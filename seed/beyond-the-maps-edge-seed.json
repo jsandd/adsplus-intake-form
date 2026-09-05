@@ -65,7 +65,7 @@
     "text": "Round the bend, past the Hole,",
     "hard": false,
     "status": "contested",
-    "note": "Working read: the canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch. Contested — Posey gave a direct 'no' to the Hole being man-made.",
+    "note": "Working read: the canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch. Contested — Posey gave a direct 'no' to the Hole being man-made. VERIFIED: 'Hole' is the poem's 42nd word — the confirmed number lands on this line.",
     "kind": "geographic"
    },
    {
@@ -6642,6 +6642,399 @@
    ],
    "when": "2026",
    "created": 1788587631023
+  },
+  {
+   "id": "i215",
+   "text": "Mysterious Writings, 'Top 10 New Clues Found in Beyond the Map's Edge' (running list): (1) the book cover's torn outline matches the Big Hole River watershed, river through mountains; (2) hardcover-only images on pp. 4 and 117 → 113, the meridian through Wisdom MT; (3) 'needle in a football field' in Netflix → Big Hole Valley, Land of 10,000 Haystacks; (4) not in any pay park; (5) first actionable clue is 'As hope surges'; (6) clues in the songs, plus two 'obvious' Netflix hints in scenes without Justin that he had control over; (7) NEW — the number 42 appears on the ALASKA portion of the map, read as 'the treasure is above the 42nd parallel'; (8) NEW — the Netflix safe combination is 44–26–1–11, read as 44.26 N / 110.5 W → Heart Lake, Yellowstone, and the dialing scene itself is taken as intentional; (9) the Big Hill is Idaho in hardcover, Utah in the audiobook; (10) the ARKADE song cover with its X — plot points from the poem and draw an X; plus the Alt+42 = asterisk = star technical clue → Polaris; NEW — the books visible behind Justin in the documentary are being catalogued as possible clues (several identified).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings Substack — Top 10 New Clues (via search summary)",
+   "tags": [
+    "mw",
+    "top-10",
+    "42",
+    "alaska",
+    "safe",
+    "heart-lake",
+    "cover",
+    "113",
+    "books"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "42 on the Alaska inset as a latitude floor: above 42°N. Every standing site on the board is above it; the Moab corridor (38.6°) is not."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Above the 42nd parallel + below 11,000 ft + inside the printed map + free — the box is getting small."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "44–26–1–11 as a coordinate pair: numbers indirectly encoded, as he confirmed."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Alt+42 → * → star → Polaris."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "If 42 is a latitude floor, La Sal, Provo, Tres Piedras, Blue Hole and Bear Lodge (44.6 — passes) split: the Utah and New Mexico sites fall."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Background books in the documentary as a reading list."
+    }
+   ],
+   "when": "2025",
+   "created": 1788628311518
+  },
+  {
+   "id": "i216",
+   "text": "Mysterious Writings, 'Justin Posey's Poem: Round the bend, past the Hole…' (Jenny Kile): the line read as a curve in the river and then past the Big Hole River; a specific theory places it where the Beaverhead and Big Hole flow into the Jefferson near Twin Bridges; 'cast your pole' is another fishing reference; and 'around the bend' is the phrase Justin uses in the Tucker poem for what comes after — the spiritual unknown — so the treasure-poem bend carries that second meaning. Posey facts restated: walking distance from 'waters' silent flight' to 'round the bend, past the Hole'; stanza 1 and at least part of stanza 2 solved; nobody at the checkpoint as of 6/21/25.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings Substack — 'Round the bend, past the Hole' (via search summary)",
+   "tags": [
+    "mw",
+    "hole",
+    "bend",
+    "twin-bridges",
+    "jefferson",
+    "tucker"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Past the Big Hole — where it ends, at the Jefferson."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Fishing."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bend as Tucker's 'after' — the line is a river bend and a passage."
+    }
+   ],
+   "when": "2025",
+   "created": 1788628379848
+  },
+  {
+   "id": "i217",
+   "text": "Cross-reference on the Twin Bridges reading: at Twin Bridges, Montana the Big Hole, the Beaverhead and the Ruby join to form the Jefferson. Lewis named those three forks in 1805 for Jefferson's virtues — Wisdom (Big Hole), Philanthropy (Ruby) and Philosophy — so the poem's 'Wisdom' river runs OUT past its Hole into a literal THREE. 'Her foot of three' = the three forks at Twin Bridges; 'his realm' = the Jefferson (named for a 'he'; alive or not 'depends on perspective'); 'his bride stands guard' = Beaverhead Rock, 12 miles up the Beaverhead, Sacagawea's landmark, 'visible but not accessible' — exactly Posey's wording. Twin Bridges is ~4,600 ft (below a mile), on the Big Hole's last reach, free BLM/FWP fishing access, dogs, and Beaverhead Rock State Park sits between it and Dillon. Gaps: 'ursa' (unless pole-star), 'twenty degree', granite (the Tobacco Roots east of Twin Bridges ARE a granite batholith — 'in ursa EAST his realm awaits' could be the Tobacco Roots), and no double arcs yet.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "twin-bridges",
+    "three-forks-jefferson",
+    "beaverhead-rock",
+    "tobacco-roots",
+    "granite",
+    "new"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Three named rivers make one at Twin Bridges — a foot of three in his own Montana."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The Wisdom River (Big Hole) ends here."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Past the Hole — past where the Big Hole ends."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Beaverhead Rock, Sacagawea's landmark, visible-only, twelve miles from the three."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The Jefferson is a 'his'; the Tobacco Root batholith east of it is granite."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Tobacco Roots: literal granite east of the confluence."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "One river carries the poem from Wisdom to the three."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Still no bear except by the pole-star reading."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "No double arcs identified."
+    }
+   ],
+   "when": "2026-09-05",
+   "created": 1788628379849
+  },
+  {
+   "id": "i218",
+   "text": "VERIFIED from the poem text: 'Hole' is the 42nd word (Can-you-find-what-lives-in-time = 7; +5 = 12; +5 = 17; +8 = 25; +6 = 31; +5 = 36; Round-the-bend-past-the = 41; Hole = 42). 42 is confirmed relevant by Posey. The only capitalized common noun in the poem is also its 42nd word — the number points at the Hole.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Poem word count (verified by Claude) — flagged by Mysterious Writings",
+   "tags": [
+    "42",
+    "hole",
+    "word-count",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "42 → the Hole. The number Posey confirmed lands on the line the community has 'solved'."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Measured rhyme' — counting words is the measure."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "42 is the answer."
+    }
+   ],
+   "when": "2025-09-08",
+   "created": 1788628459304
+  },
+  {
+   "id": "i219",
+   "text": "MW Sep 8 2025 — the 'right questions' from the X Q&A. On AI vs human: 'creating a puzzle for an intellect that dwarfs our own is a paradox… I really wanted to design something that embraces the core of what it means to be human… astronomical amount of thought'; he won't divulge the tactics. On distance: asked for the distance from the first actionable clue to the treasure — 'just by virtue of going through the process of formulating that question, you might find the answer.' On backtracking: 'If you knew the entirety of the solution, then the answer is no. But if you go through the natural progression, the answer is more like a yes.' On structure: 'Indiana Jones and National Treasure.' Checkpoint: 'a natural part of the treasure journey… There is a chance you could bypass it, but boy the odds are astronomically low.' Jenny's read: the checkpoint may only be found by an action once on location.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Mysterious Writings Substack — 'Round the bend, past the Hole' (Jenny Kile, Sep 8 2025), full text",
+   "tags": [
+    "ai",
+    "distance",
+    "backtracking",
+    "checkpoint",
+    "structure"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Formulating the distance question finds the answer' — the poem's own distance step (foot of three / twenty degree / return) IS the distance."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Same."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Checkpoint found by an action on site — consistent with 'something must be manipulated'."
+    }
+   ],
+   "when": "2025-09-08",
+   "created": 1788628459305
+  },
+  {
+   "id": "i220",
+   "text": "MW Sep 8 2025 — Posey's X post: Stanza 1 and 'at least PART of stanza 2' solved (the interview said 'half'; Jenny notes part ≠ half — a word or phrase, not a sentence). Searchers don't know without doubt until the checkpoint; Posey has not announced it found.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Posey on X, ~Sep 5 2025 (via MW)",
+   "tags": [
+    "progress",
+    "stanza-2",
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Part of stanza 2 is solved — 2:1 at least."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "'Part', not 'half': the Hole may not be among the solved words after all."
+    }
+   ],
+   "when": "2025-09-05",
+   "created": 1788628459306
+  },
+  {
+   "id": "i221",
+   "text": "MW Sep 8 2025 — word notes on 2:3–2:4. 'Round the bend': is 'Round' a name? Bend, Oregon (now eliminated); the Tucker poem p. 213 'took half my soul around the bend'; p. 149 'Tucker and Jennie rounded the bend'; p. 177 'Rounding the bend, we spotted another group of anglers across the water.' 'Past the Hole': Big Hole River, Hole-in-the-Wall, Nine Mile Hole, any Hole place-name, a fishing hole; sound-clue 'past MT' (Montana); a hole is empty. 'Cast your pole': fishing spot; the North Pole; casting a shadow with a pole (gnomon); an azimuth; an action marking one point of an X. 'Who is I?': Justin, the treasure, the location, the bride, or HERON LAKE — the book's story of the lost pole is at Heron Lake ('I' = the lake).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings Substack — 'Round the bend, past the Hole' (Jenny Kile, Sep 8 2025), full text",
+   "tags": [
+    "bend",
+    "hole",
+    "pole",
+    "heron-lake",
+    "gnomon",
+    "north-pole"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Three 'bend' passages in the book, two of them fishing scenes with anglers across the water."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Cast your pole' = the lost-pole story at Heron Lake, and/or a pole casting a shadow — a gnomon gives a bearing, tying 2:4 to 'twenty degree' and 'shadowed sight'."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A pole's shadow is a shadowed sight — 1:3 and 2:4 may be one instrument."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Pole → North Pole → Polaris → ursa."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A shadow at a known time gives an angle."
+    }
+   ],
+   "when": "2025-09-08",
+   "created": 1788628459307
+  },
+  {
+   "id": "i222",
+   "text": "MW Sep 8 2025 — 'The Bronze Beast' chapter (Tucker, Novelty Hill, Washington state) is laced with Hitchhiker's Guide allusions: 'quietly contemplate the meaning of life', 'decode the secrets of the universe', 'solved the world's greatest mystery', 'ponder life's big questions'. Washington is the 42nd state. Jenny's read: another way 42 is planted — and Posey, asked about the 42 on his taillight, said only 'The Hitchhiker's Guide to the Galaxy is a fantastic book.'",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Mysterious Writings Substack — 'Round the bend, past the Hole' (Jenny Kile, Sep 8 2025), full text",
+   "tags": [
+    "42",
+    "bronze-beast",
+    "washington",
+    "hitchhikers"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "42 planted in the book by allusion and by setting."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Everything 42 points at the 42nd word."
+    }
+   ],
+   "when": "2025-09-08",
+   "created": 1788628459308
+  },
+  {
+   "id": "i223",
+   "text": "Heron Lake, New Mexico (Rio Arriba County, ~36.7°N — north of the Santa Fe cutoff; 7,200 ft; a reservoir that the old-map theory would omit). In the book: p. 33 'Heron Lake being our north star', the lost-pole story ('I wait for you to cast your pole'), and 'Heron Lake' among the fishing waters. A heron is the community's read of a shape in the Netflix background. Heron Lake State Park charges a day-use fee (site cannot be in the park; the surrounding Carson NF and BLM land are free). Ojo Caliente — Posey's own Fenn search — is 25 miles south.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude) from MW + book references",
+   "tags": [
+    "heron-lake",
+    "new-mexico",
+    "north-star",
+    "pole",
+    "ojo-caliente"
+   ],
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The book's own 'I' with a lost pole."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Our north star' in the book."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ojo Caliente's warm surge 25 miles south."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Fee park; the site would be outside it."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "A reservoir — a dam the map omits, if the old-map theory holds."
+    }
+   ],
+   "when": "2026-09-05",
+   "created": 1788628459309
   }
  ],
  "candidates": [
@@ -7607,6 +8000,64 @@
     "g_natural": "fail"
    },
    "created": 1788587630996
+  },
+  {
+   "id": "c_twinbridges",
+   "name": "Twin Bridges — Big Hole / Beaverhead / Ruby → Jefferson (MT)",
+   "region": "MT · Madison County, Twin Bridges / Beaverhead Rock",
+   "coords": "≈ 45.55, -112.33 (verify)",
+   "elev": "≈ 4,600 ft",
+   "notes": "Where the Wisdom River (Big Hole) ends: three rivers — Lewis's Wisdom, Philanthropy, Philosophy — make the Jefferson. Beaverhead Rock (Sacagawea's landmark, visible-only) 12 mi up the Beaverhead. Tobacco Root granite batholith to the east. Below a mile; free fishing access; dogs. Built from the MW 'round the bend' reading plus the 1805 names.",
+   "kill": "No bear and no double arcs within a mile of a road; or Beaverhead Rock being the wrong bride (someone has identified her — is it this?).",
+   "test": "From the Twin Bridges confluence run 20° and 200°; list granite outcrops in the Tobacco Roots within a mile of a road; check what sits east of Beaverhead Rock.",
+   "verdicts": {
+    "l03": "fit",
+    "l07": "fit",
+    "l08": "fit",
+    "l10": "fit",
+    "l11": "fit",
+    "l19": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_public": "pass",
+    "g_vehicle": "pass",
+    "g_armchair": "pass",
+    "g_bride": "pass",
+    "g_fenn": "unk",
+    "g_trail": "unk",
+    "g_mile": "unk"
+   },
+   "created": 1788628379848
+  },
+  {
+   "id": "c_heronlake",
+   "name": "Heron Lake — north star & lost pole (NM)",
+   "region": "NM · Rio Arriba County, Heron Lake SP / Carson NF",
+   "coords": "≈ 36.70, -106.70 (verify)",
+   "elev": "≈ 7,200 ft",
+   "notes": "The book's 'our north star' and the lost-pole story. North of the Santa Fe cutoff; Ojo Caliente (Posey's Fenn search) 25 mi south. Fee state park — site would be on adjacent NF/BLM. Reservoir (dam not on an old map).",
+   "kill": "No Hole, bride or granite within reach; fee park; a reservoir.",
+   "test": "Anything named Bear, Gate or Bride within 30 mi? Granite outcrops on Carson NF nearby?",
+   "verdicts": {
+    "l08": "fit",
+    "l09": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_fenn": "pass",
+    "g_free": "unk",
+    "g_dog": "pass",
+    "g_hole": "unk"
+   },
+   "created": 1788628459304
   }
  ],
  "mapStates": {
