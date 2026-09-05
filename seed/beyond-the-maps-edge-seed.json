@@ -4335,6 +4335,302 @@
     }
    ],
    "created": 1788585102635
+  },
+  {
+   "id": "i154",
+   "text": "Checkpoint = the double arcs. Cross-referencing five statements: the checkpoint is something he placed AND something already there; it has 'some implication' of a topographic feature; the audiobook calls it 'carved in stone'; one clue has a man-made implication depending on path; and the double-arcs question got a punt where the Hole got a clean no. All five are satisfied at once if the checkpoint is a mark Posey carved on a natural granite boulder. That also explains 'hard pressed to get all the way without seeing it' (4:1 is on the way), 'zero photos of the correct checkpoint' (a small carving), and boots-on-the-ground beginning at stanza 4.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "checkpoint",
+    "double-arcs",
+    "carved",
+    "granite",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Placed + already there + carved in stone + the one man-made implication = a carving on granite."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Secrets of the past still hold' — a carving that keeps."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "If 4:1 is the one man-made implication, the Hole cannot be another — the culvert is doubly dead."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Alternative: the checkpoint is the gates, 'at least halfway' — 3:2 is clue 6 of ~10."
+    }
+   ],
+   "created": 1788585385166
+  },
+  {
+   "id": "i155",
+   "text": "What are 'double arcs'? Candidates that are literal shapes, not place names: a HEART (two arcs — 'a place that's dear to my heart', Heart Lake in the safe combination, a hunt dedicated to four dead, lovers' carvings on rock); BIGHORN RAM HORNS (two arcs, the commonest petroglyph subject in the West, and Wyoming's Bighorn River and Basin); the numeral 3 or letter B (Brandon, his late brother); a rainbow pair. A carved heart on granite is the reading that ties the most statements together.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "double-arcs",
+    "heart",
+    "bighorn",
+    "shape"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Heart = double arcs; 'dear to my heart' is Posey's own phrase for the site."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A memorial carving makes 'sacred space' literal."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Heart Lake, from the Netflix safe, is 'heart' twice."
+    }
+   ],
+   "created": 1788585385167
+  },
+  {
+   "id": "i156",
+   "text": "'Cast your pole' → 'in ursa' is one navigational step, not two. The pole is the pole star; Polaris sits in Ursa Minor. 2:4 tells you to fix north, 3:1 tells you which bear ('only Ursa East matters, no west to consider' — a direction relative to the bear, not a second bear), and 3:3 gives the bearing: 'twenty degree' is 20° east of north. 3:1 and 3:3 then say the same thing twice, which is how this poem confirms itself. 'Return her face' reverses it to 200°. This is the construction: north from the pole, 20° east, a measured leg ('foot of three'), then the back-bearing.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "pole",
+    "polaris",
+    "ursa",
+    "bearing",
+    "construction",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Pole = pole star; the line ends stanza 2 by giving you north."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'In ursa, east' = east of the bear's pointer = a bearing east of north; explains 'no west Ursa' and the lowercase."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Twenty degrees = 20° east of north — 3:1 restated as a number."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Return = the back-bearing, 200°."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Kills every place-name bear (Bear Lodge, Bear Mountain, Beartooth) if right."
+    }
+   ],
+   "created": 1788585385168
+  },
+  {
+   "id": "i157",
+   "text": "New composite — Thermopolis / Wind River Canyon / Wedding of the Waters (WY). Big Spring in Hot Springs State Park: the world's largest mineral hot spring, surging, free, 24/7 ('hope surges, clear and bright'). Wind River Canyon cuts through the OWL CREEK Mountains — an owl is the animal of silent flight ('waters' silent flight'). At the canyon mouth is a named place, the Wedding of the Waters, where the Wind River becomes the Bighorn ('his bride' at the gates of the canyon, which is signed by geological age — 'ancient gates'). Precambrian granite at the north end; the highway's three tunnels are arcs cut in it. Bighorn = double-arc horns. Wedding of the Waters is a named fishing access ('cast your pole'). Elevation ~4,400 ft — below a mile, the only mountain solve that passes Rule 42 reading 1. Wyoming law. Dogs fine. Gaps: no bear for 'ursa'; the Hole; the tunnels are man-made and no hunt item may be in one.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "wyoming",
+    "thermopolis",
+    "wind-river-canyon",
+    "wedding-of-the-waters",
+    "owl-creek",
+    "bighorn",
+    "new"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Big Spring: a hot spring that surges, free and open."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Owl Creek Mountains — silent flight, by name."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Wedding of the Waters' at the mouth of a canyon signed by geological age: a bride at ancient gates, both literal."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Wedding of the Waters is a fishing access site."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Precambrian granite at the canyon's north end; bighorn horns as arcs."
+    },
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 2,
+     "why": "2.9-billion-year rock — beyond time's swift race."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No bear."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No natural Hole found yet; the tunnels are man-made."
+    }
+   ],
+   "created": 1788585385169
+  },
+  {
+   "id": "i158",
+   "text": "New composite — Gates of the Mountains / Sleeping Giant / Beartooth (Helena, MT). The Gates of the Mountains on the Missouri is the most literal 'ancient gates' in the West (Lewis & Clark, 1805). The ridge north of Helena called the Sleeping Giant is officially Beartooth Mountain — so 'in ursa [Beartooth] east his [the Giant's] realm awaits' is double-confirmed, and 'whether he is living depends on your perspective' is exactly what you say about a sleeping giant. East of the Beartooth lies Holter Lake and the Gates. The Missouri below Holter is a famous fly-fishery ('cast your pole'); the map's missing dams mean the river is drawn undammed ('waters' silent flight'). Upstream the Missouri is born of THREE rivers at Three Forks ('her foot of three'), fed by the Jefferson, fed by the Big Hole ('the Hole') from Wisdom ('Wisdom waits') — one river thread from the crowd's stanza 1–2 to a new stanza 3 ('like a river's steady flow'). Helena ~4,000 ft: below a mile. Grandfather was Montana fish-and-game. Gaps: the bride; Mann Gulch memorial crosses nearby are grave markers; distances are large unless stanzas 1–3 are armchair.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "montana",
+    "gates-of-the-mountains",
+    "sleeping-giant",
+    "beartooth",
+    "three-forks",
+    "missouri",
+    "new"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The Gates of the Mountains: named, ancient, literal."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Beartooth Mountain IS the Sleeping Giant — bear and 'his' on one feature, east of which lie the Gates."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Three Forks: the Missouri's foot is three rivers."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Wisdom on the Big Hole feeds the same river."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The Big Hole River, natural and capital-H."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Missouri below Holter: blue-ribbon."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "One river carries the whole poem."
+    },
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No bride identified at the Gates."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Mann Gulch crosses are grave markers; the site must be clear of them."
+    },
+    {
+     "lineId": "l06",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Wisdom → Three Forks → Gates is ~150 river miles; only works if stanzas 1–3 are worked from the map."
+    }
+   ],
+   "created": 1788585385170
+  },
+  {
+   "id": "i159",
+   "text": "Rule-outs from the statements we hold. City of Rocks: 2:1–2:2 must be a pair several searchers have solved, within walking distance of 2:3 — the Reserve has no water worth a line, so stanza 2 cannot be assigned there. Sweetwater: no Hole at all, and a bride that is 'the river and its landscape' contradicts 'something visible that someone has identified'; Martin's Cove beside Devil's Gate is private and memorial ground. Bear Lodge: fee monument, phonolite, no bride in a first look. Madison: three gate failures. Corona: three statements. The La Sals stand only if stanza 2 is re-solved with a natural Hole.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "rule-out",
+    "gate",
+    "summary"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "City of Rocks and Sweetwater are stanza-4-first solves with no stanza 2."
+    },
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Sweetwater's bride is not a thing."
+    }
+   ],
+   "created": 1788585385171
   }
  ],
  "candidates": [
@@ -4692,6 +4988,80 @@
     "g_dog": "pass"
    },
    "created": 1788584545744
+  },
+  {
+   "id": "c_thermopolis",
+   "name": "Thermopolis — Wind River Canyon / Wedding of the Waters (WY)",
+   "region": "WY · Hot Springs County, Hot Springs SP / BLM canyon",
+   "coords": "≈ 43.61, -108.21 (Wedding of the Waters; verify)",
+   "elev": "≈ 4,400 ft",
+   "notes": "Big Spring (surges, free, 24/7) → Bighorn River through the Owl Creek Mountains (silent flight) → Wedding of the Waters at the canyon mouth (his bride at ancient gates, both named) → Precambrian granite, three tunnel arcs, bighorn horns. Named fishing access. Below a mile high. Wyoming.",
+   "kill": "No natural Hole on the approach, and no bear — if 'ursa' is a place name rather than a bearing, this has none.",
+   "test": "Walk the map from Big Spring south: is there a named natural Hole between the spring and the canyon mouth? Is the north-end granite carvable and off-trail, outside the tunnels?",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l08": "fit",
+    "l10": "fit",
+    "l13": "fit",
+    "l15": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_vehicle": "pass",
+    "g_safe": "pass",
+    "g_bride": "pass",
+    "g_hole": "unk",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_fenn": "unk",
+    "g_armchair": "pass"
+   },
+   "created": 1788585385012
+  },
+  {
+   "id": "c_gates",
+   "name": "Gates of the Mountains — Sleeping Giant / Beartooth (Helena, MT)",
+   "region": "MT · Lewis and Clark County, Holter Lake / Helena NF",
+   "coords": "≈ 46.84, -111.91 (Gates; verify)",
+   "elev": "≈ 3,700 ft",
+   "notes": "The most literal 'ancient gates' in the West beside a Beartooth Mountain that is the Sleeping Giant ('his', alive or not 'depends on perspective'). Missouri fly-fishing below Holter. Upstream: Three Forks (three), the Big Hole (Hole), Wisdom — one river from the crowd's stanza 1–2 to this stanza 3. Below a mile. Montana grandfather.",
+   "kill": "No bride at the Gates; or the site falling within the Mann Gulch memorial ground (grave markers).",
+   "test": "Name every feature at the Gates and on the Sleeping Giant — anything female, a face, a veil? Check Holter Lake BLM sites for day fees and dog rules.",
+   "verdicts": {
+    "l03": "fit",
+    "l07": "fit",
+    "l08": "fit",
+    "l09": "fit",
+    "l10": "fit",
+    "l11": "fit",
+    "l19": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_dog": "pass",
+    "g_vehicle": "pass",
+    "g_safe": "pass",
+    "g_free": "unk",
+    "g_bldg": "unk",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_bride": "unk",
+    "g_fenn": "unk",
+    "g_armchair": "pass"
+   },
+   "created": 1788585385012
   }
  ],
  "mapStates": {
