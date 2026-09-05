@@ -1,7 +1,7 @@
 <title>Map's Edge Workbench</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap">
 
 <style>
 /* ---------- tokens: light (complete set) ---------- */
@@ -274,6 +274,75 @@ td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:
 .meter.low i{background:var(--unk)}
 .meter.bad i{background:var(--fail)}
 
+/* ---------- sector scan (CRT inset, deliberately single-theme) ---------- */
+.crt{
+  --ph:#7dff9a; --ph-dim:#2f7a44; --ph-line:#1c4a28; --ph-bg:#030b05; --ph-warn:#ff5a46; --ph-amber:#ffc45a;
+  background:var(--ph-bg); color:var(--ph); border:2px solid var(--ph-line); border-radius:10px;
+  padding:14px 16px 12px; position:relative; overflow:hidden;
+  box-shadow:inset 0 0 80px rgba(0,0,0,.85), 0 0 0 1px #071a0c, 0 0 28px rgba(58,255,112,.12);
+  font-family:"VT323",var(--f-mono);
+}
+.crt::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:repeating-linear-gradient(0deg, rgba(0,0,0,.26) 0 1px, transparent 1px 3px);
+}
+.crt::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%);
+}
+.crt-head{
+  display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  font-size:19px; letter-spacing:.12em; text-transform:uppercase;
+  border-bottom:1px solid var(--ph-line); padding-bottom:6px; margin-bottom:10px; text-shadow:0 0 6px rgba(125,255,154,.6);
+}
+.crt-body{display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:14px; position:relative; z-index:1}
+.crt svg{width:100%; height:auto; display:block; background:var(--ph-bg)}
+.crt-console{border:1px solid var(--ph-line); padding:10px 12px; font-size:17px; display:flex; flex-direction:column; gap:9px; min-height:100%; line-height:1.25}
+.crt-console .k{color:var(--ph-dim); letter-spacing:.14em; text-transform:uppercase; font-size:14px}
+.crt-console .v{font-size:22px; text-shadow:0 0 8px rgba(125,255,154,.55)}
+.crt select,.crt textarea{background:#041108; color:var(--ph); border:1px solid var(--ph-line); font-family:inherit; font-size:17px; border-radius:2px; width:100%}
+.crt textarea{min-height:88px}
+.crt select:focus-visible,.crt textarea:focus-visible{outline:1px solid var(--ph)}
+.crt-legend{display:flex; gap:14px; flex-wrap:wrap; font-size:16px; margin-top:10px; color:var(--ph); position:relative; z-index:1}
+.crt-legend .sw{display:inline-block; width:16px; height:10px; border:1px solid var(--ph); vertical-align:middle; margin-right:5px}
+.crt-legend .sw.open{background:rgba(58,255,112,.08)}
+.crt-legend .sw.inplay{background:rgba(58,255,112,.22)}
+.crt-legend .sw.hot{background:rgba(58,255,112,.42)}
+.crt-legend .sw.active{background:rgba(58,255,112,.62)}
+.crt-legend .sw.fringe{background:rgba(58,255,112,.12); border-style:dashed}
+.crt-legend .sw.eliminated{background:repeating-linear-gradient(45deg, rgba(255,90,70,.75) 0 1px, rgba(255,80,60,.08) 1px 4px); border-color:var(--ph-warn)}
+.crt-legend .sw.offmap{background:none; border-style:dotted; border-color:var(--ph-dim)}
+.crt-foot{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:8px; font-size:15px; color:var(--ph-dim); letter-spacing:.08em; position:relative; z-index:1}
+.crt-blipsrow{font-size:16px; line-height:1.3}
+.crt-blipsrow b{color:#fff; font-weight:400}
+.blinker{animation:crtblink 1.1s step-end infinite}
+@keyframes crtblink{50%{opacity:0}}
+@keyframes crtpulse{0%,100%{fill-opacity:.52}50%{fill-opacity:.78}}
+@keyframes crtring{0%{r:1.6; opacity:1}100%{r:7; opacity:0}}
+.st{stroke:#3aff70; stroke-width:.7; cursor:pointer; vector-effect:non-scaling-stroke; transition:fill-opacity .15s}
+.st:hover{stroke:#c8ffd6; stroke-width:1.1}
+.st-open{fill:rgba(58,255,112,.07)}
+.st-inplay{fill:rgba(58,255,112,.22)}
+.st-hot{fill:rgba(58,255,112,.42)}
+.st-active{fill:rgba(58,255,112,.6); animation:crtpulse 2.6s ease-in-out infinite}
+.st-fringe{fill:rgba(58,255,112,.12); stroke-dasharray:2 1.6}
+.st-eliminated{fill:url(#crthatch); stroke:#ff5a46; stroke-width:.6}
+.st-offmap{fill:none; stroke:#1c4a28; stroke-dasharray:1 1.6; cursor:default}
+.st.sel{stroke:#ffffff; stroke-width:1.3}
+.crt text{font-family:"VT323",var(--f-mono); pointer-events:none; text-anchor:middle}
+.lbl{font-size:8px; fill:#b9ffcb; letter-spacing:.6px; paint-order:stroke; stroke:#030b05; stroke-width:1.6px; stroke-linejoin:round}
+.lbl2{font-size:5.4px; fill:#7dff9a; letter-spacing:.4px; paint-order:stroke; stroke:#030b05; stroke-width:1.4px; stroke-linejoin:round}
+.lbl.dim{fill:#2f7a44} .lbl2.dim{fill:#245c35}
+.lbl.warn,.lbl2.warn{fill:#ff8a7a}
+.grat{font-size:5px; fill:#2f7a44; letter-spacing:.3px}
+.fenn{fill:none; stroke:#ffc45a; stroke-width:.55; stroke-dasharray:2.4 1.6; opacity:.85}
+.fennlbl{font-size:5.6px; fill:#ffc45a; letter-spacing:.5px}
+.cutoff{stroke:#ff5a46; stroke-width:.55; stroke-dasharray:1.5 1.2}
+.blip{fill:#ffffff; filter:drop-shadow(0 0 2px #fff)}
+.blipring{fill:none; stroke:#ffffff; stroke-width:.5; animation:crtring 2.2s ease-out infinite}
+.bliplbl{font-size:5.2px; fill:#ffffff; text-anchor:start; letter-spacing:.3px; paint-order:stroke; stroke:#030b05; stroke-width:1.6px; stroke-linejoin:round}
+@media (max-width:1080px){ .crt-body{grid-template-columns:1fr} }
+
 /* ---------- dialog ---------- */
 dialog{
   border:1px solid var(--rule-2); border-radius:var(--r-lg); background:var(--surface); color:var(--ink);
@@ -361,6 +430,44 @@ const STATUS = [
 ];
 const STATUS_LABEL = Object.fromEntries(STATUS);
 const STATUS_CHIP  = { pinned:"fit", contested:"fail", partial:"acc", thematic:"", unsolved:"unk" };
+
+/* Search-area map: a low-poly West drawn from state-line corners on a plain
+   lat/lon grid — the same equirectangular sheet a 1990s field computer would draw. */
+const MAP_STATUS = [
+  ["open",       "Open — no read yet"],
+  ["inplay",     "In play"],
+  ["hot",        "Hot — community focus"],
+  ["active",     "Active — my solve"],
+  ["fringe",     "Fringe theory"],
+  ["eliminated", "Eliminated"],
+  ["offmap",     "Off the map"],
+];
+const MAP_STATUS_LABEL = Object.fromEntries(MAP_STATUS);
+const STATES = [
+  ["WA","Washington",  [[49,-123.3],[48.4,-124.7],[46.25,-124.05],[45.7,-120.7],[46,-119],[46,-117.03],[49,-117.03]]],
+  ["OR","Oregon",      [[46.25,-124.05],[45.7,-120.7],[46,-119],[46,-116.9],[45.5,-116.5],[44,-117.0],[42,-117.03],[42,-124.2]]],
+  ["CA","California",  [[42,-124.2],[42,-120],[39,-120],[35,-114.6],[32.7,-114.72],[32.53,-117.12],[33.5,-117.8],[34.4,-120.5],[35.6,-121.2],[36.9,-122.0],[38,-123.0],[39.5,-123.8],[40.4,-124.4]]],
+  ["NV","Nevada",      [[42,-120],[42,-114.05],[36.2,-114.05],[35,-114.6],[39,-120]]],
+  ["ID","Idaho",       [[49,-117.03],[49,-116.05],[47.9,-116.05],[46.6,-114.4],[45.6,-114.5],[44.5,-112.9],[44.5,-111.05],[42,-111.05],[42,-117.03],[44,-117.0],[45.5,-116.5],[46,-116.9],[46,-117.03]]],
+  ["MT","Montana",     [[49,-116.05],[49,-104.05],[45,-104.05],[45,-111.05],[44.5,-111.05],[44.5,-112.9],[45.6,-114.5],[46.6,-114.4],[47.9,-116.05]]],
+  ["WY","Wyoming",     [[45,-111.05],[45,-104.05],[41,-104.05],[41,-111.05]]],
+  ["UT","Utah",        [[42,-114.05],[42,-111.05],[41,-111.05],[41,-109.05],[37,-109.05],[37,-114.05]]],
+  ["CO","Colorado",    [[41,-109.05],[41,-102.05],[37,-102.05],[37,-109.05]]],
+  ["AZ","Arizona",     [[37,-114.05],[37,-109.05],[31.33,-109.05],[31.33,-111.07],[32.5,-114.8],[32.7,-114.72],[35,-114.6],[36.2,-114.05]]],
+  ["NM","New Mexico",  [[37,-109.05],[37,-103],[32,-103],[32,-106.6],[31.78,-106.5],[31.78,-108.2],[31.33,-108.2],[31.33,-109.05]]],
+  ["AK","Alaska ·inset", [[33.4,-124.6],[33.4,-119.2],[31.0,-119.2],[31.0,-124.6]]],
+  ["ND","N. Dakota",   [[49,-104.05],[49,-97.2],[46,-96.6],[46,-104.05]], true],
+  ["SD","S. Dakota",   [[46,-104.05],[46,-96.6],[43,-96.5],[43,-104.05]], true],
+  ["NE","Nebraska",    [[43,-104.05],[43,-96.5],[40,-95.3],[40,-102.05],[41,-102.05],[41,-104.05]], true],
+  ["KS","Kansas",      [[40,-102.05],[40,-94.6],[37,-94.6],[37,-102.05]], true],
+  ["OK","Oklahoma",    [[37,-103],[37,-94.6],[35.4,-94.5],[33.7,-95.5],[34,-100],[36.5,-100],[36.5,-103]], true],
+  ["TX","Texas",       [[36.5,-103],[36.5,-100],[34,-100],[32,-100],[32,-103]], true],
+];
+const FENN_MAP = [[49,-116.05],[49,-104.05],[45,-104.05],[41,-104.05],[41,-102.05],[37,-102.05],[37,-103],[32,-103],[32,-106.6],[31.78,-106.5],[31.78,-108.2],[31.33,-108.2],[31.33,-109.05],[37,-109.05],[41,-109.05],[41,-111.05],[45,-111.05],[44.5,-111.05],[44.5,-112.9],[45.6,-114.5],[46.6,-114.4],[47.9,-116.05]];
+const PX = (lat, lon) => [((lon + 125) * 10).toFixed(1), ((49.6 - lat) * 13).toFixed(1)];
+const poly = pts => "M" + pts.map(([la, lo]) => PX(la, lo).join(" ")).join("L") + "Z";
+const LABEL_AT = { ID:[44.2,-114.9], CA:[37.4,-119.9], NM:[35.9,-106.2], AZ:[34.6,-111.8], MT:[47.2,-109.6], WY:[43.6,-107.5] };
+const centroid = pts => { let a = 0, b = 0; pts.forEach(([la, lo]) => { a += la; b += lo; }); return PX(a / pts.length, b / pts.length); };
 const CONF = [
   ["confirmed",  "Confirmed",  3],
   ["likely",     "Likely",     2],
@@ -412,6 +519,8 @@ const state = {
   candidates: [],  // {id, name, region, coords, elev, notes, verdicts:{lineId:'fit'|'fail'}, created}
   route: "poem",
   selectedLine: null,
+  mapStates: {},     // {UT:{status, note}}
+  selectedState: "UT",
   filter: { q: "", kind: "", conf: "", line: "" },
   usingDemo: false,
 };
@@ -493,6 +602,7 @@ function queueWrite(path, body) {
 const savePoem   = () => queueWrite("poem/doc",  { title: state.poemTitle, raw: state.poemRaw, lines: state.lines });
 const saveIntel  = it => queueWrite("intel/" + it.id, it);
 const saveCand   = c  => queueWrite("candidates/" + c.id, c);
+const saveMap    = () => queueWrite("map/states", { states: state.mapStates });
 const dropDoc    = async path => { try { if (db) await db.doc(path).delete(); } catch (e) {} };
 
 async function connect() {
@@ -517,6 +627,11 @@ async function connect() {
     state.usingDemo = false;
     afterLoad();
   }, () => setSync("off", "Sync stopped — export a backup"));
+
+  db.doc("map/states").onSnapshot(snap => {
+    if (snap.exists) { const d = snap.data() || {}; state.mapStates = d.states && typeof d.states === "object" ? d.states : {}; }
+    if (ready && state.route === "map") render();
+  }, () => {});
 
   db.collection("intel").onSnapshot(snap => {
     const rows = snap.docs.map(d => ({ id: d.id, ...(d.data() || {}) }));
@@ -667,6 +782,7 @@ const VIEWS = [
   ["intel",      "Intel",      l => l.intel.length],
   ["candidates", "Candidates", l => l.candidates.length],
   ["matrix",     "Matrix",     l => l.candidates.length * (l.lines.length ? 1 : 0)],
+  ["map",        "Map",        l => Object.values(l.mapStates).filter(x => x && (x.status === "active" || x.status === "hot")).length || ""],
   ["data",       "Data",       () => ""],
 ];
 
@@ -676,7 +792,7 @@ function render() {
   renderNav();
   renderGauge();
   const el = document.getElementById("view");
-  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, data: viewData }[state.route];
+  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, map: viewMap, data: viewData }[state.route];
   el.innerHTML = fn();
   wire();
   el.scrollTop = 0;
@@ -940,12 +1056,114 @@ function viewMatrix() {
     </table></div>`;
 }
 
+/* ---------- view: map ---------- */
+
+function parseCoords(s) {
+  const m = /(-?\d{1,2}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)/.exec(s || "");
+  if (!m) return null;
+  const lat = +m[1], lon = +m[2];
+  if (lat < 25 || lat > 50 || lon > -90 || lon < -126) return null;
+  return [lat, lon];
+}
+
+function viewMap() {
+  const st = code => (state.mapStates[code] && state.mapStates[code].status) || "open";
+  const note = code => (state.mapStates[code] && state.mapStates[code].note) || "";
+  const sel = STATES.find(x => x[0] === state.selectedState && !x[3]) ? state.selectedState : "UT";
+  const AK = PX(33.4, -124.6);
+  state.selectedState = sel;
+  const selName = STATES.find(x => x[0] === sel)[1];
+
+  const counts = {};
+  STATES.filter(x => !x[3]).forEach(([c]) => { counts[st(c)] = (counts[st(c)] || 0) + 1; });
+
+  const grat = [];
+  [35, 40, 45].forEach(la => { const [x, y] = PX(la, -125); grat.push(`<text class="grat" x="${+x + 6}" y="${+y - 1}">${la}N</text>`); });
+  [-120, -110, -100].forEach(lo => { const [x, y] = PX(31.5, lo); grat.push(`<text class="grat" x="${x}" y="${+y + 6}">${-lo}W</text>`); });
+
+  const shapes = STATES.map(([code, name, pts, off]) => {
+    const s = off ? "offmap" : st(code);
+    const [cx, cy] = LABEL_AT[code] ? PX(LABEL_AT[code][0], LABEL_AT[code][1]) : centroid(pts);
+    const dim = off || s === "open" || s === "offmap";
+    const warn = s === "eliminated";
+    return `<path class="st st-${s} ${code === sel ? "sel" : ""}" data-state="${off ? "" : code}" d="${poly(pts)}"><title>${name}</title></path>
+      <text class="lbl ${dim ? "dim" : ""} ${warn ? "warn" : ""}" x="${cx}" y="${+cy - 1}">${code}</text>
+      <text class="lbl2 ${dim ? "dim" : ""} ${warn ? "warn" : ""}" x="${cx}" y="${+cy + 5}">${off ? "" : (s === "open" ? "" : (MAP_STATUS_LABEL[s] || s).split(" —")[0].toUpperCase())}</text>`;
+  }).join("");
+
+  const [fx, fy] = PX(49, -116.05);
+  const fenn = `<path class="fenn" d="${poly(FENN_MAP)}"/><text class="fennlbl" x="${+fx + 40}" y="${+fy - 2.5}">FENN 2013 MAP · MT WY CO NM</text>`;
+  const [c1x, c1y] = PX(34.6, -109.05), [c2x] = PX(34.6, -103);
+  const cutoff = `<line class="cutoff" x1="${c1x}" y1="${c1y}" x2="${c2x}" y2="${c1y}"/><text class="lbl2 warn" x="${(+c1x + +c2x) / 2}" y="${+c1y + 6}">SANTA FE −75 MI</text>`;
+
+  /* Sites within a few map units of each other collapse into one marker with a count,
+     so a basin worked three ways reads as one blip, not three colliding labels. */
+  const cells = new Map();
+  state.candidates.forEach(c => {
+    const ll = parseCoords(c.coords); if (!ll) return;
+    const [x, y] = PX(ll[0], ll[1]).map(Number);
+    const key = Math.round(x / 6) + "," + Math.round(y / 6);
+    if (!cells.has(key)) cells.set(key, { x, y, names: [] });
+    cells.get(key).names.push(c.name.split(/[—(]/)[0].trim());
+  });
+  const blips = [...cells.values()].map(({ x, y, names }, i) => {
+    const label = names.length > 1 ? `${names.length} SITES · ${names[0].toUpperCase().slice(0, 16)}` : names[0].toUpperCase().slice(0, 22);
+    const dy = (i % 2 ? 6 : -2.5);
+    return `<circle class="blipring" cx="${x}" cy="${y}" r="2"/><circle class="blip" cx="${x}" cy="${y}" r="1.1"/><text class="bliplbl" x="${x + 3}" y="${y + dy}">${esc(label)}</text>`;
+  }).join("");
+  const blipList = state.candidates.map(c => parseCoords(c.coords) ? `<div><b>◉</b> ${esc(c.name)}</div>` : "").filter(Boolean).join("");
+
+  const inState = state.candidates.filter(c => (c.region || "").toUpperCase().startsWith(sel));
+
+  return `${demoBanner()}
+    <div class="viewhead">
+      <div><div class="eyebrow">Section 5</div><h2>Search area</h2></div>
+    </div>
+    <p class="lede">Which states are alive and which are dead, on one screen. Click a state to set its status and keep a note on why. Sites with coordinates show as blips. The amber outline is Forrest Fenn's 2013 four-state map — the community reads Posey's 75-mile Fenn statement as confining the hunt inside it, which is the sharpest objection to anything in Utah.</p>
+    <div class="crt">
+      <div class="crt-head">
+        <span>Sector scan · American West</span>
+        <span>${counts.active || 0} active · ${counts.hot || 0} hot · ${counts.inplay || 0} in play · ${counts.eliminated || 0} out <span class="blinker">▮</span></span>
+      </div>
+      <div class="crt-body">
+        <svg viewBox="0 0 312 244" role="img" aria-label="Map of the western United States with search status per state">
+          <defs>
+            <pattern id="crtgrid" width="10" height="13" patternUnits="userSpaceOnUse"><path d="M10 0H0V13" fill="none" stroke="#12351b" stroke-width=".35"/></pattern>
+            <pattern id="crthatch" width="3.5" height="3.5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3.5" height="3.5" fill="rgba(255,80,60,.07)"/><path d="M0 0V3.5" stroke="rgba(255,90,70,.75)" stroke-width=".9"/></pattern>
+          </defs>
+          <rect width="312" height="244" fill="url(#crtgrid)"/>
+          ${grat.join("")}
+          ${shapes}
+          ${fenn}
+          ${cutoff}
+          <text class="grat" x="${+AK[0] + 1}" y="${+AK[1] - 1.5}" style="text-anchor:start">ALASKA · INSET · NOT TO SCALE</text>
+          ${blips}
+        </svg>
+        <div class="crt-console">
+          <div><div class="k">Selected</div><div class="v">${esc(selName)} <span style="color:#2f7a44">[${sel}]</span></div></div>
+          <div><div class="k">Status</div>
+            <select data-mapstatus="${sel}">${MAP_STATUS.filter(x => x[0] !== "offmap").map(([v, l]) => `<option value="${v}" ${st(sel) === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
+          <div><div class="k">Why</div>
+            <textarea data-mapnote="${sel}" placeholder="What puts this state in or out?">${esc(note(sel))}</textarea></div>
+          ${inState.length ? `<div><div class="k">Sites here</div><div class="crt-blipsrow">${inState.map(c => `<div>▸ ${esc(c.name)}</div>`).join("")}</div></div>` : ""}
+          ${blipList ? `<div><div class="k">Blips</div><div class="crt-blipsrow">${blipList}</div></div>` : ""}
+        </div>
+      </div>
+      <div class="crt-legend">
+        ${MAP_STATUS.map(([v, l]) => `<span><i class="sw ${v}"></i>${l.split(" —")[0]}</span>`).join("")}
+        <span><i class="sw" style="border-color:#ffc45a;border-style:dashed;background:none"></i>Fenn map</span>
+        <span><span style="color:#fff">◉</span> Site</span>
+      </div>
+      <div class="crt-foot"><span>Plate carrée · 1° lon = 10u · 1° lat = 13u</span><span>Status lives in the store with everything else</span></div>
+    </div>`;
+}
+
 /* ---------- view: data ---------- */
 
 function viewData() {
   const c = coverage();
   return `${demoBanner()}
-    <div class="viewhead"><div><div class="eyebrow">Section 5</div><h2>Data</h2></div></div>
+    <div class="viewhead"><div><div class="eyebrow">Section 6</div><h2>Data</h2></div></div>
     <p class="lede">Your work lives in this artifact's store and syncs across your devices. Export anyway — a backup you hold is a backup you keep.</p>
 
     <div class="two">
@@ -1321,6 +1539,7 @@ function snapshot() {
     poem: { title: state.poemTitle, raw: state.poemRaw, lines: state.lines },
     intel: state.intel,
     candidates: state.candidates,
+    mapStates: state.mapStates,
   };
 }
 
@@ -1349,8 +1568,10 @@ function doImport(file) {
     state.lines = Array.isArray(d.poem.lines) ? d.poem.lines : parseLines(state.poemRaw, []);
     state.intel = Array.isArray(d.intel) ? d.intel : [];
     state.candidates = Array.isArray(d.candidates) ? d.candidates : [];
+    state.mapStates = d.mapStates && typeof d.mapStates === "object" ? d.mapStates : {};
     state.selectedLine = state.lines[0] ? state.lines[0].id : null;
     savePoem();
+    saveMap();
     state.intel.forEach(saveIntel);
     state.candidates.forEach(saveCand);
     toast(`Imported ${state.lines.length} lines, ${state.intel.length} intel items, ${state.candidates.length} sites`);
@@ -1379,6 +1600,11 @@ function brief() {
   if (un.length) {
     out += `## Unmatched intel (${un.length})\n\n` + un.map(i => `- [${CONF_LABEL[i.conf] || "?"}] ${i.text}${i.source ? ` (${i.source})` : ""}`).join("\n") + "\n\n";
   }
+  const mapRows = STATES.filter(x => !x[3]).map(([code, name]) => {
+    const m = state.mapStates[code]; if (!m || !m.status || m.status === "open") return "";
+    return `- ${name}: ${MAP_STATUS_LABEL[m.status] || m.status}${m.note ? " — " + m.note : ""}`;
+  }).filter(Boolean);
+  if (mapRows.length) out += `## Search area\n\n${mapRows.join("\n")}\n\n`;
   out += `## Candidate sites\n\n`;
   state.candidates.forEach(cd => {
     const s = scoreCandidate(cd);
@@ -1455,6 +1681,25 @@ function wire() {
     savePoem();
   });
 
+  document.querySelectorAll(".st[data-state]").forEach(el => {
+    if (!el.dataset.state) return;
+    el.addEventListener("click", () => { state.selectedState = el.dataset.state; render(); });
+  });
+  const ms = document.querySelector("[data-mapstatus]");
+  if (ms) ms.addEventListener("change", () => {
+    const code = ms.dataset.mapstatus;
+    leaveDemoIfNeeded();
+    state.mapStates[code] = { ...(state.mapStates[code] || {}), status: ms.value };
+    saveMap(); render();
+  });
+  const mn = document.querySelector("[data-mapnote]");
+  if (mn) mn.addEventListener("change", () => {
+    const code = mn.dataset.mapnote;
+    leaveDemoIfNeeded();
+    state.mapStates[code] = { ...(state.mapStates[code] || {}), note: mn.value.trim() };
+    saveMap();
+  });
+
   const file = document.getElementById("importFile");
   if (file) file.addEventListener("change", () => { if (file.files && file.files[0]) doImport(file.files[0]); });
 
@@ -1512,7 +1757,8 @@ function wire() {
       if (!confirm("Erase the poem, all intel and all sites? Export first — this cannot be undone.")) return;
       state.intel.forEach(i => dropDoc("intel/" + i.id));
       state.candidates.forEach(c => dropDoc("candidates/" + c.id));
-      dropDoc("poem/doc");
+      dropDoc("poem/doc"); dropDoc("map/states");
+      state.mapStates = {};
       state.poemTitle = ""; state.poemRaw = ""; state.lines = []; state.intel = []; state.candidates = [];
       state.usingDemo = false; state.selectedLine = null;
       render();
@@ -1523,7 +1769,7 @@ function wire() {
 
 document.addEventListener("keydown", e => {
   if (e.target.matches("input, textarea, select") || dlg.open) return;
-  const i = ["1","2","3","4","5"].indexOf(e.key);
+  const i = ["1","2","3","4","5","6"].indexOf(e.key);
   if (i >= 0) { state.route = VIEWS[i][0]; render(); }
 });
 

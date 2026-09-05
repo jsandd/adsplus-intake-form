@@ -99,15 +99,15 @@
     "text": "Return her face to find the place.",
     "hard": false,
     "status": "partial",
-    "note": "Tukuhnikivatz ≈ 'where the sun sets last', a direction-facing name. Reverse her facing: 20° → 200°. Posey: rotation is 'technically' physical — a mountain cannot be rotated, a map or image can."
+    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes."
    },
    {
     "id": "l13",
     "stanza": 4,
     "text": "Double arcs on granite bold,",
     "hard": false,
-    "status": "pinned",
-    "note": "Corona Arch + Bowtie Arch, paired on one trail off 279: crown + groom's bowtie, the wedding pair. Objections: neither Moab sandstone nor La Sal laccolith is granite; the trail has a bolted ladder; site is 'not near any trail'."
+    "status": "partial",
+    "note": "Two basins at Tuk's foot on opposite faces. Option 1 (favored): Medicine Lakes, south side near La Sal Pass — plural by name, drivable pass with trailhead, exactly what Reading C delivers; access-road roughness must be checked against the no-high-clearance rule. Option 2: Gold Basin / Tuk cirque, north side — cirques are arcs by definition, but no named paired pools and higher, more snowbound. Old objection stands: none of this is granite. Corona/Bowtie now demoted."
    },
    {
     "id": "l14",
@@ -115,7 +115,7 @@
     "text": "Where secrets of the past still hold.",
     "hard": false,
     "status": "thematic",
-    "note": "Petroglyph panels and dinosaur tracks along the Potash corridor. Thematic, not pinned."
+    "note": "The sediment record on the basin floor: alpine basins hold undisturbed layers back to deglaciation — pollen, charcoal, ash, isotopes — which is why researchers core exactly these lakes."
    },
    {
     "id": "l15",
@@ -123,7 +123,7 @@
     "text": "Beyond the reach of time's swift race,",
     "hard": false,
     "status": "thematic",
-    "note": "The river and the canyon it cut. Thematic."
+    "note": "That same sealed record, beyond time's reach. L2 and L3 read as one continuous statement, which is what consecutive clue order should produce. The water itself is annual snowmelt; the sediment carries the age."
    },
    {
     "id": "l16",
@@ -131,7 +131,7 @@
     "text": "Wonder guards this sacred space.",
     "hard": false,
     "status": "thematic",
-    "note": "Arch country over the site. 'The sacred space' need not be the same location as 'the place' (3:4) — Posey."
+    "note": "The peaks ringing the basin — Tuk, Peale, Mellenthin, Mount Laurel — a cirque of 12,000-foot summits, so 'wonder guards' is literal description."
    },
    {
     "id": "l17",
@@ -1817,6 +1817,981 @@
    ],
    "links": [],
    "created": 1788581667097
+  },
+  {
+   "id": "i077",
+   "text": "Reading A — back bearing. 'Twenty degree' is a compass bearing and 'return' reverses it: 20 + 180 = 200. Standard surveying practice for working backward from a landmark to your own position.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "l12",
+    "bearing",
+    "reading-a"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Uses the confirmed distance element, the confirmed indirect numbers, and the confirmed physical rotation."
+    },
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Still needs an origin, so it yields a line across the map, not a point."
+    }
+   ],
+   "created": 1788583060368
+  },
+  {
+   "id": "i078",
+   "text": "Reading B — go to the face and turn around. Walk to her face, reverse your own facing. 'Return' in its plain sense, which suits stanza 5's warning against clever readings; satisfies the rotation; fits 'her face is probably not as far from the place as people think.'",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "l12",
+    "reading-b"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Plainest reading; honours the rotation and the short-distance statement."
+    },
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Strands 'twenty degree', which then has to attach to 'her foot of three'. And standing at the north face and turning around faces you away from the north basin."
+    }
+   ],
+   "created": 1788583060369
+  },
+  {
+   "id": "i079",
+   "text": "Reading C — reverse the face on the map. Her face is the mountain's aspect; returning it means reversing which direction that face looks, done on paper. North face reversed gives the south side. Preserves the rotation, stays armchair-solvable before stanza four, leaves twenty free for the foot, and outputs an actual destination.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "l12",
+    "reading-c",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The only reading that currently produces a named place: Medicine Lakes."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Frees 'twenty degree' to attach to the foot."
+    },
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Most abstract of the three."
+    }
+   ],
+   "created": 1788583060370
+  },
+  {
+   "id": "i080",
+   "text": "Medicine Lakes, south side of Tukuhnikivatz near La Sal Pass: a named plural pair at Tuk's southern base. Trip accounts describe descending the peak with the Medicine Lakes reflecting below. The name is already plural, so 'double' is satisfied by the feature itself; sits at a drivable pass with a trailhead, fitting 'no more than a mile' far better than a high cirque; and it is exactly what Reading C delivers.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-4",
+    "medicine-lakes",
+    "la-sals",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Double, by name, at the foot of the bride."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Reverse the north face and you land here."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ringed by Tuk, Peale, Mellenthin and Laurel."
+    }
+   ],
+   "created": 1788583060371
+  },
+  {
+   "id": "i081",
+   "text": "Constraint on Medicine Lakes: the La Sal Pass Road is rough. One climber reported a high-clearance Subaru failing in a wet year, with rangers suggesting a modified 4x4. Posey's rules say no high-clearance vehicle is needed. Verify dry-season access in a standard car, or find another approach.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "My own analysis",
+   "tags": [
+    "medicine-lakes",
+    "access",
+    "vehicle"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "An official rule points away from the favored basin unless a standard-car approach exists."
+    }
+   ],
+   "created": 1788583060372
+  },
+  {
+   "id": "i082",
+   "text": "Gold Basin / Tuk cirque, north side of Tukuhnikivatz, drained by a Brumley Creek tributary — reached via Geyser Pass Road to Gold Basin Road. Cirques are arc-shaped by definition: curved headwalls cut into bold rock, so 'double arcs' reads as landform rather than wordplay.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-4",
+    "gold-basin",
+    "la-sals",
+    "alternate"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Arcs as landform, at the bride's foot."
+    }
+   ],
+   "created": 1788583060373
+  },
+  {
+   "id": "i083",
+   "text": "Constraint on Gold Basin: no named paired pools located there. Trip reports describe talus, avalanche paths and creek, not lakes. Unnamed tarns may exist but are unconfirmed. Higher and more snowbound than Medicine Lakes.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "My own analysis",
+   "tags": [
+    "gold-basin",
+    "access"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "'Double' has nothing named to attach to on the north side."
+    }
+   ],
+   "created": 1788583060374
+  },
+  {
+   "id": "i084",
+   "text": "Lines 4:2–4:4 applied to whichever basin: the sediment record on the pool floors (undisturbed layers back to deglaciation — pollen, charcoal, ash, isotopes; researchers core exactly these lakes) is 'secrets of the past'; the same sealed record is 'beyond the reach of time's swift race'; the ring of 12,000-foot summits — Tuk, Peale, Mellenthin, Mount Laurel — is 'wonder guards this sacred space', literally. Accuracy note: the water is annual snowmelt; cirques date to ~20,000 years, rock 25–28 million; the sediment, not the water, carries the age.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-4",
+    "sediment",
+    "cirque"
+   ],
+   "links": [
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Sediment record as the secret that still holds."
+    },
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 2,
+     "why": "L2 and L3 read as one continuous statement — what consecutive order should produce."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Mountains standing guard, literally."
+    }
+   ],
+   "created": 1788583060375
+  },
+  {
+   "id": "i085",
+   "text": "Community: 'URSA EAST' anagrams to 'USE A STAR' — a nod to navigating by Polaris, which sits in Ursa Minor. Identified on the MW Discord in early 2026. Posey, asked about it: the lowercase was intentional, 'but that's all the clarity I'm willing to provide.'",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "MW Discord, early 2026 — via web search summary",
+   "tags": [
+    "ursa",
+    "anagram",
+    "polaris"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A wordplay reading that explains the deliberate lowercase."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Cuts against 'bear east' as a heading — if ursa is an anagram, it is not a direction."
+    }
+   ],
+   "created": 1788583060376
+  },
+  {
+   "id": "i086",
+   "text": "Community: the 'technical' hint is Alt+42 on the numpad, which types an asterisk — a STAR. Ties the recurring 42 (page 42 hill illustration, Idaho/Utah 42nd parallel, peaks-in-order count) to 'use a star'.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "numbers",
+    "42",
+    "star",
+    "technical-hint"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Reinforces a star reading of ursa."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "42 as a number that 'lives in time' across book, audiobook and map."
+    }
+   ],
+   "created": 1788583060377
+  },
+  {
+   "id": "i087",
+   "text": "Community (Southwest Montana cluster): Polaris, Montana — a town named for the North Star, Beaverhead County — as 'his realm'; Beaverhead Rock near Twin Bridges (the landmark Sacagawea recognised as home) as the bride; the Pioneer Scenic Byway / Beaverhead NF as the ancient gates. Wisdom, Montana ('Wisdom waits') sits on the Big Hole River ('past the Hole'). Posey did his June 2025 signing in Dillon, MT, and his August 2026 featured question was delayed by Montana wildfires.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Southwest Montana tourism blog — via web search summary; Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "montana",
+    "polaris",
+    "beaverhead",
+    "wisdom",
+    "big-hole"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A realm named for the star in the bear."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A famous, visible, not-alive bride at a gateway landform."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The Big Hole River is the most-cited 'Hole' outside Utah."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Wisdom waits' as a literal place name."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Blue-ribbon fly-fishing water for 'cast your pole'."
+    }
+   ],
+   "created": 1788583060378
+  },
+  {
+   "id": "i088",
+   "text": "Community: Big Hole River as 'the Hole' and 'cast your pole' as fishing. Posey punted on whether the Hole is a place with 'hole' in its name (Jackson Hole, Big Hole), calling it 'an on the nose question' — which searchers read as a live possibility rather than a no.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "hole",
+    "big-hole",
+    "fishing"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A natural, named Hole satisfies the direct 'not man-made'."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Fishing reading."
+    }
+   ],
+   "created": 1788583060379
+  },
+  {
+   "id": "i089",
+   "text": "Community: Hole 'N The Rock, the roadside attraction south of Moab in San Juan County, as 'the Hole'; Corona and Bowtie Arch west of Moab as the 'double arcs' — the most-cited Utah reading online.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "utah",
+    "moab",
+    "hole",
+    "corona"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Hole 'N The Rock is man-made (a blasted home) and a commercial attraction — fails the direct 'no'."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Independent arrival at Corona/Bowtie, for what that is worth."
+    }
+   ],
+   "created": 1788583060380
+  },
+  {
+   "id": "i090",
+   "text": "Full solve (Justin Greer, Jul 2026): Madison River, West Yellowstone. Start at Baker's Hole ('the Hole'), follow the Boundary Trail near the water, round the bend, face east toward the Madison Valley. The Three Brothers peaks aligned west-to-east with a line extended north point at the Harlequin Lake trailhead; 'double arcs' expected on granite near the parking area; return on the Boundary Trail to face the valley from Sled Hill / Old Bump. No chest reported.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Justin Greer, 'The Treasure I Found Along the Madison — A Full Solve' (Jul 31 2026) — via web search summary",
+   "tags": [
+    "montana",
+    "madison",
+    "bakers-hole",
+    "harlequin",
+    "three-brothers"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Baker's Hole — a named natural Hole on the water."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Foot of three' as three aligned peaks giving a bearing."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Granite is real in the Madison range, unlike Moab."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Return' as returning along the same trail."
+    }
+   ],
+   "created": 1788583060381
+  },
+  {
+   "id": "i091",
+   "text": "Community: the safe combination shown in Gold & Greed reads as 44.26 N 110.5 W — Heart Lake, Yellowstone. Most treat it as a starting point or easter egg rather than the site.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "netflix",
+    "yellowstone",
+    "heart-lake",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Numbers hidden in the documentary, if the safe is a clue."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Yellowstone in play; national parks never ruled out."
+    }
+   ],
+   "created": 1788583060382
+  },
+  {
+   "id": "i092",
+   "text": "Community: the cipher was solved on the MW Discord (Mooshee85 and Rose) — it reads MAGYAR. It is not in the poem and is a nod to the container, read as hinting the container is a CHEST. Not needed for the solve.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "cipher",
+    "container"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Confirms the cipher lives outside the poem; stanza 1 is not the cipher."
+    }
+   ],
+   "created": 1788583060383
+  },
+  {
+   "id": "i093",
+   "text": "Community: the 'extremely definitive' song hint is thought to be in 'Beyond the Map's Edge' by Arkade (the Netflix track). Candidates: the X on the album cover, the cracked-desert landscape, or the number 27. Audiobook tracks (Memories Begin, Requiem to Treasure, Martinis at Midnight) have no lyrics — titles or placement may carry the hint.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "songs",
+    "arkade",
+    "27"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "27 as another indirect number (the book launched March 27)."
+    }
+   ],
+   "created": 1788583060384
+  },
+  {
+   "id": "i094",
+   "text": "Audiobook bonus chapter 'Los Camarones Calientes', set at Lukeville on the Arizona border, gives a 'Border Crossing Commandment – Lukeville Edition. Rule #1 – Carved in stone – never shall wheel touch checkpoint soil. Foot traffic only.' Read as: the checkpoint cannot be driven to or identified from home.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "audiobook",
+    "checkpoint",
+    "lukeville"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Carved in stone' at the checkpoint — the gates as carved or marked rock, reached on foot."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Carved in stone is the man-made reading of arcs on rock."
+    }
+   ],
+   "created": 1788583060385
+  },
+  {
+   "id": "i095",
+   "text": "Community (fringe, Arizona): the Birthing Cave near Sedona (a half-spherical hole) as the Hole; Woo Ranch at the base of Bear Mountain ('ursa') in an alcove next to the Palatki Heritage Site — 'beyond the map's edge' of the controlled site. Posey was raised in Arizona.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "arizona",
+    "sedona",
+    "bear-mountain",
+    "fringe"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "A cave is a rule-excluded location for hunt items."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A literal Bear Mountain."
+    }
+   ],
+   "created": 1788583060386
+  },
+  {
+   "id": "i096",
+   "text": "Community: other bride candidates in circulation — Bridal Veil Falls (Provo Canyon, UT; also Shoshone NF, WY), Queener Mountain (queen = bride), Spica as companion to Arcturus (the bear-guard star), and Sophia ('Wisdom') as the celestial bride, prompted by The Da Vinci Code appearing in the documentary.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "bride",
+    "bridal-veil",
+    "spica",
+    "sophia"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The field of brides is wide; none has been confirmed publicly."
+    }
+   ],
+   "created": 1788583060387
+  },
+  {
+   "id": "i097",
+   "text": "Community inference from the 75-mile Fenn statement: Fenn's 2013 map covered only Montana, Wyoming, Colorado and New Mexico. With Colorado eliminated and south-of-Santa-Fe out, many searchers now confine the hunt to MT, WY and northern NM. Utah is outside Fenn's map. Posey walked the statement back, but the inference dominates online discussion.",
+   "kind": "objection",
+   "conf": "unverified",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "fenn",
+    "elimination",
+    "utah"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "If the Fenn-map inference holds, the La Sals are out entirely."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Same: the site would be in MT, WY or NM."
+    }
+   ],
+   "created": 1788583060388
+  },
+  {
+   "id": "i098",
+   "text": "X Marks the Pod (Sep 2025): searchers are 'quite close'; the map is useful 'for a couple different reasons'; the BTME logo was intentionally designed to hold meaning. treasure.quest was changed on July 27, 2026 (details not captured).",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Mysterious Writings (Jenny Kile) — via web search summary",
+   "tags": [
+    "progress",
+    "logo",
+    "map"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The logo is another thing to 'read just right'."
+    }
+   ],
+   "created": 1788583060389
+  },
+  {
+   "id": "i099",
+   "text": "Netflix interview backdrop: Posey sits in front of computer wallpapers (identified as Lake Louise, Colorado, Wyoming, and Utah near the Colorado River) under a giant clock. Searchers treat the wallpapers and clock as the hidden hints. Posey eliminated the clock times 4:02 and 5:26.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Moviedelic Netflix-clue roundup — via web search summary",
+   "tags": [
+    "netflix",
+    "wallpapers",
+    "clock"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A clock over his head for 'what lives in time'."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A Utah / Colorado River wallpaper puts the Potash corridor on screen."
+    }
+   ],
+   "created": 1788583060390
+  },
+  {
+   "id": "i100",
+   "text": "Fringe: an Alaska theory (Mike Unfiltered) reads 'beyond the map's edge' as the last frontier. Incompatible with 'the treasure is within the printed map' and 'American West'.",
+   "kind": "community",
+   "conf": "disputed",
+   "source": "Mike Unfiltered substack — via web search summary",
+   "tags": [
+    "alaska",
+    "fringe"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Outside the printed map by Posey's own statement."
+    }
+   ],
+   "created": 1788583060391
+  },
+  {
+   "id": "i101",
+   "text": "Dillon: the entire hunt is based on naturally occurring structures and landscapes; depending which of the multiple solution paths you take, one clue has a man-made implication. He confirmed there are multiple valid ways to solve it, and that people have been within two miles.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Dillon, MT Q&A (Jun 21 2025) — via user research",
+   "tags": [
+    "natural",
+    "man-made",
+    "multiple-paths",
+    "progress"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Endorses the move from Corona Arch and the culvert to glacial pools: natural landscape first, one man-made implication at most, path-dependent."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "A culvert is a man-made route feature in a hunt built on natural landscape."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The site is a natural place; searchers have been within two miles of it."
+    }
+   ],
+   "created": 1788583060392
+  },
+  {
+   "id": "i102",
+   "text": "Wisdom, Montana / Big Hole Valley — the community's dominant theory since launch week. 'Wisdom waits in shadowed sight' = the town of Wisdom in the Big Hole Valley. 'Past the Hole' with a capital H = the Big Hole River or Valley; no other common noun in the poem is capitalized, which is the whole argument and a fair one.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "montana",
+    "wisdom",
+    "big-hole",
+    "capitalization"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A literal place name for 'Wisdom', in the same valley as the Hole."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The only capitalized common noun — a proper-noun Hole. Natural, so it survives the direct 'not man-made'."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Posey called 'is it a place with hole in its name' an on-the-nose question rather than answering."
+    }
+   ],
+   "created": 1788583060393
+  },
+  {
+   "id": "i103",
+   "text": "Wisdom/Big Hole supporting reads: 'what lives in time' and 'flowing through each measured rhyme' as the river itself, each clue a point along it, with 'like a river's steady flow' closing the loop in stanza 5. The cover's torn outline is argued to match the Big Hole watershed, shifting between watershed edge, ridgeline and river course. 117 − 4 = 113 (the two hardcover-only image pages) and Wisdom sits on the 113th meridian. In Netflix Posey says 'needle in a football field', and the Big Hole's nickname is Land of 10,000 Haystacks. The cut-off M in 'Map's' = the edge lies beyond the mountain.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "montana",
+    "wisdom",
+    "big-hole",
+    "cover",
+    "113",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "River-as-time reading."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Clues as measured points along the river."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 5 closes the river loop."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Cover outline and cut-off M as things to read just right."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Nothing in the Wisdom cluster gives a bear or a star for 'ursa' — the theory leans on Polaris to supply it."
+    }
+   ],
+   "created": 1788583060394
+  },
+  {
+   "id": "i104",
+   "text": "Polaris, Montana companion: 'in ursa east' = Polaris, the North Star in Ursa Minor, married to the town of Polaris on the Pioneer Scenic Byway in the Beaverhead; the bride is then a north-star location on the map. Supporters cite a page-33 line about Heron Lake being 'our north star' and what looks like a heron in the Netflix background. Others take the same line to Heron Lake, New Mexico.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "montana",
+    "polaris",
+    "heron-lake",
+    "new-mexico"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Star-in-the-bear → a place named Polaris, east of the Big Hole."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bride as a map location rather than a person or landform."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Heron Lake as a 'north star' motif in the book (p. 33)."
+    }
+   ],
+   "created": 1788583060395
+  },
+  {
+   "id": "i105",
+   "text": "Wyoming / Sweetwater — the most complete published line-by-line (TreasureNet, Apr 2026). Starts from the site's legal disclaimer specifying Wyoming law governs the property; claims the site logo traces Utah's northeast corner. Journey begins in the Bridger Wilderness; 'shadowed sight' = start at dawn with the sun behind the mountains; the map's edge = the Continental Divide (his explanation for Alaska on the map). Drive Wind River Canyon to the Sweetwater River, legendary fishing water, for 'cast your pole'.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "TreasureNet full walkthrough, Apr 2026 — via user research",
+   "tags": [
+    "wyoming",
+    "sweetwater",
+    "bridger",
+    "wind-river",
+    "logo"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Dawn shadow reading."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Sweetwater as the water."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Legendary fishing ground for the pole."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The logo tracing Utah's NE corner is a Utah pointer hiding in a Wyoming solve — worth checking independently."
+    }
+   ],
+   "created": 1788583060396
+  },
+  {
+   "id": "i106",
+   "text": "Sweetwater walkthrough, stanza 3–4: 'ursa east' as a heading — Highway 220 northeast along the river to the ancient gates = Devil's Gate on the Sweetwater. 'Her foot of three' = three landmarks east of Devil's Gate. 'Return her face' = turn around and head back west (the bride being the Sweetwater River and its landscape). 'Double arcs on granite bold' = Split Rock, the notched granite landmark on the way back. Ends at or just past South Pass, where the Divide meets the river. Speculates the Netflix safe combination encodes paces or coordinates and the clock is compass quadrants at twenty degrees.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "TreasureNet full walkthrough, Apr 2026 — via user research",
+   "tags": [
+    "wyoming",
+    "devils-gate",
+    "split-rock",
+    "south-pass",
+    "granite"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Bear east as a heading — the same verb reading as my solve, on a different river."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Devil's Gate is a literal, ancient, named gate on the Oregon Trail."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Three landmarks as the foot of three."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Turn around and go back — Reading B, independently reached."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Split Rock is actual granite with an actual notch — the only circulating reading where 'granite' is literal."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "South Pass: the Divide as the map's edge."
+    }
+   ],
+   "created": 1788583060397
+  },
+  {
+   "id": "i107",
+   "text": "Alaska — the minority position (one Substack writer). Alaska appears on Posey's map and Hawaii does not; the Alaska section carries nine labeled peaks with elevations, more than any other state, and ordering them by height yields 42. The title is read as pointing past the edge, the Lower-48 clustering as the blind spot. Most treat it as thematic rather than derived. The Wyoming poster reaches Alaska differently: it is on the map because it sits west of the Continental Divide.",
+   "kind": "community",
+   "conf": "disputed",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "alaska",
+    "42",
+    "map",
+    "fringe"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "'Within the printed map' includes Alaska on paper, but 'American West' and 'not many miles to find' do not."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The peak ordering is another route to 42."
+    }
+   ],
+   "created": 1788583060398
+  },
+  {
+   "id": "i108",
+   "text": "The 42 theory, consolidated: 42 on the truck taillight, the clock at 4:02, the page-42 hill illustration, the Idaho→Utah audiobook swap across the 42nd parallel, and the Alaska peak ordering. Feeds Montana, Wyoming and Idaho readings. Dented by Posey eliminating 4:02 and 5:26 as meaningful.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "42",
+    "numbers",
+    "netflix"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A number that recurs across every medium — if anything 'lives in time', 42 is the candidate."
+    },
+    {
+     "lineId": "l01",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "The clock reading of 42 was explicitly eliminated."
+    }
+   ],
+   "created": 1788583060399
+  },
+  {
+   "id": "i109",
+   "text": "Where the community sits: leaning hard toward Montana, Wyoming and Utah — so Utah is not fringe — but nobody found is working Moab or the La Sals specifically. The Moab basin is being worked alone.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community roundup compiled Sep 2026 (user research)",
+   "tags": [
+    "utah",
+    "community",
+    "status"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "No competition in the basin; also no independent confirmation."
+    }
+   ],
+   "created": 1788583060400
   }
  ],
  "candidates": [
@@ -1836,17 +2811,141 @@
    "created": 1788581667021
   },
   {
-   "id": "c_tuk200",
-   "name": "La Sal — 200° from Tukuhnikivatz's foot (bearing reading)",
-   "region": "UT · La Sal Mountains, Manti-La Sal NF",
-   "coords": "Mt Tukuhnikivatz ≈ 38.44, -109.27 (verify)",
-   "elev": "Tuk ≈ 12,480 ft",
-   "notes": "Alternative endpoint: if 'return her face' flips 20° to 200°, the place lies on a bearing from her foot rather than back at the river. Not walked, not mapped. Conflicts with 'not as far as many think'.",
+   "id": "c_medicine",
+   "name": "Medicine Lakes — south foot of Tukuhnikivatz (favored)",
+   "region": "UT · La Sal Mountains, near La Sal Pass",
+   "coords": "≈ 38.42, -109.24 (verify on quad)",
+   "elev": "≈ 10,000 ft",
+   "notes": "Reading C endpoint. Named plural pair at Tuk's southern base; drivable pass with trailhead. Check standard-car access on La Sal Pass Road in dry season. Stanza 2 approach unchanged from the Moab start.",
    "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
     "l09": "fit",
-    "l10": "fit"
+    "l10": "fit",
+    "l12": "fit",
+    "l13": "fit",
+    "l14": "fit",
+    "l15": "fit",
+    "l16": "fit"
    },
-   "created": 1788581667021
+   "created": 1788583060291
+  },
+  {
+   "id": "c_goldbasin",
+   "name": "Gold Basin / Tuk cirque — north foot (alternate)",
+   "region": "UT · La Sal Mountains, Geyser Pass Rd → Gold Basin Rd",
+   "coords": "≈ 38.47, -109.26 (verify on quad)",
+   "elev": "≈ 10,500 ft",
+   "notes": "Arc-shaped cirques on bold rock, but no named paired pools; talus, avalanche paths and creek per trip reports. Higher and more snowbound.",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l09": "fit",
+    "l10": "fit",
+    "l13": "fit",
+    "l14": "fit",
+    "l15": "fit",
+    "l16": "fit"
+   },
+   "created": 1788583060291
+  },
+  {
+   "id": "c_madison",
+   "name": "Madison River / Harlequin Lake — West Yellowstone (Greer solve)",
+   "region": "MT · Gallatin NF / Yellowstone boundary",
+   "coords": "≈ 44.66, -111.10 (verify)",
+   "elev": "≈ 6,700 ft",
+   "notes": "Community full solve, Jul 2026: Baker's Hole → Boundary Trail → Three Brothers alignment → Harlequin Lake trailhead. Inside Fenn's map. No chest reported. Kept for comparison.",
+   "verdicts": {
+    "l07": "fit",
+    "l11": "fit"
+   },
+   "created": 1788583060291
+  },
+  {
+   "id": "c_sweetwater",
+   "name": "Sweetwater River — Devil's Gate / Split Rock / South Pass (TreasureNet walkthrough)",
+   "region": "WY · Natrona / Fremont counties, Hwy 220",
+   "coords": "≈ 42.47, -107.73 (Split Rock; verify)",
+   "elev": "≈ 6,300 ft",
+   "notes": "The only rival that assigns every line. Devil's Gate = ancient gates, Split Rock = double arcs on literal granite, ends near South Pass. Inside Fenn's map. Not walked.",
+   "verdicts": {
+    "l08": "fit",
+    "l09": "fit",
+    "l10": "fit",
+    "l11": "fit",
+    "l12": "fit",
+    "l13": "fit"
+   },
+   "created": 1788583060291
+  },
+  {
+   "id": "c_bighole",
+   "name": "Wisdom / Big Hole / Beaverhead Rock — SW Montana cluster (dominant theory)",
+   "region": "MT · Beaverhead County",
+   "coords": "≈ 45.62, -113.45 (verify)",
+   "elev": "≈ 6,000 ft",
+   "notes": "Community cluster: Polaris MT (realm), Beaverhead Rock (bride), Pioneer Byway (gates), Big Hole River (Hole), Wisdom MT ('Wisdom waits'). Inside Fenn's map; Posey's Dillon signing is nearby. Not walked.",
+   "verdicts": {
+    "l01": "fit",
+    "l02": "fit",
+    "l03": "fit",
+    "l07": "fit",
+    "l09": "fit",
+    "l10": "fit",
+    "l19": "fit"
+   },
+   "created": 1788583060291
   }
- ]
+ ],
+ "mapStates": {
+  "UT": {
+   "status": "active",
+   "note": "My solve: Moab start, La Sal bride, Medicine Lakes. Outside Fenn's 2013 map — the community's sharpest objection."
+  },
+  "MT": {
+   "status": "hot",
+   "note": "Dominant theory since launch week: Wisdom ('Wisdom waits') on the Big Hole ('the Hole', the poem's only capitalized common noun), Polaris MT for ursa, Beaverhead Rock as bride; 117−4=113 meridian; 10,000 Haystacks. Also the Madison–Harlequin solve. Inside Fenn's map."
+  },
+  "WY": {
+   "status": "hot",
+   "note": "TreasureNet full line-by-line: Bridger Wilderness → Wind River Canyon → Sweetwater → Devil's Gate → Split Rock → South Pass. Wyoming law named in the site's legal disclaimer. Yellowstone Heart Lake easter egg. Inside Fenn's map."
+  },
+  "AK": {
+   "status": "fringe",
+   "note": "On the printed map (Hawaii is not); nine labeled peaks order to 42; 'past the edge' reading. Fails 'American West' and 'not many miles'. Thematic, not derived."
+  },
+  "NM": {
+   "status": "inplay",
+   "note": "Only north of the Santa Fe −75 mi line. Inside Fenn's map. Few concrete solves circulating."
+  },
+  "ID": {
+   "status": "inplay",
+   "note": "42nd parallel / Big Hill swap points at the ID–UT line; Bear River / Bear Lake names. Outside Fenn's map."
+  },
+  "AZ": {
+   "status": "fringe",
+   "note": "Sedona: Birthing Cave + Woo Ranch under Bear Mountain by Palatki. Posey raised in AZ. Cave reading fails the rules."
+  },
+  "CO": {
+   "status": "eliminated",
+   "note": "Eliminated by Posey at Seekers Summit, Mar 28 2026 — intentional."
+  },
+  "OR": {
+   "status": "eliminated",
+   "note": "Eliminated by Posey at Seekers Summit, Mar 28 2026 — intentional."
+  },
+  "NV": {
+   "status": "open",
+   "note": ""
+  },
+  "CA": {
+   "status": "open",
+   "note": ""
+  },
+  "WA": {
+   "status": "open",
+   "note": ""
+  }
+ }
 }
