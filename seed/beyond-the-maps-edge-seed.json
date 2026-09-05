@@ -11,7 +11,7 @@
     "text": "Can you find what lives in time,",
     "hard": false,
     "status": "unsolved",
-    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography."
+    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography. Under stanza-5 reading 4, this line IS the answer (a river lives in time) rather than a step — which would explain why stanza 1 has no actionable clue."
    },
    {
     "id": "l02",
@@ -139,7 +139,7 @@
     "text": "Truth rests not in clever minds,",
     "hard": false,
     "status": "thematic",
-    "note": "Guidance: the solve should be plain, not encrypted."
+    "note": "Method instruction: solve plainly. Reading 1 makes this a warning label. Caution — Posey left stanza 5 open as possibly the last actionable clue."
    },
    {
     "id": "l18",
@@ -147,23 +147,23 @@
     "text": "Not in tangled, twisted finds.",
     "hard": false,
     "status": "thematic",
-    "note": "Warns against tangled, twisted finds — a check on solves built backward from a destination."
+    "note": "Warns against tangled, twisted finds — a check on solves built backward from a destination. Backed by no red herrings, consecutive order."
    },
    {
     "id": "l19",
     "stanza": 5,
     "text": "Like a river's steady flow—",
     "hard": false,
-    "status": "thematic",
-    "note": "Second em dash, pairing with 1:3."
+    "status": "partial",
+    "note": "Second em dash, pairing with 1:3 (reading 2, the frame's closing bracket). Also the literal river through-line (reading 3). Or an at-site instruction if stanza 5 is still geography."
    },
    {
     "id": "l20",
     "stanza": 5,
     "text": "What you seek, you already know.",
     "hard": false,
-    "status": "thematic",
-    "note": "Closing. Echoes 'you're not searching, you're retrieving'."
+    "status": "partial",
+    "note": "Callback to 1:1 — weighted highest: 'what lives in time' is the river, and the closing line says you have carried the answer since stanza 1. Caution: may be memoir consolation, not a clue."
    }
   ]
  },
@@ -2792,6 +2792,212 @@
     }
    ],
    "created": 1788583060400
+  },
+  {
+   "id": "i110",
+   "text": "Stanza 5, reading 1 — method instruction (most common read). 'Truth rests not in clever minds, not in tangled, twisted finds' and the couplet completes the thought: solve it the way a river moves, steadily and in one direction, not by knots. The correct solution is simple and linear. Backed by confirmed facts: no red herrings, consecutive order, no specialized knowledge. Under this reading stanza 5 is a warning label, not geography.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-5",
+    "method",
+    "reading-1"
+   ],
+   "links": [
+    {
+     "lineId": "l17",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Plain-reading instruction."
+    },
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Explicit warning against twisted solves."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "River as the model for how to solve, not where."
+    },
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The answer is simple enough that you already have it."
+    }
+   ],
+   "created": 1788583371530
+  },
+  {
+   "id": "i111",
+   "text": "Stanza 5, reading 2 — structural bookend. 5:3 carries the second of only two em dashes in the poem; the first is 1:3. Same position, third line, in the two stanzas that are not location clues. If the cipher has a frame, those two marks likely define it, and this couplet is the closing bracket.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-5",
+    "em-dash",
+    "cipher",
+    "reading-2"
+   ],
+   "links": [
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The closing bracket of a frame opened at 1:3."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The opening bracket — same line position, same mark."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Frame as the thing you must 'read just right'."
+    }
+   ],
+   "created": 1788583371531
+  },
+  {
+   "id": "i112",
+   "text": "Stanza 5, reading 3 — literal river. 'Like a river's steady flow' confirms that a river runs through the whole solve, naming the thread rather than adding a clue. The Big Hole camp uses this; so does the Colorado read. Under this version stanza 5 confirms you followed water the whole way.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-5",
+    "river",
+    "reading-3"
+   ],
+   "links": [
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Names the river as the through-line."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Retro-confirms 'waters' silent flight' as a river you stayed with."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The route is water from the first clue on."
+    }
+   ],
+   "created": 1788583371532
+  },
+  {
+   "id": "i113",
+   "text": "Stanza 5, reading 4 — callback to stanza 1 (weighted highest). 'What lives in time' opens the poem; 'what you seek, you already know' closes it. A river is a standard answer to what lives in time and flows through measure. The last line says the answer was stated in stanza 1 and you have been carrying it since. This explains why stanza 1 has no actionable clue: it is the answer, not a step.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-5",
+    "stanza-1",
+    "callback",
+    "reading-4",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Closes the loop opened in 1:1."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'What lives in time' = the river; stanza 1 is the answer, not a step."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Flowing through measured rhyme — the river runs through the poem's structure."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The river named outright at the end."
+    }
+   ],
+   "created": 1788583371533
+  },
+  {
+   "id": "i114",
+   "text": "Caution: Posey said the last actionable clue is stanza four OR five, depending on interpretation. He has not ruled stanza 5 out as geography — any reading that makes it pure method has to live with that.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Posey via MW (restated in my analysis)",
+   "tags": [
+    "stanza-5",
+    "caution"
+   ],
+   "links": [
+    {
+     "lineId": "l17",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "May still be a place clue."
+    },
+    {
+     "lineId": "l19",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "'Like a river's steady flow' could be an actionable instruction at the site, not only a metaphor."
+    },
+    {
+     "lineId": "l20",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Same."
+    }
+   ],
+   "created": 1788583371534
+  },
+  {
+   "id": "i115",
+   "text": "Caution: 'What you seek, you already know' may be doing double duty as consolation for the reader of a grief memoir — the book is dedicated to four dead. Not every line has to be a clue.",
+   "kind": "objection",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "stanza-5",
+    "grief",
+    "caution"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A line that works as memoir closing may carry no hunt content at all."
+    },
+    {
+     "lineId": "l17",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Same for the stanza's opening."
+    }
+   ],
+   "created": 1788583371535
   }
  ],
  "candidates": [
