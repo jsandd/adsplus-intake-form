@@ -1,7 +1,7 @@
 <title>Map's Edge Workbench</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 
 <style>
 /* ---------- tokens: light (complete set) ---------- */
@@ -338,74 +338,81 @@ td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:
 .dossier .kv{font-size:13px; line-height:1.5}
 .dossier .kv b{font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--contour); display:block; margin-bottom:2px; font-weight:500}
 
-/* ---------- sector scan (CRT inset, deliberately single-theme) ---------- */
-.crt{
-  --ph:#7dff9a; --ph-dim:#2f7a44; --ph-line:#1c4a28; --ph-bg:#030b05; --ph-warn:#ff5a46; --ph-amber:#ffc45a;
-  background:var(--ph-bg); color:var(--ph); border:2px solid var(--ph-line); border-radius:10px;
-  padding:14px 16px 12px; position:relative; overflow:hidden;
-  box-shadow:inset 0 0 80px rgba(0,0,0,.85), 0 0 0 1px #071a0c, 0 0 28px rgba(58,255,112,.12);
-  font-family:"VT323",var(--f-mono);
+/* ---------- search-area map (topo sheet) ---------- */
+.mapwrap{display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:16px; align-items:start}
+.sheet{padding:0; overflow:hidden}
+.sheet-head{
+  display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:10px 14px;
+  border-bottom:1px solid var(--rule); background:var(--surface-2);
 }
-.crt::after{
-  content:""; position:absolute; inset:0; pointer-events:none;
-  background:repeating-linear-gradient(0deg, rgba(0,0,0,.26) 0 1px, transparent 1px 3px);
+.sheet-head .title{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--contour)}
+.sheet-head .stats{font-family:var(--f-mono); font-size:11px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.sheet svg{width:100%; height:auto; display:block; background:var(--surface)}
+.tog{
+  display:inline-flex; align-items:center; gap:6px; padding:3px 9px; border-radius:100px; cursor:pointer;
+  border:1px solid var(--rule-2); background:var(--surface); font-family:var(--f-mono); font-size:10.5px; color:var(--ink-2);
 }
-.crt::before{
-  content:""; position:absolute; inset:0; pointer-events:none;
-  background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%);
+.tog.on{background:var(--accent-soft); color:var(--accent); border-color:transparent}
+.tog i{width:8px; height:8px; border-radius:2px; display:inline-block}
+.sheet-legend{display:flex; gap:12px; flex-wrap:wrap; padding:10px 14px; border-top:1px solid var(--rule); font-size:12px; color:var(--ink-2)}
+.sheet-legend .sw{display:inline-block; width:14px; height:10px; border:1px solid var(--rule-2); vertical-align:middle; margin-right:5px; border-radius:2px}
+.sw.open{background:var(--surface-2)}
+.sw.inplay{background:var(--accent-soft)}
+.sw.hot{background:var(--contour-soft); border-color:var(--contour)}
+.sw.active{background:var(--accent); border-color:var(--accent)}
+.sw.fringe{background:var(--surface-2); border-style:dashed}
+.sw.eliminated{background:repeating-linear-gradient(45deg, var(--fail) 0 1px, var(--fail-soft) 1px 4px); border-color:var(--fail)}
+.sw.offmap{background:none; border-style:dotted}
+.st{stroke:var(--rule-2); stroke-width:.6; cursor:pointer; vector-effect:non-scaling-stroke; transition:filter .12s}
+.st:hover{filter:brightness(.96)}
+.st-open{fill:var(--surface-2)}
+.st-inplay{fill:var(--accent-soft)}
+.st-hot{fill:var(--contour-soft)}
+.st-active{fill:var(--accent); fill-opacity:.55}
+.st-fringe{fill:var(--surface-2); stroke-dasharray:2 1.6}
+.st-eliminated{fill:url(#hatch); stroke:var(--fail)}
+.st-offmap{fill:none; stroke:var(--rule); stroke-dasharray:1 1.6; cursor:default}
+.st.sel{stroke:var(--ink); stroke-width:1.4}
+.sheet text{pointer-events:none; text-anchor:middle}
+.lbl{font-family:var(--f-ui); font-weight:700; font-size:7.5px; fill:var(--ink); letter-spacing:.4px; paint-order:stroke; stroke:var(--surface); stroke-width:1.4px; stroke-linejoin:round}
+.lbl2{font-family:var(--f-mono); font-size:4.8px; fill:var(--ink-2); letter-spacing:.3px; text-transform:uppercase; paint-order:stroke; stroke:var(--surface); stroke-width:1.2px}
+.lbl.dim{fill:var(--ink-3)} .lbl2.dim{fill:var(--ink-3)}
+.lbl.warn,.lbl2.warn{fill:var(--fail)}
+.grat{font-family:var(--f-mono); font-size:4.6px; fill:var(--ink-3)}
+.fenn{fill:none; stroke:var(--contour); stroke-width:.7; stroke-dasharray:2.4 1.6; opacity:.9}
+.fennlbl{font-family:var(--f-mono); font-size:5px; fill:var(--contour); letter-spacing:.4px}
+.cutoff{stroke:var(--fail); stroke-width:.6; stroke-dasharray:1.6 1.2}
+.ring{fill:var(--accent); fill-opacity:.06; stroke:var(--accent); stroke-width:.45; stroke-dasharray:1.2 1}
+.ringlbl{font-family:var(--f-mono); font-size:4.4px; fill:var(--accent); letter-spacing:.3px}
+.site{cursor:pointer}
+.site circle.dot{stroke:var(--surface); stroke-width:.8}
+.site.live circle.dot{fill:var(--fit)}
+.site.out circle.dot{fill:var(--fail); fill-opacity:.55}
+.site.sel circle.dot{stroke:var(--ink); stroke-width:1.1}
+.site circle.halo{fill:none; stroke:var(--fit); stroke-width:.45; opacity:.35}
+.site.out circle.halo{stroke:var(--fail); opacity:.3}
+.site text{font-family:var(--f-mono); font-size:4.6px; fill:var(--ink); text-anchor:start; paint-order:stroke; stroke:var(--surface); stroke-width:1.2px}
+.site.out text{fill:var(--ink-3)}
+
+.mappanel{position:sticky; top:22px; display:flex; flex-direction:column; gap:14px}
+.mappanel .card{padding:14px 16px}
+.mappanel h3{font-size:15px}
+.sitelist{display:flex; flex-direction:column; gap:4px; margin-top:8px}
+.siterow{
+  display:flex; gap:8px; align-items:center; width:100%; text-align:left; background:none; border:1px solid transparent;
+  padding:5px 8px; border-radius:var(--r-md); cursor:pointer; font-size:12.5px; color:var(--ink);
 }
-.crt-head{
-  display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-  font-size:19px; letter-spacing:.12em; text-transform:uppercase;
-  border-bottom:1px solid var(--ph-line); padding-bottom:6px; margin-bottom:10px; text-shadow:0 0 6px rgba(125,255,154,.6);
-}
-.crt-body{display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:14px; position:relative; z-index:1}
-.crt svg{width:100%; height:auto; display:block; background:var(--ph-bg)}
-.crt-console{border:1px solid var(--ph-line); padding:10px 12px; font-size:17px; display:flex; flex-direction:column; gap:9px; min-height:100%; line-height:1.25}
-.crt-console .k{color:var(--ph-dim); letter-spacing:.14em; text-transform:uppercase; font-size:14px}
-.crt-console .v{font-size:22px; text-shadow:0 0 8px rgba(125,255,154,.55)}
-.crt select,.crt textarea{background:#041108; color:var(--ph); border:1px solid var(--ph-line); font-family:inherit; font-size:17px; border-radius:2px; width:100%}
-.crt textarea{min-height:88px}
-.crt select:focus-visible,.crt textarea:focus-visible{outline:1px solid var(--ph)}
-.crt-legend{display:flex; gap:14px; flex-wrap:wrap; font-size:16px; margin-top:10px; color:var(--ph); position:relative; z-index:1}
-.crt-legend .sw{display:inline-block; width:16px; height:10px; border:1px solid var(--ph); vertical-align:middle; margin-right:5px}
-.crt-legend .sw.open{background:rgba(58,255,112,.08)}
-.crt-legend .sw.inplay{background:rgba(58,255,112,.22)}
-.crt-legend .sw.hot{background:rgba(58,255,112,.42)}
-.crt-legend .sw.active{background:rgba(58,255,112,.62)}
-.crt-legend .sw.fringe{background:rgba(58,255,112,.12); border-style:dashed}
-.crt-legend .sw.eliminated{background:repeating-linear-gradient(45deg, rgba(255,90,70,.75) 0 1px, rgba(255,80,60,.08) 1px 4px); border-color:var(--ph-warn)}
-.crt-legend .sw.offmap{background:none; border-style:dotted; border-color:var(--ph-dim)}
-.crt-foot{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:8px; font-size:15px; color:var(--ph-dim); letter-spacing:.08em; position:relative; z-index:1}
-.crt-blipsrow{font-size:16px; line-height:1.3}
-.crt-blipsrow b{color:#fff; font-weight:400}
-.blinker{animation:crtblink 1.1s step-end infinite}
-@keyframes crtblink{50%{opacity:0}}
-@keyframes crtpulse{0%,100%{fill-opacity:.52}50%{fill-opacity:.78}}
-@keyframes crtring{0%{r:1.6; opacity:1}100%{r:7; opacity:0}}
-.st{stroke:#3aff70; stroke-width:.7; cursor:pointer; vector-effect:non-scaling-stroke; transition:fill-opacity .15s}
-.st:hover{stroke:#c8ffd6; stroke-width:1.1}
-.st-open{fill:rgba(58,255,112,.07)}
-.st-inplay{fill:rgba(58,255,112,.22)}
-.st-hot{fill:rgba(58,255,112,.42)}
-.st-active{fill:rgba(58,255,112,.6); animation:crtpulse 2.6s ease-in-out infinite}
-.st-fringe{fill:rgba(58,255,112,.12); stroke-dasharray:2 1.6}
-.st-eliminated{fill:url(#crthatch); stroke:#ff5a46; stroke-width:.6}
-.st-offmap{fill:none; stroke:#1c4a28; stroke-dasharray:1 1.6; cursor:default}
-.st.sel{stroke:#ffffff; stroke-width:1.3}
-.crt text{font-family:"VT323",var(--f-mono); pointer-events:none; text-anchor:middle}
-.lbl{font-size:8px; fill:#b9ffcb; letter-spacing:.6px; paint-order:stroke; stroke:#030b05; stroke-width:1.6px; stroke-linejoin:round}
-.lbl2{font-size:5.4px; fill:#7dff9a; letter-spacing:.4px; paint-order:stroke; stroke:#030b05; stroke-width:1.4px; stroke-linejoin:round}
-.lbl.dim{fill:#2f7a44} .lbl2.dim{fill:#245c35}
-.lbl.warn,.lbl2.warn{fill:#ff8a7a}
-.grat{font-size:5px; fill:#2f7a44; letter-spacing:.3px}
-.fenn{fill:none; stroke:#ffc45a; stroke-width:.55; stroke-dasharray:2.4 1.6; opacity:.85}
-.fennlbl{font-size:5.6px; fill:#ffc45a; letter-spacing:.5px}
-.cutoff{stroke:#ff5a46; stroke-width:.55; stroke-dasharray:1.5 1.2}
-.blip{fill:#ffffff; filter:drop-shadow(0 0 2px #fff)}
-.blipring{fill:none; stroke:#ffffff; stroke-width:.5; animation:crtring 2.2s ease-out infinite}
-.bliplbl{font-size:5.2px; fill:#ffffff; text-anchor:start; letter-spacing:.3px; paint-order:stroke; stroke:#030b05; stroke-width:1.6px; stroke-linejoin:round}
-@media (max-width:1080px){ .crt-body{grid-template-columns:1fr} }
+.siterow:hover{background:var(--surface-2)}
+.siterow.sel{border-color:var(--accent); background:var(--accent-soft)}
+.siterow .d{width:8px; height:8px; border-radius:50%; flex:none; background:var(--fit)}
+.siterow.out .d{background:var(--fail); opacity:.55}
+.siterow .m{margin-left:auto; font-family:var(--f-mono); font-size:10.5px; color:var(--ink-3); white-space:nowrap}
+.mini{display:grid; grid-template-columns:repeat(20,minmax(0,1fr)); gap:1.5px; margin-top:6px}
+.mini i{display:block; height:6px; border-radius:1px; background:var(--surface-3)}
+.mini i.fit{background:var(--fit)} .mini i.fail{background:var(--fail)}
+.kvs{display:grid; grid-template-columns:auto 1fr; gap:4px 10px; font-size:12.5px; margin-top:8px}
+.kvs b{font-family:var(--f-mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--contour); font-weight:500; padding-top:2px}
+@media (max-width:1080px){ .mapwrap{grid-template-columns:1fr} .mappanel{position:static} }
 
 /* ---------- dialog ---------- */
 dialog{
@@ -577,6 +584,17 @@ const STATES = [
 const FENN_MAP = [[49,-116.05],[49,-104.05],[45,-104.05],[41,-104.05],[41,-102.05],[37,-102.05],[37,-103],[32,-103],[32,-106.6],[31.78,-106.5],[31.78,-108.2],[31.33,-108.2],[31.33,-109.05],[37,-109.05],[41,-109.05],[41,-111.05],[45,-111.05],[44.5,-111.05],[44.5,-112.9],[45.6,-114.5],[46.6,-114.4],[47.9,-116.05]];
 const PX = (lat, lon) => [((lon + 125) * 10).toFixed(1), ((49.6 - lat) * 13).toFixed(1)];
 const poly = pts => "M" + pts.map(([la, lo]) => PX(la, lo).join(" ")).join("L") + "Z";
+/* Posey's documented Fenn-search locations (Treasure Among Us / community). A 75-mile
+   ring around each is the soft gate he gave at Seekers Summit. */
+const FENN_SITES = [
+  ["Madison Jct / Nine Mile Hole", 44.64, -110.86],
+  ["Hebgen Lake",                  44.87, -111.33],
+  ["Gardiner / Boiling River",     45.03, -110.70],
+  ["Grand Teton",                  43.74, -110.80],
+  ["Sinks Canyon",                 42.74, -108.83],
+  ["Glacier NP",                   48.70, -113.80],
+  ["Ojo Caliente",                 36.30, -106.05],
+];
 const LABEL_AT = { ID:[44.2,-114.9], CA:[37.4,-119.9], NM:[35.9,-106.2], AZ:[34.6,-111.8], MT:[47.2,-109.6], WY:[43.6,-107.5] };
 const centroid = pts => { let a = 0, b = 0; pts.forEach(([la, lo]) => { a += la; b += lo; }); return PX(a / pts.length, b / pts.length); };
 const CONF = [
@@ -632,6 +650,8 @@ const state = {
   selectedLine: null,
   mapStates: {},     // {UT:{status, note}}
   selectedState: "UT",
+  selectedSite: null,
+  overlays: { fenn: true, cutoff: true, rings: false, labels: true, sitelabels: false },
   filter: { q: "", kind: "", conf: "", line: "" },
   usingDemo: false,
 };
@@ -1198,91 +1218,137 @@ function viewMap() {
   const st = code => (state.mapStates[code] && state.mapStates[code].status) || "open";
   const note = code => (state.mapStates[code] && state.mapStates[code].note) || "";
   const sel = STATES.find(x => x[0] === state.selectedState && !x[3]) ? state.selectedState : "UT";
-  const AK = PX(33.4, -124.6);
   state.selectedState = sel;
   const selName = STATES.find(x => x[0] === sel)[1];
+  const ov = state.overlays;
 
   const counts = {};
   STATES.filter(x => !x[3]).forEach(([c]) => { counts[st(c)] = (counts[st(c)] || 0) + 1; });
 
   const grat = [];
-  [35, 40, 45].forEach(la => { const [x, y] = PX(la, -125); grat.push(`<text class="grat" x="${+x + 6}" y="${+y - 1}">${la}N</text>`); });
-  [-120, -110, -100].forEach(lo => { const [x, y] = PX(31.5, lo); grat.push(`<text class="grat" x="${x}" y="${+y + 6}">${-lo}W</text>`); });
+  [35, 40, 45].forEach(la => { const [x, y] = PX(la, -125); grat.push(`<line x1="0" y1="${y}" x2="312" y2="${y}" stroke="var(--rule)" stroke-width=".3" stroke-dasharray="1 2"/><text class="grat" x="${+x + 6}" y="${+y - 1}">${la}°N</text>`); });
+  [-120, -110, -100].forEach(lo => { const [x, y] = PX(31.5, lo); grat.push(`<line x1="${x}" y1="0" x2="${x}" y2="244" stroke="var(--rule)" stroke-width=".3" stroke-dasharray="1 2"/><text class="grat" x="${x}" y="${+y + 6}">${-lo}°W</text>`); });
 
   const shapes = STATES.map(([code, name, pts, off]) => {
-    const s = off ? "offmap" : st(code);
+    const sst = off ? "offmap" : st(code);
     const [cx, cy] = LABEL_AT[code] ? PX(LABEL_AT[code][0], LABEL_AT[code][1]) : centroid(pts);
-    const dim = off || s === "open" || s === "offmap";
-    const warn = s === "eliminated";
-    return `<path class="st st-${s} ${code === sel ? "sel" : ""}" data-state="${off ? "" : code}" d="${poly(pts)}"><title>${name}</title></path>
+    const dim = off || sst === "open" || sst === "offmap";
+    const warn = sst === "eliminated";
+    return `<path class="st st-${sst} ${code === sel ? "sel" : ""}" data-state="${off ? "" : code}" d="${poly(pts)}"><title>${name} — ${MAP_STATUS_LABEL[sst] || sst}</title></path>
       <text class="lbl ${dim ? "dim" : ""} ${warn ? "warn" : ""}" x="${cx}" y="${+cy - 1}">${code}</text>
-      <text class="lbl2 ${dim ? "dim" : ""} ${warn ? "warn" : ""}" x="${cx}" y="${+cy + 5}">${off ? "" : (s === "open" ? "" : (MAP_STATUS_LABEL[s] || s).split(" —")[0].toUpperCase())}</text>`;
+      ${ov.labels && !off && sst !== "open" ? `<text class="lbl2 ${warn ? "warn" : ""}" x="${cx}" y="${+cy + 5}">${(MAP_STATUS_LABEL[sst] || sst).split(" —")[0]}</text>` : ""}`;
   }).join("");
 
+  const AK = PX(33.4, -124.6);
   const [fx, fy] = PX(49, -116.05);
-  const fenn = `<path class="fenn" d="${poly(FENN_MAP)}"/><text class="fennlbl" x="${+fx + 40}" y="${+fy - 2.5}">FENN 2013 MAP · MT WY CO NM</text>`;
+  const fenn = ov.fenn ? `<path class="fenn" d="${poly(FENN_MAP)}"/><text class="fennlbl" x="${+fx + 40}" y="${+fy - 2.5}">Fenn 2013 map · MT WY CO NM</text>` : "";
   const [c1x, c1y] = PX(34.6, -109.05), [c2x] = PX(34.6, -103);
-  const cutoff = `<line class="cutoff" x1="${c1x}" y1="${c1y}" x2="${c2x}" y2="${c1y}"/><text class="lbl2 warn" x="${(+c1x + +c2x) / 2}" y="${+c1y + 6}">SANTA FE −75 MI</text>`;
+  const cutoff = ov.cutoff ? `<line class="cutoff" x1="${c1x}" y1="${c1y}" x2="${c2x}" y2="${c1y}"/><text class="lbl2 warn" x="${(+c1x + +c2x) / 2}" y="${+c1y + 6}">Santa Fe −75 mi</text>` : "";
+  /* 75 mi ≈ 1.09° lat; in longitude it widens with latitude (÷cos). */
+  const rings = ov.rings ? FENN_SITES.map(([n, la, lo]) => {
+    const [x, y] = PX(la, lo);
+    const rx = (75 / (69.17 * Math.cos(la * Math.PI / 180))) * 10, ry = 1.085 * 13;
+    return `<ellipse class="ring" cx="${x}" cy="${y}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}"/><circle cx="${x}" cy="${y}" r=".8" fill="var(--accent)"/><text class="ringlbl" x="${x}" y="${+y - 2}">${esc(n)}</text>`;
+  }).join("") : "";
 
-  /* Sites within a few map units of each other collapse into one marker with a count,
-     so a basin worked three ways reads as one blip, not three colliding labels. */
+  /* Sites: one marker per cell; a cell with several sites shows a count. */
   const cells = new Map();
   state.candidates.forEach(c => {
     const ll = parseCoords(c.coords); if (!ll) return;
     const [x, y] = PX(ll[0], ll[1]).map(Number);
     const key = Math.round(x / 6) + "," + Math.round(y / 6);
-    if (!cells.has(key)) cells.set(key, { x, y, names: [] });
-    cells.get(key).names.push(c.name.split(/[—(]/)[0].trim());
+    if (!cells.has(key)) cells.set(key, { x, y, sites: [] });
+    cells.get(key).sites.push(c);
   });
-  const blips = [...cells.values()].map(({ x, y, names }, i) => {
-    const label = names.length > 1 ? `${names.length} SITES · ${names[0].toUpperCase().slice(0, 16)}` : names[0].toUpperCase().slice(0, 22);
-    const dy = (i % 2 ? 6 : -2.5);
-    return `<circle class="blipring" cx="${x}" cy="${y}" r="2"/><circle class="blip" cx="${x}" cy="${y}" r="1.1"/><text class="bliplbl" x="${x + 3}" y="${y + dy}">${esc(label)}</text>`;
+  const blips = [...cells.values()].map(({ x, y, sites }, i) => {
+    const live = sites.some(c => !scoreCandidate(c).ruledOut);
+    const selHere = sites.some(c => c.id === state.selectedSite);
+    const lead = sites.find(c => c.id === state.selectedSite) || sites.find(c => !scoreCandidate(c).ruledOut) || sites[0];
+    const label = sites.length > 1 ? `${sites.length} sites` : lead.name.split(/[—(]/)[0].trim().slice(0, 24);
+    const dy = (i % 2 ? 6.5 : -2.5);
+    return `<g class="site ${live ? "live" : "out"} ${selHere ? "sel" : ""}" data-site="${lead.id}" data-cell="${[...cells.keys()][i]}">
+      <circle class="halo" cx="${x}" cy="${y}" r="2.8"/><circle class="dot" cx="${x}" cy="${y}" r="1.5"/>
+      ${(ov.sitelabels || selHere) ? `<text x="${x + 3}" y="${y + dy}">${esc(label)}</text>` : ""}<title>${sites.map(c => c.name).join("\n")}</title></g>`;
   }).join("");
-  const blipList = state.candidates.map(c => parseCoords(c.coords) ? `<div><b>◉</b> ${esc(c.name)}</div>` : "").filter(Boolean).join("");
 
-  const inState = state.candidates.filter(c => (c.region || "").toUpperCase().startsWith(sel));
+  /* Panel: state card + site card */
+  const inState = state.candidates.filter(c => (c.region || "").toUpperCase().startsWith(sel))
+    .map(c => ({ c, s: scoreCandidate(c) })).sort((a, b) => (a.s.ruledOut - b.s.ruledOut) || (b.s.composite - a.s.composite));
+  const site = state.candidates.find(c => c.id === state.selectedSite);
+  const siteCard = site ? (() => {
+    const sc = scoreCandidate(site);
+    const strip = state.lines.map((l, k) => `<i class="${(site.verdicts || {})[l.id] || ""}" title="L${String(k+1).padStart(2,"0")}"></i>`).join("");
+    const gf = GATES.filter(([id]) => (site.gates || {})[id] === "fail").map(([, t]) => t);
+    return `<div class="card">
+      <div class="eyebrow">Site ${sc.ruledOut ? "· ruled out" : "· standing"}</div>
+      <h3 style="margin-top:4px">${esc(site.name)}</h3>
+      <div class="hint">${esc(site.region || "")}${site.coords ? " · " + esc(site.coords) : ""}${site.elev ? " · " + esc(site.elev) : ""}</div>
+      <div class="mini">${strip}</div>
+      <div class="kvs">
+        <b>Poem</b><span>${sc.judged ? sc.pct + "% of " + sc.judged + " judged" : "not judged"} · ${sc.fit} fit · ${sc.fail} fail</span>
+        <b>Gate</b><span>${sc.gPass} pass · ${sc.gFail} fail · ${sc.gUnk} unknown</span>
+        ${gf.length ? `<b>Fails</b><span>${gf.map(esc).join("; ")}</span>` : ""}
+        ${site.kill ? `<b>Kill</b><span>${esc(site.kill)}</span>` : ""}
+        ${site.test ? `<b>Test</b><span>${esc(site.test)}</span>` : ""}
+      </div>
+      <div class="toolbar" style="margin:10px 0 0">
+        <button class="btn sm" data-act="judge" data-cand="${site.id}">Judge lines</button>
+        <button class="btn ghost sm" data-act="edit-cand" data-cand="${site.id}">Edit</button>
+        <button class="btn ghost sm" data-act="goto-solves">Open in Solves</button>
+      </div>
+    </div>`;
+  })() : `<div class="card"><div class="eyebrow">Site</div><div class="hint" style="margin-top:6px">Click a marker on the map, or a site in the list, to see how it stands against the poem and the gate.</div></div>`;
 
   return `${demoBanner()}
     <div class="viewhead">
       <div><div class="eyebrow">Section 5</div><h2>Search area</h2></div>
+      <div class="spacer"></div>
+      <button class="tog ${ov.fenn ? "on" : ""}" data-ov="fenn"><i style="background:var(--contour)"></i>Fenn 2013 map</button>
+      <button class="tog ${ov.cutoff ? "on" : ""}" data-ov="cutoff"><i style="background:var(--fail)"></i>Santa Fe cutoff</button>
+      <button class="tog ${ov.rings ? "on" : ""}" data-ov="rings"><i style="background:var(--accent)"></i>75-mi Fenn rings</button>
+      <button class="tog ${ov.labels ? "on" : ""}" data-ov="labels">State labels</button>
+      <button class="tog ${ov.sitelabels ? "on" : ""}" data-ov="sitelabels">Site labels</button>
     </div>
-    <p class="lede">Which states are alive and which are dead, on one screen. Click a state to set its status and keep a note on why. Sites with coordinates show as blips. The amber outline is Forrest Fenn's 2013 four-state map — the community reads Posey's 75-mile Fenn statement as confining the hunt inside it, which is the sharpest objection to anything in Utah.</p>
-    <div class="crt">
-      <div class="crt-head">
-        <span>Sector scan · American West</span>
-        <span>${counts.active || 0} active · ${counts.hot || 0} hot · ${counts.inplay || 0} in play · ${counts.eliminated || 0} out <span class="blinker">▮</span></span>
-      </div>
-      <div class="crt-body">
-        <svg viewBox="0 0 312 244" role="img" aria-label="Map of the western United States with search status per state">
+    <p class="lede">Which states are alive and which are dead, and where every site sits. Click a state to set its status and keep a note; click a site marker to see its case. Green markers are still standing against the gate, red ones are ruled out. The 75-mile rings are drawn around the places Posey is documented to have searched for Fenn — the soft gate from Seekers Summit.</p>
+    <div class="mapwrap">
+      <div class="card sheet">
+        <div class="sheet-head">
+          <span class="title">Search area · American West</span>
+          <span class="spacer"></span>
+          <span class="stats">${counts.active || 0} active · ${counts.hot || 0} hot · ${counts.inplay || 0} in play · ${counts.eliminated || 0} out · ${state.candidates.filter(c => !scoreCandidate(c).ruledOut).length}/${state.candidates.length} sites standing</span>
+        </div>
+        <svg viewBox="0 0 312 244" role="img" aria-label="Map of the western United States with search status per state and candidate sites">
           <defs>
-            <pattern id="crtgrid" width="10" height="13" patternUnits="userSpaceOnUse"><path d="M10 0H0V13" fill="none" stroke="#12351b" stroke-width=".35"/></pattern>
-            <pattern id="crthatch" width="3.5" height="3.5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3.5" height="3.5" fill="rgba(255,80,60,.07)"/><path d="M0 0V3.5" stroke="rgba(255,90,70,.75)" stroke-width=".9"/></pattern>
+            <pattern id="hatch" width="3.5" height="3.5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3.5" height="3.5" fill="var(--fail-soft)"/><path d="M0 0V3.5" stroke="var(--fail)" stroke-width=".7" opacity=".7"/></pattern>
           </defs>
-          <rect width="312" height="244" fill="url(#crtgrid)"/>
+          <rect width="312" height="244" fill="var(--surface)"/>
           ${grat.join("")}
           ${shapes}
           ${fenn}
           ${cutoff}
-          <text class="grat" x="${+AK[0] + 1}" y="${+AK[1] - 1.5}" style="text-anchor:start">ALASKA · INSET · NOT TO SCALE</text>
+          ${rings}
+          <text class="grat" x="${+AK[0] + 1}" y="${+AK[1] - 1.5}" style="text-anchor:start">Alaska · inset · not to scale</text>
           ${blips}
         </svg>
-        <div class="crt-console">
-          <div><div class="k">Selected</div><div class="v">${esc(selName)} <span style="color:#2f7a44">[${sel}]</span></div></div>
-          <div><div class="k">Status</div>
-            <select data-mapstatus="${sel}">${MAP_STATUS.filter(x => x[0] !== "offmap").map(([v, l]) => `<option value="${v}" ${st(sel) === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
-          <div><div class="k">Why</div>
-            <textarea data-mapnote="${sel}" placeholder="What puts this state in or out?">${esc(note(sel))}</textarea></div>
-          ${inState.length ? `<div><div class="k">Sites here</div><div class="crt-blipsrow">${inState.map(c => `<div>▸ ${esc(c.name)}</div>`).join("")}</div></div>` : ""}
-          ${blipList ? `<div><div class="k">Blips</div><div class="crt-blipsrow">${blipList}</div></div>` : ""}
+        <div class="sheet-legend">
+          ${MAP_STATUS.map(([v, l]) => `<span><i class="sw ${v}"></i>${l.split(" —")[0]}</span>`).join("")}
+          <span><i class="sw" style="background:var(--fit); border-color:var(--fit); border-radius:50%; width:10px"></i>Site standing</span>
+          <span><i class="sw" style="background:var(--fail); border-color:var(--fail); border-radius:50%; width:10px; opacity:.6"></i>Site ruled out</span>
         </div>
       </div>
-      <div class="crt-legend">
-        ${MAP_STATUS.map(([v, l]) => `<span><i class="sw ${v}"></i>${l.split(" —")[0]}</span>`).join("")}
-        <span><i class="sw" style="border-color:#ffc45a;border-style:dashed;background:none"></i>Fenn map</span>
-        <span><span style="color:#fff">◉</span> Site</span>
+      <div class="mappanel">
+        <div class="card">
+          <div class="eyebrow">State</div>
+          <h3 style="margin-top:4px">${esc(selName)} <span class="src">${sel}</span></h3>
+          <label class="field" style="margin-top:10px"><span>Status</span>
+            <select data-mapstatus="${sel}">${MAP_STATUS.filter(x => x[0] !== "offmap").map(([v, l]) => `<option value="${v}" ${st(sel) === v ? "selected" : ""}>${l}</option>`).join("")}</select></label>
+          <label class="field" style="margin-top:8px"><span>Why</span>
+            <textarea rows="3" data-mapnote="${sel}" placeholder="What puts this state in or out?">${esc(note(sel))}</textarea></label>
+          ${inState.length ? `<div class="eyebrow" style="margin-top:12px">Sites in ${sel} · ${inState.filter(x => !x.s.ruledOut).length} standing</div>
+            <div class="sitelist">${inState.map(({ c, s }) => `<button class="siterow ${s.ruledOut ? "out" : ""} ${c.id === state.selectedSite ? "sel" : ""}" data-pick="${c.id}"><span class="d"></span><span>${esc(c.name.split(/[—(]/)[0].trim())}</span><span class="m">${s.judged ? s.pct + "%" : "—"} · ${s.gFail ? s.gFail + "✕" : s.gPass + "✓"}</span></button>`).join("")}</div>` : `<div class="hint" style="margin-top:10px">No sites in ${sel} yet.</div>`}
+        </div>
+        ${siteCard}
       </div>
-      <div class="crt-foot"><span>Plate carrée · 1° lon = 10u · 1° lat = 13u</span><span>Status lives in the store with everything else</span></div>
     </div>`;
 }
 
@@ -1952,6 +2018,16 @@ function wire() {
     if (!el.dataset.state) return;
     el.addEventListener("click", () => { state.selectedState = el.dataset.state; render(); });
   });
+  document.querySelectorAll("[data-ov]").forEach(b => b.addEventListener("click", () => {
+    state.overlays[b.dataset.ov] = !state.overlays[b.dataset.ov]; render();
+  }));
+  document.querySelectorAll(".site[data-site]").forEach(g => g.addEventListener("click", () => {
+    const c = state.candidates.find(x => x.id === g.dataset.site);
+    state.selectedSite = g.dataset.site;
+    if (c) { const code = (c.region || "").slice(0, 2).toUpperCase(); if (STATES.some(x => x[0] === code && !x[3])) state.selectedState = code; }
+    render();
+  }));
+  document.querySelectorAll("[data-pick]").forEach(b => b.addEventListener("click", () => { state.selectedSite = b.dataset.pick; render(); }));
   const ms = document.querySelector("[data-mapstatus]");
   if (ms) ms.addEventListener("change", () => {
     const code = ms.dataset.mapstatus;
@@ -1975,6 +2051,7 @@ function wire() {
     const a = b.dataset.act, id = b.dataset.intel, cid = b.dataset.cand, lid = b.dataset.line;
     if (a === "clear-demo") { leaveDemo(); render(); toast("Examples cleared — the board is yours."); }
     else if (a === "srcmode") { state.filter.srcmode = b.dataset.mode; render(); }
+    else if (a === "goto-solves") { state.route = "solves"; render(); }
     else if (a === "edit-poem") editPoemDialog();
     else if (a === "add-intel") intelDialog(null);
     else if (a === "add-intel-for") intelDialog(null, lid);
