@@ -11,7 +11,7 @@
     "text": "Can you find what lives in time,",
     "hard": false,
     "status": "unsolved",
-    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography. Under stanza-5 reading 4, this line IS the answer (a river lives in time) rather than a step — which would explain why stanza 1 has no actionable clue."
+    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography. Under stanza-5 reading 4, this line IS the answer (a river lives in time) rather than a step — which would explain why stanza 1 has no actionable clue. New: the map as a time anchor (~1864) — old names, no dams, Washington as 42nd, Whitney unnamed. If the map is fixed to a year, 'what lives in time' has a literal referent."
    },
    {
     "id": "l02",
@@ -3444,6 +3444,777 @@
     }
    ],
    "created": 1788584194560
+  },
+  {
+   "id": "i128",
+   "text": "City of Rocks, Idaho (~42.07°N — the parallel the 42 clues point at). Actual granite, so 'granite bold' is literal. California Trail landmark where emigrants wrote their names on the rock in axle grease, still legible: secrets of the past still hold. The Twin Sisters are a paired granite formation. Free public access, easy parking, natural arches in the granite. Emigrants called it a gateway (ancient gates). Gap: no bride, no bear, no obvious fishing water.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "idaho",
+    "city-of-rocks",
+    "granite",
+    "42",
+    "twin-sisters"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Literal granite, a paired formation, natural arches."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Emigrant signatures in axle grease — secrets of the past, still holding."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Emigrants called it a gateway."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "On the 42nd parallel."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No bear, no star."
+    },
+    {
+     "lineId": "l08",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No fishing water to speak of."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "No Hole."
+    }
+   ],
+   "created": 1788584545872
+  },
+  {
+   "id": "i129",
+   "text": "Granite Creek / Jackson Hole, Wyoming. 'The Hole' capitalized reads as Jackson Hole, and Posey called the hole-in-the-name question on the nose rather than shutting it down. Granite Hot Springs sits up Granite Creek off the Hoback, supplying the surge, clear and bright, in a drainage named granite. Granite Falls is there. The Hoback and Snake are serious fishing. 'Round the bend past the Hole' works as a driving instruction out of Jackson. Gap: the hot-spring pool is man-made and the access road is long gravel.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "wyoming",
+    "jackson-hole",
+    "granite-creek",
+    "hoback",
+    "hole"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A capital-H, proper-noun, natural Hole that Posey called on the nose."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A hot spring surging clear in a drainage named Granite."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granite Creek / Hoback as the water."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Hoback and Snake: serious fishing."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granite by name and by rock."
+    },
+    {
+     "lineId": "l05",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "The pool itself is man-made — fine as a waypoint, not as a hunt item."
+    },
+    {
+     "lineId": "l06",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Long gravel road; check standard-car access."
+    }
+   ],
+   "created": 1788584545873
+  },
+  {
+   "id": "i130",
+   "text": "Pioneer Mountains, Montana — the Wisdom theory run through Polaris instead of the town. Elkhorn Hot Springs supplies the surge, Polaris supplies ursa and the north star, the Big Hole River supplies the fishing and the Hole. The Pioneers are granitic. Crystal Park is a public granite-and-quartz dig with free access. Gap: heavily searched already, and Posey has said people got within two miles, which cuts both ways.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "montana",
+    "pioneers",
+    "polaris",
+    "elkhorn",
+    "crystal-park",
+    "granite"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Elkhorn Hot Springs as the surge."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Polaris: the star in the bear, as a place."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Big Hole: the capital-H Hole."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Blue-ribbon fishing."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granitic range; Crystal Park is a public dig in it."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Digging for crystals — secrets of the past."
+    },
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No bride adjacent — Beaverhead Rock is ~40 miles off."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Heavily searched; 'within two miles' means someone has been close, not that the crowd is right."
+    }
+   ],
+   "created": 1788584545874
+  },
+  {
+   "id": "i131",
+   "text": "Cross-reference: the Tetons are literally 'her' and literally 'three'. 'Les Trois Tétons' — the Grand, Middle and South Teton — were named by French trappers for a woman's breasts. 'Her foot of three' would then be the foot of the Three Tetons, a phrase that needs no wordplay. It sits inside the Jackson Hole reading, on granite-and-gneiss peaks, above serious fishing water, in the state named in the site's legal disclaimer. Not checked: a bear (ursa) east of the Hole, and what 'return her face' does there. Bearpaw Lake exists north of Jenny Lake.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "tetons",
+    "jackson-hole",
+    "her",
+    "three",
+    "wyoming",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Her foot of three' as the foot of the Three Tetons — the bride line, the three line and the 'her' all land on one named feature."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The bride as the Tetons: visible, not alive, and the range is a gate into the Hole."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Jackson Hole as the Hole, one valley over."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Teton core is granite and gneiss."
+    }
+   ],
+   "created": 1788584545875
+  },
+  {
+   "id": "i132",
+   "text": "Cross-reference: 'access is free and available 24/7' quietly rules out the inside of any fee-entry unit. Grand Teton, Yellowstone and Devils Tower charge entry; the surrounding national forests and BLM land do not. Posey refusing to rule national parks in or out is consistent with a site just outside a park boundary. So a Yellowstone or Teton solve must land in Bridger-Teton or Gallatin NF, not inside the park.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "fee",
+    "national-park",
+    "access",
+    "gate"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Any site inside a fee-entry park fails 'free and available 24/7'."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A site just outside a park boundary satisfies both this and 'not ruling parks out'."
+    }
+   ],
+   "created": 1788584545876
+  },
+  {
+   "id": "i133",
+   "text": "Cross-reference: Fenn's chest was found in Wyoming (Fenn confirmed the state, June 2020; the finder, Jack Stuef, never gave the spot). Posey bought that chest from Stuef and said he had at some point searched for it within 75 miles of where he hid his own. Wyoming and the West Yellowstone corridor were Posey's own Fenn search country. Read with the site disclaimer naming Wyoming law, the Jackson Hole, Sweetwater and Yellowstone-edge solves clear this gate easily; Moab is a stretch.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "fenn",
+    "wyoming",
+    "75-miles",
+    "stuef"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Wyoming solves clear the 75-mile Fenn gate without argument."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "The La Sals clear it only if Posey searched for Fenn in the Four Corners, which nothing on record says."
+    }
+   ],
+   "created": 1788584545877
+  },
+  {
+   "id": "i134",
+   "text": "Cross-reference: the capital-H Hole is the single most discriminating fact on the board. Posey gave a direct 'no' to a man-made Hole and called the place-name question on the nose. Every solve that survives that pair has a proper-noun natural Hole: Jackson Hole, Big Hole, Baker's Hole. The Moab corridor has none — the culvert fails the first statement and Hole 'N The Rock is man-made. Whatever else the La Sal solve gets right, stanza 2 line 3 has to be re-read before it can pass the gate.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "hole",
+    "gate",
+    "moab",
+    "discriminator"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "The Moab stanza-2 has no Hole that survives the two Posey statements."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Jackson Hole, Big Hole and Baker's Hole all do."
+    }
+   ],
+   "created": 1788584545878
+  },
+  {
+   "id": "i135",
+   "text": "Cross-reference: 'granite' is literal in every rival solve and figurative only in the La Sals. Split Rock, City of Rocks, the Pioneers and the Teton core are granite; Moab is sandstone, the La Sals laccolith, Devils Tower phonolite. Posey said clues should stand the test of time and that the hunt is built on natural landscape; a rock type is exactly the kind of clue that does. Treat 'granite' as a gate, not a flourish.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "granite",
+    "gate",
+    "geology"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "La Sal and Devils Tower readings need 'granite' to be loose; four rivals do not."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Literal granite is the plain reading stanza 5 asks for."
+    }
+   ],
+   "created": 1788584545879
+  },
+  {
+   "id": "i136",
+   "text": "Posey has said that during his Fenn search he believes he was extremely close to the chest's location in Yellowstone — possibly within 10–15 feet — and missed it. Fenn's chest was found in Wyoming in June 2020 by Jack Stuef. Posey later tried to buy the whole lot ($1.3M reported) to re-hide it; the deal fell through and he acquired several pieces at auction.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "fenn",
+    "yellowstone",
+    "wyoming",
+    "75-miles"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Yellowstone is where he searched hardest for Fenn. 'Within 75 miles of somewhere I searched for Fenn' now has a named center: the Yellowstone / Jackson Hole / West Yellowstone corridor."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "The La Sals are ~450 miles from Yellowstone; nothing on record puts a Fenn search of his in the Four Corners."
+    }
+   ],
+   "created": 1788584640478
+  },
+  {
+   "id": "i137",
+   "text": "The container is a Saddleback Leather 16-inch 'Grandfather' briefcase, about 60 lb loaded — not a chest. Contents: PAMP Suisse kilo gold bars, gold flakes and dust, coins across eras, large loose emeralds, rubies and amethysts, Fenn's jewel-encrusted dragon bracelet, artifacts from the Kushan, Crusader, Byzantine and Buyid periods, a Lydian coin (~561 BC), a meteorite, and a Bitcoin wallet that grows with book sales.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "container",
+    "briefcase",
+    "treasure"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Undercuts the MAGYAR-means-chest cipher reading — the container is a leather briefcase."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A 16-inch briefcase is the object that must fit in, and be manipulated out of, the sacred space."
+    }
+   ],
+   "created": 1788584640479
+  },
+  {
+   "id": "i138",
+   "text": "Posey's grandfather was reportedly a fish-and-game warden in Montana, where Posey spent summers exploring (one forum notes an obituary calling the grandfather a lifelong New Mexico resident). Community discussion says Posey owns property in Montana — the rules put every hunt item more than a mile from anywhere he, family or friends own property. The site is 'in a place that's dear to my heart' and 'surrounded by significance'.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "grandfather",
+    "montana",
+    "new-mexico",
+    "dear-to-my-heart",
+    "property"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A place dear to his heart, dedicated to a grandfather who worked Montana fish-and-game — Montana water is a natural fit."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A fish-and-game warden's grandson casting a pole."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "If he owns Montana property, the site must be more than a mile from it — a constraint, not a pointer."
+    }
+   ],
+   "created": 1788584640480
+  },
+  {
+   "id": "i139",
+   "text": "He made multiple trips (four, per one account) to hide the treasure, some designed to obscure the destination, and aimed to leave no digital footprint of the journey. He filmed a description of the treasure for Netflix only just before release so production staff had no advantage.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "hiding",
+    "trips",
+    "footprint"
+   ],
+   "links": [
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Obscured travel is about his trail, not the poem's — the solve is still meant to be plain."
+    }
+   ],
+   "created": 1788584640481
+  },
+  {
+   "id": "i140",
+   "text": "Rules restated in the report: no specialized knowledge needed; no dangerous water crossings; not associated with any structure; accessible 24/7 with no fee (the report reads this as likely excluding fee-entry National Parks); hints in the Netflix series 'guide you in the book'; the website map's missing state capital and misspellings are accidental; no hidden messages in site code.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "rules",
+    "access",
+    "netflix",
+    "website"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Free, 24/7, no structure, no dangerous crossing — a benign, non-park, near-road site."
+    },
+    {
+     "lineId": "l06",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "No dangerous water crossings: any reading that fords a river to reach the site is out."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Netflix hints guide the book, the book guides the poem — a chain, and the poem is the last link."
+    }
+   ],
+   "created": 1788584640482
+  },
+  {
+   "id": "i141",
+   "text": "Hunt status: on March 28, 2025, asked on X whether it had been found, Posey replied 'The treasure has NOT been found!' The site says 'check back frequently'. The report gives the hardcover as 236 pages (the master file says 220 — check which is right).",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Posey on X, Mar 28 2025 (via report)",
+   "tags": [
+    "status",
+    "pages"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "If page count is a number that matters, 220 vs 236 needs settling."
+    }
+   ],
+   "created": 1788584640483
+  },
+  {
+   "id": "i142",
+   "text": "The report's own read of the mile statement: 'not more than a mile to figure out where the treasure is at' plus 'clues lead to the exact location' implies a final step — the mile takes you to the vicinity (perhaps the checkpoint) and the precise spot is then identified by close observation or a final poem instruction, not by arriving at the end of a hike.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Public-statements research report (user upload, Sep 2026)",
+   "tags": [
+    "mile",
+    "final-step",
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The last step is recognition, not travel — 'what you seek, you already know'."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Find the place' as the observation step after the walk."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Manipulate something to see it — the final step is at the site."
+    }
+   ],
+   "created": 1788584640484
+  },
+  {
+   "id": "i143",
+   "text": "The map as a time anchor. Read the book's map not as modern geography but as a historical lens: place names changed, rivers and creeks were relabeled, section lines drawn later, towns existed before boundaries were final. The map has an old-world feel from the mid-to-late 1860s, possibly 1864 — by then every state on it except Alaska existed at least as a territory; finalized state boundaries appear overlaid on earlier territorial terrain; National Parks look updated while other features stay historically incomplete; most named places already existed as towns by the 1860s.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "map",
+    "1864",
+    "time",
+    "historical"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'What lives in time' — the map itself is anchored to a moment in time."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Read these words just right' — read the map in its own period, not ours."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Secrets of the past still hold: old names on a modern outline."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Measured rhyme — the map's measurements belong to a period."
+    }
+   ],
+   "created": 1788584709562
+  },
+  {
+   "id": "i144",
+   "text": "Time-warp anomalies on the map: Wyoming was part of Dakota Territory until 1868 (no Wyoming Territory yet in 1864). Salem, Oregon is missing (fixed in the errata) — and Salem was only confirmed as Oregon's capital in 1864. Washington is listed as the 42nd state, though it reached statehood three days after Montana in 1889 by clerical delay; Montana would otherwise have been 42nd. Small inconsistencies, or cues to look backward.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "map",
+    "1864",
+    "errata",
+    "42",
+    "washington",
+    "montana"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Dates and ordinals living in time."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Wyoming inside Dakota Territory in 1864 — 'ursa east' on an 1864 map is a different sheet."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Washington/Montana 42nd is a hidden 42 that the 4:02/5:26 elimination does not touch."
+    }
+   ],
+   "created": 1788584709563
+  },
+  {
+   "id": "i145",
+   "text": "Where are the dams? Major reservoirs are missing from the map though obvious on any modern sheet: Hoover / Lake Mead, Glen Canyon / Lake Powell, Fort Peck, Oroville, Grand Coulee. Rivers are drawn as if never dammed — pre-dam cartography.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "map",
+    "dams",
+    "rivers",
+    "pre-dam"
+   ],
+   "links": [
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Rivers 'beyond the reach of time's swift race' — drawn before they were altered."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Waters' silent flight' on a river as it ran before the dams — the map's water, not today's."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A river's steady flow, undammed."
+    }
+   ],
+   "created": 1788584709564
+  },
+  {
+   "id": "i146",
+   "text": "Mountains and measurement: Mount Shasta was widely held to be California's highest peak in the 1850s–early 1860s; on July 6, 1864 the California Geological Survey named Mount Whitney the highest in California and the contiguous US. Posey's errata notes a missing period on 'Mt. Shasta' but says nothing about Whitney. Gannett Peak is listed at 7,076 — its prominence, not its elevation — addressed in the errata as an unintended error, but it reinforces a theme of historical measurement confusion.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "map",
+    "shasta",
+    "whitney",
+    "gannett",
+    "1864",
+    "measurement"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "July 6, 1864 — a date that would fix the map's moment."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Measured rhyme — elevations and prominences as the measure."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A number given as a different kind of measure (prominence for elevation) is the sort of indirection Posey confirmed."
+    }
+   ],
+   "created": 1788584709565
+  },
+  {
+   "id": "i147",
+   "text": "Posey on the map: 'I chose the landmarks to be labeled, but the map was designed by a third party. Any incorrect names, positions, and elevations are not intentional.' Read carefully: the SELECTION of labeled landmarks is his; names, positions and elevations are the designer's. Which features got a label is the signal; where they sit and what number they carry is noise.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey (quoted in user research)",
+   "tags": [
+    "map",
+    "landmarks",
+    "errata",
+    "selection"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The list of labeled landmarks is a curated list — read it as such."
+    },
+    {
+     "lineId": "l01",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Cuts against building on elevation numbers (Gannett, Shasta) — those are the designer's."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A labeled peak named for a person or a bear is a chosen label."
+    }
+   ],
+   "created": 1788584709566
+  },
+  {
+   "id": "i148",
+   "text": "Alaska as legend or key rather than location. 1825: Treaty of Saint Petersburg set a vague Russia–Britain boundary; 1867: the US bought Alaska with that boundary undefined. Alaska stands apart on the map and may function as the anchor that 'shrinks the universe' — a key to the map's period rather than a place to search.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "alaska",
+    "map",
+    "legend",
+    "key"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Alaska as the key you read the rest by."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Not a search location under this reading."
+    }
+   ],
+   "created": 1788584709567
+  },
+  {
+   "id": "i149",
+   "text": "Territories as they stood before statehood (a period table for the map): California unorganized 1848 → state 1850 (31st); Oregon Terr. 1848 → 1859 (33rd); Utah Terr. 1850 → 1896 (45th); New Mexico Terr. 1850 → 1912 (47th); Washington Terr. 1853 → 1889 (42nd); Colorado Terr. 1861 → 1876 (38th); Dakota Terr. 1861 → ND/SD 1889 (39th/40th); Nevada Terr. 1861 → Oct 31 1864 (36th); Idaho Terr. 1863 → 1890 (43rd); Arizona Terr. 1863 → 1912 (48th); Montana Terr. May 26 1864 → 1889 (41st). By 1864 the modern map was outlined but not final — like this map.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "My own analysis",
+   "tags": [
+    "map",
+    "territories",
+    "statehood",
+    "1864"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Ordinals and dates — the numbers that live in time."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Montana Territory: May 26, 1864. Nevada statehood: October 31, 1864. Two 1864 events on the map's own year."
+    }
+   ],
+   "created": 1788584709568
   }
  ],
  "candidates": [
@@ -3460,7 +4231,25 @@
     "l09": "fit",
     "l13": "fit"
    },
-   "created": 1788581667021
+   "created": 1788581667021,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "unk",
+    "g_vehicle": "pass",
+    "g_free": "pass",
+    "g_trail": "fail",
+    "g_mile": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "fail",
+    "g_hole": "fail",
+    "g_armchair": "fail",
+    "g_fenn": "unk"
+   },
+   "kill": "Already dead on three Posey statements: on a trail, culvert Hole, two man-made implications (culvert + ladder).",
+   "test": "None needed — demoted. Keep for comparison only."
   },
   {
    "id": "c_medicine",
@@ -3480,7 +4269,27 @@
     "l15": "fit",
     "l16": "fit"
    },
-   "created": 1788583060291
+   "created": 1788583060291,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "pass",
+    "g_vehicle": "unk",
+    "g_free": "pass",
+    "g_trail": "unk",
+    "g_mile": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "fail",
+    "g_armchair": "unk",
+    "g_bride": "pass",
+    "g_rotate": "unk",
+    "g_fenn": "unk"
+   },
+   "kill": "The stanza-2 Hole. It inherits the culvert, which Posey has directly denied. Also: no granite.",
+   "test": "Find a natural, proper-noun Hole on or near the Moab approach; confirm La Sal Pass Rd in a standard car; check whether Posey ever searched for Fenn within 75 mi of Moab."
   },
   {
    "id": "c_goldbasin",
@@ -3499,7 +4308,26 @@
     "l15": "fit",
     "l16": "fit"
    },
-   "created": 1788583060291
+   "created": 1788583060291,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "unk",
+    "g_vehicle": "unk",
+    "g_free": "pass",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "fail",
+    "g_armchair": "unk",
+    "g_bride": "pass",
+    "g_fenn": "unk"
+   },
+   "kill": "Same Hole problem as Medicine Lakes, plus a high, snowbound cirque with no named double feature and a long walk from any car.",
+   "test": "Any named paired tarns in Gold Basin on the quad? If not, drop it."
   },
   {
    "id": "c_madison",
@@ -3512,7 +4340,25 @@
     "l07": "fit",
     "l11": "fit"
    },
-   "created": 1788583060291
+   "created": 1788583060291,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_fenn": "pass",
+    "g_trail": "fail",
+    "g_free": "unk",
+    "g_bldg": "unk",
+    "g_mile": "pass",
+    "g_armchair": "unk",
+    "g_safe": "pass",
+    "g_vehicle": "pass"
+   },
+   "kill": "Harlequin Lake trailhead is inside Yellowstone (fee) and the whole route is on the Boundary Trail — 'not near any trail'.",
+   "test": "Is any part of the endpoint outside the YNP boundary and off-trail? If not, it fails two gates."
   },
   {
    "id": "c_sweetwater",
@@ -3529,7 +4375,27 @@
     "l12": "fit",
     "l13": "fit"
    },
-   "created": 1788583060291
+   "created": 1788583060291,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_fenn": "pass",
+    "g_free": "pass",
+    "g_bldg": "unk",
+    "g_hole": "unk",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_armchair": "pass",
+    "g_bride": "unk",
+    "g_rotate": "pass",
+    "g_vehicle": "pass",
+    "g_safe": "pass"
+   },
+   "kill": "No Hole assigned at all, and a bride that is 'the river and its landscape' — not something visible you could identify.",
+   "test": "Is there a proper-noun Hole on the Sweetwater approach? Does anything at Devil's Gate read as a face?"
   },
   {
    "id": "c_bighole",
@@ -3547,7 +4413,27 @@
     "l10": "fit",
     "l19": "fit"
    },
-   "created": 1788583060291
+   "created": 1788583060291,
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_fenn": "pass",
+    "g_bldg": "unk",
+    "g_free": "pass",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_armchair": "pass",
+    "g_bride": "pass",
+    "g_rotate": "unk",
+    "g_vehicle": "pass",
+    "g_safe": "pass"
+   },
+   "kill": "Big Hole National Battlefield is 'near graves'; a Beaverhead Rock bride puts the gates 40 miles from the Hole. And it is the crowd's solve — 'within two miles' means the crowd has been there.",
+   "test": "Draw the route Wisdom → Big Hole → Polaris → Beaverhead Rock and measure it against 'not a great distance'."
   },
   {
    "id": "c_bearlodge",
@@ -3559,7 +4445,123 @@
    "verdicts": {
     "l09": "fit"
    },
-   "created": 1788584194433
+   "created": 1788584194433,
+   "gates": {
+    "g_notin": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_fenn": "unk",
+    "g_public": "unk",
+    "g_free": "unk",
+    "g_bldg": "unk",
+    "g_safe": "unk",
+    "g_hole": "unk",
+    "g_bride": "unk"
+   },
+   "kill": "No bride and no gates in five minutes of looking; phonolite not granite; the monument is a fee unit with a visitor center.",
+   "test": "Search the Bear Lodge Mountains for anything named Bride, Gate, or a face; check whether Posey searched the Black Hills for Fenn."
+  },
+  {
+   "id": "c_cityofrocks",
+   "name": "City of Rocks — Twin Sisters (Idaho, 42nd parallel)",
+   "region": "ID · Cassia County, City of Rocks National Reserve",
+   "coords": "≈ 42.07, -113.72 (verify)",
+   "elev": "≈ 6,000 ft",
+   "notes": "Literal granite, paired Twin Sisters, natural arches, emigrant axle-grease signatures on Register Rock, 'gateway' on the California Trail, free access, easy parking. Stanza 4 is the strongest on the board; stanzas 2–3 have nothing to grip.",
+   "kill": "No bear, star or Hole anywhere in the approach — if stanza 2–3 cannot be assigned within ~30 miles, it's a stanza-4 look-alike.",
+   "test": "Map search for any 'Bear', 'Polaris', 'Hole' or 'Gate' feature within 30 miles; check whether the Reserve is on the printed map.",
+   "verdicts": {
+    "l10": "fit",
+    "l13": "fit",
+    "l14": "fit",
+    "l09": "fail",
+    "l08": "fail"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_free": "pass",
+    "g_vehicle": "pass",
+    "g_states": "pass",
+    "g_natural": "pass",
+    "g_hole": "unk",
+    "g_mile": "pass",
+    "g_trail": "unk",
+    "g_safe": "pass",
+    "g_map": "unk",
+    "g_fenn": "unk"
+   },
+   "created": 1788584545744
+  },
+  {
+   "id": "c_jacksonhole",
+   "name": "Granite Creek / Jackson Hole — Tetons (Wyoming)",
+   "region": "WY · Teton County, Bridger-Teton NF / Hoback",
+   "coords": "≈ 43.36, -110.44 (Granite Hot Springs; verify)",
+   "elev": "≈ 6,900 ft",
+   "notes": "Capital-H proper-noun natural Hole that Posey called on the nose; surge (Granite Hot Springs), water (Granite Creek / Hoback), serious fishing, granite by name and rock. Cross-reference adds the Tetons as 'her' and 'three'. Inside Fenn's map, Wyoming law in the disclaimer, Fenn country. Site must sit outside Grand Teton NP (fee) — Bridger-Teton NF is free.",
+   "kill": "No bear or star east of the Hole for 'ursa east', or 'return her face' producing nothing near the Tetons' foot.",
+   "test": "List every 'Bear' feature east of Jackson Hole (Bearpaw Lake, Bear Creek, Sheep Mtn 'Sleeping Indian' face) and see if any sits on a bearing from the Tetons' foot; confirm Granite Creek Rd is standard-car in summer.",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l07": "fit",
+    "l08": "fit",
+    "l11": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_fenn": "pass",
+    "g_free": "unk",
+    "g_vehicle": "unk",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_bride": "unk",
+    "g_rotate": "unk",
+    "g_armchair": "pass"
+   },
+   "created": 1788584545744
+  },
+  {
+   "id": "c_pioneers",
+   "name": "Pioneer Mountains — Polaris / Elkhorn / Crystal Park (Montana)",
+   "region": "MT · Beaverhead County, Beaverhead-Deerlodge NF",
+   "coords": "≈ 45.42, -113.10 (Crystal Park; verify)",
+   "elev": "≈ 7,800 ft",
+   "notes": "The Wisdom theory routed through Polaris: Elkhorn Hot Springs surge, Polaris for ursa/north star, Big Hole for Hole and fishing, granitic Pioneers, Crystal Park free public dig. Inside Fenn's map. Heavily searched; 'within two miles' cuts both ways. Bride is the gap — Beaverhead Rock is ~40 mi off.",
+   "kill": "No bride or gates within the Pioneers; or Crystal Park / the Byway sitting inside the two-mile ring the crowd has already worked.",
+   "test": "Check Crystal Park fee status and hours (must be free, 24/7); look for any 'Gate' or bride-shaped feature on the Pioneer Byway between Polaris and Elkhorn.",
+   "verdicts": {
+    "l03": "fit",
+    "l05": "fit",
+    "l07": "fit",
+    "l08": "fit",
+    "l09": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_fenn": "pass",
+    "g_free": "unk",
+    "g_vehicle": "pass",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_bride": "unk",
+    "g_armchair": "pass"
+   },
+   "created": 1788584545744
   }
  ],
  "mapStates": {

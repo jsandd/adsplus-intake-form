@@ -274,6 +274,31 @@ td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:
 .meter.low i{background:var(--unk)}
 .meter.bad i{background:var(--fail)}
 
+/* ---------- solves / dossiers ---------- */
+.dossier{padding:16px 18px; display:grid; gap:12px}
+.dossier.out{opacity:.72}
+.dossier .head{display:flex; gap:12px; align-items:baseline; flex-wrap:wrap}
+.dossier .head h3{font-size:17px}
+.dossier .rank{font-family:var(--f-mono); font-size:11px; color:var(--contour); letter-spacing:.08em}
+.dossier .score{margin-left:auto; font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:12px; color:var(--ink-2); display:flex; gap:12px}
+.dossier .score b{font-weight:600; color:var(--ink)}
+.strip{display:grid; grid-template-columns:repeat(20, minmax(0,1fr)); gap:2px}
+.strip i{display:block; height:9px; border-radius:1px; background:var(--surface-3)}
+.strip i.fit{background:var(--fit)} .strip i.fail{background:var(--fail)} .strip i.hard{outline:1px solid var(--contour); outline-offset:-1px}
+.striplbl{display:flex; justify-content:space-between; font-family:var(--f-mono); font-size:9.5px; color:var(--ink-3); letter-spacing:.06em; margin-top:2px}
+.gates{display:flex; flex-wrap:wrap; gap:5px}
+.gate{
+  border:1px solid var(--rule-2); background:var(--surface-2); color:var(--ink-2); border-radius:100px; cursor:pointer;
+  font-family:var(--f-mono); font-size:10.5px; padding:2px 8px; display:inline-flex; gap:5px; align-items:center;
+}
+.gate:hover{border-color:var(--ink-3)}
+.gate.pass{background:var(--fit-soft); color:var(--fit); border-color:transparent}
+.gate.fail{background:var(--fail-soft); color:var(--fail); border-color:var(--fail)}
+.gate .m{font-weight:600}
+.dossier .two .field span{color:var(--contour)}
+.dossier .kv{font-size:13px; line-height:1.5}
+.dossier .kv b{font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--contour); display:block; margin-bottom:2px; font-weight:500}
+
 /* ---------- sector scan (CRT inset, deliberately single-theme) ---------- */
 .crt{
   --ph:#7dff9a; --ph-dim:#2f7a44; --ph-line:#1c4a28; --ph-bg:#030b05; --ph-warn:#ff5a46; --ph-amber:#ffc45a;
@@ -430,6 +455,29 @@ const STATUS = [
 ];
 const STATUS_LABEL = Object.fromEntries(STATUS);
 const STATUS_CHIP  = { pinned:"fit", contested:"fail", partial:"acc", thematic:"", unsolved:"unk" };
+
+/* The gate: Posey's hard statements, official rules first. Every site is checked
+   against each one — pass, fail, or unknown — independently of how well it reads. */
+const GATES = [
+  ["g_notin",    "Not underwater, in a cave, mine or tunnel, or anywhere needing rappelling",  "Rules"],
+  ["g_public",   "On publicly accessible land, not private property",                          "Rules"],
+  ["g_bldg",     "Not associated with man-made buildings; not near graves",                    "Rules"],
+  ["g_safe",     "No ropes, ladders, climbing or swimming skills needed",                       "Rules"],
+  ["g_vehicle",  "No high-clearance vehicle needed",                                            "Rules"],
+  ["g_free",     "Access free and available 24/7",                                              "Q&A"],
+  ["g_trail",    "Not near any trail — deliberately, so it isn't stumbled on",                  "Q&A"],
+  ["g_mile",     "Within about a mile of the car to identify the spot",                         "Q&A"],
+  ["g_states",   "Not Colorado, not Oregon, not 75 mi south of Santa Fe",                       "Seekers Summit"],
+  ["g_map",      "Inside the printed map; American West; not many miles to find",               "Q&A"],
+  ["g_natural",  "Built on natural landscape; at most one man-made implication, path-dependent","Dillon"],
+  ["g_hole",     "The Hole carries no man-made implication",                                    "Seekers Summit"],
+  ["g_armchair", "Stanzas 1–3 solvable from home; boots on the ground only at stanza 4",       "Q&A"],
+  ["g_bride",    "Bride is visible, not alive, and follows from understanding the gates",       "Seekers Summit"],
+  ["g_rotate",   "'Return her face' technically implies a physical rotation",                   "Seekers Summit"],
+  ["g_fenn",     "Within 75 mi of somewhere he searched for Fenn (walked back; soft)",          "Seekers Summit"],
+  ["g_manip",    "Something must be manipulated to see it; a flashlight may help",              "Q&A"],
+];
+const GATE_LABEL = Object.fromEntries(GATES.map(g => [g[0], g[1]]));
 
 /* Search-area map: a low-poly West drawn from state-line corners on a plain
    lat/lon grid — the same equirectangular sheet a 1990s field computer would draw. */
@@ -772,7 +820,13 @@ function scoreCandidate(c) {
   const judged = fit + fail;
   const unknown = state.lines.length - judged;
   const pct = judged ? Math.round(fit / judged * 100) : 0;
-  return { fit, fail, unknown, judged, pct, hardFail, ruledOut: hardFail > 0 };
+  const g = c.gates || {};
+  let gPass = 0, gFail = 0;
+  GATES.forEach(([id]) => { if (g[id] === "pass") gPass++; else if (g[id] === "fail") gFail++; });
+  const gUnk = GATES.length - gPass - gFail;
+  /* Composite: poem fit rate, discounted by how little has been judged, minus gate failures. */
+  const composite = judged ? Math.round(pct * Math.min(1, judged / 10) - gFail * 15 + gPass * 2) : 0;
+  return { fit, fail, unknown, judged, pct, hardFail, gPass, gFail, gUnk, composite, ruledOut: hardFail > 0 || gFail > 0 };
 }
 
 /* ============================ render ============================ */
@@ -783,6 +837,7 @@ const VIEWS = [
   ["candidates", "Candidates", l => l.candidates.length],
   ["matrix",     "Matrix",     l => l.candidates.length * (l.lines.length ? 1 : 0)],
   ["map",        "Map",        l => Object.values(l.mapStates).filter(x => x && (x.status === "active" || x.status === "hot")).length || ""],
+  ["solves",     "Solves",     l => l.candidates.filter(c => !scoreCandidate(c).ruledOut).length || ""],
   ["data",       "Data",       () => ""],
 ];
 
@@ -792,7 +847,7 @@ function render() {
   renderNav();
   renderGauge();
   const el = document.getElementById("view");
-  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, map: viewMap, data: viewData }[state.route];
+  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, map: viewMap, solves: viewSolves, data: viewData }[state.route];
   el.innerHTML = fn();
   wire();
   el.scrollTop = 0;
@@ -1158,12 +1213,63 @@ function viewMap() {
     </div>`;
 }
 
+/* ---------- view: solves ---------- */
+
+function viewSolves() {
+  if (!state.candidates.length) {
+    return `<div class="viewhead"><div><div class="eyebrow">Section 6</div><h2>Solves</h2></div></div>
+      <div class="empty"><h3>No sites to compare</h3><p>Add candidate sites and judge them; this view ranks them against the poem and the gate.</p></div>`;
+  }
+  const rows = state.candidates.map(c => ({ c, s: scoreCandidate(c) }))
+    .sort((a, b) => (a.s.ruledOut - b.s.ruledOut) || (b.s.composite - a.s.composite) || (b.s.fit - a.s.fit));
+  const live = rows.filter(r => !r.s.ruledOut).length;
+
+  return `${demoBanner()}
+    <div class="viewhead"><div><div class="eyebrow">Section 6</div><h2>Solves</h2></div></div>
+    <p class="lede">Every site run against two things at once: the poem (which lines it fits, from the Matrix) and the gate — Posey's hard statements, official rules first. Click a gate chip to cycle pass → fail → unknown. One gate failure or one hard-line failure rules a site out, whatever its poem score. ${live} of ${rows.length} sites are still standing.</p>
+    <div style="display:grid; gap:14px">
+      ${rows.map(({ c, s }, i) => {
+        const g = c.gates || {};
+        const strip = state.lines.map((l, k) => {
+          const v = (c.verdicts || {})[l.id] || "";
+          return `<i class="${v} ${l.hard ? "hard" : ""}" title="L${String(k+1).padStart(2,"0")} ${v || "unjudged"} — ${esc(l.text)}"></i>`;
+        }).join("");
+        const fails = state.lines.map((l, k) => (c.verdicts || {})[l.id] === "fail" ? "L" + String(k+1).padStart(2,"0") : "").filter(Boolean);
+        const gfails = GATES.filter(([id]) => g[id] === "fail").map(([, t]) => t);
+        return `<article class="card dossier ${s.ruledOut ? "out" : ""}">
+          <div class="head">
+            <span class="rank">${s.ruledOut ? "OUT" : "#" + (i + 1)}</span>
+            <h3>${esc(c.name)}</h3>
+            ${s.ruledOut ? '<span class="chip fail">ruled out</span>' : ""}
+            <span class="chip">${esc(c.region || "")}</span>
+            <span class="score"><span>poem <b>${s.judged ? s.pct + "%" : "—"}</b> of ${s.judged}</span><span>gate <b>${s.gPass}</b>/${GATES.length} pass · <b>${s.gFail}</b> fail</span><span>score <b>${s.composite}</b></span></span>
+          </div>
+          <div>
+            <div class="strip">${strip}</div>
+            <div class="striplbl"><span>L01 · stanza 1</span><span>stanza 2</span><span>stanza 3</span><span>stanza 4</span><span>stanza 5 · L20</span></div>
+          </div>
+          <div class="gates">${GATES.map(([id, t, src]) => `<button class="gate ${g[id] || ""}" data-gate="${id}" data-cand="${c.id}" title="${esc(t)} — ${src}"><span class="m">${g[id] === "pass" ? "✓" : g[id] === "fail" ? "✕" : "·"}</span>${esc(t.length > 46 ? t.slice(0, 44) + "…" : t)}</button>`).join("")}</div>
+          ${(fails.length || gfails.length) ? `<div class="kv"><b>Why it's ${s.ruledOut ? "out" : "hurting"}</b>${fails.length ? "Fails " + fails.join(", ") + ". " : ""}${gfails.map(t => esc(t)).join(". ")}</div>` : ""}
+          ${c.notes ? `<div class="kv"><b>Case</b>${esc(c.notes)}</div>` : ""}
+          <div class="two">
+            <div class="kv"><b>What would kill it</b>${c.kill ? esc(c.kill) : '<span class="hint">Not set — edit the site.</span>'}</div>
+            <div class="kv"><b>Cheapest test</b>${c.test ? esc(c.test) : '<span class="hint">Not set — edit the site.</span>'}</div>
+          </div>
+          <div class="toolbar" style="margin:0">
+            <button class="btn sm" data-act="judge" data-cand="${c.id}">Judge lines</button>
+            <button class="btn ghost sm" data-act="edit-cand" data-cand="${c.id}">Edit</button>
+          </div>
+        </article>`;
+      }).join("")}
+    </div>`;
+}
+
 /* ---------- view: data ---------- */
 
 function viewData() {
   const c = coverage();
   return `${demoBanner()}
-    <div class="viewhead"><div><div class="eyebrow">Section 6</div><h2>Data</h2></div></div>
+    <div class="viewhead"><div><div class="eyebrow">Section 7</div><h2>Data</h2></div></div>
     <p class="lede">Your work lives in this artifact's store and syncs across your devices. Export anyway — a backup you hold is a backup you keep.</p>
 
     <div class="two">
@@ -1482,6 +1588,10 @@ function candDialog(existing) {
       <label class="field"><span>Elevation</span><input type="text" id="cElev" value="${esc(c.elev||"")}" placeholder="8,140 ft"></label>
     </div>
     <label class="field"><span>Notes</span><textarea id="cNotes" rows="3" placeholder="Access, season, what drew you here.">${esc(c.notes||"")}</textarea></label>
+    <div class="two">
+      <label class="field"><span>What would kill it</span><textarea id="cKill" rows="2" placeholder="The one fact that ends this solve.">${esc(c.kill||"")}</textarea></label>
+      <label class="field"><span>Cheapest test</span><textarea id="cTest" rows="2" placeholder="What you can check from home tonight.">${esc(c.test||"")}</textarea></label>
+    </div>
   `, null, () => {
     const name = val("#cName");
     if (!name) return;
@@ -1489,7 +1599,9 @@ function candDialog(existing) {
     const rec = {
       id: existing ? existing.id : uid("c"),
       name, region: val("#cRegion"), coords: val("#cCoords"), elev: val("#cElev"), notes: val("#cNotes"),
+      kill: val("#cKill"), test: val("#cTest"),
       verdicts: existing ? (existing.verdicts || {}) : {},
+      gates: existing ? (existing.gates || {}) : {},
       created: existing ? (existing.created || Date.now()) : Date.now(),
     };
     const i = state.candidates.findIndex(x => x.id === rec.id);
@@ -1610,7 +1722,11 @@ function brief() {
     const s = scoreCandidate(cd);
     out += `### ${cd.name}${s.ruledOut ? " — RULED OUT by a hard line" : ""}\n`;
     out += `${[cd.region, cd.coords, cd.elev].filter(Boolean).join(" · ")}\n`;
-    out += `Fits ${s.fit} · Fails ${s.fail} · Unjudged ${s.unknown} · ${s.judged ? s.pct + "% fit rate" : "not judged"}\n`;
+    out += `Fits ${s.fit} · Fails ${s.fail} · Unjudged ${s.unknown} · ${s.judged ? s.pct + "% fit rate" : "not judged"} · Gate ${s.gPass} pass / ${s.gFail} fail\n`;
+    const gf = GATES.filter(([id]) => (cd.gates || {})[id] === "fail").map(([, t]) => t);
+    if (gf.length) out += `Gate failures: ${gf.join("; ")}\n`;
+    if (cd.kill) out += `Would kill it: ${cd.kill}\n`;
+    if (cd.test) out += `Cheapest test: ${cd.test}\n`;
     if (cd.notes) out += `${cd.notes}\n`;
     const fails = L.map((l, i) => ({ l, i })).filter(({ l }) => (cd.verdicts || {})[l.id] === "fail");
     if (fails.length) out += `Fails on: ${fails.map(({ i }) => "L" + String(i+1).padStart(2,"0")).join(", ")}\n`;
@@ -1680,6 +1796,20 @@ function wire() {
     l.note = note.value.trim();
     savePoem();
   });
+
+  document.querySelectorAll("[data-gate]").forEach(b => b.addEventListener("click", () => {
+    const c = state.candidates.find(x => x.id === b.dataset.cand);
+    if (!c) return;
+    leaveDemoIfNeeded();
+    const t = state.candidates.find(x => x.id === b.dataset.cand);
+    if (!t) return;
+    t.gates = t.gates || {};
+    const cur = t.gates[b.dataset.gate];
+    if (!cur) t.gates[b.dataset.gate] = "pass";
+    else if (cur === "pass") t.gates[b.dataset.gate] = "fail";
+    else delete t.gates[b.dataset.gate];
+    saveCand(t); render();
+  }));
 
   document.querySelectorAll(".st[data-state]").forEach(el => {
     if (!el.dataset.state) return;
@@ -1769,7 +1899,7 @@ function wire() {
 
 document.addEventListener("keydown", e => {
   if (e.target.matches("input, textarea, select") || dlg.open) return;
-  const i = ["1","2","3","4","5","6"].indexOf(e.key);
+  const i = ["1","2","3","4","5","6","7"].indexOf(e.key);
   if (i >= 0) { state.route = VIEWS[i][0]; render(); }
 });
 
