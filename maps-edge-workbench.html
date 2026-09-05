@@ -1,0 +1,1498 @@
+<title>Map's Edge Workbench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+
+<style>
+/* ---------- tokens: light (complete set) ---------- */
+:root{
+  --ground:#EFF1EC;
+  --surface:#FFFFFF;
+  --surface-2:#E6EAE1;
+  --surface-3:#DCE2D6;
+  --ink:#1B241F;
+  --ink-2:#4C5851;
+  --ink-3:#7A867E;
+  --rule:#CDD5C8;
+  --rule-2:#B4BFAE;
+  --contour:#9A6435;
+  --contour-soft:#E4D3C1;
+  --accent:#1F6F8B;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#D9E8ED;
+  --fit:#2E7D4F;
+  --fit-soft:#D8EADF;
+  --unk:#A97417;
+  --unk-soft:#F2E6CC;
+  --fail:#B0392C;
+  --fail-soft:#F3DBD7;
+  --shadow:0 1px 2px rgba(27,36,31,.07), 0 6px 18px -10px rgba(27,36,31,.22);
+  --shadow-lift:0 2px 4px rgba(27,36,31,.09), 0 14px 34px -14px rgba(27,36,31,.32);
+
+  --f-display:"Bitter",Georgia,"Times New Roman",serif;
+  --f-ui:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  --r-sm:3px; --r-md:5px; --r-lg:8px;
+  --rail:236px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#131A18;
+    --surface:#1B2320;
+    --surface-2:#232D29;
+    --surface-3:#2C3833;
+    --ink:#DEE6E0;
+    --ink-2:#A6B3AB;
+    --ink-3:#7B887F;
+    --rule:#2F3B36;
+    --rule-2:#3F4D47;
+    --contour:#C89463;
+    --contour-soft:#3A2E24;
+    --accent:#6BB8D6;
+    --accent-ink:#0E1A1F;
+    --accent-soft:#1D3138;
+    --fit:#63BA86;
+    --fit-soft:#1B2E23;
+    --unk:#D7A73F;
+    --unk-soft:#302716;
+    --fail:#E2705F;
+    --fail-soft:#331E1B;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px -10px rgba(0,0,0,.7);
+    --shadow-lift:0 2px 4px rgba(0,0,0,.5), 0 14px 34px -14px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131A18; --surface:#1B2320; --surface-2:#232D29; --surface-3:#2C3833;
+  --ink:#DEE6E0; --ink-2:#A6B3AB; --ink-3:#7B887F; --rule:#2F3B36; --rule-2:#3F4D47;
+  --contour:#C89463; --contour-soft:#3A2E24;
+  --accent:#6BB8D6; --accent-ink:#0E1A1F; --accent-soft:#1D3138;
+  --fit:#63BA86; --fit-soft:#1B2E23; --unk:#D7A73F; --unk-soft:#302716;
+  --fail:#E2705F; --fail-soft:#331E1B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px -10px rgba(0,0,0,.7);
+  --shadow-lift:0 2px 4px rgba(0,0,0,.5), 0 14px 34px -14px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--f-ui); font-size:14px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--f-display); font-weight:700; margin:0; text-wrap:balance; letter-spacing:-.01em}
+button,input,select,textarea{font:inherit; color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important; transition:none!important}}
+
+/* ---------- shell ---------- */
+.shell{display:grid; grid-template-columns:var(--rail) minmax(0,1fr); min-height:100vh}
+
+.rail{
+  background:var(--surface); border-right:1px solid var(--rule);
+  display:flex; flex-direction:column; position:sticky; top:0; height:100vh; overflow:auto;
+}
+.brand{padding:16px 18px 14px; border-bottom:1px solid var(--rule); position:relative; overflow:hidden}
+.brand::after{
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:.5;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='120' viewBox='0 0 240 120'><g fill='none' stroke='%239A6435' stroke-width='1' opacity='.34'><path d='M-10 96 C 40 74, 92 108, 150 82 S 236 52, 260 66'/><path d='M-10 80 C 44 58, 96 92, 152 66 S 238 38, 262 50'/><path d='M-10 64 C 48 44, 100 76, 154 50 S 240 24, 264 34'/><path d='M-10 48 C 52 30, 104 60, 156 34 S 242 10, 266 18'/></g></svg>");
+  background-position:right -30px bottom -18px; background-repeat:no-repeat;
+}
+.brand h1{font-size:17px; line-height:1.15; position:relative; z-index:1}
+.brand .sub{
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--contour); margin-top:6px; position:relative; z-index:1;
+}
+.nav{padding:10px; display:flex; flex-direction:column; gap:2px}
+.nav button{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:none; border:0; padding:8px 10px; border-radius:var(--r-md); cursor:pointer;
+  color:var(--ink-2); font-weight:500;
+}
+.nav button:hover{background:var(--surface-2); color:var(--ink)}
+.nav button[aria-current="page"]{background:var(--accent-soft); color:var(--ink); font-weight:600}
+.nav .k{font-family:var(--f-mono); font-size:10px; color:var(--ink-3); width:14px}
+.nav button[aria-current="page"] .k{color:var(--accent)}
+.nav .count{margin-left:auto; font-family:var(--f-mono); font-size:11px; color:var(--ink-3)}
+
+.gauge{margin:auto 10px 10px; padding:12px; background:var(--surface-2); border-radius:var(--r-lg)}
+.gauge .lbl{font-family:var(--f-mono); font-size:10px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3)}
+.gauge .big{font-family:var(--f-mono); font-size:26px; font-weight:600; line-height:1.1; margin-top:4px; font-variant-numeric:tabular-nums}
+.scalebar{display:flex; height:7px; margin-top:9px; border:1px solid var(--rule-2); border-radius:2px; overflow:hidden}
+.scalebar i{display:block; height:100%}
+.scalebar i:nth-child(1){background:var(--fit)}
+.scalebar i:nth-child(2){background:var(--contour); opacity:.45}
+.gauge .foot{margin-top:7px; font-size:11px; color:var(--ink-2)}
+.syncline{padding:0 10px 12px; font-family:var(--f-mono); font-size:10.5px; color:var(--ink-3); display:flex; align-items:center; gap:6px}
+.dot{width:7px; height:7px; border-radius:50%; background:var(--ink-3); flex:none}
+.dot.ok{background:var(--fit)} .dot.busy{background:var(--unk)} .dot.off{background:var(--fail)}
+
+/* ---------- main ---------- */
+.main{min-width:0; padding:22px 26px 64px; max-width:1320px}
+.viewhead{display:flex; align-items:flex-end; gap:14px; flex-wrap:wrap; margin-bottom:6px}
+.viewhead h2{font-size:23px}
+.eyebrow{font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--contour)}
+.lede{color:var(--ink-2); max-width:64ch; margin:0 0 18px}
+.toolbar{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:16px}
+.spacer{flex:1 1 auto}
+
+/* ---------- controls ---------- */
+.btn{
+  background:var(--surface); border:1px solid var(--rule-2); color:var(--ink);
+  padding:6px 12px; border-radius:var(--r-md); cursor:pointer; font-weight:500; font-size:13px;
+  display:inline-flex; align-items:center; gap:7px; transition:background .12s, border-color .12s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--ink-3)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:var(--accent-ink); font-weight:600}
+.btn.primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn.ghost{background:none; border-color:transparent; color:var(--ink-2)}
+.btn.ghost:hover{background:var(--surface-2); color:var(--ink)}
+.btn.danger{color:var(--fail); border-color:var(--rule-2)}
+.btn.danger:hover{background:var(--fail-soft); border-color:var(--fail)}
+.btn:disabled{opacity:.45; cursor:not-allowed}
+.btn.sm{padding:3px 8px; font-size:12px}
+
+input[type=text],input[type=search],input[type=number],select,textarea{
+  background:var(--surface); border:1px solid var(--rule-2); color:var(--ink);
+  padding:6px 9px; border-radius:var(--r-md); width:100%; font-size:13px;
+}
+textarea{resize:vertical; line-height:1.55}
+label.field{display:flex; flex-direction:column; gap:4px; min-width:0}
+label.field > span{
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+}
+
+.chip{
+  display:inline-flex; align-items:center; gap:5px; padding:1px 7px; border-radius:100px;
+  font-family:var(--f-mono); font-size:10.5px; letter-spacing:.04em; white-space:nowrap;
+  background:var(--surface-2); color:var(--ink-2); border:1px solid transparent;
+}
+.chip.fit{background:var(--fit-soft); color:var(--fit)}
+.chip.fail{background:var(--fail-soft); color:var(--fail)}
+.chip.unk{background:var(--unk-soft); color:var(--unk)}
+.chip.acc{background:var(--accent-soft); color:var(--accent)}
+.chip.demo{background:var(--unk-soft); color:var(--unk); border-color:var(--unk)}
+.chip.hard{background:var(--contour-soft); color:var(--contour)}
+
+.bars{display:inline-flex; gap:2px; align-items:flex-end; height:11px}
+.bars i{width:3px; background:var(--rule-2); border-radius:1px}
+.bars i:nth-child(1){height:5px} .bars i:nth-child(2){height:8px} .bars i:nth-child(3){height:11px}
+.bars.c3 i{background:var(--fit)}
+.bars.c2 i:nth-child(-n+2){background:var(--accent)}
+.bars.c1 i:nth-child(1){background:var(--unk)}
+.bars.c0 i{background:var(--fail); opacity:.55}
+
+.card{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r-lg); box-shadow:var(--shadow)}
+.banner{
+  display:flex; gap:12px; align-items:flex-start; padding:12px 14px; margin-bottom:18px;
+  background:var(--unk-soft); border:1px solid var(--unk); border-radius:var(--r-md); color:var(--ink);
+}
+.banner .t{font-weight:700; font-family:var(--f-display)}
+.banner .btn{flex:none; white-space:nowrap; background:var(--surface)}
+.banner p{margin:3px 0 0; color:var(--ink-2); font-size:13px}
+.empty{padding:34px 22px; text-align:center; color:var(--ink-2); border:1px dashed var(--rule-2); border-radius:var(--r-lg)}
+.empty h3{font-size:16px; margin-bottom:6px}
+
+/* ---------- poem ledger ---------- */
+.split{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:20px; align-items:start}
+.ledger{overflow:hidden}
+.stanza{border-bottom:1px solid var(--rule)}
+.stanza:last-child{border-bottom:0}
+.stanza-tag{
+  font-family:var(--f-mono); font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); padding:9px 16px 3px;
+}
+.pline{
+  display:grid; grid-template-columns:44px minmax(0,1fr) auto; gap:12px; align-items:baseline;
+  padding:9px 16px; width:100%; text-align:left; background:none; border:0; cursor:pointer;
+  border-left:3px solid transparent;
+}
+.pline:hover{background:var(--surface-2)}
+.pline[aria-selected="true"]{background:var(--accent-soft); border-left-color:var(--accent)}
+.pline .n{font-family:var(--f-mono); font-size:10.5px; color:var(--contour); letter-spacing:.03em}
+.pline .t{font-family:var(--f-display); font-size:15.5px; line-height:1.45}
+.pline .meta{display:flex; gap:5px; align-items:center; align-self:center}
+.covdots{display:inline-flex; gap:2px}
+.covdots i{width:5px; height:5px; border-radius:50%; background:var(--accent)}
+.covdots i.neg{background:var(--fail)}
+
+.panel{position:sticky; top:22px; padding:16px; display:flex; flex-direction:column; gap:14px}
+.panel h3{font-size:16px}
+.panel .qline{
+  font-family:var(--f-display); font-size:17px; line-height:1.4; padding:10px 12px;
+  background:var(--surface-2); border-left:3px solid var(--contour); border-radius:0 var(--r-md) var(--r-md) 0;
+}
+.linkrow{display:flex; gap:10px; padding:10px 0; border-top:1px solid var(--rule)}
+.linkrow .body{flex:1; min-width:0}
+.linkrow .body p{margin:0 0 5px; font-size:13px; line-height:1.5}
+.linkrow .why{font-size:12px; color:var(--ink-2); font-style:italic}
+.stancemark{width:3px; border-radius:2px; flex:none; background:var(--fit)}
+.stancemark.contradicts{background:var(--fail)}
+
+/* ---------- intel ---------- */
+.grid-intel{display:grid; gap:10px}
+.item{padding:12px 14px; display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:12px; align-items:start}
+.item .txt{font-size:14px; line-height:1.5; margin:0}
+.item .row2{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:8px}
+.item .acts{display:flex; gap:4px; flex-wrap:wrap; justify-content:flex-end}
+.src{font-family:var(--f-mono); font-size:11px; color:var(--ink-3)}
+
+.filters{display:flex; gap:8px; flex-wrap:wrap; align-items:end; margin-bottom:14px}
+.filters label.field{width:150px}
+.filters label.field.wide{flex:1 1 240px; width:auto}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:var(--r-lg); background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:13px}
+th,td{padding:8px 12px; text-align:left; border-bottom:1px solid var(--rule); vertical-align:top}
+thead th{
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-3); background:var(--surface-2); position:sticky; top:0; z-index:2; font-weight:500;
+  border-bottom:1px solid var(--rule-2);
+}
+tbody tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:right}
+
+.matrix th.corner,.matrix td.rowhead{
+  position:sticky; left:0; background:var(--surface); z-index:1; border-right:1px solid var(--rule-2); min-width:240px;
+}
+.matrix th.corner{z-index:3; background:var(--surface-2)}
+.matrix td.rowhead .t{font-family:var(--f-display); font-size:13.5px; line-height:1.35}
+.matrix td.rowhead .n{font-family:var(--f-mono); font-size:10px; color:var(--contour)}
+.matrix th:not(.corner){width:150px}
+.matrix td.cell{text-align:center; padding:4px}
+.cellbtn{
+  width:100%; min-width:56px; max-width:150px; height:30px; border:1px solid var(--rule); border-radius:var(--r-sm);
+  background:var(--surface-2); cursor:pointer; font-family:var(--f-mono); font-size:11px; color:var(--ink-3);
+}
+.cellbtn:hover{border-color:var(--ink-3)}
+.cellbtn.fit{background:var(--fit-soft); color:var(--fit); border-color:var(--fit)}
+.cellbtn.fail{background:var(--fail-soft); color:var(--fail); border-color:var(--fail)}
+
+.meter{height:6px; background:var(--surface-3); border-radius:3px; overflow:hidden; min-width:80px}
+.meter i{display:block; height:100%; background:var(--fit)}
+.meter.low i{background:var(--unk)}
+.meter.bad i{background:var(--fail)}
+
+/* ---------- dialog ---------- */
+dialog{
+  border:1px solid var(--rule-2); border-radius:var(--r-lg); background:var(--surface); color:var(--ink);
+  padding:0; max-width:640px; width:calc(100vw - 32px); box-shadow:var(--shadow-lift);
+}
+dialog::backdrop{background:rgba(12,20,16,.5)}
+.dlg-head{padding:16px 18px 0}
+.dlg-body{padding:14px 18px; display:flex; flex-direction:column; gap:12px; max-height:64vh; overflow:auto}
+.dlg-foot{padding:12px 18px; border-top:1px solid var(--rule); display:flex; gap:8px; justify-content:flex-end; background:var(--surface-2); border-radius:0 0 var(--r-lg) var(--r-lg)}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.three{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px}
+
+.sugg{display:flex; gap:10px; align-items:flex-start; padding:10px; border:1px solid var(--rule); border-radius:var(--r-md); background:var(--surface-2)}
+.sugg .body{flex:1; min-width:0}
+.sugg .body .ln{font-family:var(--f-display); font-size:14px; line-height:1.4}
+.sugg .body .why{font-size:12px; color:var(--ink-2); margin-top:3px}
+
+.toast{
+  position:fixed; left:50%; bottom:22px; transform:translateX(-50%);
+  background:var(--ink); color:var(--ground); padding:9px 16px; border-radius:100px;
+  font-size:13px; box-shadow:var(--shadow-lift); z-index:99; max-width:calc(100vw - 32px);
+}
+
+.hint{font-size:12px; color:var(--ink-3)}
+.tagline{display:flex; gap:5px; flex-wrap:wrap}
+
+@media (max-width:1080px){ .split{grid-template-columns:1fr} .panel{position:static} }
+@media (max-width:800px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static; height:auto; border-right:0; border-bottom:1px solid var(--rule)}
+  .nav{flex-direction:row; overflow-x:auto}
+  .nav .count{display:none}
+  .gauge{margin:0 10px 10px}
+  .main{padding:16px}
+  .two,.three{grid-template-columns:1fr}
+}
+</style>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">
+      <h1>Map's Edge Workbench</h1>
+      <div class="sub">Posey Hunt · Solve Ledger</div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="gauge">
+      <div class="lbl">Poem coverage</div>
+      <div class="big" id="gCov">—</div>
+      <div class="scalebar"><i id="gBar1"></i><i id="gBar2"></i></div>
+      <div class="foot" id="gFoot">No poem loaded</div>
+    </div>
+    <div class="syncline"><span class="dot" id="syncDot"></span><span id="syncTxt">Starting…</span></div>
+  </aside>
+  <main class="main" id="view"></main>
+</div>
+
+<dialog id="dlg"><form method="dialog" id="dlgForm">
+  <div class="dlg-head"><h2 id="dlgTitle">—</h2></div>
+  <div class="dlg-body" id="dlgBody"></div>
+  <div class="dlg-foot" id="dlgFoot"></div>
+</form></dialog>
+
+<script>
+"use strict";
+
+/* ============================ constants ============================ */
+
+const KINDS = [
+  ["book",       "Book text"],
+  ["statement",  "Posey statement"],
+  ["map",        "Map / geodata"],
+  ["field",      "Field report"],
+  ["math",       "Cipher / math"],
+  ["community",  "Community claim"],
+  ["speculation","My own theory"],
+];
+const CONF = [
+  ["confirmed",  "Confirmed",  3],
+  ["likely",     "Likely",     2],
+  ["unverified", "Unverified", 1],
+  ["disputed",   "Disputed",   0],
+];
+const KIND_LABEL = Object.fromEntries(KINDS);
+const CONF_LABEL = Object.fromEntries(CONF.map(c => [c[0], c[1]]));
+const CONF_RANK  = Object.fromEntries(CONF.map(c => [c[0], c[2]]));
+
+/* Terms that carry locational weight in a Rocky Mountain poem. Boosted by
+   the local matcher so "put in below the second bend" binds to a water line
+   rather than to whichever line happens to share the word "the". */
+const LEXICON = new Set(`
+water waters river creek crick stream brook fork confluence draw drainage canyon
+gorge gulch ravine coulee arroyo wash spring springs seep hotspring geyser falls
+cascade rapids eddy pool lake pond reservoir tarn marsh meadow park bench mesa
+plateau ridge divide saddle col pass notch gap summit peak point butte dome
+spire crag cliff face wall talus scree basin cirque glacier snowfield moraine
+timber woods forest grove aspen pine spruce fir cottonwood willow sage
+trail road track path ford crossing bridge blaze cairn marker monument
+mine shaft adit claim tunnel cabin homestead ranch corral fence gate
+north south east west up down above below under over left right high low
+begin start halt cease stop tarry rest wait end finish
+warm cold cool hot hidden secret dark light shadow sun moon
+brown home nigh meek quest gold treasure chest bronze
+mile miles feet foot yard yards elevation contour bearing degrees minutes
+morning evening dawn dusk noon summer winter autumn spring
+`.trim().split(/\s+/));
+
+const STOP = new Set(`
+a an the and or but if of to in on at by for with from as is are was were be been
+being it its it's this that these those i me my we our you your he she they them
+there here not no yes do does did done have has had will would can could should
+so than then when where which who whom what how why all any some more most other
+into out about over under again once very just also too only own same s t don
+`.trim().split(/\s+/));
+
+/* ============================ state ============================ */
+
+const state = {
+  poemTitle: "",
+  poemRaw: "",
+  lines: [],       // {id, stanza, text, hard, note}
+  intel: [],       // {id, text, kind, conf, source, tags[], created, links:[{lineId,stance,weight,why}]}
+  candidates: [],  // {id, name, region, coords, elev, notes, verdicts:{lineId:'fit'|'fail'}, created}
+  route: "poem",
+  selectedLine: null,
+  filter: { q: "", kind: "", conf: "", line: "" },
+  usingDemo: false,
+};
+
+let db = null, downloads = null, sampler = null;
+let ready = false;                 // true once db has answered (or timed out)
+const writeTimers = new Map();
+
+/* ============================ demo workspace ============================ */
+/* Shown only while the store is empty, so the board is never a blank shell.
+   Nothing here is from the real hunt — it is a worked example of the shape. */
+
+function demoData() {
+  const raw = [
+    "Begin where two cold waters meet,",
+    "and walk the shadow to its end.",
+    "",
+    "No place for the weary or the fleet,",
+    "the blaze is what you must attend.",
+  ].join("\n");
+  const lines = parseLines(raw, []);
+  const L = lines.map(l => l.id);
+  return {
+    poemTitle: "Sample stanza (not the real poem)",
+    poemRaw: raw,
+    lines: lines.map((l, i) => ({ ...l, hard: i === 0 })),
+    intel: [
+      { id:"d1", text:"Sample: the hunt area is limited to the Rocky Mountains — no site outside that range qualifies.",
+        kind:"statement", conf:"confirmed", source:"Sample source", tags:["scope"], created:0,
+        links:[{lineId:L[0], stance:"supports", weight:3, why:"Bounds where a confluence can be looked for."}] },
+      { id:"d2", text:"Sample: two named creeks join at 8,140 ft on the quad sheet; both are snow-fed and run cold into July.",
+        kind:"map", conf:"likely", source:"Sample USGS quad", tags:["confluence","elevation"], created:0,
+        links:[{lineId:L[0], stance:"supports", weight:3, why:"Direct read of 'two cold waters meet'."}] },
+      { id:"d3", text:"Sample: a lightning-scarred snag stands 40 yards north of the meadow edge — visible from the bench above.",
+        kind:"field", conf:"unverified", source:"Sample field note", tags:["blaze"], created:0,
+        links:[{lineId:L[3], stance:"supports", weight:2, why:"Candidate physical blaze."}] },
+      { id:"d4", text:"Sample: the access road is gated April–June, so an approach on foot is more than a day's walk.",
+        kind:"field", conf:"likely", source:"Sample forest order", tags:["access"], created:0,
+        links:[{lineId:L[2], stance:"contradicts", weight:2, why:"Cuts against a site reachable by the merely fleet."}] },
+    ],
+    candidates: [
+      { id:"c1", name:"Sample — North Fork confluence", region:"WY", coords:"44.1180, -110.4402", elev:"8,140 ft",
+        notes:"Worked example. Replace with your own site.", created:0,
+        verdicts:{ [L[0]]:"fit", [L[1]]:"fit", [L[3]]:"fit" } },
+      { id:"c2", name:"Sample — Lower meadow bench", region:"MT", coords:"45.0021, -111.2210", elev:"7,020 ft",
+        notes:"Worked example. Fails the hard line, so it shows as ruled out.", created:0,
+        verdicts:{ [L[0]]:"fail", [L[3]]:"fit" } },
+    ],
+  };
+}
+
+/* ============================ persistence ============================ */
+
+const uid = p => p + "_" + Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-4);
+
+function setSync(cls, txt) {
+  const d = document.getElementById("syncDot"), t = document.getElementById("syncTxt");
+  if (d) d.className = "dot " + cls;
+  if (t) t.textContent = txt;
+}
+
+/* Coalesce rapid edits into one write per document. */
+function queueWrite(path, body) {
+  if (!db) { setSync("off", "Local only — not saved"); return; }
+  clearTimeout(writeTimers.get(path));
+  writeTimers.set(path, setTimeout(async () => {
+    setSync("busy", "Saving…");
+    try {
+      await db.doc(path).set(body);
+      setSync("ok", "Saved " + new Date().toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"}));
+    } catch (e) {
+      if (e && e.code === "quota_exceeded") setSync("off", "Store full — export and prune");
+      else if (e && e.code === "revoked") setSync("off", "Access ended — export your work");
+      else setSync("off", "Save failed — export a backup");
+    }
+  }, 350));
+}
+
+const savePoem   = () => queueWrite("poem/doc",  { title: state.poemTitle, raw: state.poemRaw, lines: state.lines });
+const saveIntel  = it => queueWrite("intel/" + it.id, it);
+const saveCand   = c  => queueWrite("candidates/" + c.id, c);
+const dropDoc    = async path => { try { if (db) await db.doc(path).delete(); } catch (e) {} };
+
+async function connect() {
+  try { db = await claude.use("db"); } catch (e) { db = null; }
+  try { downloads = await claude.use("downloads"); } catch (e) { downloads = null; }
+  try { sampler = await claude.use("sample"); } catch (e) { sampler = null; }
+
+  if (!db) {
+    ready = true;
+    setSync("off", "Local only — export to keep");
+    loadDemoIfEmpty();
+    render();
+    return;
+  }
+  setSync("busy", "Connecting…");
+  db.doc("poem/doc").onSnapshot(snap => {
+    if (!snap.exists) { afterLoad(); return; }
+    const d = snap.data() || {};
+    state.poemTitle = d.title || "";
+    state.poemRaw = d.raw || "";
+    state.lines = Array.isArray(d.lines) ? d.lines.map(l => ({ ...l })) : [];
+    state.usingDemo = false;
+    afterLoad();
+  }, () => setSync("off", "Sync stopped — export a backup"));
+
+  db.collection("intel").onSnapshot(snap => {
+    const rows = snap.docs.map(d => ({ id: d.id, ...(d.data() || {}) }));
+    if (rows.length) { state.intel = rows; state.usingDemo = false; }
+    else if (!state.usingDemo) state.intel = [];
+    afterLoad();
+  }, () => {});
+
+  db.collection("candidates").onSnapshot(snap => {
+    const rows = snap.docs.map(d => ({ id: d.id, ...(d.data() || {}) }));
+    if (rows.length) { state.candidates = rows; state.usingDemo = false; }
+    else if (!state.usingDemo) state.candidates = [];
+    afterLoad();
+  }, () => {});
+
+  setTimeout(afterLoad, 2500);
+}
+
+function afterLoad() {
+  const empty = !state.lines.length && !state.intel.length && !state.candidates.length;
+  if (!ready) { ready = true; if (db) setSync("ok", "Synced"); }
+  if (empty) loadDemoIfEmpty(); else state.usingDemo = state.usingDemo && empty;
+  render();
+}
+
+function loadDemoIfEmpty() {
+  if (state.lines.length || state.intel.length || state.candidates.length) return;
+  const d = demoData();
+  Object.assign(state, d);
+  state.usingDemo = true;
+  state.selectedLine = state.lines[0] ? state.lines[0].id : null;
+}
+
+/* Clear the worked example the moment the user contributes anything real. */
+function leaveDemo() {
+  if (!state.usingDemo) return;
+  state.usingDemo = false;
+  state.poemTitle = ""; state.poemRaw = ""; state.lines = [];
+  state.intel = []; state.candidates = []; state.selectedLine = null;
+}
+
+/* ============================ poem parsing ============================ */
+
+/* Re-parsing keeps a line's id when its text is unchanged, so links and
+   verdicts survive a fix-up of the poem rather than becoming orphans. */
+function parseLines(raw, previous) {
+  const pool = new Map();
+  (previous || []).forEach(l => {
+    const k = norm(l.text);
+    if (!pool.has(k)) pool.set(k, []);
+    pool.get(k).push(l);
+  });
+  const out = [];
+  let stanza = 1, blank = false;
+  raw.split(/\r?\n/).forEach(rawLine => {
+    const text = rawLine.trim();
+    if (!text) { if (out.length) blank = true; return; }
+    if (blank) { stanza++; blank = false; }
+    const k = norm(text);
+    const reuse = pool.get(k) && pool.get(k).length ? pool.get(k).shift() : null;
+    out.push({
+      id: reuse ? reuse.id : uid("l"),
+      stanza,
+      text,
+      hard: reuse ? !!reuse.hard : false,
+      note: reuse ? (reuse.note || "") : "",
+    });
+  });
+  return out;
+}
+
+const norm = s => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+const stem = w => w.replace(/(ing|ed|es|s)$/, "");
+
+function tokens(s) {
+  return norm(s).split(" ").filter(w => w.length > 2 && !STOP.has(w)).map(stem);
+}
+
+/* ============================ local matcher ============================ */
+
+function suggestLines(text, limit) {
+  const t = tokens(text);
+  if (!t.length || !state.lines.length) return [];
+  const freq = new Map();
+  state.lines.forEach(l => new Set(tokens(l.text)).forEach(w => freq.set(w, (freq.get(w) || 0) + 1)));
+  const N = state.lines.length;
+  const seen = new Set(t);
+  const scored = state.lines.map(l => {
+    const lt = new Set(tokens(l.text));
+    let score = 0, hits = [];
+    seen.forEach(w => {
+      if (!lt.has(w)) return;
+      const idf = Math.log(1 + N / (1 + (freq.get(w) || 0)));   // rare shared words count for more
+      const boost = LEXICON.has(w) ? 2.2 : 1;                    // locational vocabulary counts for most
+      score += (0.6 + idf) * boost;
+      hits.push(w);
+    });
+    return { line: l, score, hits };
+  }).filter(s => s.score > 0);
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, limit || 4);
+}
+
+/* ============================ derived ============================ */
+
+function linksFor(lineId) {
+  const out = [];
+  state.intel.forEach(it => (it.links || []).forEach(k => { if (k.lineId === lineId) out.push({ it, link: k }); }));
+  return out.sort((a, b) => (CONF_RANK[b.it.conf] || 0) - (CONF_RANK[a.it.conf] || 0));
+}
+
+function coverage() {
+  const total = state.lines.length;
+  if (!total) return { total: 0, covered: 0, pct: 0, contested: 0 };
+  let covered = 0, contested = 0;
+  state.lines.forEach(l => {
+    const ls = linksFor(l.id);
+    if (ls.length) covered++;
+    if (ls.some(x => x.link.stance === "supports") && ls.some(x => x.link.stance === "contradicts")) contested++;
+  });
+  return { total, covered, pct: Math.round(covered / total * 100), contested };
+}
+
+function scoreCandidate(c) {
+  const v = c.verdicts || {};
+  let fit = 0, fail = 0, hardFail = 0;
+  state.lines.forEach(l => {
+    if (v[l.id] === "fit") fit++;
+    else if (v[l.id] === "fail") { fail++; if (l.hard) hardFail++; }
+  });
+  const judged = fit + fail;
+  const unknown = state.lines.length - judged;
+  const pct = judged ? Math.round(fit / judged * 100) : 0;
+  return { fit, fail, unknown, judged, pct, hardFail, ruledOut: hardFail > 0 };
+}
+
+/* ============================ render ============================ */
+
+const VIEWS = [
+  ["poem",       "Poem",       l => l.lines.length],
+  ["intel",      "Intel",      l => l.intel.length],
+  ["candidates", "Candidates", l => l.candidates.length],
+  ["matrix",     "Matrix",     l => l.candidates.length * (l.lines.length ? 1 : 0)],
+  ["data",       "Data",       () => ""],
+];
+
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+
+function render() {
+  renderNav();
+  renderGauge();
+  const el = document.getElementById("view");
+  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, data: viewData }[state.route];
+  el.innerHTML = fn();
+  wire();
+  el.scrollTop = 0;
+}
+
+function renderNav() {
+  document.getElementById("nav").innerHTML = VIEWS.map(([id, label, count], i) => `
+    <button data-route="${id}" ${state.route === id ? 'aria-current="page"' : ""}>
+      <span class="k">${i + 1}</span><span>${label}</span>
+      <span class="count">${count(state) || ""}</span>
+    </button>`).join("");
+}
+
+function renderGauge() {
+  const c = coverage();
+  document.getElementById("gCov").textContent = c.total ? c.pct + "%" : "—";
+  document.getElementById("gBar1").style.flex = c.covered || 0;
+  document.getElementById("gBar2").style.flex = Math.max(0, c.total - c.covered);
+  document.getElementById("gFoot").textContent = c.total
+    ? `${c.covered} of ${c.total} lines have intel` + (c.contested ? ` · ${c.contested} contested` : "")
+    : "No poem loaded";
+}
+
+function demoBanner() {
+  if (!state.usingDemo) return "";
+  return `<div class="banner">
+    <div>
+      <div class="t">Worked example — none of this is from the real hunt</div>
+      <p>The poem, intel and sites below are placeholders so you can see how the pieces fit. Paste the real poem or add your first intel item and the examples clear themselves.</p>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn sm" data-act="clear-demo">Clear examples</button>
+  </div>`;
+}
+
+/* ---------- view: poem ---------- */
+
+function viewPoem() {
+  if (!state.lines.length) {
+    return `<div class="viewhead"><div><div class="eyebrow">Section 1</div><h2>The poem</h2></div></div>
+      <p class="lede">Everything else in the workbench hangs off these lines. Paste the poem once and each line becomes a slot that intel and candidate sites can be matched against.</p>
+      <div class="empty"><h3>No poem yet</h3><p>Paste it in — blank lines become stanza breaks.</p>
+      <button class="btn primary" data-act="edit-poem">Paste the poem</button></div>`;
+  }
+
+  let ledger = "", stanza = 0;
+  state.lines.forEach((l, i) => {
+    if (l.stanza !== stanza) {
+      if (stanza) ledger += "</div>";
+      stanza = l.stanza;
+      ledger += `<div class="stanza"><div class="stanza-tag">Stanza ${stanza}</div>`;
+    }
+    const ls = linksFor(l.id);
+    const dots = ls.slice(0, 6).map(x => `<i class="${x.link.stance === "contradicts" ? "neg" : ""}"></i>`).join("");
+    ledger += `<button class="pline" data-line="${l.id}" aria-selected="${state.selectedLine === l.id}">
+      <span class="n">L${String(i + 1).padStart(2, "0")}</span>
+      <span class="t">${esc(l.text)}</span>
+      <span class="meta">
+        ${l.hard ? '<span class="chip hard">hard</span>' : ""}
+        ${ls.length ? `<span class="covdots">${dots}</span>` : '<span class="chip">0</span>'}
+      </span>
+    </button>`;
+  });
+  ledger += "</div>";
+
+  const sel = state.lines.find(l => l.id === state.selectedLine) || state.lines[0];
+  state.selectedLine = sel.id;
+  const idx = state.lines.indexOf(sel) + 1;
+  const ls = linksFor(sel.id);
+  const sup = ls.filter(x => x.link.stance === "supports").length;
+  const con = ls.length - sup;
+
+  const panel = `<div class="card panel">
+    <div>
+      <div class="eyebrow">Line L${String(idx).padStart(2, "0")} · Stanza ${sel.stanza}</div>
+      <div class="qline">${esc(sel.text)}</div>
+    </div>
+    <div class="toolbar" style="margin:0">
+      <button class="btn sm" data-act="toggle-hard" data-line="${sel.id}">${sel.hard ? "Unset hard constraint" : "Mark hard constraint"}</button>
+      <button class="btn sm primary" data-act="add-intel-for" data-line="${sel.id}">Add intel here</button>
+    </div>
+    <label class="field"><span>Your reading of this line</span>
+      <textarea rows="3" data-note="${sel.id}" placeholder="What do you think it instructs? Keep the working theory with the line.">${esc(sel.note || "")}</textarea></label>
+    <div>
+      <div class="eyebrow" style="margin-bottom:6px">Matched intel · ${sup} supporting · ${con} against</div>
+      ${ls.length ? ls.map(x => `
+        <div class="linkrow">
+          <span class="stancemark ${x.link.stance}"></span>
+          <div class="body">
+            <p>${esc(x.it.text)}</p>
+            ${x.link.why ? `<div class="why">${esc(x.link.why)}</div>` : ""}
+            <div class="row2">
+              <span class="chip">${esc(KIND_LABEL[x.it.kind] || x.it.kind || "note")}</span>
+              <span class="chip ${x.it.conf === "disputed" ? "fail" : x.it.conf === "confirmed" ? "fit" : ""}">${esc(CONF_LABEL[x.it.conf] || "")}</span>
+              ${x.it.source ? `<span class="src">${esc(x.it.source)}</span>` : ""}
+              <span class="spacer"></span>
+              <button class="btn ghost sm" data-act="unlink" data-intel="${x.it.id}" data-line="${sel.id}">Unlink</button>
+            </div>
+          </div>
+        </div>`).join("")
+      : `<div class="hint">Nothing matched to this line yet. Add intel, or open an item in the Intel view and match it here.</div>`}
+    </div>
+  </div>`;
+
+  return `${demoBanner()}
+    <div class="viewhead">
+      <div><div class="eyebrow">Section 1</div><h2>${esc(state.poemTitle || "The poem")}</h2></div>
+      <div class="spacer"></div>
+      <button class="btn" data-act="edit-poem">Edit poem</button>
+    </div>
+    <p class="lede">Click a line to see everything you have gathered against it. A <span class="chip hard">hard</span> line is one you treat as non-negotiable — any site that fails it is ruled out on the Candidates board.</p>
+    <div class="split"><div class="card ledger">${ledger}</div>${panel}</div>`;
+}
+
+/* ---------- view: intel ---------- */
+
+function viewIntel() {
+  const f = state.filter;
+  const q = norm(f.q);
+  const rows = state.intel.filter(it => {
+    if (f.kind && it.kind !== f.kind) return false;
+    if (f.conf && it.conf !== f.conf) return false;
+    if (f.line === "__none") { if ((it.links || []).length) return false; }
+    else if (f.line && !(it.links || []).some(k => k.lineId === f.line)) return false;
+    if (q && !norm(it.text + " " + (it.source || "") + " " + (it.tags || []).join(" ")).includes(q)) return false;
+    return true;
+  }).sort((a, b) => (b.created || 0) - (a.created || 0));
+
+  const lineOpts = state.lines.map((l, i) =>
+    `<option value="${l.id}" ${f.line === l.id ? "selected" : ""}>L${String(i+1).padStart(2,"0")} — ${esc(l.text.slice(0, 40))}</option>`).join("");
+
+  const unmatched = state.intel.filter(it => !(it.links || []).length).length;
+
+  return `${demoBanner()}
+    <div class="viewhead">
+      <div><div class="eyebrow">Section 2</div><h2>Intel</h2></div>
+      <div class="spacer"></div>
+      <button class="btn" data-act="bulk">Paste a batch</button>
+      <button class="btn primary" data-act="add-intel">Add intel</button>
+    </div>
+    <p class="lede">Every fact, quote, measurement and hunch, each one tied to the poem lines it bears on. ${unmatched ? `<strong>${unmatched}</strong> item${unmatched===1?" is":"s are"} still unmatched.` : "Everything here is matched to at least one line."}</p>
+
+    <div class="filters">
+      <label class="field wide"><span>Search</span><input type="search" data-filter="q" value="${esc(f.q)}" placeholder="Text, source or tag"></label>
+      <label class="field"><span>Kind</span><select data-filter="kind"><option value="">All kinds</option>
+        ${KINDS.map(([v, l]) => `<option value="${v}" ${f.kind===v?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field"><span>Confidence</span><select data-filter="conf"><option value="">Any</option>
+        ${CONF.map(([v, l]) => `<option value="${v}" ${f.conf===v?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field wide"><span>Matched to</span><select data-filter="line"><option value="">Any line</option>
+        <option value="__none" ${f.line==="__none"?"selected":""}>Unmatched only</option>${lineOpts}</select></label>
+    </div>
+
+    ${rows.length ? `<div class="grid-intel">${rows.map(intelCard).join("")}</div>`
+      : `<div class="empty"><h3>Nothing matches</h3><p>${state.intel.length ? "Loosen the filters above." : "Add your first item, or paste a batch of notes."}</p></div>`}`;
+}
+
+function intelCard(it) {
+  const links = (it.links || []).map(k => {
+    const i = state.lines.findIndex(l => l.id === k.lineId);
+    if (i < 0) return "";
+    return `<span class="chip ${k.stance === "contradicts" ? "fail" : "acc"}" title="${esc(state.lines[i].text)}">${k.stance === "contradicts" ? "✕" : "→"} L${String(i+1).padStart(2,"0")}</span>`;
+  }).join("");
+  const rank = CONF_RANK[it.conf] == null ? 1 : CONF_RANK[it.conf];
+  return `<article class="card item">
+    <span class="bars c${rank}" title="${esc(CONF_LABEL[it.conf] || "")}"><i></i><i></i><i></i></span>
+    <div>
+      <p class="txt">${esc(it.text)}</p>
+      <div class="row2">
+        <span class="chip">${esc(KIND_LABEL[it.kind] || it.kind || "note")}</span>
+        ${it.source ? `<span class="src">${esc(it.source)}</span>` : ""}
+        ${(it.tags || []).map(t => `<span class="chip">#${esc(t)}</span>`).join("")}
+        ${links || '<span class="chip unk">unmatched</span>'}
+      </div>
+    </div>
+    <div class="acts">
+      <button class="btn sm" data-act="match" data-intel="${it.id}">Match</button>
+      <button class="btn ghost sm" data-act="edit-intel" data-intel="${it.id}">Edit</button>
+      <button class="btn ghost sm" data-act="del-intel" data-intel="${it.id}">Delete</button>
+    </div>
+  </article>`;
+}
+
+/* ---------- view: candidates ---------- */
+
+function viewCandidates() {
+  const rows = state.candidates.map(c => ({ c, s: scoreCandidate(c) }))
+    .sort((a, b) => (a.s.ruledOut - b.s.ruledOut) || (b.s.pct - a.s.pct) || (b.s.fit - a.s.fit));
+
+  return `${demoBanner()}
+    <div class="viewhead">
+      <div><div class="eyebrow">Section 3</div><h2>Candidate sites</h2></div>
+      <div class="spacer"></div>
+      <button class="btn primary" data-act="add-cand">Add a site</button>
+    </div>
+    <p class="lede">Each site is judged line by line. Fit rate counts only the lines you have actually judged, so a site you have barely worked does not flatter itself with a high score.</p>
+    ${rows.length ? `<div class="tablewrap"><table>
+      <thead><tr>
+        <th>Site</th><th>Where</th><th>Fit rate</th><th class="num">Fits</th><th class="num">Fails</th><th class="num">Unjudged</th><th></th>
+      </tr></thead>
+      <tbody>${rows.map(({ c, s }) => `
+        <tr>
+          <td>
+            <strong>${esc(c.name)}</strong>
+            ${s.ruledOut ? '<span class="chip fail" style="margin-left:6px">ruled out</span>' : ""}
+            ${c.notes ? `<div class="hint" style="margin-top:3px">${esc(c.notes)}</div>` : ""}
+          </td>
+          <td>
+            <div>${esc(c.region || "—")}</div>
+            ${c.coords ? `<div class="src">${esc(c.coords)}</div>` : ""}
+            ${c.elev ? `<div class="src">${esc(c.elev)}</div>` : ""}
+          </td>
+          <td>
+            <div class="meter ${s.pct >= 70 ? "" : s.pct >= 40 ? "low" : "bad"}"><i style="width:${s.judged ? s.pct : 0}%"></i></div>
+            <div class="src" style="margin-top:3px">${s.judged ? s.pct + "% of " + s.judged + " judged" : "not judged"}</div>
+          </td>
+          <td class="num">${s.fit}</td>
+          <td class="num">${s.fail}${s.hardFail ? ` <span class="chip fail">${s.hardFail} hard</span>` : ""}</td>
+          <td class="num">${s.unknown}</td>
+          <td style="white-space:nowrap">
+            <button class="btn sm" data-act="judge" data-cand="${c.id}">Judge lines</button>
+            <button class="btn ghost sm" data-act="edit-cand" data-cand="${c.id}">Edit</button>
+            <button class="btn ghost sm" data-act="del-cand" data-cand="${c.id}">Delete</button>
+          </td>
+        </tr>`).join("")}</tbody></table></div>`
+      : `<div class="empty"><h3>No sites yet</h3><p>Add a place you are considering and judge it against the poem.</p></div>`}`;
+}
+
+/* ---------- view: matrix ---------- */
+
+function viewMatrix() {
+  if (!state.lines.length || !state.candidates.length) {
+    return `<div class="viewhead"><div><div class="eyebrow">Section 4</div><h2>Line-by-site matrix</h2></div></div>
+      <div class="empty"><h3>Needs a poem and at least one site</h3><p>The matrix compares every line against every candidate at once.</p></div>`;
+  }
+  const cands = state.candidates.map(c => ({ c, s: scoreCandidate(c) }))
+    .sort((a, b) => (a.s.ruledOut - b.s.ruledOut) || (b.s.pct - a.s.pct));
+
+  return `${demoBanner()}
+    <div class="viewhead"><div><div class="eyebrow">Section 4</div><h2>Line-by-site matrix</h2></div></div>
+    <p class="lede">Click any cell to cycle it: unjudged → fit → fail. Read down a column to see how a site holds up; read across a row to see which line is doing the eliminating.</p>
+    <div class="tablewrap"><table class="matrix">
+      <thead><tr><th class="corner">Poem line</th>
+        ${cands.map(({ c, s }) => `<th>${esc(c.name)}${s.ruledOut ? '<br><span class="chip fail">ruled out</span>' : ""}</th>`).join("")}
+      </tr></thead>
+      <tbody>${state.lines.map((l, i) => `
+        <tr>
+          <td class="rowhead">
+            <div class="n">L${String(i+1).padStart(2,"0")}${l.hard ? " · HARD" : ""}</div>
+            <div class="t">${esc(l.text)}</div>
+          </td>
+          ${cands.map(({ c }) => {
+            const v = (c.verdicts || {})[l.id] || "";
+            return `<td class="cell"><button class="cellbtn ${v}" data-act="cycle" data-cand="${c.id}" data-line="${l.id}">${v === "fit" ? "fit" : v === "fail" ? "fail" : "·"}</button></td>`;
+          }).join("")}
+        </tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
+/* ---------- view: data ---------- */
+
+function viewData() {
+  const c = coverage();
+  return `${demoBanner()}
+    <div class="viewhead"><div><div class="eyebrow">Section 5</div><h2>Data</h2></div></div>
+    <p class="lede">Your work lives in this artifact's store and syncs across your devices. Export anyway — a backup you hold is a backup you keep.</p>
+
+    <div class="two">
+      <div class="card" style="padding:16px">
+        <h3>Take it with you</h3>
+        <p class="hint" style="margin:6px 0 12px">A full JSON snapshot: poem, intel, links and sites.</p>
+        <div class="toolbar" style="margin:0">
+          <button class="btn primary" data-act="export">Download JSON</button>
+          <button class="btn" data-act="import">Import JSON</button>
+          <input type="file" accept=".json,application/json" id="importFile" hidden>
+        </div>
+      </div>
+      <div class="card" style="padding:16px">
+        <h3>Hand it back to Claude</h3>
+        <p class="hint" style="margin:6px 0 12px">A Markdown brief of the whole board — paste it into a chat when you want a second read.</p>
+        <div class="toolbar" style="margin:0">
+          <button class="btn" data-act="brief">Copy brief to clipboard</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:16px; margin-top:16px">
+      <h3>Where things stand</h3>
+      <div class="tablewrap" style="margin-top:10px; border:0">
+        <table>
+          <tbody>
+            <tr><td>Poem lines</td><td class="num">${state.lines.length}</td></tr>
+            <tr><td>Lines with intel</td><td class="num">${c.covered} (${c.pct}%)</td></tr>
+            <tr><td>Contested lines — supporting and opposing intel on the same line</td><td class="num">${c.contested}</td></tr>
+            <tr><td>Hard constraints</td><td class="num">${state.lines.filter(l => l.hard).length}</td></tr>
+            <tr><td>Intel items</td><td class="num">${state.intel.length}</td></tr>
+            <tr><td>Unmatched intel</td><td class="num">${state.intel.filter(i => !(i.links || []).length).length}</td></tr>
+            <tr><td>Candidate sites</td><td class="num">${state.candidates.length}</td></tr>
+            <tr><td>Sites ruled out by a hard line</td><td class="num">${state.candidates.filter(x => scoreCandidate(x).ruledOut).length}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="padding:16px; margin-top:16px">
+      <h3>Start over</h3>
+      <p class="hint" style="margin:6px 0 12px">Deletes the poem, all intel and all sites from the store. Export first.</p>
+      <button class="btn danger" data-act="wipe">Erase everything</button>
+    </div>`;
+}
+
+/* ============================ dialogs ============================ */
+
+const dlg = document.getElementById("dlg");
+let dlgSubmit = null;
+
+function openDialog(title, bodyHTML, footHTML, onSubmit) {
+  document.getElementById("dlgTitle").textContent = title;
+  document.getElementById("dlgBody").innerHTML = bodyHTML;
+  document.getElementById("dlgFoot").innerHTML = footHTML ||
+    `<button class="btn ghost" value="cancel">Cancel</button><button class="btn primary" value="ok">Save</button>`;
+  dlgSubmit = onSubmit;
+  dlg.showModal();
+  const first = dlg.querySelector("textarea, input, select");
+  if (first) setTimeout(() => first.focus(), 30);
+}
+
+dlg.addEventListener("close", () => {
+  if (dlg.returnValue === "ok" && dlgSubmit) dlgSubmit();
+  dlgSubmit = null;
+});
+
+function val(sel) { const el = dlg.querySelector(sel); return el ? el.value.trim() : ""; }
+
+function editPoemDialog() {
+  openDialog("The poem", `
+    <label class="field"><span>Title (optional)</span>
+      <input type="text" id="pTitle" value="${esc(state.poemTitle)}" placeholder="e.g. Beyond the Map's Edge — the poem"></label>
+    <label class="field"><span>Poem text — one line per line, blank line between stanzas</span>
+      <textarea id="pRaw" rows="14" placeholder="Paste the poem here.">${esc(state.poemRaw)}</textarea></label>
+    <p class="hint">Editing keeps every match: a line whose words you leave unchanged keeps its id, its intel and its verdicts.</p>
+  `, null, () => {
+    const raw = val("#pRaw");
+    if (!raw) return;
+    leaveDemoIfNeeded();
+    state.poemTitle = val("#pTitle");
+    state.poemRaw = raw;
+    state.lines = parseLines(raw, state.lines);
+    state.selectedLine = state.lines[0] ? state.lines[0].id : null;
+    savePoem();
+    toast(`Poem set — ${state.lines.length} lines`);
+    render();
+  });
+}
+
+function leaveDemoIfNeeded() {
+  if (state.usingDemo) leaveDemo();
+}
+
+function intelDialog(existing, presetLine) {
+  const it = existing || { text:"", kind:"statement", conf:"unverified", source:"", tags:[], links:[] };
+  openDialog(existing ? "Edit intel" : "Add intel", `
+    <label class="field"><span>What do you know?</span>
+      <textarea id="iText" rows="4" placeholder="One fact, quote or measurement.">${esc(it.text)}</textarea></label>
+    <div class="three">
+      <label class="field"><span>Kind</span><select id="iKind">${KINDS.map(([v,l]) => `<option value="${v}" ${it.kind===v?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field"><span>Confidence</span><select id="iConf">${CONF.map(([v,l]) => `<option value="${v}" ${it.conf===v?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field"><span>Tags — comma separated</span><input type="text" id="iTags" value="${esc((it.tags||[]).join(", "))}" placeholder="blaze, water"></label>
+    </div>
+    <label class="field"><span>Source</span>
+      <input type="text" id="iSource" value="${esc(it.source || "")}" placeholder="Book p. 41 · interview · quad sheet · your own field visit"></label>
+    <p class="hint">Save it, then use <strong>Match</strong> to bind it to poem lines — by hand or with a suggested read.</p>
+  `, null, () => {
+    const text = val("#iText");
+    if (!text) return;
+    leaveDemoIfNeeded();
+    const rec = {
+      id: existing ? existing.id : uid("i"),
+      text,
+      kind: val("#iKind"),
+      conf: val("#iConf"),
+      source: val("#iSource"),
+      tags: val("#iTags").split(",").map(s => s.trim()).filter(Boolean),
+      links: existing ? (existing.links || []) : [],
+      created: existing ? (existing.created || Date.now()) : Date.now(),
+    };
+    if (presetLine) rec.links = rec.links.concat([{ lineId: presetLine, stance: "supports", weight: 2, why: "" }]);
+    upsertIntel(rec);
+    render();
+    if (!existing) matchDialog(rec.id);
+  });
+}
+
+function upsertIntel(rec) {
+  const i = state.intel.findIndex(x => x.id === rec.id);
+  if (i >= 0) state.intel[i] = rec; else state.intel.push(rec);
+  saveIntel(rec);
+}
+
+function bulkDialog() {
+  openDialog("Paste a batch", `
+    <label class="field"><span>Notes — one item per line</span>
+      <textarea id="bText" rows="10" placeholder="Paste your notes. Each line becomes its own intel item."></textarea></label>
+    <div class="three">
+      <label class="field"><span>Kind for all</span><select id="bKind">${KINDS.map(([v,l]) => `<option value="${v}" ${v==="statement"?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field"><span>Confidence for all</span><select id="bConf">${CONF.map(([v,l]) => `<option value="${v}" ${v==="unverified"?"selected":""}>${l}</option>`).join("")}</select></label>
+      <label class="field"><span>Source for all</span><input type="text" id="bSource" placeholder="Where this batch came from"></label>
+    </div>
+    <label style="display:flex; gap:8px; align-items:center; font-size:13px">
+      <input type="checkbox" id="bAuto" checked style="width:auto"> Suggest a poem line for each item as it lands
+    </label>
+  `, null, () => {
+    const lines = val("#bText").split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+    if (!lines.length) return;
+    leaveDemoIfNeeded();
+    const kind = val("#bKind"), conf = val("#bConf"), source = val("#bSource");
+    const auto = dlg.querySelector("#bAuto") && dlg.querySelector("#bAuto").checked;
+    let matched = 0;
+    lines.forEach((text, n) => {
+      const rec = { id: uid("i"), text, kind, conf, source, tags: [], links: [], created: Date.now() + n };
+      if (auto) {
+        const top = suggestLines(text, 1)[0];
+        if (top && top.score >= 2.2) { rec.links = [{ lineId: top.line.id, stance:"supports", weight:1, why:"Suggested from shared wording: " + top.hits.join(", ") }]; matched++; }
+      }
+      upsertIntel(rec);
+    });
+    toast(`Added ${lines.length} items${auto ? ` · ${matched} pre-matched, all worth a review` : ""}`);
+    state.route = "intel";
+    render();
+  });
+}
+
+function matchDialog(intelId) {
+  const it = state.intel.find(x => x.id === intelId);
+  if (!it) return;
+  if (!state.lines.length) { toast("Add the poem first — there is nothing to match against."); return; }
+
+  const body = () => {
+    const existing = (it.links || []).map(k => {
+      const i = state.lines.findIndex(l => l.id === k.lineId);
+      if (i < 0) return "";
+      return `<div class="sugg">
+        <div class="body">
+          <div class="ln"><span class="src">L${String(i+1).padStart(2,"0")}</span> ${esc(state.lines[i].text)}</div>
+          ${k.why ? `<div class="why">${esc(k.why)}</div>` : ""}
+        </div>
+        <span class="chip ${k.stance === "contradicts" ? "fail" : "fit"}">${k.stance}</span>
+        <button type="button" class="btn ghost sm" data-mact="drop" data-line="${k.lineId}">Remove</button>
+      </div>`;
+    }).join("");
+
+    const sugg = suggestLines(it.text, 5)
+      .filter(s => !(it.links || []).some(k => k.lineId === s.line.id))
+      .map(s => {
+        const i = state.lines.indexOf(s.line);
+        return `<div class="sugg">
+          <div class="body">
+            <div class="ln"><span class="src">L${String(i+1).padStart(2,"0")}</span> ${esc(s.line.text)}</div>
+            <div class="why">Shared wording: ${esc(s.hits.join(", ")) || "—"} · strength ${s.score.toFixed(1)}</div>
+          </div>
+          <button type="button" class="btn sm" data-mact="add" data-line="${s.line.id}" data-stance="supports">Supports</button>
+          <button type="button" class="btn sm" data-mact="add" data-line="${s.line.id}" data-stance="contradicts">Against</button>
+        </div>`;
+      }).join("");
+
+    const all = state.lines.map((l, i) =>
+      `<option value="${l.id}">L${String(i+1).padStart(2,"0")} — ${esc(l.text)}</option>`).join("");
+
+    return `<div class="card" style="padding:10px 12px; background:var(--surface-2); box-shadow:none">
+        <p style="margin:0; font-size:13px">${esc(it.text)}</p></div>
+      ${existing ? `<div><div class="eyebrow" style="margin-bottom:6px">Matched</div><div style="display:grid; gap:8px">${existing}</div></div>` : ""}
+      <div>
+        <div class="toolbar" style="margin:0 0 6px">
+          <div class="eyebrow">Suggested lines</div>
+          <div class="spacer"></div>
+          <button type="button" class="btn sm" id="askClaude" ${sampler ? "" : "disabled title='Needs the Claude reading capability'"}>Ask Claude to read it</button>
+        </div>
+        <div id="suggBox" style="display:grid; gap:8px">${sugg || '<div class="hint">No wording in common with any line — match it by hand below.</div>'}</div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px">Match by hand</div>
+        <div class="two">
+          <label class="field"><span>Line</span><select id="mLine">${all}</select></label>
+          <label class="field"><span>Stance</span><select id="mStance">
+            <option value="supports">Supports this line</option>
+            <option value="contradicts">Argues against this line</option></select></label>
+        </div>
+        <label class="field" style="margin-top:8px"><span>Why — one sentence</span>
+          <input type="text" id="mWhy" placeholder="What in the line does this bear on?"></label>
+        <button type="button" class="btn" id="mAdd" style="margin-top:8px">Add match</button>
+      </div>`;
+  };
+
+  const refresh = () => { document.getElementById("dlgBody").innerHTML = body(); bindMatch(); };
+
+  function addLink(lineId, stance, why) {
+    it.links = (it.links || []).filter(k => k.lineId !== lineId);
+    it.links.push({ lineId, stance, weight: 2, why: why || "" });
+    upsertIntel(it);
+    refresh();
+    renderGauge();
+  }
+
+  function bindMatch() {
+    dlg.querySelectorAll("[data-mact]").forEach(b => b.addEventListener("click", () => {
+      const id = b.dataset.line;
+      if (b.dataset.mact === "drop") { it.links = (it.links || []).filter(k => k.lineId !== id); upsertIntel(it); refresh(); renderGauge(); }
+      else addLink(id, b.dataset.stance, "Matched from a suggested read");
+    }));
+    const addBtn = dlg.querySelector("#mAdd");
+    if (addBtn) addBtn.addEventListener("click", () => {
+      const sel = dlg.querySelector("#mLine");
+      if (sel && sel.value) addLink(sel.value, dlg.querySelector("#mStance").value, dlg.querySelector("#mWhy").value.trim());
+    });
+    const ask = dlg.querySelector("#askClaude");
+    if (ask && sampler) ask.addEventListener("click", () => askClaude(ask, it, addLink));
+  }
+
+  openDialog("Match to the poem", body(),
+    `<button class="btn primary" value="ok">Done</button>`, () => render());
+  bindMatch();
+}
+
+async function askClaude(btn, it, addLink) {
+  const box = document.getElementById("suggBox");
+  btn.disabled = true; btn.textContent = "Reading…";
+  const numbered = state.lines.map((l, i) => `${i + 1}. ${l.text}`).join("\n");
+  const prompt =
+`You are helping with a treasure-hunt poem. Here is the poem, one numbered line per row:
+
+${numbered}
+
+Here is one piece of information the hunter has gathered:
+"""${it.text}"""
+
+Which poem lines does this information bear on? Judge only on what the text actually says — if it bears on nothing, return an empty list. Reply with JSON only:
+{"matches":[{"line":<line number>,"stance":"supports"|"contradicts","why":"<one short sentence>"}]}`;
+
+  try {
+    const res = await sampler.json(prompt, { modelTier: "default" });
+    const matches = (res && (res.matches || res)) || [];
+    const list = Array.isArray(matches) ? matches : [];
+    if (!list.length) { box.innerHTML = '<div class="hint">Claude found no line this bears on. Match it by hand if you disagree.</div>'; }
+    else {
+      box.innerHTML = list.map(m => {
+        const i = (Number(m.line) || 0) - 1;
+        const l = state.lines[i];
+        if (!l) return "";
+        return `<div class="sugg">
+          <div class="body">
+            <div class="ln"><span class="src">L${String(i+1).padStart(2,"0")}</span> ${esc(l.text)}</div>
+            <div class="why">${esc(m.why || "")}</div>
+          </div>
+          <button type="button" class="btn sm" data-cl="${l.id}" data-st="${m.stance === "contradicts" ? "contradicts" : "supports"}">Accept</button>
+        </div>`;
+      }).join("") || '<div class="hint">Nothing usable came back.</div>';
+      box.querySelectorAll("[data-cl]").forEach(b => b.addEventListener("click", () =>
+        addLink(b.dataset.cl, b.dataset.st, "Claude's read: " + (b.parentElement.querySelector(".why")?.textContent || ""))));
+    }
+  } catch (e) {
+    const code = e && e.code;
+    box.innerHTML = `<div class="hint">${code === "not_granted" || code === "unavailable"
+      ? "Claude's reading is not available in this view — the suggestions above are from wording overlap."
+      : code === "rate_limited" ? "Too many requests just now. Wait a moment and try again."
+      : "That read did not come back. Try again, or match by hand."}</div>`;
+  }
+  btn.disabled = false; btn.textContent = "Ask Claude to read it";
+}
+
+function candDialog(existing) {
+  const c = existing || { name:"", region:"", coords:"", elev:"", notes:"", verdicts:{} };
+  openDialog(existing ? "Edit site" : "Add a candidate site", `
+    <label class="field"><span>Name</span><input type="text" id="cName" value="${esc(c.name)}" placeholder="How you refer to it"></label>
+    <div class="three">
+      <label class="field"><span>State / region</span><input type="text" id="cRegion" value="${esc(c.region||"")}" placeholder="WY"></label>
+      <label class="field"><span>Coordinates</span><input type="text" id="cCoords" value="${esc(c.coords||"")}" placeholder="44.1180, -110.4402"></label>
+      <label class="field"><span>Elevation</span><input type="text" id="cElev" value="${esc(c.elev||"")}" placeholder="8,140 ft"></label>
+    </div>
+    <label class="field"><span>Notes</span><textarea id="cNotes" rows="3" placeholder="Access, season, what drew you here.">${esc(c.notes||"")}</textarea></label>
+  `, null, () => {
+    const name = val("#cName");
+    if (!name) return;
+    leaveDemoIfNeeded();
+    const rec = {
+      id: existing ? existing.id : uid("c"),
+      name, region: val("#cRegion"), coords: val("#cCoords"), elev: val("#cElev"), notes: val("#cNotes"),
+      verdicts: existing ? (existing.verdicts || {}) : {},
+      created: existing ? (existing.created || Date.now()) : Date.now(),
+    };
+    const i = state.candidates.findIndex(x => x.id === rec.id);
+    if (i >= 0) state.candidates[i] = rec; else state.candidates.push(rec);
+    saveCand(rec);
+    render();
+  });
+}
+
+function judgeDialog(candId) {
+  const c = state.candidates.find(x => x.id === candId);
+  if (!c) return;
+  if (!state.lines.length) { toast("Add the poem first — there is nothing to judge against."); return; }
+  c.verdicts = c.verdicts || {};
+
+  const body = () => state.lines.map((l, i) => {
+    const v = c.verdicts[l.id] || "";
+    return `<div class="sugg">
+      <div class="body">
+        <div class="ln"><span class="src">L${String(i+1).padStart(2,"0")}${l.hard ? " · HARD" : ""}</span> ${esc(l.text)}</div>
+        ${l.note ? `<div class="why">${esc(l.note)}</div>` : ""}
+      </div>
+      <button type="button" class="btn sm ${v === "fit" ? "primary" : ""}" data-jv="fit" data-jl="${l.id}">Fits</button>
+      <button type="button" class="btn sm ${v === "fail" ? "danger" : ""}" data-jv="fail" data-jl="${l.id}">Fails</button>
+      <button type="button" class="btn ghost sm" data-jv="" data-jl="${l.id}">Clear</button>
+    </div>`;
+  }).join("");
+
+  const bind = () => dlg.querySelectorAll("[data-jl]").forEach(b => b.addEventListener("click", () => {
+    if (b.dataset.jv) c.verdicts[b.dataset.jl] = b.dataset.jv; else delete c.verdicts[b.dataset.jl];
+    saveCand(c);
+    document.getElementById("dlgBody").innerHTML = `<div style="display:grid; gap:8px">${body()}</div>`;
+    bind();
+  }));
+
+  openDialog("Judge — " + c.name, `<div style="display:grid; gap:8px">${body()}</div>`,
+    `<button class="btn primary" value="ok">Done</button>`, () => render());
+  bind();
+}
+
+/* ============================ export / import ============================ */
+
+function snapshot() {
+  return {
+    format: "maps-edge-workbench/1",
+    exportedAt: new Date().toISOString(),
+    poem: { title: state.poemTitle, raw: state.poemRaw, lines: state.lines },
+    intel: state.intel,
+    candidates: state.candidates,
+  };
+}
+
+async function doExport() {
+  const json = JSON.stringify(snapshot(), null, 2);
+  const filename = "maps-edge-" + new Date().toISOString().slice(0, 10) + ".json";
+  if (!downloads) { copy(json, "Downloads are unavailable here — the JSON is on your clipboard."); return; }
+  try {
+    await downloads.save({ filename, data: json });
+    toast("Saved " + filename);
+  } catch (e) {
+    if (e && e.code === "declined") return;
+    copy(json, "Could not save the file — the JSON is on your clipboard instead.");
+  }
+}
+
+function doImport(file) {
+  const r = new FileReader();
+  r.onload = () => {
+    let d;
+    try { d = JSON.parse(String(r.result)); } catch (e) { toast("That file is not valid JSON."); return; }
+    if (!d || !d.poem) { toast("That file is not a workbench export."); return; }
+    leaveDemo();
+    state.poemTitle = d.poem.title || "";
+    state.poemRaw = d.poem.raw || "";
+    state.lines = Array.isArray(d.poem.lines) ? d.poem.lines : parseLines(state.poemRaw, []);
+    state.intel = Array.isArray(d.intel) ? d.intel : [];
+    state.candidates = Array.isArray(d.candidates) ? d.candidates : [];
+    state.selectedLine = state.lines[0] ? state.lines[0].id : null;
+    savePoem();
+    state.intel.forEach(saveIntel);
+    state.candidates.forEach(saveCand);
+    toast(`Imported ${state.lines.length} lines, ${state.intel.length} intel items, ${state.candidates.length} sites`);
+    render();
+  };
+  r.readAsText(file);
+}
+
+function brief() {
+  const c = coverage();
+  const L = state.lines;
+  let out = `# ${state.poemTitle || "Treasure solve board"}\n\n`;
+  out += `Coverage: ${c.covered}/${c.total} lines have intel (${c.pct}%). ${c.contested} contested.\n\n## Poem, line by line\n\n`;
+  L.forEach((l, i) => {
+    out += `**L${String(i+1).padStart(2,"0")}${l.hard ? " (HARD)" : ""}** — ${l.text}\n`;
+    if (l.note) out += `- My reading: ${l.note}\n`;
+    linksFor(l.id).forEach(x => {
+      out += `- ${x.link.stance === "contradicts" ? "AGAINST" : "SUPPORTS"} [${CONF_LABEL[x.it.conf] || "?"}] ${x.it.text}`;
+      out += x.it.source ? ` (${x.it.source})` : "";
+      out += x.link.why ? ` — ${x.link.why}` : "";
+      out += "\n";
+    });
+    out += "\n";
+  });
+  const un = state.intel.filter(i => !(i.links || []).length);
+  if (un.length) {
+    out += `## Unmatched intel (${un.length})\n\n` + un.map(i => `- [${CONF_LABEL[i.conf] || "?"}] ${i.text}${i.source ? ` (${i.source})` : ""}`).join("\n") + "\n\n";
+  }
+  out += `## Candidate sites\n\n`;
+  state.candidates.forEach(cd => {
+    const s = scoreCandidate(cd);
+    out += `### ${cd.name}${s.ruledOut ? " — RULED OUT by a hard line" : ""}\n`;
+    out += `${[cd.region, cd.coords, cd.elev].filter(Boolean).join(" · ")}\n`;
+    out += `Fits ${s.fit} · Fails ${s.fail} · Unjudged ${s.unknown} · ${s.judged ? s.pct + "% fit rate" : "not judged"}\n`;
+    if (cd.notes) out += `${cd.notes}\n`;
+    const fails = L.map((l, i) => ({ l, i })).filter(({ l }) => (cd.verdicts || {})[l.id] === "fail");
+    if (fails.length) out += `Fails on: ${fails.map(({ i }) => "L" + String(i+1).padStart(2,"0")).join(", ")}\n`;
+    out += "\n";
+  });
+  copy(out, "Brief copied — paste it into a chat with Claude.");
+}
+
+function copy(text, msg) {
+  const done = () => toast(msg || "Copied");
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+  } else fallbackCopy(text, done);
+}
+function fallbackCopy(text, done) {
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); done(); } catch (e) { toast("Copying is blocked here — export the JSON instead."); }
+  ta.remove();
+}
+
+let toastTimer = null;
+function toast(msg) {
+  const old = document.querySelector(".toast");
+  if (old) old.remove();
+  const el = document.createElement("div");
+  el.className = "toast"; el.textContent = msg; el.setAttribute("role", "status");
+  document.body.appendChild(el);
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.remove(), 3600);
+}
+
+/* ============================ wiring ============================ */
+
+function wire() {
+  document.querySelectorAll("[data-route]").forEach(b => b.addEventListener("click", () => {
+    state.route = b.dataset.route; render();
+  }));
+
+  document.querySelectorAll(".pline").forEach(b => b.addEventListener("click", () => {
+    state.selectedLine = b.dataset.line; render();
+  }));
+
+  document.querySelectorAll("[data-filter]").forEach(el => {
+    const k = el.dataset.filter;
+    const ev = el.tagName === "SELECT" ? "change" : "input";
+    el.addEventListener(ev, () => { state.filter[k] = el.value; render();
+      const again = document.querySelector(`[data-filter="${k}"]`);
+      if (again && ev === "input") { again.focus(); again.setSelectionRange(again.value.length, again.value.length); }
+    });
+  });
+
+  const note = document.querySelector("[data-note]");
+  if (note) note.addEventListener("change", () => {
+    const l = state.lines.find(x => x.id === note.dataset.note);
+    if (!l) return;
+    leaveDemoIfNeeded();
+    l.note = note.value.trim();
+    savePoem();
+  });
+
+  const file = document.getElementById("importFile");
+  if (file) file.addEventListener("change", () => { if (file.files && file.files[0]) doImport(file.files[0]); });
+
+  document.querySelectorAll("[data-act]").forEach(b => b.addEventListener("click", ev => {
+    ev.preventDefault();
+    const a = b.dataset.act, id = b.dataset.intel, cid = b.dataset.cand, lid = b.dataset.line;
+    if (a === "clear-demo") { leaveDemo(); render(); toast("Examples cleared — the board is yours."); }
+    else if (a === "edit-poem") editPoemDialog();
+    else if (a === "add-intel") intelDialog(null);
+    else if (a === "add-intel-for") intelDialog(null, lid);
+    else if (a === "edit-intel") intelDialog(state.intel.find(x => x.id === id));
+    else if (a === "match") matchDialog(id);
+    else if (a === "bulk") bulkDialog();
+    else if (a === "del-intel") {
+      const it = state.intel.find(x => x.id === id);
+      if (it && confirm("Delete this intel item?\n\n" + it.text.slice(0, 140))) {
+        state.intel = state.intel.filter(x => x.id !== id); dropDoc("intel/" + id); render();
+      }
+    }
+    else if (a === "unlink") {
+      const it = state.intel.find(x => x.id === id);
+      if (it) { it.links = (it.links || []).filter(k => k.lineId !== lid); upsertIntel(it); render(); }
+    }
+    else if (a === "toggle-hard") {
+      const l = state.lines.find(x => x.id === lid);
+      if (l) { leaveDemoIfNeeded(); const cur = state.lines.find(x => x.id === lid); if (cur) { cur.hard = !cur.hard; savePoem(); render(); } }
+    }
+    else if (a === "add-cand") candDialog(null);
+    else if (a === "edit-cand") candDialog(state.candidates.find(x => x.id === cid));
+    else if (a === "judge") judgeDialog(cid);
+    else if (a === "del-cand") {
+      const c = state.candidates.find(x => x.id === cid);
+      if (c && confirm("Delete " + c.name + "?")) {
+        state.candidates = state.candidates.filter(x => x.id !== cid); dropDoc("candidates/" + cid); render();
+      }
+    }
+    else if (a === "cycle") {
+      const c = state.candidates.find(x => x.id === cid);
+      if (!c) return;
+      leaveDemoIfNeeded();
+      const target = state.candidates.find(x => x.id === cid);
+      if (!target) return;
+      target.verdicts = target.verdicts || {};
+      const cur = target.verdicts[lid];
+      if (!cur) target.verdicts[lid] = "fit";
+      else if (cur === "fit") target.verdicts[lid] = "fail";
+      else delete target.verdicts[lid];
+      saveCand(target);
+      render();
+    }
+    else if (a === "export") doExport();
+    else if (a === "import") document.getElementById("importFile").click();
+    else if (a === "brief") brief();
+    else if (a === "wipe") {
+      if (!confirm("Erase the poem, all intel and all sites? Export first — this cannot be undone.")) return;
+      state.intel.forEach(i => dropDoc("intel/" + i.id));
+      state.candidates.forEach(c => dropDoc("candidates/" + c.id));
+      dropDoc("poem/doc");
+      state.poemTitle = ""; state.poemRaw = ""; state.lines = []; state.intel = []; state.candidates = [];
+      state.usingDemo = false; state.selectedLine = null;
+      render();
+      toast("Erased.");
+    }
+  }));
+}
+
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, textarea, select") || dlg.open) return;
+  const i = ["1","2","3","4","5"].indexOf(e.key);
+  if (i >= 0) { state.route = VIEWS[i][0]; render(); }
+});
+
+/* ============================ boot ============================ */
+
+loadDemoIfEmpty();
+render();
+if (window.claude && typeof window.claude.use === "function") connect();
+else setSync("off", "Local only — export to keep your work");
+</script>
