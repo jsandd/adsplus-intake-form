@@ -91,7 +91,7 @@
     "text": "Her foot of three at twenty degree,",
     "hard": false,
     "status": "partial",
-    "note": "Tuk's three-sided pyramid form = foot of three; twenty degrees taken from her foot. Cannot yet be walked."
+    "note": "Tuk's three-sided pyramid form = foot of three; twenty degrees taken from her foot. Cannot yet be walked. If the poem converges rather than walks, the origin this bearing lacks is supplied elsewhere — the X is where two lines meet."
    },
    {
     "id": "l12",
@@ -99,7 +99,7 @@
     "text": "Return her face to find the place.",
     "hard": false,
     "status": "partial",
-    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes."
+    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes. Backtracking Q&A now supports B directly (feet return to trodden ground); the Indiana Jones / National Treasure nudge supports the bearing here being one arm of an X rather than a walk. 'Find' appears only here and at 1:1."
    },
    {
     "id": "l13",
@@ -2998,6 +2998,118 @@
     }
    ],
    "created": 1788583371535
+  },
+  {
+   "id": "i116",
+   "text": "Backtracking. Asked whether you ever return to previously trodden ground while following the poem path: if you knew the entirety of the solution the answer is no, but going through the natural progression of the hunt the answer is more like a yes. The clues stay in sequence; your feet don't.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A (via user research)",
+   "tags": [
+    "backtracking",
+    "sequence",
+    "return"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Direct support for 'return her face' = turn around and go back (Reading B) — a loop that does not break consecutive clue order."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A bearing taken from one point and walked from another is exactly the kind of loop this describes."
+    },
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Cuts slightly against Reading C: a map-only reversal never puts your feet on trodden ground."
+    }
+   ],
+   "created": 1788583471857
+  },
+  {
+   "id": "i117",
+   "text": "Poem structure. Asked whether the poem is linear, several geographic points miles apart, or a hybrid, he declined — then offered that there are some great movies out there: Indiana Jones and National Treasure. Read as a nudge away from Fenn-style point-to-point walking toward convergence: an X from intersecting lines, or something you assemble rather than follow.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A (via user research)",
+   "tags": [
+    "structure",
+    "convergence",
+    "movies"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A bearing with no origin makes sense if it is one of two lines whose intersection is the X — the origin is supplied by another clue."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Return her face as the second line of the X."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Read these words just right' — assembly, not a walk."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Weakens any reading that needs a strict walking chain from the water past the Hole to the site."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Measured rhyme as the assembly instructions."
+    }
+   ],
+   "created": 1788583471858
+  },
+  {
+   "id": "i118",
+   "text": "The word 'find' appears exactly twice in the poem: 1:1 ('Can you find what lives in time') and 3:4 ('Return her face to find the place'). If stanza 1 is the reading method, the two uses may be pointing at each other.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "find",
+    "stanza-1",
+    "stanza-3",
+    "wordplay"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Find' here is answered at 3:4."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Find the place' echoes 1:1 — the place may be what lives in time, or be found the way stanza 1 says to read."
+    },
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Consistent with the stanza-1 callback: what you find is what you already know."
+    }
+   ],
+   "created": 1788583471859
   }
  ],
  "candidates": [
