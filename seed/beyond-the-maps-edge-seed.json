@@ -4631,6 +4631,130 @@
     }
    ],
    "created": 1788585385171
+  },
+  {
+   "id": "i160",
+   "text": "The 75-mile exchange, as transcribed (Seekers Summit, Mar 28 2026). Q: 'Is the location where you hid your treasure within 75 miles of a place where you searched for the Forrest Fenn chest?' A: 'I searched a lot of places, guys. Uh, so yeah, I mean it's true to say that at some point I had searched for the Fenn treasure within that 75 mile radius. Yeah.' Follow-up: when he first started, his interpretation of the Rocky Mountains was 'incredibly broad — any mountain with rocks.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit transcript via Mysterious Writings (relayed by Google AI overview)",
+   "tags": [
+    "fenn",
+    "75-miles",
+    "transcript"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A yes — but 'at some point' and 'a lot of places' make the radius large, not a pointer."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Weaker than the community uses it: it does not confine the hunt to Fenn's four states."
+    }
+   ],
+   "created": 1788585598313
+  },
+  {
+   "id": "i161",
+   "text": "Posey's Fenn search footprint, as compiled by the community: the epicenter was the west and north sides of Yellowstone — the Madison River corridor including Nine Mile Hole (Fenn's favorite fishing spot) and Madison Junction where the Firehole and Gibbon meet; the northern gateways at Gardiner, Devil's Slide and the Boiling River; Hebgen Lake and Iron Springs. Montana: the 'bitter-cold mountains' of Glacier NP. South and early: Ojo Caliente NM (warm waters), and early looks at clusters of clues in Utah and Idaho before Fenn ruled them out. Cloudcroft NM and Tucson AZ are out (south of Santa Fe).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Google AI overview citing Reddit r/JustinPoseysTreasure + Mysterious Writings (machine summary — verify)",
+   "tags": [
+    "fenn",
+    "footprint",
+    "yellowstone",
+    "madison",
+    "glacier",
+    "utah",
+    "idaho"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The 75-mile ring around west/north Yellowstone covers Jackson Hole, Island Park, Hebgen, the Madison, Gardiner — and Gallatin / Bridger-Teton forest land around the park that is free and dog-friendly."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Nine Mile Hole and the Firehole: capital-H, natural Holes in his own Fenn country — though both sit inside the park."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "If he looked in Utah early, Moab clears the Fenn gate after all — 'at some point' is doing the work."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ojo Caliente, Boiling River, Iron Springs: he searched warm water for Fenn — 'hope surges, clear and bright' as a spring is in character."
+    }
+   ],
+   "created": 1788585598314
+  },
+  {
+   "id": "i162",
+   "text": "Cross-reference on the footprint: the free / 24-7 / dogs gate puts the site outside the park, but the Fenn epicenter is the park's west and north edges. The overlap is the ring of national forest just outside: Hebgen Lake and the Madison Arm (Gallatin NF), Island Park and Big Springs (Caribou-Targhee NF, Idaho — a huge clear spring at the head of the Henry's Fork, legendary fly-fishing, free), the Gallatin canyon, Gardiner's surroundings, and the Hoback south of Jackson. Big Springs, Idaho: 'hope surges, clear and bright' (one of the largest springs in the US, gin-clear), 'waters' silent flight' (the Henry's Fork), fishing ('cast your pole'), and Upper/Lower Mesa Falls downstream — two falls, two arcs. Idaho is on the 42 thread. Untested.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "island-park",
+    "big-springs",
+    "henrys-fork",
+    "mesa-falls",
+    "idaho",
+    "new"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Big Springs surges gin-clear from the ground."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Henry's Fork below the spring — silent water."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Henry's Fork: legendary fly water."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Upper and Lower Mesa Falls — a double, on the same river."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "No Hole found on the Henry's Fork yet."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "No bear or star beyond the pole-star reading."
+    }
+   ],
+   "created": 1788585598315
   }
  ],
  "candidates": [
@@ -4707,7 +4831,7 @@
     "g_dog": "pass"
    },
    "kill": "The stanza-2 Hole. It inherits the culvert, which Posey has directly denied. Also: no granite.",
-   "test": "Find a natural, proper-noun Hole on or near the Moab approach; confirm La Sal Pass Rd in a standard car; check whether Posey ever searched for Fenn within 75 mi of Moab."
+   "test": "Find a natural, proper-noun Hole on or near the Moab approach; confirm La Sal Pass Rd in a standard car; check whether Posey ever searched for Fenn within 75 mi of Moab. Fenn gate: the overview says he looked in Utah early — find the source; if real, Moab clears it."
   },
   {
    "id": "c_goldbasin",
@@ -4802,7 +4926,7 @@
     "g_states": "pass",
     "g_map": "pass",
     "g_natural": "pass",
-    "g_fenn": "pass",
+    "g_fenn": "unk",
     "g_free": "pass",
     "g_bldg": "unk",
     "g_hole": "unk",
@@ -4842,7 +4966,7 @@
     "g_map": "pass",
     "g_natural": "pass",
     "g_hole": "pass",
-    "g_fenn": "pass",
+    "g_fenn": "unk",
     "g_bldg": "unk",
     "g_free": "pass",
     "g_trail": "unk",
@@ -4978,7 +5102,7 @@
     "g_map": "pass",
     "g_natural": "pass",
     "g_hole": "pass",
-    "g_fenn": "pass",
+    "g_fenn": "unk",
     "g_free": "unk",
     "g_vehicle": "pass",
     "g_trail": "unk",
