@@ -11,7 +11,8 @@
     "text": "Can you find what lives in time,",
     "hard": false,
     "status": "unsolved",
-    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography. Under stanza-5 reading 4, this line IS the answer (a river lives in time) rather than a step — which would explain why stanza 1 has no actionable clue. New: the map as a time anchor (~1864) — old names, no dams, Washington as 42nd, Whitney unnamed. If the map is fixed to a year, 'what lives in time' has a literal referent."
+    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography. Under stanza-5 reading 4, this line IS the answer (a river lives in time) rather than a step — which would explain why stanza 1 has no actionable clue. New: the map as a time anchor (~1864) — old names, no dams, Washington as 42nd, Whitney unnamed. If the map is fixed to a year, 'what lives in time' has a literal referent.",
+    "kind": "mystery"
    },
    {
     "id": "l02",
@@ -19,7 +20,8 @@
     "text": "Flowing through each measured rhyme?",
     "hard": false,
     "status": "unsolved",
-    "note": "Counting is the method: words per line, syllables, positions. Posey confirmed numbers are indirectly encoded."
+    "note": "Counting is the method: words per line, syllables, positions. Posey confirmed numbers are indirectly encoded.",
+    "kind": "mystery"
    },
    {
     "id": "l03",
@@ -27,7 +29,8 @@
     "text": "Wisdom waits in shadowed sight—",
     "hard": false,
     "status": "unsolved",
-    "note": "Ends on an em dash — one of only two in the poem (the other is 5:3). Possibly the cipher's home."
+    "note": "Ends on an em dash — one of only two in the poem (the other is 5:3). Possibly the cipher's home.",
+    "kind": "geographic"
    },
    {
     "id": "l04",
@@ -35,7 +38,8 @@
     "text": "For those who read these words just right.",
     "hard": false,
     "status": "unsolved",
-    "note": "Confirms the stanza is instruction, not movement. He would not rule out reading or rearranging the poem other than as presented."
+    "note": "Confirms the stanza is instruction, not movement. He would not rule out reading or rearranging the poem other than as presented.",
+    "kind": "instruction"
    },
    {
     "id": "l05",
@@ -43,7 +47,8 @@
     "text": "As hope surges, clear and bright,",
     "hard": false,
     "status": "pinned",
-    "note": "First actionable clue (Posey). Working read: Matrimony Spring at US-191/SR-128 north of Moab — cold, clear, year-round, La Sal-fed; local marriage legend plants the bride motif early."
+    "note": "First actionable clue (Posey). Working read: Matrimony Spring at US-191/SR-128 north of Moab — cold, clear, year-round, La Sal-fed; local marriage legend plants the bride motif early.",
+    "kind": "geographic"
    },
    {
     "id": "l06",
@@ -51,7 +56,8 @@
     "text": "Walk near waters' silent flight.",
     "hard": false,
     "status": "pinned",
-    "note": "The Colorado River along SR-279 (Potash Road). Walking-distance constraint starts here. Open objection: nothing in the line picks 279 over SR-128 or a bank."
+    "note": "The Colorado River along SR-279 (Potash Road). Walking-distance constraint starts here. Open objection: nothing in the line picks 279 over SR-128 or a bank.",
+    "kind": "navigate"
    },
    {
     "id": "l07",
@@ -59,7 +65,8 @@
     "text": "Round the bend, past the Hole,",
     "hard": false,
     "status": "contested",
-    "note": "Working read: the canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch. Contested — Posey gave a direct 'no' to the Hole being man-made."
+    "note": "Working read: the canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch. Contested — Posey gave a direct 'no' to the Hole being man-made.",
+    "kind": "geographic"
    },
    {
     "id": "l08",
@@ -67,7 +74,8 @@
     "text": "I wait for you to cast your pole.",
     "hard": false,
     "status": "thematic",
-    "note": "Colorado riverbank along 279. Placeholder, not pinned. Fishing-pole reading unconfirmed."
+    "note": "Colorado riverbank along 279. Placeholder, not pinned. Fishing-pole reading unconfirmed.",
+    "kind": "navigate"
    },
    {
     "id": "l09",
@@ -75,7 +83,8 @@
     "text": "In ursa east his realm awaits;",
     "hard": false,
     "status": "pinned",
-    "note": "'Bear east' as a heading; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named for a Ute chief. Objections: no bear naming in the La Sals; 'Waas = man' is hedged. New lead: 'ursa' as a decapitalized proper name — Bear Lodge (Devils Tower, Bear Lodge Mountains, NE Wyoming), where lodge ≈ realm confirms itself. Unchecked for a bride or gates."
+    "note": "'Bear east' as a heading; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named for a Ute chief. Objections: no bear naming in the La Sals; 'Waas = man' is hedged. New lead: 'ursa' as a decapitalized proper name — Bear Lodge (Devils Tower, Bear Lodge Mountains, NE Wyoming), where lodge ≈ realm confirms itself. Unchecked for a bride or gates.",
+    "kind": "celestial"
    },
    {
     "id": "l10",
@@ -83,7 +92,8 @@
     "text": "His bride stands guard at ancient gates.",
     "hard": false,
     "status": "contested",
-    "note": "Mount Tukuhnikivatz as bride to the man-mountain, at the gates of the range. 'Ancient gates' not pinned to a feature. Contested by the 'not a living person' clarification, which reads person-shaped."
+    "note": "Mount Tukuhnikivatz as bride to the man-mountain, at the gates of the range. 'Ancient gates' not pinned to a feature. Contested by the 'not a living person' clarification, which reads person-shaped.",
+    "kind": "geographic"
    },
    {
     "id": "l11",
@@ -91,7 +101,8 @@
     "text": "Her foot of three at twenty degree,",
     "hard": false,
     "status": "partial",
-    "note": "Measurement, not shape: three feet = a yard, or 3°20′ (degrees and minutes). The Tuk three-sided-pyramid reading is demoted. Posey: numbers are indirect, there is a distance element, and you needn't be at the bride to identify her foot of three — all consistent with a measurement. If the poem converges rather than walks, this is one arm of the X."
+    "note": "Measurement, not shape: three feet = a yard, or 3°20′ (degrees and minutes). The Tuk three-sided-pyramid reading is demoted. Posey: numbers are indirect, there is a distance element, and you needn't be at the bride to identify her foot of three — all consistent with a measurement. If the poem converges rather than walks, this is one arm of the X. Hub: 11–12 is the poem's only non-end-rhyming couplet (degree/place); the rhyme is internal — THREE/FACE — and Justin confirmed it is the only one, i.e. deliberate emphasis.",
+    "kind": "precision"
    },
    {
     "id": "l12",
@@ -99,7 +110,8 @@
     "text": "Return her face to find the place.",
     "hard": false,
     "status": "partial",
-    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes. Backtracking Q&A now supports B directly (feet return to trodden ground); the Indiana Jones / National Treasure nudge supports the bearing here being one arm of an X rather than a walk. 'Find' appears only here and at 1:1. Structure read: the middle of the poem builds a construction on a map (Indiana Jones / National Treasure — a device oriented correctly reveals the place), which is why BOTG waits until stanza 4."
+    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes. Backtracking Q&A now supports B directly (feet return to trodden ground); the Indiana Jones / National Treasure nudge supports the bearing here being one arm of an X rather than a walk. 'Find' appears only here and at 1:1. Structure read: the middle of the poem builds a construction on a map (Indiana Jones / National Treasure — a device oriented correctly reveals the place), which is why BOTG waits until stanza 4.",
+    "kind": "navigate"
    },
    {
     "id": "l13",
@@ -107,7 +119,8 @@
     "text": "Double arcs on granite bold,",
     "hard": false,
     "status": "partial",
-    "note": "Two basins at Tuk's foot on opposite faces. Option 1 (favored): Medicine Lakes, south side near La Sal Pass — plural by name, drivable pass with trailhead, exactly what Reading C delivers; access-road roughness must be checked against the no-high-clearance rule. Option 2: Gold Basin / Tuk cirque, north side — cirques are arcs by definition, but no named paired pools and higher, more snowbound. Old objection stands: none of this is granite. Corona/Bowtie now demoted."
+    "note": "Two basins at Tuk's foot on opposite faces. Option 1 (favored): Medicine Lakes, south side near La Sal Pass — plural by name, drivable pass with trailhead, exactly what Reading C delivers; access-road roughness must be checked against the no-high-clearance rule. Option 2: Gold Basin / Tuk cirque, north side — cirques are arcs by definition, but no named paired pools and higher, more snowbound. Old objection stands: none of this is granite. Corona/Bowtie now demoted.",
+    "kind": "checkpoint"
    },
    {
     "id": "l14",
@@ -115,7 +128,8 @@
     "text": "Where secrets of the past still hold.",
     "hard": false,
     "status": "thematic",
-    "note": "The sediment record on the basin floor: alpine basins hold undisturbed layers back to deglaciation — pollen, charcoal, ash, isotopes — which is why researchers core exactly these lakes."
+    "note": "The sediment record on the basin floor: alpine basins hold undisturbed layers back to deglaciation — pollen, charcoal, ash, isotopes — which is why researchers core exactly these lakes.",
+    "kind": "checkpoint"
    },
    {
     "id": "l15",
@@ -123,7 +137,8 @@
     "text": "Beyond the reach of time's swift race,",
     "hard": false,
     "status": "thematic",
-    "note": "That same sealed record, beyond time's reach. L2 and L3 read as one continuous statement, which is what consecutive clue order should produce. The water itself is annual snowmelt; the sediment carries the age."
+    "note": "That same sealed record, beyond time's reach. L2 and L3 read as one continuous statement, which is what consecutive clue order should produce. The water itself is annual snowmelt; the sediment carries the age.",
+    "kind": "literary"
    },
    {
     "id": "l16",
@@ -131,7 +146,8 @@
     "text": "Wonder guards this sacred space.",
     "hard": false,
     "status": "thematic",
-    "note": "The peaks ringing the basin — Tuk, Peale, Mellenthin, Mount Laurel — a cirque of 12,000-foot summits, so 'wonder guards' is literal description."
+    "note": "The peaks ringing the basin — Tuk, Peale, Mellenthin, Mount Laurel — a cirque of 12,000-foot summits, so 'wonder guards' is literal description.",
+    "kind": "mystery"
    },
    {
     "id": "l17",
@@ -139,7 +155,8 @@
     "text": "Truth rests not in clever minds,",
     "hard": false,
     "status": "thematic",
-    "note": "Method instruction: solve plainly. Reading 1 makes this a warning label. Caution — Posey left stanza 5 open as possibly the last actionable clue."
+    "note": "Method instruction: solve plainly. Reading 1 makes this a warning label. Caution — Posey left stanza 5 open as possibly the last actionable clue.",
+    "kind": "instruction"
    },
    {
     "id": "l18",
@@ -147,7 +164,8 @@
     "text": "Not in tangled, twisted finds.",
     "hard": false,
     "status": "thematic",
-    "note": "Warns against tangled, twisted finds — a check on solves built backward from a destination. Backed by no red herrings, consecutive order."
+    "note": "Warns against tangled, twisted finds — a check on solves built backward from a destination. Backed by no red herrings, consecutive order.",
+    "kind": "instruction"
    },
    {
     "id": "l19",
@@ -155,7 +173,8 @@
     "text": "Like a river's steady flow—",
     "hard": false,
     "status": "partial",
-    "note": "Second em dash, pairing with 1:3 (reading 2, the frame's closing bracket). Also the literal river through-line (reading 3). Or an at-site instruction if stanza 5 is still geography."
+    "note": "Second em dash, pairing with 1:3 (reading 2, the frame's closing bracket). Also the literal river through-line (reading 3). Or an at-site instruction if stanza 5 is still geography.",
+    "kind": "literary"
    },
    {
     "id": "l20",
@@ -163,7 +182,8 @@
     "text": "What you seek, you already know.",
     "hard": false,
     "status": "partial",
-    "note": "Callback to 1:1 — weighted highest: 'what lives in time' is the river, and the closing line says you have carried the answer since stanza 1. Caution: may be memoir consolation, not a clue."
+    "note": "Callback to 1:1 — weighted highest: 'what lives in time' is the river, and the closing line says you have carried the answer since stanza 1. Caution: may be memoir consolation, not a clue.",
+    "kind": "mystery"
    }
   ]
  },
@@ -192,7 +212,8 @@
      "why": "Site constraint: wherever the sacred space is, it is none of these."
     }
    ],
-   "created": 1788581667022
+   "created": 1788581667022,
+   "when": "2025-03-27"
   },
   {
    "id": "i002",
@@ -211,7 +232,8 @@
      "why": "Site constraint."
     }
    ],
-   "created": 1788581667023
+   "created": 1788581667023,
+   "when": "2025-03-27"
   },
   {
    "id": "i003",
@@ -237,7 +259,8 @@
      "why": "Site constraint: reachable without gear."
     }
    ],
-   "created": 1788581667024
+   "created": 1788581667024,
+   "when": "2025-03-27"
   },
   {
    "id": "i004",
@@ -257,7 +280,8 @@
      "why": "The sacred space is close to access and benign — not a cliff, not a cave."
     }
    ],
-   "created": 1788581667025
+   "created": 1788581667025,
+   "when": "2026-03-28"
   },
   {
    "id": "i005",
@@ -303,7 +327,8 @@
      "why": "'Measured rhyme' invites counting or re-ordering."
     }
    ],
-   "created": 1788581667027
+   "created": 1788581667027,
+   "when": "2026-03-28"
   },
   {
    "id": "i007",
@@ -372,7 +397,8 @@
      "why": "'Shadowed sight' — something hidden in plain view."
     }
    ],
-   "created": 1788581667030
+   "created": 1788581667030,
+   "when": "2026-03-28"
   },
   {
    "id": "i010",
@@ -404,7 +430,8 @@
      "why": "'Lives in time' — hours, dates, clock numbers."
     }
    ],
-   "created": 1788581667031
+   "created": 1788581667031,
+   "when": "2026-03-28"
   },
   {
    "id": "i011",
@@ -605,7 +632,8 @@
      "why": "Retrieval is a planned act, not a scramble."
     }
    ],
-   "created": 1788581667039
+   "created": 1788581667039,
+   "when": "2025-09-04"
   },
   {
    "id": "i019",
@@ -686,7 +714,8 @@
      "why": "'Double arcs on granite' could be marks he made on existing rock."
     }
    ],
-   "created": 1788581667042
+   "created": 1788581667042,
+   "when": "2026-03-28"
   },
   {
    "id": "i022",
@@ -712,7 +741,8 @@
      "why": "Same — 2:2 is solvable and has been solved."
     }
    ],
-   "created": 1788581667043
+   "created": 1788581667043,
+   "when": "2025-08-01"
   },
   {
    "id": "i023",
@@ -757,7 +787,8 @@
      "why": "She is a visible, identifiable thing — a landform, monument or image fits; a living person does not."
     }
    ],
-   "created": 1788581667045
+   "created": 1788581667045,
+   "when": "2026-03-28"
   },
   {
    "id": "i025",
@@ -777,7 +808,8 @@
      "why": "A mountain cannot be physically rotated. The Tukuhnikivatz facing-reversal reading needs a rotatable object — a map, an image, a carving."
     }
    ],
-   "created": 1788581667046
+   "created": 1788581667046,
+   "when": "2026-03-28"
   },
   {
    "id": "i026",
@@ -797,7 +829,8 @@
      "why": "The place is near the face. A 200° bearing running miles from a summit is probably too far."
     }
    ],
-   "created": 1788581667047
+   "created": 1788581667047,
+   "when": "2026-03-28"
   },
   {
    "id": "i027",
@@ -817,7 +850,8 @@
      "why": "Foot of three is derivable remotely — from a map, a name, or a shape — consistent with stanza 3 being armchair-solvable."
     }
    ],
-   "created": 1788581667048
+   "created": 1788581667048,
+   "when": "2026-03-28"
   },
   {
    "id": "i028",
@@ -837,7 +871,8 @@
      "why": "The gates come with or before the bride; understanding them is how you confirm her."
     }
    ],
-   "created": 1788581667049
+   "created": 1788581667049,
+   "when": "2026-03-28"
   },
   {
    "id": "i029",
@@ -856,7 +891,8 @@
      "why": "Compatible with a mountain named for a person (Waas the Ute chief), a personified feature, or a figure of legend."
     }
    ],
-   "created": 1788581667050
+   "created": 1788581667050,
+   "when": "2026-03-28"
   },
   {
    "id": "i030",
@@ -876,7 +912,8 @@
      "why": "Lowercase ursa points away from a proper name (Ursa Major) toward a common noun or wordplay — 'bear east' as a heading, or an anagram."
     }
    ],
-   "created": 1788581667051
+   "created": 1788581667051,
+   "when": "2026-03-28"
   },
   {
    "id": "i031",
@@ -902,7 +939,8 @@
      "why": "The sacred space may lie beyond the place the bride's face reveals."
     }
    ],
-   "created": 1788581667052
+   "created": 1788581667052,
+   "when": "2026-03-28"
   },
   {
    "id": "i032",
@@ -921,7 +959,8 @@
      "why": "The culvert reading requires this 'no' to be misleading. A natural hole, or a place-name Hole, fits the answer."
     }
    ],
-   "created": 1788581667053
+   "created": 1788581667053,
+   "when": "2026-03-28"
   },
   {
    "id": "i033",
@@ -941,7 +980,8 @@
      "why": "If anything in the poem is man-made, this is the leading candidate: carved, built or placed arcs on rock."
     }
    ],
-   "created": 1788581667054
+   "created": 1788581667054,
+   "when": "2025-06-21"
   },
   {
    "id": "i034",
@@ -991,7 +1031,8 @@
      "why": "The La Sals are on the Utah side of the state line — adjacent to Colorado but outside it."
     }
    ],
-   "created": 1788581667057
+   "created": 1788581667057,
+   "when": "2026-03-28"
   },
   {
    "id": "i037",
@@ -1095,7 +1136,8 @@
      "why": "'Measured rhyme' — page numbers 4, 90, 117, 156 are candidates for the measure."
     }
    ],
-   "created": 1788581667062
+   "created": 1788581667062,
+   "when": "2025-03-27"
   },
   {
    "id": "i042",
@@ -1121,7 +1163,8 @@
      "why": "An arch on the cover would put an arch in the poem."
     }
    ],
-   "created": 1788581667063
+   "created": 1788581667063,
+   "when": "2025-03-27"
   },
   {
    "id": "i043",
@@ -1275,7 +1318,8 @@
     "dedication"
    ],
    "links": [],
-   "created": 1788581667072
+   "created": 1788581667072,
+   "when": "2025-03-27"
   },
   {
    "id": "i052",
@@ -1322,7 +1366,8 @@
      "why": "Plants the bride motif three lines early."
     }
    ],
-   "created": 1788581667074
+   "created": 1788581667074,
+   "when": "2026-09-05"
   },
   {
    "id": "i054",
@@ -1348,7 +1393,8 @@
      "why": "The spring feeds the river."
     }
    ],
-   "created": 1788581667075
+   "created": 1788581667075,
+   "when": "2026-09-05"
   },
   {
    "id": "i055",
@@ -1368,7 +1414,8 @@
      "why": "Silent, flowing water you walk near."
     }
    ],
-   "created": 1788581667076
+   "created": 1788581667076,
+   "when": "2026-09-05"
   },
   {
    "id": "i056",
@@ -1389,7 +1436,8 @@
      "why": "A literal bend then a literal hole on the approach to the arch."
     }
    ],
-   "created": 1788581667077
+   "created": 1788581667077,
+   "when": "2026-09-05"
   },
   {
    "id": "i057",
@@ -1410,7 +1458,8 @@
      "why": "A named 'his' summit due east of the stanza-2 endpoint."
     }
    ],
-   "created": 1788581667078
+   "created": 1788581667078,
+   "when": "2026-09-05"
   },
   {
    "id": "i058",
@@ -1431,7 +1480,8 @@
      "why": "A paired peak for the paired line."
     }
    ],
-   "created": 1788581667079
+   "created": 1788581667079,
+   "when": "2026-09-05"
   },
   {
    "id": "i059",
@@ -1452,7 +1502,8 @@
      "why": "Shape reading of 'three'; the bearing reading of 'twenty degree'."
     }
    ],
-   "created": 1788581667080
+   "created": 1788581667080,
+   "when": "2026-09-05"
   },
   {
    "id": "i060",
@@ -1473,7 +1524,8 @@
      "why": "'Return her face' as reversing a bearing."
     }
    ],
-   "created": 1788581667081
+   "created": 1788581667081,
+   "when": "2026-09-05"
   },
   {
    "id": "i061",
@@ -1495,7 +1547,8 @@
      "why": "Two arcs, side by side, with a marriage reading."
     }
    ],
-   "created": 1788581667082
+   "created": 1788581667082,
+   "when": "2026-09-05"
   },
   {
    "id": "i062",
@@ -1515,7 +1568,8 @@
      "why": "Thematic fit."
     }
    ],
-   "created": 1788581667083
+   "created": 1788581667083,
+   "when": "2026-09-05"
   },
   {
    "id": "i063",
@@ -1540,7 +1594,8 @@
      "why": "Thematic fit."
     }
    ],
-   "created": 1788581667084
+   "created": 1788581667084,
+   "when": "2026-09-05"
   },
   {
    "id": "i064",
@@ -1579,7 +1634,8 @@
      "why": "The other em dash — the pair."
     }
    ],
-   "created": 1788581667085
+   "created": 1788581667085,
+   "when": "2026-09-05"
   },
   {
    "id": "i065",
@@ -1599,7 +1655,8 @@
      "why": "Secrets of the past along the corridor."
     }
    ],
-   "created": 1788581667086
+   "created": 1788581667086,
+   "when": "2026-09-05"
   },
   {
    "id": "i066",
@@ -1619,7 +1676,8 @@
      "why": "The poem says granite. Sandstone arches are not granite; if 'granite' is literal, Corona/Bowtie fail."
     }
    ],
-   "created": 1788581667087
+   "created": 1788581667087,
+   "when": "2026-09-05"
   },
   {
    "id": "i067",
@@ -1639,7 +1697,8 @@
      "why": "'Ursa east' has no bear to point at in the La Sals; the reading relies entirely on 'bear' as a verb."
     }
    ],
-   "created": 1788581667088
+   "created": 1788581667088,
+   "when": "2026-09-05"
   },
   {
    "id": "i068",
@@ -1658,7 +1717,8 @@
      "why": "Cuts against a mountain-bride: nobody worries about searchers hassling a peak."
     }
    ],
-   "created": 1788581667089
+   "created": 1788581667089,
+   "when": "2026-09-05"
   },
   {
    "id": "i069",
@@ -1678,7 +1738,8 @@
      "why": "The line does not pick the road; the destination does."
     }
    ],
-   "created": 1788581667090
+   "created": 1788581667090,
+   "when": "2026-09-05"
   },
   {
    "id": "i070",
@@ -1703,7 +1764,8 @@
      "why": "The Hole was chosen because Jeep Arch was already the target."
     }
    ],
-   "created": 1788581667091
+   "created": 1788581667091,
+   "when": "2026-09-05"
   },
   {
    "id": "i071",
@@ -1723,7 +1785,8 @@
      "why": "'His realm' as 'man mountain' rests on a hedged translation."
     }
    ],
-   "created": 1788581667092
+   "created": 1788581667092,
+   "when": "2026-09-05"
   },
   {
    "id": "i072",
@@ -1743,7 +1806,8 @@
      "why": "Would settle the culvert reading."
     }
    ],
-   "created": 1788581667093
+   "created": 1788581667093,
+   "when": "2026-09-05"
   },
   {
    "id": "i073",
@@ -1763,7 +1827,8 @@
      "why": "Decides whether the cover can be the bride's face."
     }
    ],
-   "created": 1788581667094
+   "created": 1788581667094,
+   "when": "2026-09-05"
   },
   {
    "id": "i074",
@@ -1783,7 +1848,8 @@
      "why": "Mountain vs monument vs image."
     }
    ],
-   "created": 1788581667095
+   "created": 1788581667095,
+   "when": "2026-09-05"
   },
   {
    "id": "i075",
@@ -1803,7 +1869,8 @@
      "why": "Decides how the number line is used."
     }
    ],
-   "created": 1788581667096
+   "created": 1788581667096,
+   "when": "2026-09-05"
   },
   {
    "id": "i076",
@@ -1843,7 +1910,8 @@
      "why": "Still needs an origin, so it yields a line across the map, not a point."
     }
    ],
-   "created": 1788583060368
+   "created": 1788583060368,
+   "when": "2026-09-05"
   },
   {
    "id": "i078",
@@ -1869,7 +1937,8 @@
      "why": "Strands 'twenty degree', which then has to attach to 'her foot of three'. And standing at the north face and turning around faces you away from the north basin."
     }
    ],
-   "created": 1788583060369
+   "created": 1788583060369,
+   "when": "2026-09-05"
   },
   {
    "id": "i079",
@@ -1902,7 +1971,8 @@
      "why": "Most abstract of the three."
     }
    ],
-   "created": 1788583060370
+   "created": 1788583060370,
+   "when": "2026-09-05"
   },
   {
    "id": "i080",
@@ -1936,7 +2006,8 @@
      "why": "Ringed by Tuk, Peale, Mellenthin and Laurel."
     }
    ],
-   "created": 1788583060371
+   "created": 1788583060371,
+   "when": "2026-09-05"
   },
   {
    "id": "i081",
@@ -1957,7 +2028,8 @@
      "why": "An official rule points away from the favored basin unless a standard-car approach exists."
     }
    ],
-   "created": 1788583060372
+   "created": 1788583060372,
+   "when": "2026-09-05"
   },
   {
    "id": "i082",
@@ -1979,7 +2051,8 @@
      "why": "Arcs as landform, at the bride's foot."
     }
    ],
-   "created": 1788583060373
+   "created": 1788583060373,
+   "when": "2026-09-05"
   },
   {
    "id": "i083",
@@ -1999,7 +2072,8 @@
      "why": "'Double' has nothing named to attach to on the north side."
     }
    ],
-   "created": 1788583060374
+   "created": 1788583060374,
+   "when": "2026-09-05"
   },
   {
    "id": "i084",
@@ -2032,7 +2106,8 @@
      "why": "Mountains standing guard, literally."
     }
    ],
-   "created": 1788583060375
+   "created": 1788583060375,
+   "when": "2026-09-05"
   },
   {
    "id": "i085",
@@ -2830,7 +2905,8 @@
      "why": "The answer is simple enough that you already have it."
     }
    ],
-   "created": 1788583371530
+   "created": 1788583371530,
+   "when": "2026-09-05"
   },
   {
    "id": "i111",
@@ -2864,7 +2940,8 @@
      "why": "Frame as the thing you must 'read just right'."
     }
    ],
-   "created": 1788583371531
+   "created": 1788583371531,
+   "when": "2026-09-05"
   },
   {
    "id": "i112",
@@ -2897,7 +2974,8 @@
      "why": "The route is water from the first clue on."
     }
    ],
-   "created": 1788583371532
+   "created": 1788583371532,
+   "when": "2026-09-05"
   },
   {
    "id": "i113",
@@ -2938,7 +3016,8 @@
      "why": "The river named outright at the end."
     }
    ],
-   "created": 1788583371533
+   "created": 1788583371533,
+   "when": "2026-09-05"
   },
   {
    "id": "i114",
@@ -2997,7 +3076,8 @@
      "why": "Same for the stanza's opening."
     }
    ],
-   "created": 1788583371535
+   "created": 1788583371535,
+   "when": "2026-09-05"
   },
   {
    "id": "i116",
@@ -3109,7 +3189,8 @@
      "why": "Consistent with the stanza-1 callback: what you find is what you already know."
     }
    ],
-   "created": 1788583471859
+   "created": 1788583471859,
+   "when": "2026-09-05"
   },
   {
    "id": "i119",
@@ -3161,7 +3242,8 @@
      "why": "'State borders are arbitrary' undercuts the Fenn four-state inference that puts Utah out — borders don't bound the solve."
     }
    ],
-   "created": 1788583956744
+   "created": 1788583956744,
+   "when": "2026-08-23"
   },
   {
    "id": "i120",
@@ -3193,7 +3275,8 @@
      "why": "A 20°/200° line run for miles from a summit would be a great distance."
     }
    ],
-   "created": 1788583956745
+   "created": 1788583956745,
+   "when": "2026-08-23"
   },
   {
    "id": "i121",
@@ -3226,7 +3309,8 @@
      "why": "The distance element lives in the late stanzas."
     }
    ],
-   "created": 1788583956746
+   "created": 1788583956746,
+   "when": "2026-08-23"
   },
   {
    "id": "i122",
@@ -3254,7 +3338,8 @@
      "why": "Medicine Lakes at La Sal Pass is the kind of place this describes."
     }
    ],
-   "created": 1788583956747
+   "created": 1788583956747,
+   "when": "2026-08-23"
   },
   {
    "id": "i123",
@@ -3281,7 +3366,8 @@
      "why": "'Figure out where' is not 'retrieve' — the place you identify within a mile of the car may not be where you end up."
     }
    ],
-   "created": 1788583956748
+   "created": 1788583956748,
+   "when": "2026-08-23"
   },
   {
    "id": "i124",
@@ -3334,7 +3420,8 @@
      "why": "If stanza 3 is a construction, the stanza-2 walk does not need to lead physically into it — weakens Jeep Arch as a hinge."
     }
    ],
-   "created": 1788584194557
+   "created": 1788584194557,
+   "when": "2026-09-05"
   },
   {
    "id": "i125",
@@ -3369,7 +3456,8 @@
      "why": "Ursa East as 'the east of the Bear Lodge range' leaves 'no west Ursa' slightly odd — the range has a west side."
     }
    ],
-   "created": 1788584194558
+   "created": 1788584194558,
+   "when": "2026-09-05"
   },
   {
    "id": "i126",
@@ -3409,7 +3497,8 @@
      "why": "Literally a sacred space, guarded by a wonder."
     }
    ],
-   "created": 1788584194559
+   "created": 1788584194559,
+   "when": "2026-09-05"
   },
   {
    "id": "i127",
@@ -3443,7 +3532,8 @@
      "why": "A measured offset from the face gives the place — short, as he said."
     }
    ],
-   "created": 1788584194560
+   "created": 1788584194560,
+   "when": "2026-09-05"
   },
   {
    "id": "i128",
@@ -3502,7 +3592,8 @@
      "why": "No Hole."
     }
    ],
-   "created": 1788584545872
+   "created": 1788584545872,
+   "when": "2026-09-05"
   },
   {
    "id": "i129",
@@ -3561,7 +3652,8 @@
      "why": "Long gravel road; check standard-car access."
     }
    ],
-   "created": 1788584545873
+   "created": 1788584545873,
+   "when": "2026-09-05"
   },
   {
    "id": "i130",
@@ -3627,7 +3719,8 @@
      "why": "Heavily searched; 'within two miles' means someone has been close, not that the crowd is right."
     }
    ],
-   "created": 1788584545874
+   "created": 1788584545874,
+   "when": "2026-09-05"
   },
   {
    "id": "i131",
@@ -3669,7 +3762,8 @@
      "why": "Teton core is granite and gneiss."
     }
    ],
-   "created": 1788584545875
+   "created": 1788584545875,
+   "when": "2026-09-05"
   },
   {
    "id": "i132",
@@ -3697,7 +3791,8 @@
      "why": "A site just outside a park boundary satisfies both this and 'not ruling parks out'."
     }
    ],
-   "created": 1788584545876
+   "created": 1788584545876,
+   "when": "2026-09-05"
   },
   {
    "id": "i133",
@@ -3725,7 +3820,8 @@
      "why": "The La Sals clear it only if Posey searched for Fenn in the Four Corners, which nothing on record says."
     }
    ],
-   "created": 1788584545877
+   "created": 1788584545877,
+   "when": "2026-09-05"
   },
   {
    "id": "i134",
@@ -3753,7 +3849,8 @@
      "why": "Jackson Hole, Big Hole and Baker's Hole all do."
     }
    ],
-   "created": 1788584545878
+   "created": 1788584545878,
+   "when": "2026-09-05"
   },
   {
    "id": "i135",
@@ -3780,7 +3877,8 @@
      "why": "Literal granite is the plain reading stanza 5 asks for."
     }
    ],
-   "created": 1788584545879
+   "created": 1788584545879,
+   "when": "2026-09-05"
   },
   {
    "id": "i136",
@@ -3945,7 +4043,8 @@
      "why": "If page count is a number that matters, 220 vs 236 needs settling."
     }
    ],
-   "created": 1788584640483
+   "created": 1788584640483,
+   "when": "2025-03-28"
   },
   {
    "id": "i142",
@@ -4018,7 +4117,8 @@
      "why": "Measured rhyme — the map's measurements belong to a period."
     }
    ],
-   "created": 1788584709562
+   "created": 1788584709562,
+   "when": "2026-09-05"
   },
   {
    "id": "i144",
@@ -4054,7 +4154,8 @@
      "why": "Washington/Montana 42nd is a hidden 42 that the 4:02/5:26 elimination does not touch."
     }
    ],
-   "created": 1788584709563
+   "created": 1788584709563,
+   "when": "2026-09-05"
   },
   {
    "id": "i145",
@@ -4088,7 +4189,8 @@
      "why": "A river's steady flow, undammed."
     }
    ],
-   "created": 1788584709564
+   "created": 1788584709564,
+   "when": "2026-09-05"
   },
   {
    "id": "i146",
@@ -4124,7 +4226,8 @@
      "why": "A number given as a different kind of measure (prominence for elevation) is the sort of indirection Posey confirmed."
     }
    ],
-   "created": 1788584709565
+   "created": 1788584709565,
+   "when": "2026-09-05"
   },
   {
    "id": "i147",
@@ -4186,7 +4289,8 @@
      "why": "Not a search location under this reading."
     }
    ],
-   "created": 1788584709567
+   "created": 1788584709567,
+   "when": "2026-09-05"
   },
   {
    "id": "i149",
@@ -4214,7 +4318,8 @@
      "why": "Montana Territory: May 26, 1864. Nevada statehood: October 31, 1864. Two 1864 events on the map's own year."
     }
    ],
-   "created": 1788584709568
+   "created": 1788584709568,
+   "when": "2026-09-05"
   },
   {
    "id": "i150",
@@ -4313,7 +4418,8 @@
      "why": "Reading 2 keeps every mountain site in and drops the Moab corridor (~4,000 ft) and Devils Tower (~4,200 ft)."
     }
    ],
-   "created": 1788585102634
+   "created": 1788585102634,
+   "when": "2026-01"
   },
   {
    "id": "i153",
@@ -4334,7 +4440,8 @@
      "why": "Whichever reading holds, it splits the board cleanly — settle it before spending a trip."
     }
    ],
-   "created": 1788585102635
+   "created": 1788585102635,
+   "when": "2026-09-05"
   },
   {
    "id": "i154",
@@ -4375,7 +4482,8 @@
      "why": "Alternative: the checkpoint is the gates, 'at least halfway' — 3:2 is clue 6 of ~10."
     }
    ],
-   "created": 1788585385166
+   "created": 1788585385166,
+   "when": "2026-09-05"
   },
   {
    "id": "i155",
@@ -4409,7 +4517,8 @@
      "why": "Heart Lake, from the Netflix safe, is 'heart' twice."
     }
    ],
-   "created": 1788585385167
+   "created": 1788585385167,
+   "when": "2026-09-05"
   },
   {
    "id": "i156",
@@ -4457,7 +4566,8 @@
      "why": "Kills every place-name bear (Bear Lodge, Bear Mountain, Beartooth) if right."
     }
    ],
-   "created": 1788585385168
+   "created": 1788585385168,
+   "when": "2026-09-05"
   },
   {
    "id": "i157",
@@ -4524,7 +4634,8 @@
      "why": "No natural Hole found yet; the tunnels are man-made."
     }
    ],
-   "created": 1788585385169
+   "created": 1788585385169,
+   "when": "2026-09-05"
   },
   {
    "id": "i158",
@@ -4603,7 +4714,8 @@
      "why": "Wisdom → Three Forks → Gates is ~150 river miles; only works if stanzas 1–3 are worked from the map."
     }
    ],
-   "created": 1788585385170
+   "created": 1788585385170,
+   "when": "2026-09-05"
   },
   {
    "id": "i159",
@@ -4630,7 +4742,8 @@
      "why": "Sweetwater's bride is not a thing."
     }
    ],
-   "created": 1788585385171
+   "created": 1788585385171,
+   "when": "2026-09-05"
   },
   {
    "id": "i160",
@@ -4657,7 +4770,8 @@
      "why": "Weaker than the community uses it: it does not confine the hunt to Fenn's four states."
     }
    ],
-   "created": 1788585598313
+   "created": 1788585598313,
+   "when": "2026-09"
   },
   {
    "id": "i161",
@@ -4700,7 +4814,8 @@
      "why": "Ojo Caliente, Boiling River, Iron Springs: he searched warm water for Fenn — 'hope surges, clear and bright' as a spring is in character."
     }
    ],
-   "created": 1788585598314
+   "created": 1788585598314,
+   "when": "2026-09"
   },
   {
    "id": "i162",
@@ -4754,7 +4869,8 @@
      "why": "No bear or star beyond the pole-star reading."
     }
    ],
-   "created": 1788585598315
+   "created": 1788585598315,
+   "when": "2026-09-05"
   },
   {
    "id": "i163",
@@ -4802,7 +4918,8 @@
      "why": "Free, 24/7, dogs, natural."
     }
    ],
-   "created": 1788586657700
+   "created": 1788586657700,
+   "when": "2026-09-05"
   },
   {
    "id": "i164",
@@ -4844,7 +4961,8 @@
      "why": "Secrets of the past still hold in the old name."
     }
    ],
-   "created": 1788586657701
+   "created": 1788586657701,
+   "when": "2026-09-05"
   },
   {
    "id": "i165",
@@ -4879,7 +4997,8 @@
      "why": "Literal gates, but no bride found."
     }
    ],
-   "created": 1788586657702
+   "created": 1788586657702,
+   "when": "2026-09-05"
   },
   {
    "id": "i166",
@@ -4907,7 +5026,8 @@
      "why": "Same."
     }
    ],
-   "created": 1788586657703
+   "created": 1788586657703,
+   "when": "2026-09-05"
   },
   {
    "id": "i167",
@@ -4929,7 +5049,8 @@
      "why": "Sandstone."
     }
    ],
-   "created": 1788586657704
+   "created": 1788586657704,
+   "when": "2026-09-05"
   },
   {
    "id": "i168",
@@ -4976,7 +5097,8 @@
      "why": "Inside the state park is out (hours); the site must be canyon-side or at the access area."
     }
    ],
-   "created": 1788586657705
+   "created": 1788586657705,
+   "when": "2026-09-05"
   },
   {
    "id": "i169",
@@ -5004,7 +5126,8 @@
      "why": "Fee for non-residents if the site were there; it cannot be — the rock is inaccessible."
     }
    ],
-   "created": 1788586657706
+   "created": 1788586657706,
+   "when": "2026-09-05"
   },
   {
    "id": "i170",
@@ -5039,7 +5162,8 @@
      "why": "Cameahwait's realm across the pass."
     }
    ],
-   "created": 1788586657707
+   "created": 1788586657707,
+   "when": "2026-09-05"
   },
   {
    "id": "i171",
@@ -5068,7 +5192,8 @@
      "why": "Bride and groom flank the gates of the Hole."
     }
    ],
-   "created": 1788586657708
+   "created": 1788586657708,
+   "when": "2026-09-05"
   },
   {
    "id": "i172",
@@ -5096,7 +5221,8 @@
      "why": "Too far from a car, on a trail."
     }
    ],
-   "created": 1788586657709
+   "created": 1788586657709,
+   "when": "2026-09-05"
   },
   {
    "id": "i173",
@@ -5124,7 +5250,8 @@
      "why": "Not within a mile of it."
     }
    ],
-   "created": 1788586657710
+   "created": 1788586657710,
+   "when": "2026-09-05"
   },
   {
    "id": "i174",
@@ -5176,7 +5303,8 @@
      "why": "Far from Fenn country; ranch road."
     }
    ],
-   "created": 1788586657711
+   "created": 1788586657711,
+   "when": "2026-09-05"
   },
   {
    "id": "i175",
@@ -5216,7 +5344,8 @@
      "why": "Limestone."
     }
    ],
-   "created": 1788586657712
+   "created": 1788586657712,
+   "when": "2026-09-05"
   },
   {
    "id": "i176",
@@ -5249,7 +5378,8 @@
      "why": "Nothing for stanza 4."
     }
    ],
-   "created": 1788586657713
+   "created": 1788586657713,
+   "when": "2026-09-05"
   },
   {
    "id": "i177",
@@ -5282,7 +5412,8 @@
      "why": "No Hole."
     }
    ],
-   "created": 1788586657714
+   "created": 1788586657714,
+   "when": "2026-09-05"
   },
   {
    "id": "i178",
@@ -5316,7 +5447,1201 @@
      "why": "Rest area buildings."
     }
    ],
-   "created": 1788586657715
+   "created": 1788586657715,
+   "when": "2026-09-05"
+  },
+  {
+   "id": "i179",
+   "text": "Hub constraints table (Posey, per the hub): the site is below 11,000 ft; clues may cross state lines; the location is less than a mile from a car; access 24/7, no fee; not in a pay park, national-park fee area or restricted zone. 'The treasure is absolutely hidden somewhere on the map that I've published.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "constraints",
+    "elevation",
+    "state-lines",
+    "map"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Under 11,000 ft — every basin above that is out (Gold Basin is marginal)."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Clues may cross state lines — a construction that starts in one state and lands in another is allowed."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Rules out the highest La Sal and Uinta options."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587079743
+  },
+  {
+   "id": "i180",
+   "text": "Hub progress board: the Hole (2:3) is 'confirmed solved by the community'; the Bride (3:2) has been identified; at least 6 clues solved by the most-advanced searcher; part of stanza 3 solved; the technical clue solved by one person overseas; no one has reached the 'kitchen-sized target area' as of Seekers Summit 2026. Still open on the hub: the exact ursa east reading, 'foot of three at twenty', and the double arcs location.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "progress",
+    "solved",
+    "kitchen-sized",
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "If the community has the Hole, it is a named natural place — the crowd's Big Hole reading is the one the hub counts as solved."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bride identified."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Kitchen-sized target area' — the final spot is a few square yards; the last step is recognition."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Ursa still open for everyone."
+    }
+   ],
+   "when": "2026-03",
+   "created": 1788587079744
+  },
+  {
+   "id": "i181",
+   "text": "Netflix, per the hub: the clocks are confirmed relevant, and Posey called 4:19 on the Netflix clock 'a little uncanny'. Number 42 confirmed relevant at Seekers Summit 2026 with no public decode. (Our file has 4:02 and 5:26 eliminated — the clock as an object is in, those two times are out.)",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "netflix",
+    "clock",
+    "4:19",
+    "42"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A clock over his head, and a time he called uncanny: 4:19."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "4:19 — four and nineteen, another indirect number to test against 'three at twenty'."
+    }
+   ],
+   "when": "2026-03",
+   "created": 1788587079745
+  },
+  {
+   "id": "i182",
+   "text": "Book, per the hub: the only explicit 'bride' in the book is a photo caption — 'From left: Grandpa Posey, Mom and Dad (aka the bride and groom), Grandma Posey, and Grandma Clements in September of 1979.' A photograph is a physical object that can be rotated; 'return her face' would then be literal and armchair. Also: Brandon's memorial is 'The Redington Requiem' — a granite boulder pushed by Justin; the Tucker tribute poem in 'The Mountain Memory' chapter has helpful clues (confirmed at Seekers Summit 2026); Justin's mother barrel-raced (horseshoes = double arcs theory); a rancher held a brass ring with 18–20 keys; Brandon counted 17 steps across the patio by 'Shadow Feet the raccoon'; 'probability matrices devoured nearly a decade of my life'.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "book",
+    "bride",
+    "photo",
+    "brandon",
+    "granite-boulder",
+    "tucker",
+    "mother",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The book's one bride is his mother in a 1979 wedding photo — 'his' bride, and a face you can physically turn."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Return her face: rotate the photograph. Satisfies 'technically a physical rotation' without moving a mountain."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Brandon's memorial is a granite boulder Justin pushed — the poem's granite may be a memorial stone, and the double arcs a mark on it."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A memorial site: 'wonder guards this sacred space'."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "17 steps, 18–20 keys, 1979 — numbers in the book."
+    },
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Probability matrices devoured a decade' — stanza 5 is autobiographical."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587079746
+  },
+  {
+   "id": "i183",
+   "text": "Book gazetteer, per the hub: places named in the memoir — Dillon, Big Hole Valley, Beaverhead Valley, Wisdom (in the Grasshopper Valley chapter), Polaris MT (explicitly named), Pioneer Mountains, Crystal Park, Bannack, Blacktail Deer Creek, Clark Canyon Reservoir, Red Rock River. The hub reads the 'geographic fingerprint' as the Big Hole / Grasshopper Valley / Pioneer Mountains corridor with Dillon as hub, and the hiding spot as 'connected to his grandfather's territory'.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "gazetteer",
+    "montana",
+    "dillon",
+    "grasshopper-valley",
+    "polaris",
+    "crystal-park",
+    "bannack"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Polaris is named in the book itself."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Wisdom is in the book, in the Grasshopper Valley chapter."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Big Hole Valley named."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Crystal Park — a granite dig — is in the book."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The grandfather's territory: the Grasshopper Valley (Polaris, Elkhorn Hot Springs, Crystal Park) is where the family cabin most plausibly sits — and the site must be more than a mile from it."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Clark Canyon Reservoir is a dam the map omits."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587079747
+  },
+  {
+   "id": "i184",
+   "text": "Hub theories for the gates and bride: Storm Lake Pass on the Continental Divide (Anaconda-Pintler, above the Big Hole) as the 'gate'; Beaverhead Rock; Queener Mountain (queen = bride) in the Big Hole area; Bridal Veil Falls / Creek. Wisdom, Montana as 'the most widely accepted first geographic clue', literally shadowed by its ranges morning and evening ('shadowed sight').",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "gates",
+    "storm-lake-pass",
+    "queener",
+    "wisdom",
+    "shadowed"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Storm Lake Pass and Queener Mountain put gates and bride inside the Big Hole itself."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Wisdom shadowed by its mountains — a literal 'shadowed sight'."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587079748
+  },
+  {
+   "id": "i185",
+   "text": "Hub interview index (dates): Cowlazars & KPro YouTube (very early, shortly after launch); Froggy YouTube (early); Treasure Hunt With Us YouTube (Apr 9 2025); Sandal TikTok/YouTube livestream (around National Public Lands Day, late Sep 2025); X Marks the Pod (pre-Summit, late 2025/early 2026); Seekers Summit (Mar 28 2026). The hub holds 233 interview Q&As and 295 book ('JIBLE') entries. The hunt as Posey describes it: 'formalized hide-and-seek with confidence checkpoints — I wanted to give a way for people to gain confidence as opposed to losing confidence as they work through clues.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "interviews",
+    "timeline",
+    "checkpoint",
+    "quote"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Confidence checkpoint at or past the midpoint."
+    }
+   ],
+   "when": "2025-04-09",
+   "created": 1788587079749
+  },
+  {
+   "id": "i186",
+   "text": "Hub readings of 'double arcs on granite bold': two carved or natural U-curves on a granite boulder or cliff; double rainbows or river curves reflected in granite; two horseshoe shapes (his mother's barrel racing); two semicircular petroglyphs or erosion marks. 'Bold' = prominent, visible from a distance — a recognizable landmark, not a subtle marker. Hub note on homophones: numbers 'indirectly encoded through wordplay and homophones' (our file has him declining on homophones specifically — treat as unsettled).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "treasurehuntamusementpark.com BTME research hub (Cowlazars) — via search summary",
+   "tags": [
+    "double-arcs",
+    "horseshoe",
+    "bold",
+    "homophones"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Bold' as visible from a distance cuts against a small carving and toward a landmark."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Against my checkpoint-as-small-carving reading, if 'bold' means big."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587079750
+  },
+  {
+   "id": "i187",
+   "text": "CORRECTION — railroad tracks. Dillon (6/21/25): 'Do you consider railroad tracks a man-made structure?' → 'I consider them to be a man-made structure. Yes.' Summit (3/28/26): 'Based on how the rules are described, railroad tracks are ruled out.' Also Dillon: 'I did not put it in very close proximity to any man-made trail… so it is a little ways off' — he didn't want a random hiker to stumble on it. So tracks are OUT as a site, not 'nearby'; my earlier fragment read was wrong. And: 'One clue arguably has a man-made implication, but the whole hunt could be solved using only natural structures depending on interpretation.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "railroad",
+    "man-made",
+    "trail",
+    "correction"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Not at railroad tracks. Not close to any man-made trail — 'a little ways off'."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The one man-made implication is optional — a natural-only path exists."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587630996
+  },
+  {
+   "id": "i188",
+   "text": "Fenn footprint per Treasure Among Us: Madison Junction, Nine Mile Hole, Hebgen Lake, Yellowstone, SINKS CANYON, Grand Teton, San Juan Mountains. If accurate, Sinks Canyon (Lander, WY) was itself a Posey Fenn-search location — the 75-mile gate for the Sinks solve is met at zero miles. San Juans are Colorado (eliminated).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Treasure Among Us — BTME pages (user research write-up)",
+   "tags": [
+    "fenn",
+    "footprint",
+    "sinks-canyon",
+    "grand-teton"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Sinks Canyon is in his own Fenn footprint."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Grand Teton too — the Jackson Hole solve clears the gate."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587630997
+  },
+  {
+   "id": "i189",
+   "text": "Not private property — reiterated emphatically June 2026 after reports of trespassing: 'the treasure is not on private property', already stated in rules, posts and interviews. Federal vs state land: 'No, but it's publicly accessible as of today' (Dillon). 'The focus is on legal accessibility of the final location, not convenience of access.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Treasure Among Us — BTME pages (user research write-up)",
+   "tags": [
+    "private-property",
+    "access",
+    "june-2026"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Public land, period."
+    }
+   ],
+   "when": "2026-06",
+   "created": 1788587630998
+  },
+  {
+   "id": "i190",
+   "text": "Hunt status: a separate marked-book prize was found in July 2026; Justin clarified the marked book was found, 'not the treasure (yet)'. A Treasure Hunt With Us meet-and-greet is scheduled for Sep 12 2026 in POLARIS, Montana — event news, not a stated clue, but the venue is the community's ursa town.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Treasure Among Us — BTME pages (user research write-up)",
+   "tags": [
+    "status",
+    "marked-book",
+    "polaris",
+    "event"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "He is going to Polaris. Event logistics, not a clue — but note it."
+    }
+   ],
+   "when": "2026-07",
+   "created": 1788587630999
+  },
+  {
+   "id": "i191",
+   "text": "Poem creation: 'I wrote the bulk of that poem in 6 hours or less. Purposely didn't finish the poem til the day the book went to print… I only tweaked two words tops.' (Dillon). Froggy: 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Dillon Q&A — Jun 21 2025 (THAP / JIBLE)",
+   "tags": [
+    "poem",
+    "creation"
+   ],
+   "links": [
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Written fast and intuitively — the plain reading is likely the intended one."
+    }
+   ],
+   "when": "2025-06-21",
+   "created": 1788587631000
+  },
+  {
+   "id": "i192",
+   "text": "'Virtually every line in the poem is helpful. So just because as hope surges is the first actionable clue, doesn't mean people should discount the earlier lines. They are helpful context.' (X Dark Matters). 'Is the poem an instruction manual, a map, or both?' → 'In a way, a map can be an instruction manual, so I guess, yeah.' (Sandal)",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "X Dark Matters — Sep 4 2025 (JIBLE)",
+   "tags": [
+    "poem",
+    "stanza-1",
+    "map"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 1 is context, not filler."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The poem is a map."
+    }
+   ],
+   "when": "2025-09-04",
+   "created": 1788587631001
+  },
+  {
+   "id": "i193",
+   "text": "'From beginning to end of the poem… it will inherently create some sort of shape.' (JIBLE, Distances). Read with 'each clue is not meant to convey great distance' (Summit) and the Indiana Jones / National Treasure nudge: the clues trace a figure, not a march.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "JIBLE 4.0 (jessinthewest / hi-imerica, upd. 9/30/25) via THAP hub",
+   "tags": [
+    "structure",
+    "shape",
+    "construction"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A shape needs lines: the bearing is one of them."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Return = the shape closes."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ursa as a direction, drawing a leg of the shape."
+    }
+   ],
+   "when": "2025",
+   "created": 1788587631002
+  },
+  {
+   "id": "i194",
+   "text": "'The key to one direction lies in another' — this line is a hidden audio message decoded from the ARKADE song 'Beyond the Map's Edge' (Netflix); Justin confirmed the associated technical clue, not as the core geographic solution. At Summit: 'Does this relate to the azimuth?' → 'No.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Treasure Among Us — BTME pages (user research write-up)",
+   "tags": [
+    "song",
+    "arkade",
+    "technical-clue",
+    "direction",
+    "azimuth"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The song's message is a direction-reversal instruction — 'return her face' in other words."
+    },
+    {
+     "lineId": "l11",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Not the azimuth, he says — so not simply 'take a compass bearing'."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "One direction (ursa east) keyed by another."
+    }
+   ],
+   "when": "2026-04",
+   "created": 1788587631003
+  },
+  {
+   "id": "i195",
+   "text": "Cipher solved and confirmed: MAGYAR (April 2026) — Hungarian; Tucker was a Vizsla, a Hungarian breed. 'The cipher is more than anything a nod to what the container is' (Sandal). Not in the poem, not in the book ('Who says the cipher is in the book?'). Basic math only. Solver: a woman overseas. Justin: MAGYAR does not give coordinates, a state or a region.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Treasure Among Us — BTME pages (user research write-up)",
+   "tags": [
+    "cipher",
+    "magyar",
+    "vizsla",
+    "container"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'What you seek, you already know' — the container is Tucker-shaped: recognizable to anyone who read the book."
+    },
+    {
+     "lineId": "l04",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Stanza 1 is not the cipher."
+    }
+   ],
+   "when": "2026-04",
+   "created": 1788587631004
+  },
+  {
+   "id": "i196",
+   "text": "Container: 'Who says it's a box?' (4/9/25). 'Targeted and deliberate modifications' to an existing object; some searchers have guessed it correctly; 'extremely recognizable — anybody who watched the series or read my book will know right away'; not a Fenn replica. The Tucker bronze statue (~70–80 lb, hollow) is NOT the treasure. The original Saddleback briefcase that carried the treasure, plus the Netflix coffee mugs, ship to the winner.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Treasure Hunt With Us podcast — Apr 9 2025 (THAP)",
+   "tags": [
+    "container",
+    "tucker",
+    "briefcase"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Recognizable on sight."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Something 60 lb and briefcase-sized, modified, concealed so that something must be moved to see it."
+    }
+   ],
+   "when": "2025-04-09",
+   "created": 1788587631005
+  },
+  {
+   "id": "i197",
+   "text": "Rearrangement and reading: 'Does the poem need to be read or rearranged other than as presented?' → 'I'm not going to rule that out.' Thematic vs literal → 'Probably roughly both in equal measure.' Anagrams → 'I haven't specified.' Homophones/wordplay for numbers → 'Yes' — kept 'in play'. Solve verifiability: between Sudoku and 'jump in the lake' — 'a reasonable person would say okay, seems reasonable'.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "reading",
+    "anagram",
+    "homophone",
+    "verifiability"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Both literal and thematic, and a non-linear read is not ruled out."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Numbers may hide in words."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631006
+  },
+  {
+   "id": "i198",
+   "text": "Multiple solves as safeguards: 'in case certain aspects of the mechanics don't work… there are other ways to approach it so that you end up finding it either way' (Sandal). 'There is an optimal solution and fallback paths… someone might not quite understand one clue, they could still limp along' (Dillon, Gypsy's Kiss).",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Sandal Sanders livestream — Sep 27 2025 (JIBLE)",
+   "tags": [
+    "multiple-solves",
+    "limp-along"
+   ],
+   "links": [
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Redundancy is built in; a solve need not close every line."
+    }
+   ],
+   "when": "2025-09-27",
+   "created": 1788587631007
+  },
+  {
+   "id": "i199",
+   "text": "Stanza 3 verbatim: 'Is return her face referring to the bride?' → punt (9/4/25); later 'her face belongs to her' → yes (Summit). 'Is the place in her face or her gaze?' → no clarity. 'Has the bride ever been alive?' → 'depends on how you define the term alive' (Sandal). 'Is bride the right word?' → 'No. I'm pretty pleased with that one.' 'Is double arcs a directional bearing?' → punt. 'Are there multiple meanings to castle?' → 'only one correct interpretation' (castle appears somewhere in the materials — locate it).",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "bride",
+    "face",
+    "castle",
+    "double-arcs"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Bride' is the exact word he wanted."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Her face is hers; place-in-face vs gaze left open."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Double arcs as a bearing was not denied."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631008
+  },
+  {
+   "id": "i200",
+   "text": "Vantage point: 'There is a vantage point mentioned in your grandfather's memoir — did you incorporate that?' → 'There is a vantage point involved. But it's not that any of the clues are necessarily talking about that vantage point.' Grandpa FITZWATER (Montana fish-and-game warden, Dillon / Blacktail Deer Creek) wrote memoirs; Justin's favorite story: the poacher confronted at a cabin poker game.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "vantage-point",
+    "fitzwater",
+    "grandfather"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Shadowed sight' — a sight line from a vantage point."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Foot of three at twenty degree' identified from a distance — from the vantage point."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631009
+  },
+  {
+   "id": "i201",
+   "text": "Layer 5: 'It is true to say that layer five has some bearing on the treasure hunt.' Undefined publicly — likely an audio/mix layer (the song) or a map layer. Ankh in the legal section: not a clue, though the ankh may matter elsewhere. Dedication: 'layered and intentional… I am talking about a person… someone very special.' 'The Legal Lowdown' has no hints. Rancher 'Niven': 'an interesting character, that's about all I can say.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "layer-5",
+    "ankh",
+    "dedication",
+    "niven"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Layers to read just right."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631010
+  },
+  {
+   "id": "i202",
+   "text": "Two 'super obvious' Netflix hints: 'It's either episode two or three. It is a scene that does not have me in it. But it was a scene that I had some control over. If you rewatch it, it'll be pretty obvious.' (Dillon). By 9/27/25 he said people had since figured these out. Clues only 'where I had some notion of control, directly or indirectly'. The lawyer/Carl scene: zero clues. Checkpoint not visible in the series. At least five singular clues, some compound. 'Netflix hints guide you in the book.' Roman numerals on the clock make no difference. Clock count: 'the lower the number the better.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Dillon Q&A — Jun 21 2025 (THAP / JIBLE)",
+   "tags": [
+    "netflix",
+    "episode-2-3",
+    "clock",
+    "control"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Clocks are 'part of the cipher'; time is important."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Series → book → poem."
+    }
+   ],
+   "when": "2025-06-21",
+   "created": 1788587631011
+  },
+  {
+   "id": "i203",
+   "text": "Hiding verbatim: two 2023 journeys totaling 9,000+ miles (first was reconnaissance), off-grid; 'no hint meant to be read into 9,000 miles'; at least four trips from the car, all within a 24-hour span, with a broken tibia, not his own vehicle; 'anonymous travel is very hard… my route was convoluted… I did it twice'; has never returned and has no plans to. Animal seen while hiding: mammalian, NOT a moose, first time seeing it in nature, 'if I said the animal it could have a pretty profound impact on the search area' — and separately he has confirmed seeing a wolverine in the wild.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "hiding",
+    "animal",
+    "wolverine",
+    "tibia"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A four-trip carry within a day on a broken leg from a normal car: the site is close, gentle and drivable-to."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "If the animal is a wolverine, the search area is high mountain country — Winds, Tetons, Beartooths, Pintlers, Glacier — not desert canyon."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631012
+  },
+  {
+   "id": "i204",
+   "text": "Site verbatim: 'a place that is important to me, and a place that I've known about for quite some time'; meaningful for beauty, symbolism AND sentiment ('all of the above'); 'physical objects along the way — fair to say there are'; the finder 'will have come to know its personal lore and secrets — I think so'. 'Is there a significant clue visible standing 15 feet from the container?' → 'The most accurate answer is no.' Metal detector → 'probably not'. Digging → 'not something I'm willing to rule out'. Exterior of a structure → 'always a possibility'; a gazebo counts as a building. Not wheelchair accessible. 'If you're needing to drink many bottles of water, you're going too far.' 'Even a serious low rider would absolutely have made it' on BLM dirt roads.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "site",
+    "15-feet",
+    "digging",
+    "low-rider",
+    "blm"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Nothing shows at 15 ft; something is manipulated; digging not ruled out — a covered or wedged cache, not a visible one."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Personal lore and secrets at the site."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 1,
+     "why": "BLM dirt road access."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631013
+  },
+  {
+   "id": "i205",
+   "text": "Progress verbatim: 'Certainly the first stanza… at least a large portion, been solved. The second stanza, at least half of it' (9/4/25). 'Part of stanza 3 solved'; 'at least six clues' by the most-advanced searcher; 'people less than two miles… and certainly even less' (Dillon); 200 ft from the checkpoint (8/1/25); 'fairly close' several (X Marks); zero checkpoint photos; kitchen-sized area unreached; 'No group way off in left field. No group uber close.' 'Tangible progress… absolutely attainable… a matter of time.' Summit stats: 277,428 verify requests; 119,644 people '100% sure'; 1,221 bribe attempts; 80 blackmail; 19 tracking; 16 search-and-rescue operations.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Seekers Summit, Tucson — Mar 28 2026 (THAP transcript)",
+   "tags": [
+    "progress",
+    "stats",
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 1 and half of stanza 2 are solved by the crowd — whatever 2:1–2:2 are, they are findable."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Within 200 ft of the checkpoint without recognizing it: small or unremarkable up close."
+    }
+   ],
+   "when": "2026-03-28",
+   "created": 1788587631014
+  },
+  {
+   "id": "i206",
+   "text": "Design philosophy verbatim: 'formalized hide-and-seek with confidence checkpoints'; 'the part of me that embraces childlike wonder' wrote the poem; designed for humans not AI ('an astronomical amount of thought'); won't say if buried because AI could use it; Disney Imagineering background (~a decade) — 'not just you go and get it — there's something more to it'; tiers: 'some easier things… and some more challenging'; no grid searching; 'take your treasure hat off and read the memoir as a memoir'; 'understanding the person who hid it is the clearest map'. Pep talk: 'The night is darkest before the light. If you are confident in the location in which you're searching, I see little reason to stray.' Finder psychology: Hurley from Lost. 42: 'The Hitchhiker's Guide to the Galaxy is a fantastic book.'",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "X Marks the Pod — pre-Summit, ~early 2026 (THAP)",
+   "tags": [
+    "philosophy",
+    "childlike-wonder",
+    "ai",
+    "disney",
+    "hurley",
+    "42"
+   ],
+   "links": [
+    {
+     "lineId": "l17",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Childlike wonder, not engineering — the reading a kid would give."
+    },
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Obvious in retrospect."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "42 → Hitchhiker's Guide: the answer to everything."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587631015
+  },
+  {
+   "id": "i207",
+   "text": "Logo: 'the angzarr symbol — I chose and modified it intentionally' (X Dark Matters). Angzarr is the Unicode glyph ⍼ (U+237C, 'right angle with downwards zigzag arrow'), a symbol with no known origin — a right angle plus a zigzag arrow. 'I designed the logo intentionally and it has some meaning' (X Marks). TreasureNet: the logo traces Utah's northeast corner.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "X Dark Matters — Sep 4 2025 (JIBLE)",
+   "tags": [
+    "logo",
+    "angzarr",
+    "right-angle"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A right angle in the logo — an angle is a bearing; twenty degrees is an angle."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A zigzag arrow that turns back: return."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The logo is a thing to read."
+    }
+   ],
+   "when": "2025-09-04",
+   "created": 1788587631016
+  },
+  {
+   "id": "i208",
+   "text": "Book verbatim, structure: chapters Seinfeld-style. Named: The Gracie Grail (Gracie's Antiques, Dillon — 'an arched entryway crowned with brick', 'the iron gate seemed to politely suggest this place had boundaries', a door that needs 'lift and turn'); The Rod Race (Grasshopper Creek); The Mountain Memory (Tucker poem, p. 213); The Treasure Trail (Nine Mile Hole, Yellowstone list, '$100 to the first person who can tell me where this was taken' photo); The Redington Requiem (Brandon; 'I pushed a monument of granite across this unforgiving land'); The Curious Confluence; The Fitzwaters (Grandpa, Dillon, Blacktail Deer Creek 'whispered stories through the willows'); The Dubious Decision ('navigating the great unknown with wisdom as your compass'); Money Machine; The Concrete Kiss; The Trailside Troubles; The Postal Pilgrimage and Poseys on the Road ('the most meaningful chapters' — Justin). Legal Lowdown: no hints.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "chapters",
+    "gracie",
+    "fitzwater",
+    "confluence",
+    "postal-pilgrimage"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "An arched entry and an iron gate in the Dillon chapter — gates in his own words."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Lift and turn' — a rotation mechanic he wrote down."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'With wisdom as your compass.'"
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A 'curious confluence' — waters meeting."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587631017
+  },
+  {
+   "id": "i209",
+   "text": "Book verbatim, motifs: dedication 'thank you for being my north star'; 'Like four points of a compass, I've dedicated this treasure to four departed souls' (book order is authoritative, per Justin); Prologue opens 'Grid searching Nine Mile Hole. Again… Six years had changed me'; the treasure spans 'ancient Lydia to outer space'; hiding spot 'dear to my heart… whispers of personal lore and secrets'; Introduction 'you might find clues to my treasure scattered through these pages'; acknowledgments 'the best treasures hide in plain sight — sometimes between the lines of an acknowledgments page' and 'your fingerprints are on every page'; p. 116 'ursine'; 'You have to think like a trout'; 'Childhood runs on wonder, not wisdom'; the crawdad lesson (simple traps catch more); 'saguaros standing guard'; the Quail Egg Quest ('pure, unadulterated childlike wonder'); Tucker afraid of a bronze bear that 'stood guard near the town center'; hiding on the horse Meghan 'in plain sight'; the Great Gift Hunt; mother 'so precisely calculated you'd think she had a protractor in her stirrups'.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "motifs",
+    "north-star",
+    "compass",
+    "acknowledgments",
+    "ursine",
+    "plain-sight"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Ursine' on p. 116 — ursa = bear in his own usage; a bronze bear 'stood guard'."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "North star, time, Lydia to outer space."
+    },
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Between the lines of the acknowledgments — read just right."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Standing guard' is his phrase for protective landforms."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A protractor in the stirrups — angles are a family trait."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587631018
+  },
+  {
+   "id": "i210",
+   "text": "Tucker poem (p. 213, Mountain Memory) — confirmed helpful: 'Tucker, once my earthly friend, / Took half my soul around the bend'; 'In the mountain's hushed solitude, where the air is crisp and the trees stand in silent reverence, I cast my line into a babbling brook'; 'And as I tread this mortal coil, / I wish release from sorrow's toil'; 'Two lonely souls, forever twined'; 'Here, where earth and memory converge, Tucker lives on.' Tucker: a Vizsla, trained by hide-and-seek on trails; appears through the documentary; a three-legged (porcelain) dog recurs in the book; Tucker Creek exists in the Big Hole region; community theory: a lost-dog poster of Tucker as the checkpoint.",
+   "kind": "book",
+   "conf": "confirmed",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "tucker",
+    "poem",
+    "around-the-bend",
+    "mortal-coil",
+    "babbling-brook"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Around the bend' is Tucker's crossing — the poem's bend is a river bend AND the passage beyond."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'I cast my line into a babbling brook' in the mountain's hushed solitude — small water, not a big river."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Trees stand in silent reverence' — silence at the water."
+    },
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Mortal coil' — 4:3 is the Tucker poem's line restated."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Where earth and memory converge' — the sacred space is a memorial spot."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A three-legged dog: a foot of three."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587631019
+  },
+  {
+   "id": "i211",
+   "text": "Book geography verbatim: 'the Big Hole's crystal waters'; Grasshopper Valley 'flanked by the Big Hole Valley'; 'At night, the sky in Grasshopper Valley is so star-spangled… thumbing through your mental Rolodex for constellations'; Crystal Park 'smell of pine and wet granite… fairy dust shards and crystal chunks'; Red Rock River feeds Clark Canyon Reservoir 'where fresh, cool, oxygen-rich water flows in'; Dillon 'steeped in history, like a tea bag stewing for centuries'; Bannack and Sheriff Plummer; 'local lore suggests millions in precious metal still hidden in those hills'; Shoshone and Bannock named as original inhabitants; photo 'Mom fishing the river she loves the most — The Beaverhead'; Grandpa Fitzwater with binoculars 'never met a faraway view he didn't need to inspect closer'.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "gazetteer",
+    "grasshopper-valley",
+    "crystal-park",
+    "beaverhead",
+    "bannack",
+    "constellations"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Constellations named over Grasshopper Valley, where Polaris the town sits."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Wet granite at Crystal Park — granite in his own Montana words."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Bannack, Plummer, hidden gold — secrets of the past."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Oxygen-rich water flowing into Clark Canyon — a surge."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Binoculars and faraway views — sight."
+    }
+   ],
+   "when": "2025-03-27",
+   "created": 1788587631020
+  },
+  {
+   "id": "i212",
+   "text": "Hub community theories (all speculation): Hope Creek NE of Wisdom in the Anaconda-Pintler ('hope surges'); Lamar / Trout Creek; the Hidden Lake / Queener Mountain BOTG solve (Storm Lake Pass = gates, Queener = bride, triangular ridge at 20° NE of Trout Creek = foot of three, Waterton Valley CDT 6.73 mi = return, Hidden Lake canyon walls = double arcs; claims a 200-ft checkpoint area); a double-arched stone bridge near Warm Springs Conservation Area MT ('Rainbow Arch', matching Netflix coffee-cup handles); the four-city X (Wisdom MT, Bend OR, Jackson Hole WY, Truth or Consequences NM); the page-156 acrostic B-R-G-D-S-H-L shifted one → 'CHEST I AM'; the line-initial acrostic C-F-W-F-A-W-R-I-I-H-H-R-D-W-B-W-T-N-L-W; 'Wise River'; 'the vessel's a loco' anagram and the father's train culture / Great Northern; Wonder Lake / Wonder Mountain names; 'shadowed sight' = Wisdom in valley shadow.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "theories",
+    "hope-creek",
+    "queener",
+    "hidden-lake",
+    "warm-springs",
+    "acrostic"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Hope Creek by name."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Storm Lake Pass and Queener Mountain — gate and bride in one drainage."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A bridge is a man-made structure — a bridge cannot be the site, only a mark."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "6.73 mi with a decimal 'jump' — a hub reading of the distance element."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587631021
+  },
+  {
+   "id": "i213",
+   "text": "Hub 'contradictions to watch': (1) 'not associated with any man-made structure' (Cowlazars, strongest) vs 'exterior of a structure — always a possibility' (X Marks); (2) 'leans armchair' vs BOTG from stanza 4; (3) verbal answers carry less weight than written — 'I'm much more apt to answer mechanic questions in written form'; verify verbal answers against treasure.quest; (4) national parks: 'I'm not going to say yes or no.' Hub on stanza 1 acrostic: no phrase found.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "contradictions",
+    "verbal-vs-written",
+    "national-parks"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Written statements outrank verbal ones — the rules page is the gate, the Q&A is color."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587631022
+  },
+  {
+   "id": "i214",
+   "text": "Numbers in the materials (hub): 42 (truck, Hitchhiker's), 4:19 clock, 17 steps (Brandon counting Shadow Feet the raccoon), 18–20 keys on the rancher's ring, 1979 (wedding photo), 113 (117−4), 6.73 mi, 111 (explicitly meaningless), 1652 (Oak Tree shilling from Grandpa's counterfeit collection, replaced with a genuine one), 561 BC (Lydian), 4 compass points, 10 breadcrumbs, 60 lb, 9,000 miles (no hint), 24 hours, 4 trips.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "treasurehuntamusementpark.com — BTME hub (Cowlazars), site copy",
+   "tags": [
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The measured numbers in play."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "20 sits in '18–20 keys' and 'twenty degree'."
+    }
+   ],
+   "when": "2026",
+   "created": 1788587631023
   }
  ],
  "candidates": [
@@ -5511,7 +6836,7 @@
    "region": "MT · Beaverhead County",
    "coords": "≈ 45.62, -113.45 (verify)",
    "elev": "≈ 6,000 ft",
-   "notes": "Community cluster: Polaris MT (realm), Beaverhead Rock (bride), Pioneer Byway (gates), Big Hole River (Hole), Wisdom MT ('Wisdom waits'). Inside Fenn's map; Posey's Dillon signing is nearby. Not walked. VERIFIED: the Big Hole River was Lewis's 'Wisdom River' (1805) — 1:3 and 2:3 are one river.",
+   "notes": "Community cluster: Polaris MT (realm), Beaverhead Rock (bride), Pioneer Byway (gates), Big Hole River (Hole), Wisdom MT ('Wisdom waits'). Inside Fenn's map; Posey's Dillon signing is nearby. Not walked. VERIFIED: the Big Hole River was Lewis's 'Wisdom River' (1805) — 1:3 and 2:3 are one river. HUB: the book names Polaris, Crystal Park, Wisdom (Grasshopper Valley chapter), Bannack, Blacktail Deer Creek, Clark Canyon Reservoir and Red Rock River — Dillon as hub, 'grandfather's territory'. Sep 12 2026: Posey meet-and-greet in Polaris (event, not a clue).",
    "verdicts": {
     "l01": "fit",
     "l02": "fit",
@@ -5611,7 +6936,7 @@
    "region": "WY · Teton County, Bridger-Teton NF / Hoback",
    "coords": "≈ 43.36, -110.44 (Granite Hot Springs; verify)",
    "elev": "≈ 6,900 ft",
-   "notes": "Capital-H proper-noun natural Hole that Posey called on the nose; surge (Granite Hot Springs), water (Granite Creek / Hoback), serious fishing, granite by name and rock. Cross-reference adds the Tetons as 'her' and 'three'. Inside Fenn's map, Wyoming law in the disclaimer, Fenn country. Site must sit outside Grand Teton NP (fee) — Bridger-Teton NF is free. VERIFIED: the Sleeping Indian (a 'he', alive or not by perspective) is the east edge of the Hole; the Tetons ('her', three) the west.",
+   "notes": "Capital-H proper-noun natural Hole that Posey called on the nose; surge (Granite Hot Springs), water (Granite Creek / Hoback), serious fishing, granite by name and rock. Cross-reference adds the Tetons as 'her' and 'three'. Inside Fenn's map, Wyoming law in the disclaimer, Fenn country. Site must sit outside Grand Teton NP (fee) — Bridger-Teton NF is free. VERIFIED: the Sleeping Indian (a 'he', alive or not by perspective) is the east edge of the Hole; the Tetons ('her', three) the west. TAU: Grand Teton is in his Fenn footprint.",
    "kill": "No bear or star east of the Hole for 'ursa east', or 'return her face' producing nothing near the Tetons' foot.",
    "test": "Bear or star east of the Hole; run 20°/200° from the Tetons' foot; check Teton Canyon (ID) for off-trail granite within a mile of the road.",
    "verdicts": {
@@ -5648,7 +6973,7 @@
    "region": "MT · Beaverhead County, Beaverhead-Deerlodge NF",
    "coords": "≈ 45.42, -113.10 (Crystal Park; verify)",
    "elev": "≈ 7,800 ft",
-   "notes": "The Wisdom theory routed through Polaris: Elkhorn Hot Springs surge, Polaris for ursa/north star, Big Hole for Hole and fishing, granitic Pioneers, Crystal Park free public dig. Inside Fenn's map. Heavily searched; 'within two miles' cuts both ways. Bride is the gap — Beaverhead Rock is ~40 mi off.",
+   "notes": "The Wisdom theory routed through Polaris: Elkhorn Hot Springs surge, Polaris for ursa/north star, Big Hole for Hole and fishing, granitic Pioneers, Crystal Park free public dig. Inside Fenn's map. Heavily searched; 'within two miles' cuts both ways. Bride is the gap — Beaverhead Rock is ~40 mi off. HUB: the book names Polaris, Crystal Park, Wisdom (Grasshopper Valley chapter), Bannack, Blacktail Deer Creek, Clark Canyon Reservoir and Red Rock River — Dillon as hub, 'grandfather's territory'. Sep 12 2026: Posey meet-and-greet in Polaris (event, not a clue).",
    "kill": "No bride or gates within the Pioneers; or Crystal Park / the Byway sitting inside the two-mile ring the crowd has already worked.",
    "test": "Check Crystal Park fee status and hours (must be free, 24/7); look for any 'Gate' or bride-shaped feature on the Pioneer Byway between Polaris and Elkhorn.",
    "verdicts": {
@@ -5758,7 +7083,7 @@
    "region": "WY · Fremont County, Sinks Canyon SP / Shoshone NF",
    "coords": "≈ 42.74, -108.83 (the Rise; verify)",
    "elev": "≈ 6,100 ft",
-   "notes": "Stanza 2 in order and at walking distance: the Rise (surge, clear, giant trout, no fishing) → the river underground (silent flight) → the Sinks (natural capital-H Hole) → cast your pole above it. Upper canyon is Wind River granite in national forest. Free, dogs, Wyoming law. Stanza 3 candidates within 30 miles: Chief Washakie's reservation ('his realm'), Sacagawea's statue and grave at Fort Washakie ('his bride', not alive, visible), Bears Ears peak in the Winds, the Popo Agie's three forks. Nothing in stanza 3 is pinned yet.",
+   "notes": "Stanza 2 in order and at walking distance: the Rise (surge, clear, giant trout, no fishing) → the river underground (silent flight) → the Sinks (natural capital-H Hole) → cast your pole above it. Upper canyon is Wind River granite in national forest. Free, dogs, Wyoming law. Stanza 3 candidates within 30 miles: Chief Washakie's reservation ('his realm'), Sacagawea's statue and grave at Fort Washakie ('his bride', not alive, visible), Bears Ears peak in the Winds, the Popo Agie's three forks. Nothing in stanza 3 is pinned yet. HUB/TAU: Sinks Canyon is listed among Posey's own Fenn-search locations — the 75-mile gate is met at zero miles (source is secondary; verify in the book's Treasure Trail list).",
    "kill": "No bear, star or bearing that lands the construction back in the canyon; or the granite reach being all trail.",
    "test": "From the Rise, run 20° and 200°: what do the lines cross within a mile of a road? Is there off-trail granite in the upper canyon with a carvable face? Did Posey ever search the Winds for Fenn?",
    "verdicts": {
@@ -5785,7 +7110,7 @@
     "g_bldg": "unk",
     "g_bride": "unk",
     "g_rotate": "unk",
-    "g_fenn": "unk"
+    "g_fenn": "pass"
    },
    "created": 1788586657535
   },
@@ -5819,6 +7144,469 @@
     "g_trail": "unk"
    },
    "created": 1788586657535
+  },
+  {
+   "id": "c_bigsprings",
+   "name": "Big Springs / Henry's Fork — Island Park (ID)",
+   "region": "ID · Fremont County, Caribou-Targhee NF",
+   "coords": "≈ 44.50, -111.26 (verify)",
+   "elev": "≈ 6,400 ft",
+   "notes": "120M gal/day of crystal-clear 52°F water; fishing prohibited at the spring, blue-ribbon below; Upper/Lower Mesa Falls downstream (a double); free NF, dogs; inside Posey's Fenn ring; Idaho on the 42 thread.",
+   "kill": "No Hole and no bear within the Henry's Fork corridor.",
+   "test": "Search the Henry's Fork from Big Springs to Ashton for any feature named Hole or Bear; check the Mesa Falls granite/rhyolite.",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l08": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_fenn": "pass",
+    "g_hole": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_provo",
+   "name": "Provo Canyon / Timpanogos — Bridal Veil Falls (UT)",
+   "region": "UT · Utah County, Uinta-Wasatch-Cache NF",
+   "coords": "≈ 40.34, -111.60 (verify)",
+   "elev": "≈ 4,600 ft",
+   "notes": "Bridal Veil Falls (free county park, dogs) is the maiden's tears; Timpanogos's skyline is her sleeping profile from the canyon — a named face. Provo River blue-ribbon. Below a mile. Utah early-Fenn claim.",
+   "kill": "No Hole; the mountain is limestone; urban.",
+   "test": "Any natural Hole in Provo Canyon (Cascade Springs? Deer Creek?); granite within a mile of a free pullout.",
+   "verdicts": {
+    "l08": "fit",
+    "l10": "fit",
+    "l12": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_hole": "unk",
+    "g_fenn": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_bluehole",
+   "name": "Blue Hole — Santa Rosa (NM)",
+   "region": "NM · Guadalupe County, city park",
+   "coords": "≈ 34.94, -104.67 (verify)",
+   "elev": "≈ 4,600 ft",
+   "notes": "Bell-shaped artesian sinkhole, 3,000 gal/min, 62°F, crystal clear, tied to the Pecos; north of the Santa Fe cutoff. A perfect 2:1 and a named Hole with nothing after it.",
+   "kill": "City dive park with structures and a grate; no granite, no mountains, no bear.",
+   "test": "Anything for stanzas 3–4 within 30 miles?",
+   "verdicts": {
+    "l05": "fit",
+    "l07": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_bldg": "fail",
+    "g_free": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_beartrap",
+   "name": "Bear Trap Canyon — Madison River (MT)",
+   "region": "MT · Madison County, BLM Lee Metcalf Wilderness",
+   "coords": "≈ 45.61, -111.60 (verify)",
+   "elev": "≈ 4,900 ft",
+   "notes": "BLM's first wilderness; a literal Bear for ursa; Madison = Posey's Fenn corridor (within 75 mi of West Yellowstone); year-round fishing; Archean gneiss and granite walls; dogs; below a mile; the Sphinx (a face) east across the range.",
+   "kill": "The whole canyon is the 9-mile Bear Trap trail; no Hole; no bride.",
+   "test": "Is there off-trail granite at the canyon head (Trail Creek) within a mile of the road? Any Hole upstream short of Baker's Hole?",
+   "verdicts": {
+    "l06": "fit",
+    "l08": "fit",
+    "l09": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_fenn": "pass",
+    "g_trail": "fail",
+    "g_hole": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_lemhi",
+   "name": "Lemhi Pass / Sacagawea's return (MT/ID)",
+   "region": "MT/ID · Continental Divide, Salmon-Challis / Beaverhead-Deerlodge NF",
+   "coords": "≈ 44.97, -113.44 (verify)",
+   "elev": "≈ 7,373 ft",
+   "notes": "Free Forest Service Sacajawea Memorial Area 0.2 mi below the pass; gravel but passenger-car. She was taken at Three Forks and returned here to her brother Cameahwait. The Divide is the map's edge. A reading more than a spot.",
+   "kill": "No water line near the pass; no Hole; no granite feature.",
+   "test": "Map the pass for granite outcrops and any feature named for a bear or gate.",
+   "verdicts": {
+    "l11": "fit",
+    "l12": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_vehicle": "pass",
+    "g_hole": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_torrey",
+   "name": "Torrey Lake petroglyphs — Dubois (WY)",
+   "region": "WY · Fremont County, Whiskey Basin WHMA",
+   "coords": "≈ 43.45, -109.55 (verify)",
+   "elev": "≈ 7,800 ft",
+   "notes": "175 Dinwoody-style petroglyphs incl. bighorn sheep (double-arc horns) 9–13 mi SE of Dubois; Wind River fishing; Union Pass = the Divide. Verified sandstone, not granite; guided visits recommended.",
+   "kill": "Sandstone.",
+   "test": "Are any of the boulders granitic erratics rather than sandstone?",
+   "verdicts": {
+    "l08": "fit",
+    "l14": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "unk",
+    "g_dog": "pass"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_trespiedras",
+   "name": "Tres Piedras / Ojo Caliente (NM)",
+   "region": "NM · Taos County, Carson NF",
+   "coords": "≈ 36.65, -105.97 (verify)",
+   "elev": "≈ 8,000 ft",
+   "notes": "Granitic gneiss crags on Carson NF (free), 24 mi north of Ojo Caliente, where Posey searched for Fenn; Rio Grande Gorge (silent water) and blue-ribbon fishing nearby; petroglyphs on the gorge. North of the Santa Fe cutoff.",
+   "kill": "No bride, no Hole.",
+   "test": "Any feature named Hole or bride between Ojo Caliente and Tres Piedras; check the SW corner private land.",
+   "verdicts": {
+    "l05": "fit",
+    "l08": "fit",
+    "l13": "fit",
+    "l14": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_fenn": "pass",
+    "g_hole": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_uintas",
+   "name": "High Uintas — Kings Peak / Bear River (UT)",
+   "region": "UT · Summit County, Uinta-Wasatch-Cache NF",
+   "coords": "≈ 40.78, -110.37 (verify)",
+   "elev": "≈ 13,528 ft (Kings)",
+   "notes": "Kings Peak = 'his realm'; the Bear River rises here ('ursa'); Red Castle; Christmas Meadows. Quartzite, not granite; Mirror Lake Highway has a fee; mostly above 11,000 ft.",
+   "kill": "Elevation and rock type.",
+   "test": "Any granite and any sub-11,000-ft candidate on the Bear River drainage?",
+   "verdicts": {
+    "l09": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_vedauwoo",
+   "name": "Vedauwoo / Pole Mountain (WY)",
+   "region": "WY · Albany County, Medicine Bow NF",
+   "coords": "≈ 41.16, -105.37 (verify)",
+   "elev": "≈ 8,000 ft",
+   "notes": "Sherman granite blobs on the Pole Mountain unit ('cast your pole'); day fee at the main area; no water line; far from Fenn ground.",
+   "kill": "No water for stanza 2; no Fenn.",
+   "test": "—",
+   "verdicts": {
+    "l08": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "unk",
+    "g_fenn": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_medicinewheel",
+   "name": "Medicine Wheel — Bighorn Mountains (WY)",
+   "region": "WY · Big Horn County, Bighorn NF",
+   "coords": "≈ 44.83, -107.92 (verify)",
+   "elev": "≈ 9,640 ft",
+   "notes": "A stone circle (arcs) that is literally sacred and ancient; limestone; restricted access with a 1.5-mi walk; 9,640 ft.",
+   "kill": "Limestone; restricted.",
+   "test": "—",
+   "verdicts": {
+    "l14": "fit",
+    "l16": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "unk",
+    "g_trail": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_pompeys",
+   "name": "Pompeys Pillar (MT)",
+   "region": "MT · Yellowstone County, BLM National Monument",
+   "coords": "≈ 46.00, -108.00 (verify)",
+   "elev": "≈ 2,900 ft",
+   "notes": "Clark's 1806 signature carved in rock — 'secrets of the past still hold'. Sandstone; fee monument.",
+   "kill": "Sandstone; fee.",
+   "test": "—",
+   "verdicts": {
+    "l14": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_beartooth",
+   "name": "Beartooth Highway / Beartooth Butte (MT/WY)",
+   "region": "MT/WY · Custer-Gallatin / Shoshone NF",
+   "coords": "≈ 44.95, -109.60 (verify)",
+   "elev": "≈ 10,000 ft",
+   "notes": "A literal Beartooth for ursa, granite plateau, inside the Fenn ring; but 10,000 ft, fee-adjacent (Yellowstone NE entrance), no water line and no Hole.",
+   "kill": "No stanza 2.",
+   "test": "Any spring/Hole pair along the Clarks Fork below the plateau?",
+   "verdicts": {
+    "l09": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_fenn": "pass",
+    "g_hole": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_thousandsprings",
+   "name": "Thousand Springs / Lost River Sinks (ID)",
+   "region": "ID · Gooding / Butte counties",
+   "coords": "≈ 42.75, -114.85 (verify)",
+   "elev": "≈ 3,000 ft",
+   "notes": "Springs bursting from the Snake River canyon wall (surge) fed by the Lost Rivers that sink into the plain (silent flight). The Sinks are on the INL, restricted; the springs are a fee state park.",
+   "kill": "Restricted and fee.",
+   "test": "—",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_sacajaweapeak",
+   "name": "Sacajawea Peak — Bridger Range (MT)",
+   "region": "MT · Gallatin County, Custer-Gallatin NF",
+   "coords": "≈ 45.90, -110.96 (verify)",
+   "elev": "≈ 9,665 ft",
+   "notes": "A bride's name on the highest Bridger; free NF; near Bozeman. No Hole, no granite line, a trail summit.",
+   "kill": "No Hole; trail.",
+   "test": "—",
+   "verdicts": {
+    "l10": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_trail": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_boilingriver",
+   "name": "Boiling River / Gardiner (MT)",
+   "region": "MT · Park County, YNP north entrance",
+   "coords": "≈ 44.99, -110.69 (verify)",
+   "elev": "≈ 5,600 ft",
+   "notes": "Posey searched here for Fenn; a hot river meeting a cold one (surge). Inside the park and closed since the 2022 flood.",
+   "kill": "Park, fee, dogs, closed.",
+   "test": "—",
+   "verdicts": {
+    "l05": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "fail",
+    "g_dog": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_devilsslide",
+   "name": "Devil's Slide / Gardiner (MT)",
+   "region": "MT · Park County, roadside US-89",
+   "coords": "≈ 45.08, -110.79 (verify)",
+   "elev": "≈ 5,200 ft",
+   "notes": "Posey searched here for Fenn; a bold rock formation visible from the highway. Private land, roadside.",
+   "kill": "Private.",
+   "test": "—",
+   "verdicts": {
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_public": "fail"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_ennis",
+   "name": "Ennis / Sphinx Mountain (MT)",
+   "region": "MT · Madison County, Custer-Gallatin NF",
+   "coords": "≈ 45.13, -111.48 (verify)",
+   "elev": "≈ 10,876 ft",
+   "notes": "The Sphinx — a named face in the Madison Range — and the Helmet beside it; Madison fishing; Fenn corridor. No Hole, no bride, high.",
+   "kill": "No Hole; no bride.",
+   "test": "—",
+   "verdicts": {
+    "l08": "fit",
+    "l12": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_fenn": "pass"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_crazies",
+   "name": "Crazy Mountains (MT)",
+   "region": "MT · Sweet Grass / Park counties",
+   "coords": "≈ 46.02, -110.28 (verify)",
+   "elev": "≈ 11,000 ft",
+   "notes": "Checked and nothing lands: no Hole, no bride, checkerboard private access, summits at 11,000.",
+   "kill": "Nothing lands.",
+   "test": "—",
+   "verdicts": {},
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_public": "unk"
+   },
+   "created": 1788587079564
+  },
+  {
+   "id": "c_hiddenlake",
+   "name": "Hidden Lake / Queener Mountain — Anaconda-Pintler (MT)",
+   "region": "MT · Beaverhead County, Anaconda-Pintler Wilderness, N of Wisdom",
+   "coords": "≈ 45.88, -113.30 (Storm Lake Pass; verify)",
+   "elev": "≈ 8,500–9,000 ft",
+   "notes": "Hub-featured BOTG solve (two trips): Trout/Lamar Creek = silent flight; Queener Mountain (queen) = bride; Storm Lake Pass / Divide = ancient gates; triangular ridge at 20° NE of Trout Creek = foot of three; Waterton Valley CDT (6.73 mi) = return; Hidden Lake canyon walls = double arcs. Claims a 200-ft checkpoint area. Wilderness: free, dogs, no vehicles beyond trailhead; Pintler granite exists.",
+   "kill": "6.73 miles of CDT is not 'a mile from the car'; a wilderness lake basin is not 'a little ways off a trail'.",
+   "test": "Is there a road-accessible approach to Hidden Lake within a mile? Is the Queener/Storm Lake rock granite?",
+   "verdicts": {
+    "l03": "fit",
+    "l06": "fit",
+    "l07": "fit",
+    "l10": "fit",
+    "l11": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_hole": "pass",
+    "g_mile": "fail",
+    "g_trail": "unk",
+    "g_fenn": "unk"
+   },
+   "created": 1788587630996
+  },
+  {
+   "id": "c_warmsprings",
+   "name": "Rainbow Arch bridge — Warm Springs Conservation Area (MT)",
+   "region": "MT · Deer Lodge County, Warm Springs WMA",
+   "coords": "≈ 46.18, -112.78 (verify)",
+   "elev": "≈ 4,800 ft",
+   "notes": "Reddit field find: a double-arched stone bridge — two arcs in stone — 'matching coffee-cup handles in the documentary'. As a site it is a man-made structure and fails outright; as a 4:1 mark it survives only if the arcs are the checkpoint and the treasure sits elsewhere. Warm Springs = a surge. Below a mile.",
+   "kill": "A bridge is a man-made structure; the treasure is not associated with one.",
+   "test": "Is the bridge on public land and off-trail? Is there granite (not the bridge stone) within a mile?",
+   "verdicts": {
+    "l05": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_bldg": "fail",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_natural": "fail"
+   },
+   "created": 1788587630996
   }
  ],
  "mapStates": {

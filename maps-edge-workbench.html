@@ -274,6 +274,45 @@ td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:
 .meter.low i{background:var(--unk)}
 .meter.bad i{background:var(--fail)}
 
+/* ---------- hunt resources (pill links) ---------- */
+.reslist{display:flex; flex-wrap:wrap; gap:8px}
+.res{
+  display:inline-flex; align-items:center; gap:8px; padding:7px 14px; border-radius:100px;
+  border:1px solid var(--rule-2); background:var(--surface); color:var(--ink); text-decoration:none; font-size:13px;
+}
+.res:hover{border-color:var(--accent); background:var(--accent-soft)}
+.res .g{font-size:14px}
+.res .k{font-family:var(--f-mono); font-size:10px; color:var(--ink-3); letter-spacing:.06em}
+.kindtag{font-family:var(--f-mono); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); border:1px solid var(--rule); border-radius:3px; padding:0 4px}
+
+/* ---------- couplets on the ledger ---------- */
+.pline .n{position:relative}
+.pline.cpl-a .n::after,.pline.cpl-b .n::after{
+  content:""; position:absolute; left:-9px; width:3px; background:var(--contour-soft); border-radius:2px;
+}
+.pline.cpl-a .n::after{top:6px; bottom:-14px}
+.pline.cpl-b .n::after{top:-14px; bottom:6px}
+.rhyme{font-family:var(--f-mono); font-size:9.5px; color:var(--contour); letter-spacing:.06em; opacity:.85}
+
+/* ---------- sources & timeline ---------- */
+.srcgrid{display:grid; gap:12px}
+.src-card{padding:14px 16px}
+.src-card .head{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap}
+.src-card .head h3{font-size:15px}
+.src-card .when{font-family:var(--f-mono); font-size:11px; color:var(--contour); letter-spacing:.06em}
+.src-card .n{margin-left:auto; font-family:var(--f-mono); font-size:11px; color:var(--ink-3)}
+.src-card ul{margin:8px 0 0; padding-left:18px; font-size:13px; line-height:1.5}
+.src-card li{margin:3px 0}
+.src-card li .lines{font-family:var(--f-mono); font-size:10px; color:var(--accent); margin-left:6px}
+.tl{position:relative; padding-left:22px}
+.tl::before{content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px; background:var(--rule-2)}
+.tl .src-card{position:relative}
+.tl .src-card::before{
+  content:""; position:absolute; left:-20px; top:18px; width:9px; height:9px; border-radius:50%;
+  background:var(--contour); box-shadow:0 0 0 3px var(--ground);
+}
+.tl .src-card.undated::before{background:var(--rule-2)}
+
 /* ---------- solves / dossiers ---------- */
 .dossier{padding:16px 18px; display:grid; gap:12px}
 .dossier.out{opacity:.72}
@@ -479,6 +518,29 @@ const GATES = [
   ["g_dog",      "You can bring your dog (outdoors type) — so not a no-dogs park trail",         "treasure.quest FAQ"],
 ];
 const GATE_LABEL = Object.fromEntries(GATES.map(g => [g[0], g[1]]));
+
+/* Where the hunt is discussed. Links only — the substance lives in Intel. */
+const RESOURCES = [
+  ["🌐", "Official site — treasure.quest",            "https://treasure.quest/en/",                                                     "poem · rules · errata"],
+  ["📣", "treasure.quest announcements",              "https://treasure.quest/en/announcements/",                                       "FAQ · every official interview linked"],
+  ["✍️", "Mysterious Writings — BTME hub",            "https://mysteriouswritings.com/beyond-the-maps-edge-treasure-hunt/",             "Q&A compilations"],
+  ["📰", "Mysterious Writings Substack",              "https://mysteriouswritings.substack.com/",                                       "weekly recaps"],
+  ["🗂️", "MW forum (proboards)",                      "https://mysteriouswritings.proboards.com/thread/7358/maps-edge-treasure-hunt",   "long threads"],
+  ["🎢", "Treasure Hunt Amusement Park — BTME hub",   "https://treasurehuntamusementpark.com/beyond-the-maps-edge/index.html",          "233 Q&As · JIBLE 4.0 (295 verbatim)"],
+  ["🧭", "Treasure Among Us — BTME",                  "https://treasureamongus.com/page/hunts/other/beyond_the_maps_edge/overview",     "facts · rules · solve status"],
+  ["📒", "Treasure Notes — starter guide",            "https://treasurenotes.app/guides/beyond-the-map-edge",                           ""],
+  ["🔐", "Library of Secrets — submissions",          "https://library-of-secrets.com/",                                                ""],
+  ["💬", "Reddit — r/beyondthemapsedge",              "https://www.reddit.com/r/beyondthemapsedge/",                                    ""],
+  ["💬", "Reddit — r/JustinPoseysTreasure",           "https://www.reddit.com/r/JustinPoseysTreasure/",                                 ""],
+  ["👥", "Facebook — BTME Treasure Seekers",          "https://www.facebook.com/search/groups/?q=BTME%20Treasure%20Seekers",            "group"],
+  ["🧵", "TreasureNet thread",                        "https://www.treasurenet.com/threads/treasure-hunt-location.711538/",             "Sweetwater walkthrough"],
+  ["📺", "Netflix Tudum — Gold & Greed",              "https://www.netflix.com/tudum/articles/gold-and-greed-the-hunt-for-fenns-treasure-release-date-news", "interview"],
+  ["📝", "Justin Greer — Madison full solve",         "https://www.justin-greer.com/2026/07/31/the-treasure-i-found-along-the-madison-a-full-solve/", "Jul 2026"],
+  ["🧭", "Mike Unfiltered",                           "https://mikeunfiltered.substack.com/",                                           "Alaska · 20° theories"],
+  ["🗺️", "Southwest Montana — hunt blog",             "https://southwestmt.com/blog/is-montana-hiding-a-million-dollar-treasure-clues-point-to-big-sky-country/", "Big Hole cluster"],
+];
+const resourcesHTML = () => `<div class="reslist">${RESOURCES.map(([g, t, u, k]) =>
+  `<a class="res" href="${u}" target="_blank" rel="noopener"><span class="g">${g}</span><span>${esc(t)}</span>${k ? `<span class="k">${esc(k)}</span>` : ""}</a>`).join("")}</div>`;
 
 /* Search-area map: a low-poly West drawn from state-line corners on a plain
    lat/lon grid — the same equirectangular sheet a 1990s field computer would draw. */
@@ -747,6 +809,7 @@ function parseLines(raw, previous) {
       text,
       hard: reuse ? !!reuse.hard : false,
       status: reuse ? (reuse.status || "unsolved") : "unsolved",
+      kind: reuse ? (reuse.kind || "") : "",
       note: reuse ? (reuse.note || "") : "",
     });
   });
@@ -786,6 +849,12 @@ function suggestLines(text, limit) {
 }
 
 /* ============================ derived ============================ */
+
+/* Last word of a line, stripped — shown as a small rhyme tag so couplets read as pairs. */
+function rhymeWord(t) {
+  const w = (t || "").replace(/[—–-]+$/, "").trim().split(/\s+/).pop() || "";
+  return w.replace(/[^A-Za-z']/g, "").toLowerCase();
+}
 
 function linksFor(lineId) {
   const out = [];
@@ -839,6 +908,7 @@ const VIEWS = [
   ["matrix",     "Matrix",     l => l.candidates.length * (l.lines.length ? 1 : 0)],
   ["map",        "Map",        l => Object.values(l.mapStates).filter(x => x && (x.status === "active" || x.status === "hot")).length || ""],
   ["solves",     "Solves",     l => l.candidates.filter(c => !scoreCandidate(c).ruledOut).length || ""],
+  ["sources",    "Sources",    l => new Set(l.intel.map(i => i.source).filter(Boolean)).size || ""],
   ["data",       "Data",       () => ""],
 ];
 
@@ -848,7 +918,7 @@ function render() {
   renderNav();
   renderGauge();
   const el = document.getElementById("view");
-  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, map: viewMap, solves: viewSolves, data: viewData }[state.route];
+  const fn = { poem: viewPoem, intel: viewIntel, candidates: viewCandidates, matrix: viewMatrix, map: viewMap, solves: viewSolves, sources: viewSources, data: viewData }[state.route];
   el.innerHTML = fn();
   wire();
   el.scrollTop = 0;
@@ -905,10 +975,12 @@ function viewPoem() {
     }
     const ls = linksFor(l.id);
     const dots = ls.slice(0, 6).map(x => `<i class="${x.link.stance === "contradicts" ? "neg" : ""}"></i>`).join("");
-    ledger += `<button class="pline" data-line="${l.id}" aria-selected="${state.selectedLine === l.id}">
+    const cpl = (i % 2 === 0) ? "cpl-a" : "cpl-b";
+    ledger += `<button class="pline ${cpl}" data-line="${l.id}" aria-selected="${state.selectedLine === l.id}">
       <span class="n">L${String(i + 1).padStart(2, "0")}</span>
-      <span class="t">${esc(l.text)}</span>
+      <span class="t">${esc(l.text)} <span class="rhyme">${esc(rhymeWord(l.text))}</span></span>
       <span class="meta">
+        ${l.kind ? `<span class="kindtag">${esc(l.kind)}</span>` : ""}
         ${l.hard ? '<span class="chip hard">hard</span>' : ""}
         ${l.status && l.status !== "unsolved" ? `<span class="chip ${STATUS_CHIP[l.status] || ""}">${esc(STATUS_LABEL[l.status] || l.status)}</span>` : ""}
         ${ls.length ? `<span class="covdots">${dots}</span>` : '<span class="chip">0</span>'}
@@ -1265,13 +1337,72 @@ function viewSolves() {
     </div>`;
 }
 
+/* ---------- view: sources & timeline ---------- */
+
+/* Pull a sortable date out of free text: ISO first, then "Mon D YYYY", then a bare year. */
+function whenKey(s) {
+  if (!s) return "";
+  const iso = /(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(s);
+  if (iso) return iso[1] + iso[2] + (iso[3] || "00");
+  const m = /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})?,?\s*(\d{4})/i.exec(s);
+  if (m) { const mo = "janfebmaraprmayjunjulaugsepoctnovdec".indexOf(m[1].slice(0,3).toLowerCase()) / 3 + 1; return m[3] + String(mo).padStart(2,"0") + String(m[2] || 0).padStart(2,"0"); }
+  const y = /(20\d{2})/.exec(s);
+  return y ? y[1] + "0000" : "";
+}
+
+function viewSources() {
+  const groups = new Map();
+  state.intel.forEach(it => {
+    const key = (it.source || "Unsourced").trim();
+    if (!groups.has(key)) groups.set(key, { source: key, items: [], when: "" });
+    const g = groups.get(key);
+    g.items.push(it);
+    const wk = whenKey(it.when) || whenKey(it.source);
+    if (wk && (!g.when || wk < g.when)) g.when = wk;
+  });
+  const rows = [...groups.values()];
+  const mode = state.filter.srcmode || "timeline";
+  if (mode === "timeline") rows.sort((a, b) => (b.when || "0") .localeCompare(a.when || "0") || b.items.length - a.items.length);
+  else rows.sort((a, b) => b.items.length - a.items.length);
+  const posey = state.intel.filter(i => i.kind === "statement").length;
+
+  const card = g => {
+    const dated = !!g.when;
+    const label = dated ? g.when.slice(0,4) + (g.when.slice(4,6) !== "00" ? "-" + g.when.slice(4,6) : "") + (g.when.slice(6) !== "00" ? "-" + g.when.slice(6) : "") : "undated";
+    return `<article class="card src-card ${dated ? "" : "undated"}">
+      <div class="head"><span class="when">${label}</span><h3>${esc(g.source)}</h3><span class="n">${g.items.length} item${g.items.length === 1 ? "" : "s"}</span></div>
+      <ul>${g.items.map(it => {
+        const ls = (it.links || []).map(k => { const i = state.lines.findIndex(l => l.id === k.lineId); return i < 0 ? "" : (k.stance === "contradicts" ? "✕" : "→") + "L" + String(i+1).padStart(2,"0"); }).filter(Boolean).join(" ");
+        return `<li>${esc(it.text.length > 220 ? it.text.slice(0, 218) + "…" : it.text)} <span class="chip">${esc(KIND_LABEL[it.kind] || it.kind)}</span>${ls ? `<span class="lines">${ls}</span>` : ""}</li>`;
+      }).join("")}</ul>
+    </article>`;
+  };
+
+  return `${demoBanner()}
+    <div class="viewhead">
+      <div><div class="eyebrow">Section 7</div><h2>Sources &amp; timeline</h2></div>
+      <div class="spacer"></div>
+      <button class="btn sm ${mode === "timeline" ? "primary" : ""}" data-act="srcmode" data-mode="timeline">Timeline</button>
+      <button class="btn sm ${mode === "bysize" ? "primary" : ""}" data-act="srcmode" data-mode="bysize">By weight</button>
+    </div>
+    <p class="lede">Every item grouped by where it came from, newest first when a date is known. ${posey} items are Posey's own words; the rest are book facts, map reads, community claims and your own analysis. Give an item a date when you add it and it takes its place on the line.</p>
+    <div class="card" style="padding:12px 14px; margin-bottom:16px">${resourcesHTML()}</div>
+    <div class="${mode === "timeline" ? "tl" : ""} srcgrid">${rows.map(card).join("")}</div>`;
+}
+
 /* ---------- view: data ---------- */
 
 function viewData() {
   const c = coverage();
   return `${demoBanner()}
-    <div class="viewhead"><div><div class="eyebrow">Section 7</div><h2>Data</h2></div></div>
+    <div class="viewhead"><div><div class="eyebrow">Section 8</div><h2>Data</h2></div></div>
     <p class="lede">Your work lives in this artifact's store and syncs across your devices. Export anyway — a backup you hold is a backup you keep.</p>
+
+    <div class="card" style="padding:16px; margin-bottom:16px">
+      <h3>Hunt resources</h3>
+      <p class="hint" style="margin:6px 0 12px">Where the hunt is discussed. Anything worth keeping from these goes into Intel with its source and date.</p>
+      ${resourcesHTML()}
+    </div>
 
     <div class="two">
       <div class="card" style="padding:16px">
@@ -1379,8 +1510,12 @@ function intelDialog(existing, presetLine) {
       <label class="field"><span>Confidence</span><select id="iConf">${CONF.map(([v,l]) => `<option value="${v}" ${it.conf===v?"selected":""}>${l}</option>`).join("")}</select></label>
       <label class="field"><span>Tags — comma separated</span><input type="text" id="iTags" value="${esc((it.tags||[]).join(", "))}" placeholder="blaze, water"></label>
     </div>
-    <label class="field"><span>Source</span>
-      <input type="text" id="iSource" value="${esc(it.source || "")}" placeholder="Book p. 41 · interview · quad sheet · your own field visit"></label>
+    <div class="two">
+      <label class="field"><span>Source</span>
+        <input type="text" id="iSource" value="${esc(it.source || "")}" placeholder="Book p. 41 · interview · quad sheet · your own field visit"></label>
+      <label class="field"><span>When (optional, YYYY-MM-DD or free text)</span>
+        <input type="text" id="iWhen" value="${esc(it.when || "")}" placeholder="2026-03-28"></label>
+    </div>
     <p class="hint">Save it, then use <strong>Match</strong> to bind it to poem lines — by hand or with a suggested read.</p>
   `, null, () => {
     const text = val("#iText");
@@ -1392,6 +1527,7 @@ function intelDialog(existing, presetLine) {
       kind: val("#iKind"),
       conf: val("#iConf"),
       source: val("#iSource"),
+      when: val("#iWhen"),
       tags: val("#iTags").split(",").map(s => s.trim()).filter(Boolean),
       links: existing ? (existing.links || []) : [],
       created: existing ? (existing.created || Date.now()) : Date.now(),
@@ -1703,7 +1839,7 @@ function brief() {
     if (l.note) out += `- My reading: ${l.note}\n`;
     linksFor(l.id).forEach(x => {
       out += `- ${x.link.stance === "contradicts" ? "AGAINST" : "SUPPORTS"} [${CONF_LABEL[x.it.conf] || "?"}] ${x.it.text}`;
-      out += x.it.source ? ` (${x.it.source})` : "";
+      out += x.it.source ? ` (${x.it.source}${x.it.when ? ", " + x.it.when : ""})` : "";
       out += x.link.why ? ` — ${x.link.why}` : "";
       out += "\n";
     });
@@ -1838,6 +1974,7 @@ function wire() {
     ev.preventDefault();
     const a = b.dataset.act, id = b.dataset.intel, cid = b.dataset.cand, lid = b.dataset.line;
     if (a === "clear-demo") { leaveDemo(); render(); toast("Examples cleared — the board is yours."); }
+    else if (a === "srcmode") { state.filter.srcmode = b.dataset.mode; render(); }
     else if (a === "edit-poem") editPoemDialog();
     else if (a === "add-intel") intelDialog(null);
     else if (a === "add-intel-for") intelDialog(null, lid);
@@ -1900,7 +2037,7 @@ function wire() {
 
 document.addEventListener("keydown", e => {
   if (e.target.matches("input, textarea, select") || dlg.open) return;
-  const i = ["1","2","3","4","5","6","7"].indexOf(e.key);
+  const i = ["1","2","3","4","5","6","7","8"].indexOf(e.key);
   if (i >= 0) { state.route = VIEWS[i][0]; render(); }
 });
 
