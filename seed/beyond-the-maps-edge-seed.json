@@ -3110,6 +3110,178 @@
     }
    ],
    "created": 1788583471859
+  },
+  {
+   "id": "i119",
+   "text": "Reddit (u/GreenEyes7141018, 13 up / 48 comments): what if the hunt is like National Treasure — each stanza is one location, and at that location is a clue giving the next. Offered to explain two Posey quotes: 'the key to one direction lies in another' and 'state borders are arbitrary'.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "r/beyondthemapsedge, ~Aug 23 2026 (u/GreenEyes7141018)",
+   "tags": [
+    "structure",
+    "national-treasure",
+    "stanza-per-location",
+    "posey-quote"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'The key to one direction lies in another' reads as a direction reversed or derived from another direction — return her face."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ursa east as one direction whose key is elsewhere."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Stanza 2 as location one."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Stanza 3 as location two."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Stanza 4 as location three, where the on-site clue is found."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'State borders are arbitrary' undercuts the Fenn four-state inference that puts Utah out — borders don't bound the solve."
+    }
+   ],
+   "created": 1788583956744
+  },
+  {
+   "id": "i120",
+   "text": "Reddit (u/PNW-OOTW, 9 up): Posey said in an interview that the poem isn't meant to convey a great distance.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "r/beyondthemapsedge, ~Aug 23 2026 (u/PNW-OOTW)",
+   "tags": [
+    "distance",
+    "posey-quote"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Water → bend → Hole is short."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Face to place is short — consistent with 'not as far as many think'."
+    },
+    {
+     "lineId": "l11",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "A 20°/200° line run for miles from a summit would be a great distance."
+    }
+   ],
+   "created": 1788583956745
+  },
+  {
+   "id": "i121",
+   "text": "Reddit (u/Senior_Muscle_8829): each stanza puts you somewhere — levels in a game, or checkpoints you know are right — and the last few stanzas are where your area is dialed in and you go boots-on-the-ground to 'convey the said distance'. The final move is the chess move that travels the actual distance.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "r/beyondthemapsedge, ~Aug 23 2026 (u/Senior_Muscle_8829)",
+   "tags": [
+    "structure",
+    "levels",
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Has stanza 1 placing you somewhere, against the stanza-1-is-method reading."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 4 as the on-the-ground distance step — matches 'BOTG required at stanza four'."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The distance element lives in the late stanzas."
+    }
+   ],
+   "created": 1788583956746
+  },
+  {
+   "id": "i122",
+   "text": "Reddit (u/PNW-OOTW quoting Posey): 'How far from your car do you need to go? You don't need to hike a great distance. You don't need to hike more than a mile to figure out where the treasure is at.' Commenter's read: with 'a fair amount' solvable from home, you won't be travelling around a bunch to solve the clues.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "r/beyondthemapsedge, ~Aug 23 2026 (u/PNW-OOTW, quoting Posey)",
+   "tags": [
+    "distance",
+    "car",
+    "mile",
+    "access"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The site is within a mile of a car — a drivable pass with a trailhead fits; a deep cirque does not."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Medicine Lakes at La Sal Pass is the kind of place this describes."
+    }
+   ],
+   "created": 1788583956747
+  },
+  {
+   "id": "i123",
+   "text": "Reddit (u/Theroguehippie1): reread the question he was asked. The 'not more than a mile' answer was about distance from your car to figure out where the treasure is — it says nothing about whether the clues convey distances at all, or how far clue-to-clue is. 'To figure out where the treasure is at… OK then what?' People need to get better at asking questions.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "r/beyondthemapsedge, ~Aug 23 2026 (u/Theroguehippie1)",
+   "tags": [
+    "distance",
+    "mile",
+    "question-framing"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Corrects an over-read: the under-a-mile figure is car-to-vantage, not water-to-Hole. Clue-to-clue distance is still unconstrained."
+    },
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "'Figure out where' is not 'retrieve' — the place you identify within a mile of the car may not be where you end up."
+    }
+   ],
+   "created": 1788583956748
   }
  ],
  "candidates": [
@@ -3219,7 +3391,7 @@
  "mapStates": {
   "UT": {
    "status": "active",
-   "note": "My solve: Moab start, La Sal bride, Medicine Lakes. Outside Fenn's 2013 map — the community's sharpest objection."
+   "note": "My solve: Moab start, La Sal bride, Medicine Lakes. Outside Fenn's 2013 map — the community's sharpest objection — but Posey reportedly said 'state borders are arbitrary' (via r/beyondthemapsedge), which cuts against it."
   },
   "MT": {
    "status": "hot",
