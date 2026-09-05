@@ -4215,6 +4215,126 @@
     }
    ],
    "created": 1788584709568
+  },
+  {
+   "id": "i150",
+   "text": "Official FAQ (treasure.quest announcements): Are the clues in consecutive order? Yes. Is the treasure buried? 'If you know where to go, it wouldn't matter either way.' Exact spot or general area? 'If you've solved the poem in its entirety, you'll end up at an exact location.' How far from your car? 'You don't need to hike a great distance. You don't need to hike more than a mile to figure out where the treasure is at.' Do you have to pay to get in? 'No, not as of today.' The container is immediately recognizable, not a Fenn replica, and no knowledge of the Fenn hunt is needed. The whole treasure weighs 60 lb.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest announcements FAQ (via r/TreasureHunting, u/Advanced_Relation_79)",
+   "tags": [
+    "faq",
+    "rules",
+    "buried",
+    "exact",
+    "fee",
+    "60"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Wouldn't matter either way' — the container is concealed in a way that makes buried-or-not moot: covered, wedged, or inside something."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Exact location at the end of the poem."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "'No Fenn knowledge needed' — the 75-mile Fenn statement is a constraint on the site, not a clue in the poem."
+    }
+   ],
+   "created": 1788585102632
+  },
+  {
+   "id": "i151",
+   "text": "Official FAQ: 'Can I bring my dog? If your dog is the outdoors type, absolutely!' Dogs are barred from trails and backcountry in Yellowstone and Grand Teton and most national parks; they are allowed on national forest and BLM land. Read with 'no fee, not as of today', the site is very unlikely to be inside a national park.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest announcements FAQ (via r/TreasureHunting, u/Advanced_Relation_79)",
+   "tags": [
+    "faq",
+    "dog",
+    "national-park",
+    "gate"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A site on a no-dogs park trail fails a direct FAQ answer."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Forest Service and BLM land pass — the Hoback, Big Hole, Pioneers, City of Rocks, Sweetwater all do."
+    }
+   ],
+   "created": 1788585102633
+  },
+  {
+   "id": "i152",
+   "text": "Rule 42 (r/beyondthemapsedge, 33 up): at the end of Gold & Greed Posey quotes Lewis Carroll. In Alice, the King invokes Rule 42: 'All persons more than a mile high to leave the court.' Reading 1: eliminates locations above a mile high (5,280 ft). Reading 2 (commenter): those above a mile high 'get out' — i.e. go boots-on-the-ground — so the treasure is between 5,280 and ~11,000 ft. Another searcher's first BOTG was outside Denver, the Mile High City (Colorado is now eliminated).",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "r/beyondthemapsedge, ~Jan 2026 (u/DesertCloak)",
+   "tags": [
+    "42",
+    "rule-42",
+    "elevation",
+    "alice",
+    "netflix"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A 42 that is not a clock time — survives the 4:02/5:26 elimination."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Reading 1 puts most of the Rockies out: everything on the board except Moab and Devils Tower sits above a mile."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Reading 2 keeps every mountain site in and drops the Moab corridor (~4,000 ft) and Devils Tower (~4,200 ft)."
+    }
+   ],
+   "created": 1788585102634
+  },
+  {
+   "id": "i153",
+   "text": "Elevation check against Rule 42 (approximate): Potash Rd / Corona ≈ 4,000 ft (below a mile); Devils Tower base ≈ 4,200; Big Hole / Wisdom ≈ 6,000; City of Rocks ≈ 6,000; Jackson / Granite Hot Springs ≈ 6,200–6,900; Split Rock ≈ 6,300; Baker's Hole ≈ 6,600; Crystal Park ≈ 7,800; Medicine Lakes ≈ 10,000; Gold Basin ≈ 10,500. Under 'below a mile' only the Moab corridor and Devils Tower survive; under 'above a mile' those two are the ones that fall.",
+   "kind": "objection",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude, Sep 5 2026)",
+   "tags": [
+    "elevation",
+    "rule-42",
+    "gate"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Whichever reading holds, it splits the board cleanly — settle it before spending a trip."
+    }
+   ],
+   "created": 1788585102635
   }
  ],
  "candidates": [
@@ -4246,7 +4366,8 @@
     "g_natural": "fail",
     "g_hole": "fail",
     "g_armchair": "fail",
-    "g_fenn": "unk"
+    "g_fenn": "unk",
+    "g_dog": "pass"
    },
    "kill": "Already dead on three Posey statements: on a trail, culvert Hole, two man-made implications (culvert + ladder).",
    "test": "None needed — demoted. Keep for comparison only."
@@ -4286,7 +4407,8 @@
     "g_armchair": "unk",
     "g_bride": "pass",
     "g_rotate": "unk",
-    "g_fenn": "unk"
+    "g_fenn": "unk",
+    "g_dog": "pass"
    },
    "kill": "The stanza-2 Hole. It inherits the culvert, which Posey has directly denied. Also: no granite.",
    "test": "Find a natural, proper-noun Hole on or near the Moab approach; confirm La Sal Pass Rd in a standard car; check whether Posey ever searched for Fenn within 75 mi of Moab."
@@ -4324,7 +4446,8 @@
     "g_hole": "fail",
     "g_armchair": "unk",
     "g_bride": "pass",
-    "g_fenn": "unk"
+    "g_fenn": "unk",
+    "g_dog": "pass"
    },
    "kill": "Same Hole problem as Medicine Lakes, plus a high, snowbound cirque with no named double feature and a long walk from any car.",
    "test": "Any named paired tarns in Gold Basin on the quad? If not, drop it."
@@ -4355,9 +4478,10 @@
     "g_mile": "pass",
     "g_armchair": "unk",
     "g_safe": "pass",
-    "g_vehicle": "pass"
+    "g_vehicle": "pass",
+    "g_dog": "fail"
    },
-   "kill": "Harlequin Lake trailhead is inside Yellowstone (fee) and the whole route is on the Boundary Trail — 'not near any trail'.",
+   "kill": "Inside Yellowstone: fee entry, no dogs on trails, and the route is the Boundary Trail. Three gates.",
    "test": "Is any part of the endpoint outside the YNP boundary and off-trail? If not, it fails two gates."
   },
   {
@@ -4392,7 +4516,8 @@
     "g_bride": "unk",
     "g_rotate": "pass",
     "g_vehicle": "pass",
-    "g_safe": "pass"
+    "g_safe": "pass",
+    "g_dog": "pass"
    },
    "kill": "No Hole assigned at all, and a bride that is 'the river and its landscape' — not something visible you could identify.",
    "test": "Is there a proper-noun Hole on the Sweetwater approach? Does anything at Devil's Gate read as a face?"
@@ -4430,7 +4555,8 @@
     "g_bride": "pass",
     "g_rotate": "unk",
     "g_vehicle": "pass",
-    "g_safe": "pass"
+    "g_safe": "pass",
+    "g_dog": "pass"
    },
    "kill": "Big Hole National Battlefield is 'near graves'; a Beaverhead Rock bride puts the gates 40 miles from the Hole. And it is the crowd's solve — 'within two miles' means the crowd has been there.",
    "test": "Draw the route Wisdom → Big Hole → Polaris → Beaverhead Rock and measure it against 'not a great distance'."
@@ -4457,7 +4583,8 @@
     "g_bldg": "unk",
     "g_safe": "unk",
     "g_hole": "unk",
-    "g_bride": "unk"
+    "g_bride": "unk",
+    "g_dog": "unk"
    },
    "kill": "No bride and no gates in five minutes of looking; phonolite not granite; the monument is a fee unit with a visitor center.",
    "test": "Search the Bear Lodge Mountains for anything named Bride, Gate, or a face; check whether Posey searched the Black Hills for Fenn."
@@ -4490,7 +4617,8 @@
     "g_trail": "unk",
     "g_safe": "pass",
     "g_map": "unk",
-    "g_fenn": "unk"
+    "g_fenn": "unk",
+    "g_dog": "unk"
    },
    "created": 1788584545744
   },
@@ -4525,7 +4653,8 @@
     "g_mile": "unk",
     "g_bride": "unk",
     "g_rotate": "unk",
-    "g_armchair": "pass"
+    "g_armchair": "pass",
+    "g_dog": "pass"
    },
    "created": 1788584545744
   },
@@ -4559,7 +4688,8 @@
     "g_trail": "unk",
     "g_mile": "unk",
     "g_bride": "unk",
-    "g_armchair": "pass"
+    "g_armchair": "pass",
+    "g_dog": "pass"
    },
    "created": 1788584545744
   }
