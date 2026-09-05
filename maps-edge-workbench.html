@@ -349,7 +349,18 @@ const KINDS = [
   ["math",       "Cipher / math"],
   ["community",  "Community claim"],
   ["speculation","My own theory"],
+  ["objection",  "Objection / constraint"],
+  ["question",   "Question to ask"],
 ];
+const STATUS = [
+  ["unsolved",  "Unsolved"],
+  ["thematic",  "Thematic only"],
+  ["partial",   "Partial"],
+  ["pinned",    "Pinned"],
+  ["contested", "Pinned, contested"],
+];
+const STATUS_LABEL = Object.fromEntries(STATUS);
+const STATUS_CHIP  = { pinned:"fit", contested:"fail", partial:"acc", thematic:"", unsolved:"unk" };
 const CONF = [
   ["confirmed",  "Confirmed",  3],
   ["likely",     "Likely",     2],
@@ -376,6 +387,9 @@ north south east west up down above below under over left right high low
 begin start halt cease stop tarry rest wait end finish
 warm cold cool hot hidden secret dark light shadow sun moon
 brown home nigh meek quest gold treasure chest bronze
+hole bend pole cast ursa bear bride groom gate gates realm face foot arc arcs
+arch arches granite sandstone checkpoint degree degrees twenty three double
+wonder sacred secret shadow rhyme wisdom hope surge
 mile miles feet foot yard yards elevation contour bearing degrees minutes
 morning evening dawn dusk noon summer winter autumn spring
 `.trim().split(/\s+/));
@@ -568,6 +582,7 @@ function parseLines(raw, previous) {
       stanza,
       text,
       hard: reuse ? !!reuse.hard : false,
+      status: reuse ? (reuse.status || "unsolved") : "unsolved",
       note: reuse ? (reuse.note || "") : "",
     });
   });
@@ -626,6 +641,12 @@ function coverage() {
   return { total, covered, pct: Math.round(covered / total * 100), contested };
 }
 
+function statusCounts() {
+  const out = { unsolved:0, thematic:0, partial:0, pinned:0, contested:0 };
+  state.lines.forEach(l => { const k = l.status || "unsolved"; out[k] = (out[k] || 0) + 1; });
+  return out;
+}
+
 function scoreCandidate(c) {
   const v = c.verdicts || {};
   let fit = 0, fail = 0, hardFail = 0;
@@ -674,8 +695,10 @@ function renderGauge() {
   document.getElementById("gCov").textContent = c.total ? c.pct + "%" : "—";
   document.getElementById("gBar1").style.flex = c.covered || 0;
   document.getElementById("gBar2").style.flex = Math.max(0, c.total - c.covered);
-  document.getElementById("gFoot").textContent = c.total
-    ? `${c.covered} of ${c.total} lines have intel` + (c.contested ? ` · ${c.contested} contested` : "")
+  const st = statusCounts();
+  document.getElementById("gFoot").innerHTML = c.total
+    ? `${c.covered} of ${c.total} lines have intel` + (c.contested ? ` · ${c.contested} split` : "") +
+      `<br>${st.pinned + st.contested} pinned · ${st.partial} partial · ${st.unsolved} unsolved`
     : "No poem loaded";
 }
 
@@ -715,6 +738,7 @@ function viewPoem() {
       <span class="t">${esc(l.text)}</span>
       <span class="meta">
         ${l.hard ? '<span class="chip hard">hard</span>' : ""}
+        ${l.status && l.status !== "unsolved" ? `<span class="chip ${STATUS_CHIP[l.status] || ""}">${esc(STATUS_LABEL[l.status] || l.status)}</span>` : ""}
         ${ls.length ? `<span class="covdots">${dots}</span>` : '<span class="chip">0</span>'}
       </span>
     </button>`;
@@ -737,6 +761,8 @@ function viewPoem() {
       <button class="btn sm" data-act="toggle-hard" data-line="${sel.id}">${sel.hard ? "Unset hard constraint" : "Mark hard constraint"}</button>
       <button class="btn sm primary" data-act="add-intel-for" data-line="${sel.id}">Add intel here</button>
     </div>
+    <label class="field"><span>Solve status</span>
+      <select data-status="${sel.id}">${STATUS.map(([v,l]) => `<option value="${v}" ${(sel.status||"unsolved")===v?"selected":""}>${l}</option>`).join("")}</select></label>
     <label class="field"><span>Your reading of this line</span>
       <textarea rows="3" data-note="${sel.id}" placeholder="What do you think it instructs? Keep the working theory with the line.">${esc(sel.note || "")}</textarea></label>
     <div>
@@ -949,6 +975,10 @@ function viewData() {
             <tr><td>Poem lines</td><td class="num">${state.lines.length}</td></tr>
             <tr><td>Lines with intel</td><td class="num">${c.covered} (${c.pct}%)</td></tr>
             <tr><td>Contested lines — supporting and opposing intel on the same line</td><td class="num">${c.contested}</td></tr>
+            <tr><td>Lines pinned to a location</td><td class="num">${statusCounts().pinned}</td></tr>
+            <tr><td>Lines pinned but contested by a direct Posey statement</td><td class="num">${statusCounts().contested}</td></tr>
+            <tr><td>Lines partial or thematic only</td><td class="num">${statusCounts().partial + statusCounts().thematic}</td></tr>
+            <tr><td>Lines unsolved</td><td class="num">${statusCounts().unsolved}</td></tr>
             <tr><td>Hard constraints</td><td class="num">${state.lines.filter(l => l.hard).length}</td></tr>
             <tr><td>Intel items</td><td class="num">${state.intel.length}</td></tr>
             <tr><td>Unmatched intel</td><td class="num">${state.intel.filter(i => !(i.links || []).length).length}</td></tr>
@@ -1335,7 +1365,7 @@ function brief() {
   let out = `# ${state.poemTitle || "Treasure solve board"}\n\n`;
   out += `Coverage: ${c.covered}/${c.total} lines have intel (${c.pct}%). ${c.contested} contested.\n\n## Poem, line by line\n\n`;
   L.forEach((l, i) => {
-    out += `**L${String(i+1).padStart(2,"0")}${l.hard ? " (HARD)" : ""}** — ${l.text}\n`;
+    out += `**L${String(i+1).padStart(2,"0")}${l.hard ? " (HARD)" : ""}** — ${l.text}  _${STATUS_LABEL[l.status] || "Unsolved"}_\n`;
     if (l.note) out += `- My reading: ${l.note}\n`;
     linksFor(l.id).forEach(x => {
       out += `- ${x.link.stance === "contradicts" ? "AGAINST" : "SUPPORTS"} [${CONF_LABEL[x.it.conf] || "?"}] ${x.it.text}`;
@@ -1408,6 +1438,14 @@ function wire() {
     });
   });
 
+  const stat = document.querySelector("[data-status]");
+  if (stat) stat.addEventListener("change", () => {
+    const l = state.lines.find(x => x.id === stat.dataset.status);
+    if (!l) return;
+    leaveDemoIfNeeded();
+    const cur = state.lines.find(x => x.id === stat.dataset.status);
+    if (cur) { cur.status = stat.value; savePoem(); render(); }
+  });
   const note = document.querySelector("[data-note]");
   if (note) note.addEventListener("change", () => {
     const l = state.lines.find(x => x.id === note.dataset.note);

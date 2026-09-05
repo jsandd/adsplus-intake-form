@@ -1,0 +1,1852 @@
+{
+ "format": "maps-edge-workbench/1",
+ "exportedAt": "2026-09-05",
+ "poem": {
+  "title": "Beyond the Map's Edge",
+  "raw": "Can you find what lives in time,\nFlowing through each measured rhyme?\nWisdom waits in shadowed sight—\nFor those who read these words just right.\n\nAs hope surges, clear and bright,\nWalk near waters' silent flight.\nRound the bend, past the Hole,\nI wait for you to cast your pole.\n\nIn ursa east his realm awaits;\nHis bride stands guard at ancient gates.\nHer foot of three at twenty degree,\nReturn her face to find the place.\n\nDouble arcs on granite bold,\nWhere secrets of the past still hold.\nBeyond the reach of time's swift race,\nWonder guards this sacred space.\n\nTruth rests not in clever minds,\nNot in tangled, twisted finds.\nLike a river's steady flow—\nWhat you seek, you already know.",
+  "lines": [
+   {
+    "id": "l01",
+    "stanza": 1,
+    "text": "Can you find what lives in time,",
+    "hard": false,
+    "status": "unsolved",
+    "note": "Read 'time' literally: clock, date, hours. Stanza 1 is reading method, not geography."
+   },
+   {
+    "id": "l02",
+    "stanza": 1,
+    "text": "Flowing through each measured rhyme?",
+    "hard": false,
+    "status": "unsolved",
+    "note": "Counting is the method: words per line, syllables, positions. Posey confirmed numbers are indirectly encoded."
+   },
+   {
+    "id": "l03",
+    "stanza": 1,
+    "text": "Wisdom waits in shadowed sight—",
+    "hard": false,
+    "status": "unsolved",
+    "note": "Ends on an em dash — one of only two in the poem (the other is 5:3). Possibly the cipher's home."
+   },
+   {
+    "id": "l04",
+    "stanza": 1,
+    "text": "For those who read these words just right.",
+    "hard": false,
+    "status": "unsolved",
+    "note": "Confirms the stanza is instruction, not movement. He would not rule out reading or rearranging the poem other than as presented."
+   },
+   {
+    "id": "l05",
+    "stanza": 2,
+    "text": "As hope surges, clear and bright,",
+    "hard": false,
+    "status": "pinned",
+    "note": "First actionable clue (Posey). Working read: Matrimony Spring at US-191/SR-128 north of Moab — cold, clear, year-round, La Sal-fed; local marriage legend plants the bride motif early."
+   },
+   {
+    "id": "l06",
+    "stanza": 2,
+    "text": "Walk near waters' silent flight.",
+    "hard": false,
+    "status": "pinned",
+    "note": "The Colorado River along SR-279 (Potash Road). Walking-distance constraint starts here. Open objection: nothing in the line picks 279 over SR-128 or a bank."
+   },
+   {
+    "id": "l07",
+    "stanza": 2,
+    "text": "Round the bend, past the Hole,",
+    "hard": false,
+    "status": "contested",
+    "note": "Working read: the canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch. Contested — Posey gave a direct 'no' to the Hole being man-made."
+   },
+   {
+    "id": "l08",
+    "stanza": 2,
+    "text": "I wait for you to cast your pole.",
+    "hard": false,
+    "status": "thematic",
+    "note": "Colorado riverbank along 279. Placeholder, not pinned. Fishing-pole reading unconfirmed."
+   },
+   {
+    "id": "l09",
+    "stanza": 3,
+    "text": "In ursa east his realm awaits;",
+    "hard": false,
+    "status": "pinned",
+    "note": "'Bear east' as a heading; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named for a Ute chief. Objections: no bear naming in the La Sals; 'Waas = man' is hedged."
+   },
+   {
+    "id": "l10",
+    "stanza": 3,
+    "text": "His bride stands guard at ancient gates.",
+    "hard": false,
+    "status": "contested",
+    "note": "Mount Tukuhnikivatz as bride to the man-mountain, at the gates of the range. 'Ancient gates' not pinned to a feature. Contested by the 'not a living person' clarification, which reads person-shaped."
+   },
+   {
+    "id": "l11",
+    "stanza": 3,
+    "text": "Her foot of three at twenty degree,",
+    "hard": false,
+    "status": "partial",
+    "note": "Tuk's three-sided pyramid form = foot of three; twenty degrees taken from her foot. Cannot yet be walked."
+   },
+   {
+    "id": "l12",
+    "stanza": 3,
+    "text": "Return her face to find the place.",
+    "hard": false,
+    "status": "partial",
+    "note": "Tukuhnikivatz ≈ 'where the sun sets last', a direction-facing name. Reverse her facing: 20° → 200°. Posey: rotation is 'technically' physical — a mountain cannot be rotated, a map or image can."
+   },
+   {
+    "id": "l13",
+    "stanza": 4,
+    "text": "Double arcs on granite bold,",
+    "hard": false,
+    "status": "pinned",
+    "note": "Corona Arch + Bowtie Arch, paired on one trail off 279: crown + groom's bowtie, the wedding pair. Objections: neither Moab sandstone nor La Sal laccolith is granite; the trail has a bolted ladder; site is 'not near any trail'."
+   },
+   {
+    "id": "l14",
+    "stanza": 4,
+    "text": "Where secrets of the past still hold.",
+    "hard": false,
+    "status": "thematic",
+    "note": "Petroglyph panels and dinosaur tracks along the Potash corridor. Thematic, not pinned."
+   },
+   {
+    "id": "l15",
+    "stanza": 4,
+    "text": "Beyond the reach of time's swift race,",
+    "hard": false,
+    "status": "thematic",
+    "note": "The river and the canyon it cut. Thematic."
+   },
+   {
+    "id": "l16",
+    "stanza": 4,
+    "text": "Wonder guards this sacred space.",
+    "hard": false,
+    "status": "thematic",
+    "note": "Arch country over the site. 'The sacred space' need not be the same location as 'the place' (3:4) — Posey."
+   },
+   {
+    "id": "l17",
+    "stanza": 5,
+    "text": "Truth rests not in clever minds,",
+    "hard": false,
+    "status": "thematic",
+    "note": "Guidance: the solve should be plain, not encrypted."
+   },
+   {
+    "id": "l18",
+    "stanza": 5,
+    "text": "Not in tangled, twisted finds.",
+    "hard": false,
+    "status": "thematic",
+    "note": "Warns against tangled, twisted finds — a check on solves built backward from a destination."
+   },
+   {
+    "id": "l19",
+    "stanza": 5,
+    "text": "Like a river's steady flow—",
+    "hard": false,
+    "status": "thematic",
+    "note": "Second em dash, pairing with 1:3."
+   },
+   {
+    "id": "l20",
+    "stanza": 5,
+    "text": "What you seek, you already know.",
+    "hard": false,
+    "status": "thematic",
+    "note": "Closing. Echoes 'you're not searching, you're retrieving'."
+   }
+  ]
+ },
+ "intel": [
+  {
+   "id": "i001",
+   "text": "Hunt Items (the treasure, the checkpoint and any placed clue) are NOT underwater, on private property, in caves, mines or tunnels, anywhere that needs rappelling, associated with man-made buildings, near graves or grave markers, or in dangerous places.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest official rules",
+   "tags": [
+    "rules",
+    "elimination"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A culvert is tunnel-shaped. The Hole reading has to argue it is a route feature you pass, not a place a hunt item sits."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Site constraint: wherever the sacred space is, it is none of these."
+    }
+   ],
+   "created": 1788581667022
+  },
+  {
+   "id": "i002",
+   "text": "All Hunt Items ARE more than 1 mile from anywhere Posey, his family or friends live, work or own property (including their businesses); on publicly accessible land anyone can visit; safe to get to.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest official rules",
+   "tags": [
+    "rules"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Site constraint."
+    }
+   ],
+   "created": 1788581667023
+  },
+  {
+   "id": "i003",
+   "text": "You DON'T need climbing gear or ropes, permission to enter private land, swimming skills, ladders or climbing skills, or a high-clearance vehicle.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest official rules",
+   "tags": [
+    "rules",
+    "access"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "The Corona Arch trail has a bolted ladder and safety cables. Not disqualifying — the rule says you don't need them, not that none exist — but it is an official statement pointing away from that trail."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Site constraint: reachable without gear."
+    }
+   ],
+   "created": 1788581667024
+  },
+  {
+   "id": "i004",
+   "text": "'If you need rope then it's not the right location.' Searchers are going too deep into wilderness, rappelling into caves and searching cliffsides. Nothing dangerous is required. Asked point blank where it is: on earth, in the American West, not a place you have to go many miles to find.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "safety",
+    "scope"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The sacred space is close to access and benign — not a cliff, not a cave."
+    }
+   ],
+   "created": 1788581667025
+  },
+  {
+   "id": "i005",
+   "text": "All essential clues are in the poem, free on treasure.quest. Five stanzas of four lines. At least 10 clues. Clues are in consecutive order, top to bottom (confirmed in website announcements).",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "treasure.quest announcements",
+   "tags": [
+    "mechanics",
+    "order"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Consecutive order is itself a reading rule."
+    }
+   ],
+   "created": 1788581667026
+  },
+  {
+   "id": "i006",
+   "text": "Asked at Seekers Summit whether the poem needs to be read or rearranged in any way other than as presented: 'I'm not going to rule that out.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "mechanics",
+    "cipher"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Read these words just right' may mean a non-linear reading — column, count, or rearrangement."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Measured rhyme' invites counting or re-ordering."
+    }
+   ],
+   "created": 1788581667027
+  },
+  {
+   "id": "i007",
+   "text": "No red herrings in the poem. No hidden codes in the website's source code.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "mechanics"
+   ],
+   "links": [
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Every line means something; nothing is there to mislead."
+    }
+   ],
+   "created": 1788581667028
+  },
+  {
+   "id": "i008",
+   "text": "A 'fair amount' can be solved from home. Boots on the ground are required for retrieval. If the poem is solved in its entirety, an exact location is given.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "mechanics"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Find the place' — the poem resolves to an exact spot, not a region."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Retrieval happens here; the rest can be worked from home."
+    }
+   ],
+   "created": 1788581667029
+  },
+  {
+   "id": "i009",
+   "text": "One cipher exists, plus one hint he describes as 'somewhat technical'; neither is critical to the solution. Asked whether the cipher sits in one section of the book or spans several: 'Who says the cipher is in the book?'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "cipher"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 1 reads as the reading rule — the cipher may live in the poem itself, not the book."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Shadowed sight' — something hidden in plain view."
+    }
+   ],
+   "created": 1788581667030
+  },
+  {
+   "id": "i010",
+   "text": "Numbers are indirectly associated with the poem (wordplay, hidden in words) — confirmed yes; declined to address homophones specifically. There IS a distance element in following the clues.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "numbers",
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The one explicit number line: three and twenty. A distance element likely lives here."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Measured rhyme' — counting produces the indirect numbers."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Lives in time' — hours, dates, clock numbers."
+    }
+   ],
+   "created": 1788581667031
+  },
+  {
+   "id": "i011",
+   "text": "The map is useful. The treasure is hidden within the printed map, not beyond its edge.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "map"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bounds the site to the book's printed map."
+    }
+   ],
+   "created": 1788581667032
+  },
+  {
+   "id": "i012",
+   "text": "All clues are expected to stand the test of time; he will announce if something drastic changes.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "durability"
+   ],
+   "links": [
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Beyond the reach of time's swift race' — the clues, and the site, endure."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Argues against building 'his realm' on a contested Ute translation of Waas — a durable clue would not hinge on hedged etymology."
+    }
+   ],
+   "created": 1788581667033
+  },
+  {
+   "id": "i013",
+   "text": "First actionable clue: 'As hope surges, clear and bright' (2:1). Last actionable clue: stanza four or five, depending on interpretation.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "sequence"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The starting point is this line. Everything before it is method."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 1 is instruction, not a place — consistent with the stanza-1 reading."
+    }
+   ],
+   "created": 1788581667034
+  },
+  {
+   "id": "i014",
+   "text": "Boots on the ground becomes absolutely required at stanza four. Implication: stanzas 1 through 3 are intended to be solvable from home.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "sequence",
+    "armchair"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 4 is where you must physically stand."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "The working solve anchors stanza 3 on standing at Jeep Arch. If stanzas 1–3 are armchair-solvable, the La Sals should fall out of the map and poem alone."
+    },
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Same armchair objection: the bride should be identifiable from home."
+    }
+   ],
+   "created": 1788581667035
+  },
+  {
+   "id": "i015",
+   "text": "It is walking distance from 'waters' silent flight' through 'round the bend, past the Hole.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 3,
+     "why": "2:2 and 2:3 are close together on the ground."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The Hole is within a walk of the water."
+    }
+   ],
+   "created": 1788581667036
+  },
+  {
+   "id": "i016",
+   "text": "'No need to hike more than a mile to figure out where the treasure is at.' Searchers note this is not the same as 'to find it'.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Find the place' — knowing where is a short walk; retrieving may be separate."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The walk from the water past the Hole is under a mile."
+    }
+   ],
+   "created": 1788581667037
+  },
+  {
+   "id": "i017",
+   "text": "'How far from the first clue to the last in miles' — he called this impossible to answer given how the clues are structured.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "First-to-last is not a straight line — the route may fold back, or use a bearing rather than a path."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A bearing-and-distance step would make first-to-last mileage meaningless."
+    }
+   ],
+   "created": 1788581667038
+  },
+  {
+   "id": "i018",
+   "text": "'By the time you're going to get the treasure you're not searching, you're retrieving.' Once you figure out exactly where it is, you will have sufficient time to plan how you wish to retrieve it.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "X Marks the Pod (Sep 4 2025)",
+   "tags": [
+    "retrieval"
+   ],
+   "links": [
+    {
+     "lineId": "l20",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'What you seek, you already know' — by the end there is nothing left to search for."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Retrieval is a planned act, not a scramble."
+    }
+   ],
+   "created": 1788581667039
+  },
+  {
+   "id": "i019",
+   "text": "Something will need to be manipulated in order to see the treasure; depending on conditions a flashlight could be helpful. Punted separately on whether you need to move any rocks.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "retrieval"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The sacred space conceals: something guards or covers the container."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Secrets still hold' — hidden until manipulated."
+    }
+   ],
+   "created": 1788581667040
+  },
+  {
+   "id": "i020",
+   "text": "Built-in checkpoint gives the reassuring feeling you aren't lost. It gives zero doubt you are trending right. You are at least halfway through the poem clues when you reach it. It is part of the poem, as a stage of the journey. Excellent chance you find the treasure if you're first to it.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Halfway through twenty lines lands in stanza 3 — 'ancient gates' is the natural checkpoint reading."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Or the checkpoint is where 'his realm' begins."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Find the place' could be the checkpoint, with the sacred space beyond it."
+    }
+   ],
+   "created": 1788581667041
+  },
+  {
+   "id": "i021",
+   "text": "The checkpoint is both something he placed AND something already there. Asked if it is tied to a topographic feature: 'there is some implication there.' Not something you need to worry about moving. Possible to be at it and not recognize it, depending how close you are.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A placed mark on an existing landform — a gate that was already there, marked by him."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Double arcs on granite' could be marks he made on existing rock."
+    }
+   ],
+   "created": 1788581667042
+  },
+  {
+   "id": "i022",
+   "text": "Aug 1 2025: several searchers have solved at least the first two clues, and some have been within 200 feet of the checkpoint. Zero searchers have sent him a photo of the correct checkpoint. The checkpoint is not visible in Gold & Greed.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Posey on X, Aug 1 2025",
+   "tags": [
+    "checkpoint",
+    "progress"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The first two clues (2:1, 2:2) are being solved correctly by multiple people."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Same — 2:2 is solvable and has been solved."
+    }
+   ],
+   "created": 1788581667043
+  },
+  {
+   "id": "i023",
+   "text": "'You'd be hard pressed to get all the way without seeing the checkpoint.' The audiobook adds a chapter containing the word 'checkpoint', widely read as confirming it cannot be identified from home.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "checkpoint",
+    "audiobook"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The checkpoint sits on the route, seen in passing."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "If it can't be identified from home, it may be the first stanza-4 element."
+    }
+   ],
+   "created": 1788581667044
+  },
+  {
+   "id": "i024",
+   "text": "The bride is not a person who is alive right now. Clarified intent: he does not want anyone thinking she is a living person you can interact with, to prevent searchers hassling real people. The bride is something visible. Someone has correctly identified the bride.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "bride"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "She is a visible, identifiable thing — a landform, monument or image fits; a living person does not."
+    }
+   ],
+   "created": 1788581667045
+  },
+  {
+   "id": "i025",
+   "text": "Her face does belong to the bride: yes. 'Return her face' does imply a physical rotation — 'the technically correct answer is yes.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "bride",
+    "rotation"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A mountain cannot be physically rotated. The Tukuhnikivatz facing-reversal reading needs a rotatable object — a map, an image, a carving."
+    }
+   ],
+   "created": 1788581667046
+  },
+  {
+   "id": "i026",
+   "text": "'Return her face to find the place' — the distance from her face to the place is 'probably not as far as many people might think.' Distance from the bride to the treasure: 'a matter of perspective.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "bride",
+    "distance"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The place is near the face. A 200° bearing running miles from a summit is probably too far."
+    }
+   ],
+   "created": 1788581667047
+  },
+  {
+   "id": "i027",
+   "text": "You do not need to be at the bride to identify her foot of three.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "bride",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Foot of three is derivable remotely — from a map, a name, or a shape — consistent with stanza 3 being armchair-solvable."
+    }
+   ],
+   "created": 1788581667048
+  },
+  {
+   "id": "i028",
+   "text": "It would be 'a little strange' to discover the bride without understanding the ancient gates.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "bride",
+    "gates"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The gates come with or before the bride; understanding them is how you confirm her."
+    }
+   ],
+   "created": 1788581667049
+  },
+  {
+   "id": "i029",
+   "text": "Asked whether 'he' is living or was ever living: 'That depends on your perspective.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "realm"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Compatible with a mountain named for a person (Waas the Ute chief), a personified feature, or a figure of legend."
+    }
+   ],
+   "created": 1788581667050
+  },
+  {
+   "id": "i030",
+   "text": "Only Ursa East matters; there is no separate west Ursa. The lowercase 'ursa' was deliberate. On an anagram reading such as 'use a star': 'the poem was written deliberately, so the choice of not capitalizing was intentional, but that's all the clarity I'm willing to provide.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "ursa",
+    "wordplay"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Lowercase ursa points away from a proper name (Ursa Major) toward a common noun or wordplay — 'bear east' as a heading, or an anagram."
+    }
+   ],
+   "created": 1788581667051
+  },
+  {
+   "id": "i031",
+   "text": "Part of stanza 3 has been solved by searchers, at least in part. 'The place' (3:4) and 'the sacred space' (4:4) are not necessarily the same location.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "progress",
+    "two-places"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'The place' is a real, distinct waypoint."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The sacred space may lie beyond the place the bride's face reveals."
+    }
+   ],
+   "created": 1788581667052
+  },
+  {
+   "id": "i032",
+   "text": "The Hole carries no man-made implication — a direct 'no' at Seekers Summit. Punted on whether it corresponds to a place with 'hole' in its name (Jackson Hole, Big Hole River): 'an on the nose question.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "hole"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "The culvert reading requires this 'no' to be misleading. A natural hole, or a place-name Hole, fits the answer."
+    }
+   ],
+   "created": 1788581667053
+  },
+  {
+   "id": "i033",
+   "text": "Punted on whether 'double arcs on granite bold' is the clue with the man-made implication — widely read as a soft yes, given the Hole was a clean no. At Dillon, would not say whether the arcs exist naturally or were created: 'a strange question to answer since he knows what he knows.'",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Dillon, MT book signing Q&A (Jun 21 2025) via Mysterious Writings",
+   "tags": [
+    "arcs",
+    "man-made"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "If anything in the poem is man-made, this is the leading candidate: carved, built or placed arcs on rock."
+    }
+   ],
+   "created": 1788581667054
+  },
+  {
+   "id": "i034",
+   "text": "Whether 'cast your pole' refers to a fishing pole: not specified.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "pole"
+   ],
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Fishing is the plain reading but unconfirmed — a survey pole, a flagpole or a bearing 'pole' remain open."
+    }
+   ],
+   "created": 1788581667055
+  },
+  {
+   "id": "i035",
+   "text": "Will not say yes or no on whether national parks are ruled out. Has not specified: whether the site predates his Fenn searches, whether the poem references Native American legends, whether there are golf references. Punted on whether he can view searchers near the treasure.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "open"
+   ],
+   "links": [],
+   "created": 1788581667056
+  },
+  {
+   "id": "i036",
+   "text": "Colorado eliminated (Seekers Summit, intentional). Oregon eliminated (Seekers Summit, intentional).",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Seekers Summit, Tucson (Mar 28 2026) via Mysterious Writings",
+   "tags": [
+    "elimination"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The La Sals are on the Utah side of the state line — adjacent to Colorado but outside it."
+    }
+   ],
+   "created": 1788581667057
+  },
+  {
+   "id": "i037",
+   "text": "Confirmed he had at some point searched for the Fenn chest within 75 miles of where he hid his own treasure — then walked it back, not wanting people to think he'd eliminated states, and questioned whether Fenn's site was even in the official Rocky Mountains.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "fenn",
+    "scope"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Weak regional bound: somewhere he once searched for Fenn, within 75 miles."
+    }
+   ],
+   "created": 1788581667058
+  },
+  {
+   "id": "i038",
+   "text": "Community inference, not Posey: from Fenn's 'north of Santa Fe' framing, everything roughly 75 miles south of Santa Fe is out. Moab (~38.6°N) is well north of that cutoff.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Searcher inference",
+   "tags": [
+    "fenn",
+    "scope"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Moab clears the community's Santa Fe cutoff."
+    }
+   ],
+   "created": 1788581667059
+  },
+  {
+   "id": "i039",
+   "text": "Access to the location is free and available 24/7. It is NOT near any trail — deliberate, so it wouldn't be stumbled upon.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "access",
+    "trail"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "Corona and Bowtie Arch sit on a maintained, popular trail. The double arcs may be on-trail, but the sacred space is off it."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Site constraint: off-trail, free, always open — rules out fee areas with gates and hours."
+    }
+   ],
+   "created": 1788581667060
+  },
+  {
+   "id": "i040",
+   "text": "220-page memoir with hints scattered throughout. Clues and hints are the same thing in his view. Many clues in the book, but not every story contains one. The book is a better clue resource than the documentary.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "book"
+   ],
+   "links": [],
+   "created": 1788581667061
+  },
+  {
+   "id": "i041",
+   "text": "Intentional differences between hardcover and digital, and he said the differences hold insights. Hardcover has two more images than digital, on pages 4 and 117. Page 90 does not exist — pages run 89 to 91 inside chapter 9. Page 156 is missing its page number where comparable pages have theirs.",
+   "kind": "book",
+   "conf": "confirmed",
+   "source": "Beyond the Map's Edge (hardcover)",
+   "tags": [
+    "book",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Missing and unnumbered pages are number play — 'what lives in time' may be a count."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Measured rhyme' — page numbers 4, 90, 117, 156 are candidates for the measure."
+    }
+   ],
+   "created": 1788581667062
+  },
+  {
+   "id": "i042",
+   "text": "Cover: the M in 'Map's' is cut short. Searchers propose the cover aperture matches a watershed or terrain outline; the working solve proposes Jeep Arch rotated 90°. Posey has said the interior map was designed by a third party and its errors were not intentional — his input on the cover art is unknown.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Searcher observation + Beyond the Map's Edge (hardcover)",
+   "tags": [
+    "cover",
+    "rotation"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "If the cover is her face, the rotation reading finally has an object that can be 'returned'."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 1,
+     "why": "An arch on the cover would put an arch in the poem."
+    }
+   ],
+   "created": 1788581667063
+  },
+  {
+   "id": "i043",
+   "text": "'The Concrete Kiss': the Big Hill speed-bump line says Idaho in hardcover (p. 43) but Utah in the audiobook. The hill illustration is on page 42. Idaho and Utah share the 42nd parallel.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Audiobook vs hardcover comparison",
+   "tags": [
+    "audiobook",
+    "utah",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A deliberate Idaho→Utah swap puts Utah in play; 42 ties the page to the parallel."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Another indirect number."
+    }
+   ],
+   "created": 1788581667064
+  },
+  {
+   "id": "i044",
+   "text": "Audiobook Acknowledgements add a sentence: the difference between reality and fantasy is not a wall but a map waiting to be drawn.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Audiobook vs hardcover comparison",
+   "tags": [
+    "audiobook",
+    "map"
+   ],
+   "links": [
+    {
+     "lineId": "l04",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Read these words just right' — the map is to be drawn from the words."
+    }
+   ],
+   "created": 1788581667065
+  },
+  {
+   "id": "i045",
+   "text": "Audiobook: 'The' is added to the chapter title 'Trailside Troubles' (p. 113 hardcover). In 'The Treasure Trail' (p. 185) there is a search list; the narrator adds that two entries remained uncrossed.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Audiobook vs hardcover comparison",
+   "tags": [
+    "audiobook"
+   ],
+   "links": [
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Two uncrossed entries — secrets of the past that still hold."
+    }
+   ],
+   "created": 1788581667066
+  },
+  {
+   "id": "i046",
+   "text": "Netflix: he had no creative control and did not know scene order, framing or focus. He hid hints during filming that even the producers didn't know about. At least 5 singular clues plus compound clues requiring several scenes. Two hints he considers obvious remain unfound, in a scene he does not appear in but had some control over. Clock times 4:02 and 5:26 are eliminated as meaningful.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "netflix"
+   ],
+   "links": [],
+   "created": 1788581667067
+  },
+  {
+   "id": "i047",
+   "text": "A Bureau of Land Management placard is visible in a Netflix packing scene, proposed as one of the obvious hints. The Gold Bar / Potash corridor is BLM land.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Gold & Greed (Netflix) — searcher observation",
+   "tags": [
+    "netflix",
+    "blm"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Points to BLM land — matches the Moab corridor and satisfies 'publicly accessible'."
+    }
+   ],
+   "created": 1788581667068
+  },
+  {
+   "id": "i048",
+   "text": "There are clues in the hunt's songs. One song contains what he called an extremely definitive clue.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "songs"
+   ],
+   "links": [],
+   "created": 1788581667069
+  },
+  {
+   "id": "i049",
+   "text": "Roughly 60 pounds including container. Mostly gold: bars, precious gems, rare coins, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest, and a Bitcoin wallet funded by book sales. Container immediately recognizable as his, not a Fenn replica. A separate Steward holds additional items.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "treasure"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Sixty pounds sets the retrieval problem — somewhere you can reach and carry out from without gear."
+    }
+   ],
+   "created": 1788581667070
+  },
+  {
+   "id": "i050",
+   "text": "Finders keepers. Finder may remain anonymous, but must come forward within 30 days to claim the Bitcoin portion. The complete solution will be revealed at the conclusion of the hunt.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "claiming"
+   ],
+   "links": [],
+   "created": 1788581667071
+  },
+  {
+   "id": "i051",
+   "text": "Posey searched for Fenn for years; bought the Fenn chest from finder Jack Stuef, auctioned most contents Dec 2022, kept the chest, the dragon bracelet, a few coins, dust and flakes. Software engineer, art and antique dealer, raised in Arizona, based in Texas. Hunt dedicated to four late loved ones: his father, grandfather, brother Brandon, and his dog Tucker.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Beyond the Map's Edge (hardcover)",
+   "tags": [
+    "background",
+    "dedication"
+   ],
+   "links": [],
+   "created": 1788581667072
+  },
+  {
+   "id": "i052",
+   "text": "Speculation: 'not a person who is alive right now' plus a hunt dedicated to four late loved ones — the bride could honor a dedicatee (a memorial, a named or personal feature) rather than be a landform.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own theory",
+   "tags": [
+    "bride",
+    "dedication"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "An alternative bride that satisfies 'not alive' and 'visible' without a mountain."
+    }
+   ],
+   "created": 1788581667073
+  },
+  {
+   "id": "i053",
+   "text": "Matrimony Spring at the junction of US-191 and SR-128 north of Moab: cold, clear, flows 365 days a year, likely sourced from the La Sals ~30 miles southeast. Local legend: couples who drink from it marry; drinking marries you to the land and you always return. Supports 'clear and bright' where the muddy Colorado does not.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "spring",
+    "bride"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Clear, bright, surging water at the start of the route."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Plants the bride motif three lines early."
+    }
+   ],
+   "created": 1788581667074
+  },
+  {
+   "id": "i054",
+   "text": "The spring's outflow is piped through a culvert under SR-128 into the Colorado — the water in 2:1 physically becomes the water in 2:2. North on 191, cross the Colorado on the highway bridge; SR-279 branches left about two miles up and drops onto the river's north bank. Roughly four miles total; the walking constraint begins at 2:2, so a drive here is permitted.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "route"
+   ],
+   "links": [
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Continuity of water from 2:1 to 2:2."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The spring feeds the river."
+    }
+   ],
+   "created": 1788581667075
+  },
+  {
+   "id": "i055",
+   "text": "The Colorado River along SR-279 (Potash Road) is 'waters' silent flight' — a big, quiet river moving through the canyon.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "river"
+   ],
+   "links": [
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Silent, flowing water you walk near."
+    }
+   ],
+   "created": 1788581667076
+  },
+  {
+   "id": "i056",
+   "text": "The canyon bend, then the large culvert on the Gold Bar approach to Jeep Arch, is 'round the bend, past the Hole.' Argument: Posey's exclusion language is 'man-made buildings', which leaves a culvert available as a passable route feature.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "hole",
+    "jeep-arch"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A literal bend then a literal hole on the approach to the arch."
+    }
+   ],
+   "created": 1788581667077
+  },
+  {
+   "id": "i057",
+   "text": "'Bear east' read as a heading instruction; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named by the Hayden Survey for a local Ute chief; 'Waas' also reported (hedged) to mean 'man' in Ute. Older maps label it Mount Nas or Nass.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "la-sals",
+    "waas",
+    "ursa"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A named 'his' summit due east of the stanza-2 endpoint."
+    }
+   ],
+   "created": 1788581667078
+  },
+  {
+   "id": "i058",
+   "text": "Mount Tukuhnikivatz as the bride to the man-mountain, standing at the gates of the range. 'Ancient gates' not pinned to a specific feature.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "la-sals",
+    "tukuhnikivatz",
+    "bride"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A paired peak for the paired line."
+    }
+   ],
+   "created": 1788581667079
+  },
+  {
+   "id": "i059",
+   "text": "Tukuhnikivatz's three-sided pyramid form is 'her foot of three'; twenty degrees is taken from her foot.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "la-sals",
+    "tukuhnikivatz",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Shape reading of 'three'; the bearing reading of 'twenty degree'."
+    }
+   ],
+   "created": 1788581667080
+  },
+  {
+   "id": "i060",
+   "text": "Tukuhnikivatz is usually translated as roughly 'where the sun sets last' — a direction-facing name. Reverse her facing: 20 becomes 200.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "la-sals",
+    "tukuhnikivatz",
+    "rotation"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Return her face' as reversing a bearing."
+    }
+   ],
+   "created": 1788581667081
+  },
+  {
+   "id": "i061",
+   "text": "Corona Arch and Bowtie Arch, paired within a few hundred feet on one trail off 279. Corona means crown; a bowtie is a groom's — the wedding pair. The trail's bolted cable and ladder supply a man-made element.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "corona",
+    "bowtie",
+    "arcs"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Two arcs, side by side, with a marriage reading."
+    }
+   ],
+   "created": 1788581667082
+  },
+  {
+   "id": "i062",
+   "text": "Petroglyph panels and dinosaur tracks along the Potash corridor are 'secrets of the past still hold'. Thematic, not pinned.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab",
+    "petroglyphs"
+   ],
+   "links": [
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Thematic fit."
+    }
+   ],
+   "created": 1788581667083
+  },
+  {
+   "id": "i063",
+   "text": "The river and the canyon it cut are 'time's swift race'; arch country over the site is 'wonder guards this sacred space'. Thematic.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "moab"
+   ],
+   "links": [
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Thematic fit."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Thematic fit."
+    }
+   ],
+   "created": 1788581667084
+  },
+  {
+   "id": "i064",
+   "text": "Stanza 1 reading: 'time' literally (clock, date, hours); 'measured rhyme' = counting words, syllables, positions; 1:3 and 5:3 are the poem's only two em dashes — a pairing that brackets the poem.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "stanza-1",
+    "cipher",
+    "em-dash"
+   ],
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Literal time."
+    },
+    {
+     "lineId": "l02",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Counting method."
+    },
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 2,
+     "why": "One of two em dashes."
+    },
+    {
+     "lineId": "l19",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The other em dash — the pair."
+    }
+   ],
+   "created": 1788581667085
+  },
+  {
+   "id": "i065",
+   "text": "The Old Spanish Trail ran from Santa Fe past the La Sals, connecting the region to Fenn country.",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Working solve — master file §11",
+   "tags": [
+    "history",
+    "la-sals"
+   ],
+   "links": [
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Secrets of the past along the corridor."
+    }
+   ],
+   "created": 1788581667086
+  },
+  {
+   "id": "i066",
+   "text": "Granite: Moab is sandstone; the La Sals are laccolithic intrusive rock. Neither is granite.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "granite",
+    "geology"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "The poem says granite. Sandstone arches are not granite; if 'granite' is literal, Corona/Bowtie fail."
+    }
+   ],
+   "created": 1788581667087
+  },
+  {
+   "id": "i067",
+   "text": "Ursa: no bear-related naming exists among the La Sal peaks (Waas, Peale, Mellenthin, Tukuhnikivatz, South Mountain) or the local drainages (Mill Creek, Pack Creek). The nearest bear name, Bears Ears, is ~70 miles southwest — the wrong direction from Moab.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "ursa",
+    "la-sals"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "'Ursa east' has no bear to point at in the La Sals; the reading relies entirely on 'bear' as a verb."
+    }
+   ],
+   "created": 1788581667088
+  },
+  {
+   "id": "i068",
+   "text": "The bride clarification — volunteering twice that she is not a living person and not someone you can interact with — only makes sense if the bride reads as person-shaped. Counterweight: he also said the bride is visible, and that whether 'he' is living depends on perspective; both are compatible with landforms.",
+   "kind": "objection",
+   "conf": "unverified",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "bride"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Cuts against a mountain-bride: nobody worries about searchers hassling a peak."
+    }
+   ],
+   "created": 1788581667089
+  },
+  {
+   "id": "i069",
+   "text": "Direction of travel: nothing in 2:2 specifies bank, downstream, or the choice of SR-279 over SR-128, which also follows the Colorado from the same junction. The turn onto 279 is currently chosen retroactively by the destination.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "route",
+    "moab"
+   ],
+   "links": [
+    {
+     "lineId": "l06",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "The line does not pick the road; the destination does."
+    }
+   ],
+   "created": 1788581667090
+  },
+  {
+   "id": "i070",
+   "text": "Derivation order: the solve was built outward from Jeep Arch rather than forward from the poem. Stanza 5 explicitly warns against tangled, twisted finds.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "method"
+   ],
+   "links": [
+    {
+     "lineId": "l18",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The poem's own test: a solve that needs the answer to justify its steps is a twisted find."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "The Hole was chosen because Jeep Arch was already the target."
+    }
+   ],
+   "created": 1788581667091
+  },
+  {
+   "id": "i071",
+   "text": "Waas etymology: the 'man' translation is hedged in sources; the Ute chief attribution is better supported. Clues should stand the test of time, which argues against building on a contested translation.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Master file §12 — constraints to reconcile",
+   "tags": [
+    "waas",
+    "etymology"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "'His realm' as 'man mountain' rests on a hedged translation."
+    }
+   ],
+   "created": 1788581667092
+  },
+  {
+   "id": "i072",
+   "text": "Ask: Does the Hole refer to something you pass through?",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Master file §13 — open questions",
+   "tags": [
+    "ask",
+    "hole"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Would settle the culvert reading."
+    }
+   ],
+   "created": 1788581667093
+  },
+  {
+   "id": "i073",
+   "text": "Ask: Did you have any input on the book's cover art?",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Master file §13 — open questions",
+   "tags": [
+    "ask",
+    "cover"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Decides whether the cover can be the bride's face."
+    }
+   ],
+   "created": 1788581667094
+  },
+  {
+   "id": "i074",
+   "text": "Ask: Is the bride a natural feature or something made?",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Master file §13 — open questions",
+   "tags": [
+    "ask",
+    "bride"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Mountain vs monument vs image."
+    }
+   ],
+   "created": 1788581667095
+  },
+  {
+   "id": "i075",
+   "text": "Ask: Is 'her foot of three' a measurement, a bearing, or a shape? Does 'twenty degree' refer to a compass bearing?",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Master file §13 — open questions",
+   "tags": [
+    "ask",
+    "numbers"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Decides how the number line is used."
+    }
+   ],
+   "created": 1788581667096
+  },
+  {
+   "id": "i076",
+   "text": "Posey answers a monthly Featured Question through Mysterious Writings (since July 2026). Questions phrased specifically but not 'on the nose' have gotten real answers.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Posey Q&A compiled by Mysterious Writings",
+   "tags": [
+    "ask",
+    "process"
+   ],
+   "links": [],
+   "created": 1788581667097
+  }
+ ],
+ "candidates": [
+  {
+   "id": "c_corona",
+   "name": "Corona & Bowtie Arch — Potash Road (working solve)",
+   "region": "UT · Moab / Gold Bar, BLM",
+   "coords": "≈ 38.58, -109.62 (verify on quad)",
+   "elev": "≈ 4,600 ft",
+   "notes": "Stanza-4 site of the Moab / La Sal solve. Reached via SR-279 from the Matrimony Spring start; trail has bolted cable and ladder. Verdicts follow the §11 scoreboard: pinned lines fit, contested lines left unjudged so the objections stay visible.",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l09": "fit",
+    "l13": "fit"
+   },
+   "created": 1788581667021
+  },
+  {
+   "id": "c_tuk200",
+   "name": "La Sal — 200° from Tukuhnikivatz's foot (bearing reading)",
+   "region": "UT · La Sal Mountains, Manti-La Sal NF",
+   "coords": "Mt Tukuhnikivatz ≈ 38.44, -109.27 (verify)",
+   "elev": "Tuk ≈ 12,480 ft",
+   "notes": "Alternative endpoint: if 'return her face' flips 20° to 200°, the place lies on a bearing from her foot rather than back at the river. Not walked, not mapped. Conflicts with 'not as far as many think'.",
+   "verdicts": {
+    "l09": "fit",
+    "l10": "fit"
+   },
+   "created": 1788581667021
+  }
+ ]
+}
