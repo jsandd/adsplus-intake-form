@@ -4755,6 +4755,568 @@
     }
    ],
    "created": 1788585598315
+  },
+  {
+   "id": "i163",
+   "text": "VERIFIED — Sinks Canyon, Lander WY: the Middle Fork of the Popo Agie disappears into a limestone cavern ('the Sinks') and reappears about a quarter mile downstream at 'the Rise', a clear pool of huge trout, after ~2 hours underground. Fishing is prohibited at the Rise and from the Rise down to the Sinks Canyon Road bridge. No day-use fee. Leashed dogs allowed. Upper canyon is Shoshone National Forest.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "sinks-canyon",
+    "lander",
+    "popo-agie",
+    "rise",
+    "hole",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The Rise: water surging up out of the ground, clear and bright, full of fish."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Between the Rise and the Sinks the river is underground — water in silent flight, and the two are a quarter-mile walk apart, exactly Posey's 'walking distance from 2:2 to 2:3'."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The Sinks is a natural Hole, capital-H on every map, and not man-made."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'I wait for you to cast your pole' — the pool of giant trout you may not fish; the poem's 'I' waits where you cannot cast."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Free, 24/7, dogs, natural."
+    }
+   ],
+   "created": 1788586657700
+  },
+  {
+   "id": "i164",
+   "text": "VERIFIED — Lewis named the Big Hole River the 'Wisdom' on Aug 6 1805 (with the Philanthropy, now the Ruby) for Jefferson's virtues; fur trappers later renamed it the Big Hole, 'hole' being their word for a mountain valley. The town of Wisdom keeps the old name. So 'Wisdom waits in shadowed sight' is the river's former name — hidden in plain sight on an old map, which is what the 1864-map theory predicts.",
+   "kind": "book",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "wisdom",
+    "big-hole",
+    "lewis-clark",
+    "old-names",
+    "1864",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Wisdom is the Big Hole River's original name — an old-map name waiting under the new one."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The same river is the Hole; 1:3 and 2:3 name one river twice."
+    },
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A name that lives in time."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Secrets of the past still hold in the old name."
+    }
+   ],
+   "created": 1788586657701
+  },
+  {
+   "id": "i165",
+   "text": "VERIFIED — The Sleeping Giant north of Helena is Beartooth Mountain (6,792 ft) on the maps; it lies west of the Missouri and Holter Lake, head to the EAST, feet to the west; the Gates of the Mountains are nearby. But the Gates are Madison Group limestone (Mission Canyon / Lodgepole), not granite, and access is by boat or the Meriwether picnic site. Pictographs near Mann Gulch.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "sleeping-giant",
+    "beartooth",
+    "gates-of-the-mountains",
+    "limestone",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "The bear's head points east — 'in ursa east' reads off the mountain itself."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "Limestone, not granite — the Gates cannot carry 4:1 literally."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Literal gates, but no bride found."
+    }
+   ],
+   "created": 1788586657702
+  },
+  {
+   "id": "i166",
+   "text": "VERIFIED — Medicine Lakes (La Sals): reached by FR 238 off La Sal Pass Road, ~350 yards of road that 'requires a high-clearance 4-wheel-drive vehicle'; it is a trailhead and camping area with pit toilets and stocked rainbow trout. So the lakes are on a trail, at structures, past a 4WD spur — three gate problems for a site (as a waypoint the walk from La Sal Pass Road is trivial).",
+   "kind": "objection",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "medicine-lakes",
+    "trail",
+    "4wd",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "A trailhead with toilets is not 'not near any trail' or clear of structures."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Same."
+    }
+   ],
+   "created": 1788586657703
+  },
+  {
+   "id": "i167",
+   "text": "VERIFIED — Torrey Lake petroglyphs (Dubois) are on sandstone boulders, not granite; a guided visit is recommended. Drop as a granite site.",
+   "kind": "objection",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "dubois",
+    "torrey-lake",
+    "sandstone",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Sandstone."
+    }
+   ],
+   "created": 1788586657704
+  },
+  {
+   "id": "i168",
+   "text": "VERIFIED — Thermopolis: Hot Springs State Park is free but open 6 am–10 pm, so the site itself cannot be in the park; leashed dogs allowed on park trails. The Wedding of the Waters is 5 miles south, a Game & Fish public access area on a blue-ribbon reach. Wind River Canyon's three highway tunnels were blasted through solid rock, the third through Precambrian granite at the north end, with abutments of an old dam visible on the walls south of tunnel 3. The canyon's formations carry brown signs listing period, name and age. Legend Rock petroglyphs are ~30 miles NW.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "thermopolis",
+    "wind-river-canyon",
+    "tunnels",
+    "granite",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A named bride at the mouth of an age-signed canyon."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granite at the north end, literal."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Old dam abutments — a past that still holds, and a dam the map omits."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Three tunnels at the foot of the canyon."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Inside the state park is out (hours); the site must be canyon-side or at the access area."
+    }
+   ],
+   "created": 1788586657705
+  },
+  {
+   "id": "i169",
+   "text": "VERIFIED — Beaverhead Rock State Park: the landmark 'may be viewed and photographed from a distance but is not directly accessible'; non-residents pay $8 per vehicle. Clark's bearings confirm it as the feature Sacagawea named. As a bride it is exactly 'something visible' — visible only, and not alive.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "beaverhead-rock",
+    "sacagawea",
+    "bride",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A bride you can see and not touch — matching the wording of Posey's answer."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Fee for non-residents if the site were there; it cannot be — the rock is inaccessible."
+    }
+   ],
+   "created": 1788586657706
+  },
+  {
+   "id": "i170",
+   "text": "VERIFIED — Lemhi Pass (7,373 ft, Continental Divide, MT/ID): gravel but passenger-car OK; Sacajawea Memorial Area is a free Forest Service site 0.2 mi south of the pass. Sacagawea was taken by Hidatsa raiders near Three Forks (~1800) and reunited with her brother Cameahwait five days after the Corps crossed Lemhi Pass in 1805. 'Return her face' as her literal return home lands here.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "lemhi-pass",
+    "sacagawea",
+    "cameahwait",
+    "continental-divide",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Her return, on the map's edge (the Divide)."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Three Forks is where she was taken — 'her foot of three'."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Cameahwait's realm across the pass."
+    }
+   ],
+   "created": 1788586657707
+  },
+  {
+   "id": "i171",
+   "text": "VERIFIED — Jackson Hole's Sleeping Indian (Sheep Mountain, Gros Ventre Range) is a chief lying on his back with headdress, obvious from the west, on the EAST edge of the Hole. Posey's 'whether he is living depends on your perspective' fits a sleeping figure exactly. A 'his' now sits east of the Hole, opposite the Tetons ('her') on the west. No bear name yet — the mountain is named for bighorn sheep.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "jackson-hole",
+    "sleeping-indian",
+    "sheep-mountain",
+    "his",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A sleeping 'he' east of the Hole; the Tetons are 'she' west of it — the poem's pair on one valley."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bride and groom flank the gates of the Hole."
+    }
+   ],
+   "created": 1788586657708
+  },
+  {
+   "id": "i172",
+   "text": "Lead — Alaska Basin. If 'return her face' turns the Tetons' famous east face around, the west side of the range is Teton Canyon and Alaska Basin (Jedediah Smith Wilderness, Caribou-Targhee NF, Idaho): free, dogs allowed, granite. The user's Alaska-as-key idea and the rotation reading land on the same named basin. Against: Alaska Basin is an 8-mile trail hike and 9,500 ft — far past 'a mile from the car' and on a trail.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude)",
+   "tags": [
+    "alaska-basin",
+    "tetons",
+    "idaho",
+    "return-her-face"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The reversed face lands on a basin named Alaska."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Too far from a car, on a trail."
+    }
+   ],
+   "created": 1788586657709
+  },
+  {
+   "id": "i173",
+   "text": "VERIFIED — Posey's summers were at the family cabin in Montana where his grandfather was a fish-and-game warden; he explored the nearby hills with a metal detector. The rules put every hunt item more than a mile from property his family owns, so the cabin bounds the site from inside as well as outside: 'dear to my heart', but not within a mile of the cabin.",
+   "kind": "statement",
+   "conf": "likely",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "cabin",
+    "montana",
+    "grandfather",
+    "property"
+   ],
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A Montana site near, but more than a mile from, a family cabin — find the cabin and you have a ring."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Not within a mile of it."
+    }
+   ],
+   "created": 1788586657710
+  },
+  {
+   "id": "i174",
+   "text": "Scan result — Hole-in-the-Wall (Kaycee, WY): a natural gap in the Red Wall, capital-H on every map; BLM, fee-free Outlaw Cave campground; Middle Fork Powder blue-ribbon; Rock Art Cave petroglyphs and an ancient cairn line. 'His realm' = Butch Cassidy's — and whether Butch is alive or dead 'depends on your perspective' is the actual state of the historical record (Bolivia 1908 vs. survival legends). Against: Red Wall is sandstone; the Bighorn granite is 20+ miles west; ~200 miles from Posey's Fenn ground; access road runs through a ranch headquarters.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude)",
+   "tags": [
+    "hole-in-the-wall",
+    "butch-cassidy",
+    "kaycee",
+    "scan"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 3,
+     "why": "A capital-H natural Hole that is also a gate."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The Hole is literally an ancient gate."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A 'he' whose living status is genuinely a matter of perspective."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Outlaw caches and petroglyphs."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "Sandstone."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Far from Fenn country; ranch road."
+    }
+   ],
+   "created": 1788586657711
+  },
+  {
+   "id": "i175",
+   "text": "Scan result — Provo Canyon / Timpanogos (UT): Bridal Veil Falls (free county park, dogs) is the maiden's tears in the Timpanogos legend; the mountain's skyline is her sleeping profile from the canyon — a named 'her face'. The Provo is blue-ribbon. Against: no Hole, no bear, the mountain is limestone, and it is urban.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude)",
+   "tags": [
+    "provo",
+    "timpanogos",
+    "bridal-veil",
+    "scan"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A named bride."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A named face."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No Hole."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Limestone."
+    }
+   ],
+   "created": 1788586657712
+  },
+  {
+   "id": "i176",
+   "text": "Scan result — Blue Hole, Santa Rosa NM: a bell-shaped artesian sinkhole, 3,000 gal/min, 62°F, crystal clear, tied to the Pecos; north of the Santa Fe cutoff. Against: a city dive park with structures and a grate; no granite, no mountains, no bear. A perfect 2:1 with nothing after it.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude)",
+   "tags": [
+    "blue-hole",
+    "santa-rosa",
+    "scan"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Surges clear and bright."
+    },
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A Hole by name."
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Nothing for stanza 4."
+    }
+   ],
+   "created": 1788586657713
+  },
+  {
+   "id": "i177",
+   "text": "Scan result — Big Springs / Henry's Fork (Island Park, ID): 120 million gallons a day of crystal-clear 52°F water; fishing prohibited at the spring, great below; free national forest, dogs; Upper and Lower Mesa Falls downstream; inside Posey's Fenn ring; Idaho on the 42 thread. Against: no Hole, no bear.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Cross-reference (Claude)",
+   "tags": [
+    "island-park",
+    "big-springs",
+    "scan"
+   ],
+   "links": [
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Surge."
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Waits where you cannot cast, like the Rise."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No Hole."
+    }
+   ],
+   "created": 1788586657714
+  },
+  {
+   "id": "i178",
+   "text": "Scan result — Independence Rock (WY): granite dome with 5,000+ emigrant names carved or greased on; no fee; dogs; 5 miles from Devil's Gate. Better stanza 4 than Split Rock for the Sweetwater solve ('secrets of the past still hold' is literal), but it sits beside a rest area with buildings.",
+   "kind": "map",
+   "conf": "confirmed",
+   "source": "Verified by web search, Sep 5 2026 (Claude)",
+   "tags": [
+    "independence-rock",
+    "sweetwater",
+    "granite",
+    "verified"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granite."
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Names that still hold."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Rest area buildings."
+    }
+   ],
+   "created": 1788586657715
   }
  ],
  "candidates": [
@@ -4798,7 +5360,7 @@
    "region": "UT · La Sal Mountains, near La Sal Pass",
    "coords": "≈ 38.42, -109.24 (verify on quad)",
    "elev": "≈ 10,000 ft",
-   "notes": "Reading C endpoint. Named plural pair at Tuk's southern base; drivable pass with trailhead. Check standard-car access on La Sal Pass Road in dry season. Stanza 2 approach unchanged from the Moab start.",
+   "notes": "Reading C endpoint. Named plural pair at Tuk's southern base; drivable pass with trailhead. Check standard-car access on La Sal Pass Road in dry season. Stanza 2 approach unchanged from the Moab start. VERIFIED: a trailhead with pit toilets at the end of a 4WD spur — fails three gates as a site.",
    "verdicts": {
     "l05": "fit",
     "l06": "fit",
@@ -4814,11 +5376,11 @@
    "gates": {
     "g_notin": "pass",
     "g_public": "pass",
-    "g_bldg": "pass",
+    "g_bldg": "fail",
     "g_safe": "pass",
-    "g_vehicle": "unk",
+    "g_vehicle": "fail",
     "g_free": "pass",
-    "g_trail": "unk",
+    "g_trail": "fail",
     "g_mile": "pass",
     "g_states": "pass",
     "g_map": "pass",
@@ -4910,14 +5472,15 @@
    "region": "WY · Natrona / Fremont counties, Hwy 220",
    "coords": "≈ 42.47, -107.73 (Split Rock; verify)",
    "elev": "≈ 6,300 ft",
-   "notes": "The only rival that assigns every line. Devil's Gate = ancient gates, Split Rock = double arcs on literal granite, ends near South Pass. Inside Fenn's map. Not walked.",
+   "notes": "The only rival that assigns every line. Devil's Gate = ancient gates, Split Rock = double arcs on literal granite, ends near South Pass. Inside Fenn's map. Not walked. VERIFIED: Independence Rock (granite, 5,000 carved names, free, dogs) is 5 mi from Devil's Gate — a better 4:1–4:2 than Split Rock, but beside a rest area.",
    "verdicts": {
     "l08": "fit",
     "l09": "fit",
     "l10": "fit",
     "l11": "fit",
     "l12": "fit",
-    "l13": "fit"
+    "l13": "fit",
+    "l14": "fit"
    },
    "created": 1788583060291,
    "gates": {
@@ -4948,7 +5511,7 @@
    "region": "MT · Beaverhead County",
    "coords": "≈ 45.62, -113.45 (verify)",
    "elev": "≈ 6,000 ft",
-   "notes": "Community cluster: Polaris MT (realm), Beaverhead Rock (bride), Pioneer Byway (gates), Big Hole River (Hole), Wisdom MT ('Wisdom waits'). Inside Fenn's map; Posey's Dillon signing is nearby. Not walked.",
+   "notes": "Community cluster: Polaris MT (realm), Beaverhead Rock (bride), Pioneer Byway (gates), Big Hole River (Hole), Wisdom MT ('Wisdom waits'). Inside Fenn's map; Posey's Dillon signing is nearby. Not walked. VERIFIED: the Big Hole River was Lewis's 'Wisdom River' (1805) — 1:3 and 2:3 are one river.",
    "verdicts": {
     "l01": "fit",
     "l02": "fit",
@@ -5048,16 +5611,17 @@
    "region": "WY · Teton County, Bridger-Teton NF / Hoback",
    "coords": "≈ 43.36, -110.44 (Granite Hot Springs; verify)",
    "elev": "≈ 6,900 ft",
-   "notes": "Capital-H proper-noun natural Hole that Posey called on the nose; surge (Granite Hot Springs), water (Granite Creek / Hoback), serious fishing, granite by name and rock. Cross-reference adds the Tetons as 'her' and 'three'. Inside Fenn's map, Wyoming law in the disclaimer, Fenn country. Site must sit outside Grand Teton NP (fee) — Bridger-Teton NF is free.",
+   "notes": "Capital-H proper-noun natural Hole that Posey called on the nose; surge (Granite Hot Springs), water (Granite Creek / Hoback), serious fishing, granite by name and rock. Cross-reference adds the Tetons as 'her' and 'three'. Inside Fenn's map, Wyoming law in the disclaimer, Fenn country. Site must sit outside Grand Teton NP (fee) — Bridger-Teton NF is free. VERIFIED: the Sleeping Indian (a 'he', alive or not by perspective) is the east edge of the Hole; the Tetons ('her', three) the west.",
    "kill": "No bear or star east of the Hole for 'ursa east', or 'return her face' producing nothing near the Tetons' foot.",
-   "test": "List every 'Bear' feature east of Jackson Hole (Bearpaw Lake, Bear Creek, Sheep Mtn 'Sleeping Indian' face) and see if any sits on a bearing from the Tetons' foot; confirm Granite Creek Rd is standard-car in summer.",
+   "test": "Bear or star east of the Hole; run 20°/200° from the Tetons' foot; check Teton Canyon (ID) for off-trail granite within a mile of the road.",
    "verdicts": {
     "l05": "fit",
     "l06": "fit",
     "l07": "fit",
     "l08": "fit",
     "l11": "fit",
-    "l13": "fit"
+    "l13": "fit",
+    "l09": "fit"
    },
    "gates": {
     "g_notin": "pass",
@@ -5119,7 +5683,7 @@
    "region": "WY · Hot Springs County, Hot Springs SP / BLM canyon",
    "coords": "≈ 43.61, -108.21 (Wedding of the Waters; verify)",
    "elev": "≈ 4,400 ft",
-   "notes": "Big Spring (surges, free, 24/7) → Bighorn River through the Owl Creek Mountains (silent flight) → Wedding of the Waters at the canyon mouth (his bride at ancient gates, both named) → Precambrian granite, three tunnel arcs, bighorn horns. Named fishing access. Below a mile high. Wyoming.",
+   "notes": "Big Spring (surges, free, 24/7) → Bighorn River through the Owl Creek Mountains (silent flight) → Wedding of the Waters at the canyon mouth (his bride at ancient gates, both named) → Precambrian granite, three tunnel arcs, bighorn horns. Named fishing access. Below a mile high. Wyoming. VERIFIED: park hours 6–10, so the site is canyon-side or at the Wedding of the Waters access, not in the park. Tunnel 3 is in Precambrian granite; old dam abutments beside it.",
    "kill": "No natural Hole on the approach, and no bear — if 'ursa' is a place name rather than a bearing, this has none.",
    "test": "Walk the map from Big Spring south: is there a named natural Hole between the spring and the canyon mouth? Is the north-end granite carvable and off-trail, outside the tunnels?",
    "verdicts": {
@@ -5133,7 +5697,7 @@
    "gates": {
     "g_notin": "pass",
     "g_public": "pass",
-    "g_free": "pass",
+    "g_free": "unk",
     "g_dog": "pass",
     "g_states": "pass",
     "g_map": "pass",
@@ -5155,7 +5719,7 @@
    "region": "MT · Lewis and Clark County, Holter Lake / Helena NF",
    "coords": "≈ 46.84, -111.91 (Gates; verify)",
    "elev": "≈ 3,700 ft",
-   "notes": "The most literal 'ancient gates' in the West beside a Beartooth Mountain that is the Sleeping Giant ('his', alive or not 'depends on perspective'). Missouri fly-fishing below Holter. Upstream: Three Forks (three), the Big Hole (Hole), Wisdom — one river from the crowd's stanza 1–2 to this stanza 3. Below a mile. Montana grandfather.",
+   "notes": "The most literal 'ancient gates' in the West beside a Beartooth Mountain that is the Sleeping Giant ('his', alive or not 'depends on perspective'). Missouri fly-fishing below Holter. Upstream: Three Forks (three), the Big Hole (Hole), Wisdom — one river from the crowd's stanza 1–2 to this stanza 3. Below a mile. Montana grandfather. VERIFIED: Beartooth = Sleeping Giant, head east. But the Gates are limestone — 4:1 fails literally.",
    "kill": "No bride at the Gates; or the site falling within the Mann Gulch memorial ground (grave markers).",
    "test": "Name every feature at the Gates and on the Sleeping Giant — anything female, a face, a veil? Check Holter Lake BLM sites for day fees and dog rules.",
    "verdicts": {
@@ -5165,7 +5729,8 @@
     "l09": "fit",
     "l10": "fit",
     "l11": "fit",
-    "l19": "fit"
+    "l19": "fit",
+    "l13": "fail"
    },
    "gates": {
     "g_notin": "pass",
@@ -5186,6 +5751,74 @@
     "g_armchair": "pass"
    },
    "created": 1788585385012
+  },
+  {
+   "id": "c_sinks",
+   "name": "Sinks Canyon → Wind River front (Lander, WY)",
+   "region": "WY · Fremont County, Sinks Canyon SP / Shoshone NF",
+   "coords": "≈ 42.74, -108.83 (the Rise; verify)",
+   "elev": "≈ 6,100 ft",
+   "notes": "Stanza 2 in order and at walking distance: the Rise (surge, clear, giant trout, no fishing) → the river underground (silent flight) → the Sinks (natural capital-H Hole) → cast your pole above it. Upper canyon is Wind River granite in national forest. Free, dogs, Wyoming law. Stanza 3 candidates within 30 miles: Chief Washakie's reservation ('his realm'), Sacagawea's statue and grave at Fort Washakie ('his bride', not alive, visible), Bears Ears peak in the Winds, the Popo Agie's three forks. Nothing in stanza 3 is pinned yet.",
+   "kill": "No bear, star or bearing that lands the construction back in the canyon; or the granite reach being all trail.",
+   "test": "From the Rise, run 20° and 200°: what do the lines cross within a mile of a road? Is there off-trail granite in the upper canyon with a carvable face? Did Posey ever search the Winds for Fenn?",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l07": "fit",
+    "l08": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_vehicle": "pass",
+    "g_safe": "pass",
+    "g_armchair": "pass",
+    "g_trail": "unk",
+    "g_mile": "unk",
+    "g_bldg": "unk",
+    "g_bride": "unk",
+    "g_rotate": "unk",
+    "g_fenn": "unk"
+   },
+   "created": 1788586657535
+  },
+  {
+   "id": "c_holeinwall",
+   "name": "Hole-in-the-Wall — Outlaw Canyon (Kaycee, WY)",
+   "region": "WY · Johnson County, BLM Middle Fork Powder",
+   "coords": "≈ 43.47, -106.98 (Outlaw Cave CG; verify)",
+   "elev": "≈ 5,600 ft",
+   "notes": "Capital-H natural Hole that is itself a gate; blue-ribbon Middle Fork; fee-free BLM; petroglyphs and cairn line; Butch Cassidy as the 'he' whose living is a matter of perspective. Sandstone, far from Fenn ground.",
+   "kill": "Granite: there is none in the Red Wall. Fenn: 200 miles from anywhere he is known to have searched.",
+   "test": "Is there a Bighorn granite outcrop within a mile of the Middle Fork road? Did Posey search the Bighorns?",
+   "verdicts": {
+    "l07": "fit",
+    "l08": "fit",
+    "l09": "fit",
+    "l10": "fit",
+    "l14": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_fenn": "unk",
+    "g_trail": "unk"
+   },
+   "created": 1788586657535
   }
  ],
  "mapStates": {
