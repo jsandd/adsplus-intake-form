@@ -75,7 +75,7 @@
     "text": "In ursa east his realm awaits;",
     "hard": false,
     "status": "pinned",
-    "note": "'Bear east' as a heading; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named for a Ute chief. Objections: no bear naming in the La Sals; 'Waas = man' is hedged."
+    "note": "'Bear east' as a heading; from Jeep Arch the La Sals lie east. 'His realm' = Mount Waas (12,306 ft), Grand County high point, named for a Ute chief. Objections: no bear naming in the La Sals; 'Waas = man' is hedged. New lead: 'ursa' as a decapitalized proper name — Bear Lodge (Devils Tower, Bear Lodge Mountains, NE Wyoming), where lodge ≈ realm confirms itself. Unchecked for a bride or gates."
    },
    {
     "id": "l10",
@@ -91,7 +91,7 @@
     "text": "Her foot of three at twenty degree,",
     "hard": false,
     "status": "partial",
-    "note": "Tuk's three-sided pyramid form = foot of three; twenty degrees taken from her foot. Cannot yet be walked. If the poem converges rather than walks, the origin this bearing lacks is supplied elsewhere — the X is where two lines meet."
+    "note": "Measurement, not shape: three feet = a yard, or 3°20′ (degrees and minutes). The Tuk three-sided-pyramid reading is demoted. Posey: numbers are indirect, there is a distance element, and you needn't be at the bride to identify her foot of three — all consistent with a measurement. If the poem converges rather than walks, this is one arm of the X."
    },
    {
     "id": "l12",
@@ -99,7 +99,7 @@
     "text": "Return her face to find the place.",
     "hard": false,
     "status": "partial",
-    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes. Backtracking Q&A now supports B directly (feet return to trodden ground); the Indiana Jones / National Treasure nudge supports the bearing here being one arm of an X rather than a walk. 'Find' appears only here and at 1:1."
+    "note": "Three readings. A: back bearing — 20° reversed = 200°, needs an origin so yields a line not a point. B: walk to her face and turn around — plain 'return', but strands 'twenty degree' and may face away from the basin. C: reverse the face on the map — north face reversed gives the south side; armchair-solvable, leaves 20 for the foot, outputs a named place. C is the only reading that currently produces a destination: Medicine Lakes. Backtracking Q&A now supports B directly (feet return to trodden ground); the Indiana Jones / National Treasure nudge supports the bearing here being one arm of an X rather than a walk. 'Find' appears only here and at 1:1. Structure read: the middle of the poem builds a construction on a map (Indiana Jones / National Treasure — a device oriented correctly reveals the place), which is why BOTG waits until stanza 4."
    },
    {
     "id": "l13",
@@ -3282,6 +3282,168 @@
     }
    ],
    "created": 1788583956748
+  },
+  {
+   "id": "i124",
+   "text": "The structure probably isn't a walk. He wouldn't say whether the poem is linear or several points miles apart, then mentioned Indiana Jones and National Treasure — both about an object or device that reveals a location when oriented correctly, not about following directions. Add 'return her face' technically implying physical rotation and a bearing with no origin, and the middle of the poem likely builds a construction on a map rather than a route on the ground. That also explains why boots on the ground isn't required until stanza four.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "structure",
+    "construction",
+    "map",
+    "rotation",
+    "favored"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Rotation as orienting a device or map, not turning your body — the Staff of Ra / Silence Dogood reading."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "An origin-less bearing is a construction line, not a walking instruction."
+    },
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 3 as the construction: realm, bride, gates, foot, face are the parts of the device."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Same."
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Explains the armchair boundary: the construction resolves on paper, and stanza 4 is where you go stand on the result."
+    },
+    {
+     "lineId": "l07",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "If stanza 3 is a construction, the stanza-2 walk does not need to lead physically into it — weakens Jeep Arch as a hinge."
+    }
+   ],
+   "created": 1788584194557
+  },
+  {
+   "id": "i125",
+   "text": "'Ursa east' as a proper name, not a constellation. Only Ursa East matters, there is no west to consider, and the lowercase was deliberate — that reads like a place name disguised by decapitalizing. Test first: Bear Lodge. Devils Tower's Lakota name is Bear Lodge, and it sits in the Bear Lodge Mountains in northeast Wyoming. Lodge and realm are near-synonyms, so 'ursa… his realm' would be doing the same work twice, which is how these poems confirm themselves. Wyoming also fits the site's legal disclaimer. Unchecked: a bride-shaped feature or ancient gates nearby. May fall apart in five minutes, but the reading to chase first.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "ursa",
+    "bear-lodge",
+    "devils-tower",
+    "wyoming",
+    "proper-name"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Bear (ursa) + Lodge (realm): a double-confirmed proper name, disguised by lowercase, east of most of the map."
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Devils Tower is a sacred site with a gate-like base; a bride feature is unverified."
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Ursa East as 'the east of the Bear Lodge range' leaves 'no west Ursa' slightly odd — the range has a west side."
+    }
+   ],
+   "created": 1788584194558
+  },
+  {
+   "id": "i126",
+   "text": "Checks on Bear Lodge from what I know, unverified on the ground: Devils Tower National Monument charges an entrance fee and the rock is phonolite porphyry, not granite; the Belle Fourche River bends past the base ('waters' silent flight'); it is a major climbing site (rules: no climbing skills needed); and it is a sacred site to several tribes ('sacred space'). A site inside the monument fails 'free, 24/7' and 'not associated with man-made buildings'; land just outside it in the Bear Lodge Mountains (Black Hills NF) would not.",
+   "kind": "objection",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "bear-lodge",
+    "devils-tower",
+    "access",
+    "granite"
+   ],
+   "links": [
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Not granite, if the arcs are meant to be at the tower."
+    },
+    {
+     "lineId": "l16",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Entrance fee and hours inside the monument vs 'free and available 24/7' — the site would have to be outside the boundary."
+    },
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The Belle Fourche bends around the tower."
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Literally a sacred space, guarded by a wonder."
+    }
+   ],
+   "created": 1788584194559
+  },
+  {
+   "id": "i127",
+   "text": "'Foot of three' is probably a measurement, not a shape. Three feet is a yard. Or 'three at twenty' reads as degrees and minutes: 3°20′. Stop trying to make it describe a mountain's geometry.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "My own analysis",
+   "tags": [
+    "l11",
+    "measurement",
+    "yard",
+    "dms"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Measurement reading: a yard, or 3°20′ — both are the kind of indirect number Posey confirmed."
+    },
+    {
+     "lineId": "l11",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Against the Tukuhnikivatz three-sided-pyramid shape reading."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A measured offset from the face gives the place — short, as he said."
+    }
+   ],
+   "created": 1788584194560
   }
  ],
  "candidates": [
@@ -3386,6 +3548,18 @@
     "l19": "fit"
    },
    "created": 1788583060291
+  },
+  {
+   "id": "c_bearlodge",
+   "name": "Bear Lodge / Devils Tower — NE Wyoming (ursa as proper name)",
+   "region": "WY · Crook County, Bear Lodge Mountains / Black Hills NF",
+   "coords": "≈ 44.59, -104.72 (Devils Tower; verify)",
+   "elev": "≈ 5,100 ft (tower summit)",
+   "notes": "Lead to chase first: Bear (ursa) + Lodge (realm). Inside Fenn's map; Wyoming law in the site disclaimer. Not checked for a bride or gates. Site must sit outside the fee monument to satisfy free/24-7 and no-buildings. Rock is phonolite, not granite.",
+   "verdicts": {
+    "l09": "fit"
+   },
+   "created": 1788584194433
   }
  ],
  "mapStates": {
