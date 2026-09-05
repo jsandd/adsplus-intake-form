@@ -7221,7 +7221,39 @@
     "g_dog": "pass"
    },
    "kill": "No Hole assigned at all, and a bride that is 'the river and its landscape' — not something visible you could identify.",
-   "test": "Is there a proper-noun Hole on the Sweetwater approach? Does anything at Devil's Gate read as a face?"
+   "test": "Is there a proper-noun Hole on the Sweetwater approach? Does anything at Devil's Gate read as a face?",
+   "chain": {
+    "l08": {
+     "place": "Sweetwater River",
+     "reading": "Fishing river along the emigrant trail",
+     "conf": 1,
+     "coords": "42.47, -107.50"
+    },
+    "l10": {
+     "place": "Devil's Gate",
+     "reading": "The ancient gates: a 370-ft granite cleft on the Oregon Trail",
+     "conf": 3,
+     "coords": "42.4467, -107.2131"
+    },
+    "l12": {
+     "place": "South Pass",
+     "reading": "Return: turn west at the Divide",
+     "conf": 1,
+     "coords": "42.35, -108.88"
+    },
+    "l13": {
+     "place": "Split Rock (or Independence Rock)",
+     "reading": "Double arcs on literal Sherman-type granite",
+     "conf": 2,
+     "coords": "42.4762, -107.5661"
+    },
+    "l14": {
+     "place": "Independence Rock",
+     "reading": "5,000 carved emigrant names — secrets of the past still hold",
+     "conf": 2,
+     "coords": "42.4936, -107.1319"
+    }
+   }
   },
   {
    "id": "c_bighole",
@@ -7260,7 +7292,51 @@
     "g_dog": "pass"
    },
    "kill": "Big Hole National Battlefield is 'near graves'; a Beaverhead Rock bride puts the gates 40 miles from the Hole. And it is the crowd's solve — 'within two miles' means the crowd has been there.",
-   "test": "Draw the route Wisdom → Big Hole → Polaris → Beaverhead Rock and measure it against 'not a great distance'."
+   "test": "Draw the route Wisdom → Big Hole → Polaris → Beaverhead Rock and measure it against 'not a great distance'.",
+   "chain": {
+    "l02": {
+     "place": "Wisdom (Big Hole) River",
+     "reading": "The river that flows through the stanzas: Lewis's Wisdom River is the Big Hole",
+     "conf": 1,
+     "coords": "45.62, -113.45"
+    },
+    "l03": {
+     "place": "Wisdom, MT",
+     "reading": "A town named Wisdom on the Wisdom River — the book names it",
+     "conf": 3,
+     "coords": "45.6166, -113.4536"
+    },
+    "l07": {
+     "place": "Big Hole River / Big Hole valley",
+     "reading": "The Hole is the Big Hole; the river rounds the bend at Wisdom",
+     "conf": 2,
+     "coords": "45.62, -113.45"
+    },
+    "l08": {
+     "place": "Big Hole River blue-ribbon water",
+     "reading": "Fly-fishing river of the book's Dillon chapters",
+     "conf": 2,
+     "coords": "45.70, -113.30"
+    },
+    "l09": {
+     "place": "Polaris, MT",
+     "reading": "North star = Ursa Minor; 'his realm' east of the Divide",
+     "conf": 2,
+     "coords": "45.3660, -113.1220"
+    },
+    "l10": {
+     "place": "Beaverhead Rock",
+     "reading": "Sacagawea's landmark: a bride not alive but visible",
+     "conf": 2,
+     "coords": "45.4267, -112.4563"
+    },
+    "l19": {
+     "place": "Big Hole River",
+     "reading": "A river's steady flow",
+     "conf": 1,
+     "coords": "45.62, -113.45"
+    }
+   }
   },
   {
    "id": "c_bearlodge",
@@ -7321,7 +7397,27 @@
     "g_fenn": "unk",
     "g_dog": "unk"
    },
-   "created": 1788584545744
+   "created": 1788584545744,
+   "chain": {
+    "l10": {
+     "place": "Register Rock, California Trail gateway",
+     "reading": "Emigrant gateway; no bride",
+     "conf": 1,
+     "coords": "42.07, -113.72"
+    },
+    "l13": {
+     "place": "Twin Sisters granite",
+     "reading": "Paired granite spires with natural arches",
+     "conf": 2,
+     "coords": "42.0525, -113.7278"
+    },
+    "l14": {
+     "place": "Register Rock axle-grease signatures",
+     "reading": "Emigrant names still hold",
+     "conf": 2,
+     "coords": "42.07, -113.72"
+    }
+   }
   },
   {
    "id": "c_jacksonhole",
@@ -7358,7 +7454,51 @@
     "g_armchair": "pass",
     "g_dog": "pass"
    },
-   "created": 1788584545744
+   "created": 1788584545744,
+   "chain": {
+    "l05": {
+     "place": "Granite Hot Springs",
+     "reading": "Hot water surges up Granite Creek; free below the pool",
+     "conf": 2,
+     "coords": "43.3598, -110.4416"
+    },
+    "l06": {
+     "place": "Granite Creek → Hoback River",
+     "reading": "Walk near the creek down to the Hoback",
+     "conf": 2,
+     "coords": "43.33, -110.45"
+    },
+    "l07": {
+     "place": "Jackson Hole",
+     "reading": "Proper-noun natural Hole that Posey called on the nose",
+     "conf": 3,
+     "coords": "43.48, -110.76"
+    },
+    "l08": {
+     "place": "Snake / Hoback fly water",
+     "reading": "Serious fishing water at walking distance",
+     "conf": 2,
+     "coords": "43.28, -110.70"
+    },
+    "l09": {
+     "place": "Sleeping Indian (Sheep Mountain), east edge of the Hole",
+     "reading": "A 'he' alive or not by perspective, on the east rim",
+     "conf": 1,
+     "coords": "43.55, -110.55"
+    },
+    "l11": {
+     "place": "The Tetons (Trois Tétons) — three",
+     "reading": "Her foot of three: the base of the three Tetons; run 20° from it",
+     "conf": 1,
+     "coords": "43.74, -110.80"
+    },
+    "l13": {
+     "place": "Granite Creek granite / Gros Ventre outcrops",
+     "reading": "Granite by name and by rock",
+     "conf": 1,
+     "coords": "43.36, -110.44"
+    }
+   }
   },
   {
    "id": "c_pioneers",
@@ -7393,7 +7533,45 @@
     "g_armchair": "pass",
     "g_dog": "pass"
    },
-   "created": 1788584545744
+   "created": 1788584545744,
+   "chain": {
+    "l03": {
+     "place": "Wisdom / Wisdom River",
+     "reading": "Lewis's Wisdom River on the west side of the Pioneers",
+     "conf": 2,
+     "coords": "45.6166, -113.4536"
+    },
+    "l05": {
+     "place": "Elkhorn Hot Springs",
+     "reading": "Hot springs surge on the Pioneer Byway",
+     "conf": 2,
+     "coords": "45.4483, -113.1236"
+    },
+    "l07": {
+     "place": "Big Hole River at Wise River",
+     "reading": "The Hole is the Big Hole; the byway leaves it at Wise River",
+     "conf": 2,
+     "coords": "45.79, -112.95"
+    },
+    "l08": {
+     "place": "Big Hole fishing access",
+     "reading": "Blue-ribbon water",
+     "conf": 1,
+     "coords": "45.79, -112.95"
+    },
+    "l09": {
+     "place": "Polaris, MT",
+     "reading": "North star = Ursa Minor; the 2026 meet-and-greet town",
+     "conf": 2,
+     "coords": "45.3660, -113.1220"
+    },
+    "l13": {
+     "place": "Crystal Park / Pioneer batholith granite",
+     "reading": "Granitic Pioneers; free public crystal dig",
+     "conf": 2,
+     "coords": "45.487, -113.113"
+    }
+   }
   },
   {
    "id": "c_thermopolis",
@@ -7429,7 +7607,51 @@
     "g_fenn": "unk",
     "g_armchair": "pass"
    },
-   "created": 1788585385012
+   "created": 1788585385012,
+   "chain": {
+    "l05": {
+     "place": "Big Spring, Hot Springs State Park",
+     "reading": "3.6 million gal/day surge, clear, 24/7 free bathhouse",
+     "conf": 3,
+     "coords": "43.6533, -108.1990"
+    },
+    "l06": {
+     "place": "Bighorn River south toward Wind River Canyon",
+     "reading": "Flat water walking the riverbank south from the park",
+     "conf": 2,
+     "coords": "43.60, -108.20"
+    },
+    "l08": {
+     "place": "Wedding of the Waters fishing access",
+     "reading": "Named public fishing access where the Wind becomes the Bighorn",
+     "conf": 2,
+     "coords": "43.5963, -108.2085"
+    },
+    "l09": {
+     "place": "Owl Creek Mountains / reservation south of the canyon",
+     "reading": "The canyon cuts through the Owl Creeks; reservation land is 'his realm'",
+     "conf": 1,
+     "coords": "43.50, -108.20"
+    },
+    "l10": {
+     "place": "Wedding of the Waters at the canyon mouth",
+     "reading": "The bride stands at the ancient gates: a named wedding at the gates of a 2.9-billion-year canyon",
+     "conf": 2,
+     "coords": "43.5963, -108.2085"
+    },
+    "l13": {
+     "place": "Precambrian granite at the canyon's north end (Tunnel 3)",
+     "reading": "Granite by the tunnels and old dam abutments; canyon-side, outside the park",
+     "conf": 2,
+     "coords": "43.58, -108.21"
+    },
+    "l15": {
+     "place": "Wind River Canyon geologic signs",
+     "reading": "Road signs count back through 2.9 billion years: 'beyond the reach of time'",
+     "conf": 2,
+     "coords": "43.55, -108.20"
+    }
+   }
   },
   {
    "id": "c_gates",
@@ -7468,7 +7690,39 @@
     "g_fenn": "unk",
     "g_armchair": "pass"
    },
-   "created": 1788585385012
+   "created": 1788585385012,
+   "chain": {
+    "l03": {
+     "place": "Wisdom River → Missouri, upstream",
+     "reading": "One river from the crowd's stanza 1 to this stanza 3",
+     "conf": 1,
+     "coords": "45.92, -111.50"
+    },
+    "l08": {
+     "place": "Missouri below Holter Dam",
+     "reading": "Blue-ribbon fly water",
+     "conf": 2,
+     "coords": "46.99, -112.01"
+    },
+    "l09": {
+     "place": "Sleeping Giant / Beartooth Mountain",
+     "reading": "A bear's tooth for ursa; a sleeping 'he', alive by perspective, head east",
+     "conf": 2,
+     "coords": "46.83, -112.02"
+    },
+    "l10": {
+     "place": "Gates of the Mountains",
+     "reading": "The most literal ancient gates in the West (Lewis, 1805)",
+     "conf": 3,
+     "coords": "46.8446, -111.9130"
+    },
+    "l11": {
+     "place": "Three Forks, Missouri headwaters (upstream)",
+     "reading": "Foot of three: where three rivers make the Missouri",
+     "conf": 1,
+     "coords": "45.926, -111.507"
+    }
+   }
   },
   {
    "id": "c_sinks",
@@ -7505,7 +7759,51 @@
     "g_rotate": "unk",
     "g_fenn": "pass"
    },
-   "created": 1788586657535
+   "created": 1788586657535,
+   "chain": {
+    "l05": {
+     "place": "The Rise of the Sinks",
+     "reading": "Spring surges up clear from the rock; giant trout, no fishing allowed",
+     "conf": 3,
+     "coords": "42.7397, -108.8187"
+    },
+    "l06": {
+     "place": "Popo Agie underground, Sinks → Rise",
+     "reading": "The river runs a quarter mile underground in silence and takes two hours to emerge",
+     "conf": 3,
+     "coords": "42.735, -108.83"
+    },
+    "l07": {
+     "place": "The Sinks, Sinks Canyon",
+     "reading": "Capital-H natural Hole where the river vanishes; the canyon road bends right at it",
+     "conf": 2,
+     "coords": "42.7315, -108.8357"
+    },
+    "l08": {
+     "place": "Popo Agie above the Sinks",
+     "reading": "Public fishing water in Shoshone NF above the cavern",
+     "conf": 2,
+     "coords": "42.72, -108.85"
+    },
+    "l09": {
+     "place": "Wind River Reservation, east of the Winds",
+     "reading": "Chief Washakie's realm; 'his' whose living is a matter of perspective",
+     "conf": 1,
+     "coords": "43.00, -108.90"
+    },
+    "l10": {
+     "place": "Sacagawea's grave, Fort Washakie",
+     "reading": "A bride, not alive, visible as a statue at the cemetery gates",
+     "conf": 1,
+     "coords": "43.0057, -108.9022"
+    },
+    "l13": {
+     "place": "Wind River granite, upper Sinks Canyon",
+     "reading": "Precambrian granite cliffs in Shoshone NF; carvable faces off the trail",
+     "conf": 2,
+     "coords": "42.72, -108.85"
+    }
+   }
   },
   {
    "id": "c_holeinwall",
@@ -7536,7 +7834,39 @@
     "g_fenn": "unk",
     "g_trail": "unk"
    },
-   "created": 1788586657535
+   "created": 1788586657535,
+   "chain": {
+    "l07": {
+     "place": "Hole-in-the-Wall",
+     "reading": "Capital-H natural Hole that is itself a gap in the red wall",
+     "conf": 3,
+     "coords": "43.47, -106.98"
+    },
+    "l08": {
+     "place": "Middle Fork Powder River",
+     "reading": "Blue-ribbon water below Outlaw Cave",
+     "conf": 2,
+     "coords": "43.47, -106.98"
+    },
+    "l09": {
+     "place": "Outlaw Cave / Hole-in-the-Wall Gang",
+     "reading": "Butch Cassidy's realm; alive by legend",
+     "conf": 1,
+     "coords": "43.47, -106.98"
+    },
+    "l10": {
+     "place": "The red-wall gap as gate",
+     "reading": "The Hole is the gate; no named bride",
+     "conf": 1,
+     "coords": ""
+    },
+    "l14": {
+     "place": "Outlaw Cave petroglyphs and cairn line",
+     "reading": "Secrets of the past still hold",
+     "conf": 1,
+     "coords": ""
+    }
+   }
   },
   {
    "id": "c_bigsprings",
@@ -7637,7 +7967,33 @@
     "g_trail": "fail",
     "g_hole": "unk"
    },
-   "created": 1788587079564
+   "created": 1788587079564,
+   "chain": {
+    "l06": {
+     "place": "Madison River through Bear Trap Canyon",
+     "reading": "Powerhouse trail along the river",
+     "conf": 1,
+     "coords": "45.61, -111.60"
+    },
+    "l08": {
+     "place": "Madison River",
+     "reading": "Year-round fishing",
+     "conf": 2,
+     "coords": "45.61, -111.60"
+    },
+    "l09": {
+     "place": "Bear Trap Canyon",
+     "reading": "A literal Bear for ursa; the Sphinx (a face) east across the range",
+     "conf": 2,
+     "coords": "45.61, -111.60"
+    },
+    "l13": {
+     "place": "Archean gneiss and granite canyon walls",
+     "reading": "Bold rock but gneiss more than granite",
+     "conf": 1,
+     "coords": "45.61, -111.60"
+    }
+   }
   },
   {
    "id": "c_lemhi",
@@ -7976,7 +8332,39 @@
     "g_trail": "unk",
     "g_fenn": "unk"
    },
-   "created": 1788587630996
+   "created": 1788587630996,
+   "chain": {
+    "l06": {
+     "place": "Trout / Lamar Creek",
+     "reading": "Silent creek walk from the trailhead",
+     "conf": 1,
+     "coords": ""
+    },
+    "l10": {
+     "place": "Queener Mountain / Storm Lake Pass",
+     "reading": "Queen = bride; the pass on the Divide = ancient gates",
+     "conf": 1,
+     "coords": "46.05, -113.30"
+    },
+    "l11": {
+     "place": "Triangular ridge 20° NE of Trout Creek",
+     "reading": "Foot of three as a triangle at 20°",
+     "conf": 1,
+     "coords": ""
+    },
+    "l12": {
+     "place": "Waterton Valley CDT (6.73 mi)",
+     "reading": "The return leg",
+     "conf": 1,
+     "coords": ""
+    },
+    "l13": {
+     "place": "Hidden Lake canyon walls",
+     "reading": "Arcs in the canyon walls; Pintler granite",
+     "conf": 1,
+     "coords": "45.88, -113.30"
+    }
+   }
   },
   {
    "id": "c_warmsprings",
@@ -8033,7 +8421,51 @@
     "g_trail": "unk",
     "g_mile": "unk"
    },
-   "created": 1788628379848
+   "created": 1788628379848,
+   "chain": {
+    "l03": {
+     "place": "Wisdom River (Big Hole), Lewis's 1805 name",
+     "reading": "Wisdom waits at the river's end",
+     "conf": 2,
+     "coords": "45.55, -112.33"
+    },
+    "l07": {
+     "place": "Big Hole bends into the Jefferson at Twin Bridges",
+     "reading": "Round the bend where the Big Hole ends",
+     "conf": 2,
+     "coords": "45.5461, -112.3320"
+    },
+    "l08": {
+     "place": "Jefferson / Big Hole confluence fishing access",
+     "reading": "Free FAS with fly water",
+     "conf": 2,
+     "coords": "45.5461, -112.3320"
+    },
+    "l10": {
+     "place": "Beaverhead Rock",
+     "reading": "Sacagawea's landmark, 12 mi up the Beaverhead; visible-only",
+     "conf": 2,
+     "coords": "45.4267, -112.4563"
+    },
+    "l11": {
+     "place": "Three rivers make the Jefferson",
+     "reading": "Foot of three: Wisdom, Philanthropy (Ruby), Philosophy (Beaverhead) at her feet",
+     "conf": 1,
+     "coords": "45.55, -112.33"
+    },
+    "l13": {
+     "place": "Tobacco Root granite batholith",
+     "reading": "Granite outcrops east of the valley",
+     "conf": 1,
+     "coords": "45.55, -112.10"
+    },
+    "l19": {
+     "place": "Jefferson River",
+     "reading": "A river's steady flow",
+     "conf": 1,
+     "coords": "45.55, -112.33"
+    }
+   }
   },
   {
    "id": "c_heronlake",
