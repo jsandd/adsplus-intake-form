@@ -1,0 +1,51 @@
+{
+  "_readme": "Where each part of your database feeds the solve builder. Edit freely, then run: python3 run.py import <export.json>. Nothing is read until this file says where it goes. Unmapped kinds go to 'rumors' and are reported.",
+
+  "poem": {
+    "import": true,
+    "_note": "The poem document (20 lines) becomes the poem the tool works from if you have not pasted one yet. Line ids l01..l20 are translated to S#L# refs."
+  },
+
+  "intel": {
+    "_note": "223 records. 'kind' decides which layer a record feeds. 'conf' plus kind decides its reliability tier. Records whose kind is not listed here go to rumors.",
+    "route_by_kind": {
+      "statement": "statements",
+      "book": "book",
+      "map": "rumors",
+      "field": "rumors",
+      "math": "rumors",
+      "community": "rumors",
+      "speculation": "rumors",
+      "objection": "rumors",
+      "question": "rumors"
+    },
+    "tier_by_kind_and_conf": {
+      "statement":   {"confirmed": "confirmed", "likely": "reported",    "unverified": "circulating", "disputed": "unverified"},
+      "book":        {"confirmed": "confirmed", "likely": "reported",    "unverified": "circulating", "disputed": "unverified"},
+      "map":         {"confirmed": "reported",  "likely": "reported",    "unverified": "unverified",  "disputed": "unverified"},
+      "field":       {"confirmed": "reported",  "likely": "reported",    "unverified": "unverified",  "disputed": "unverified"},
+      "community":   {"confirmed": "reported",  "likely": "circulating", "unverified": "circulating", "disputed": "unverified"},
+      "speculation": {"confirmed": "fan",       "likely": "fan",         "unverified": "fan",         "disputed": "unverified"},
+      "objection":   {"confirmed": "reported",  "likely": "fan",         "unverified": "fan",         "disputed": "unverified"},
+      "question":    {"confirmed": "fan",       "likely": "fan",         "unverified": "fan",         "disputed": "fan"},
+      "math":        {"confirmed": "reported",  "likely": "fan",         "unverified": "fan",         "disputed": "unverified"}
+    },
+    "_tier_note": "Your 'likely' statements become 'reported' (not 'confirmed') because most were compiled by Mysterious Writings or THAP rather than quoted from a dated primary source. Change a row here if you disagree."
+  },
+
+  "candidates": {
+    "_note": "36 solve/site records. Each with coordinates becomes a 'site' feature in the landmark inventory (tier below). Each with a chain (12 of them) also becomes a read-only reference solve you can compare against.",
+    "to_features": true,
+    "to_reference_solves": true,
+    "tier": "fan"
+  },
+
+  "mapStates": {
+    "import": true,
+    "_note": "States marked 'eliminated' (CO, OR) are added to the eliminated-states rule. The other statuses and your notes are kept as settings and shown on the map."
+  },
+
+  "readings": {
+    "_note": "Empty in the export (0 records) — nothing to map yet."
+  }
+}
