@@ -9250,6 +9250,269 @@
      "coords": "38.655, -109.375"
     }
    }
+  },
+  {
+   "id": "c_t1_bighole",
+   "name": "TOP 1 · Wisdom River corridor — Big Hole → Beaverhead → Twin Bridges (SW Montana)",
+   "region": "MT · Beaverhead / Madison counties",
+   "coords": "45.6166, -113.4536 (Wisdom) → 45.5461, -112.3320 (Twin Bridges)",
+   "elev": "6,060 ft at Wisdom · 4,600 ft at Twin Bridges",
+   "notes": "TOP-3 VERDICT (Sep 6 2026): Most evidence, least finished. The only region where the poem's own words (Wisdom, Hole, three, river) and Posey's own life (grandfather's Montana, the Dillon signing, the book's gazetteer) land on the same forty miles. — Lewis named the Big Hole the Wisdom River in August 1805; trappers renamed it for the 'hole' (their word for a mountain valley) it drains. So 'Wisdom waits in shadowed sight' and 'past the Hole' are one river under two names, and the book's map, drawn in a deliberately old style, is the shadowed sight that keeps the old name. The river runs out of its Hole to Twin Bridges, where Lewis's three virtues (Wisdom, Philanthropy, Philosophy) make the Jefferson: a literal 'foot of three'. Beaverhead Rock, the landmark Sacagawea recognised as home, stands twelve miles up the Beaverhead as a bride that is visible, not alive, and 'follows from the gates' if the gates are the ancient Beaverhead passage the Corps walked. Granite is on both sides: the Pioneer batholith west (Crystal Park, the book's 'wet granite') and the Tobacco Root batholith east.",
+   "kill": "Any Posey answer that the Hole is not a place name; a bride confirmed outside the Beaverhead; or a checkpoint statement that puts stanza 2 and stanza 3 within walking distance of each other (this corridor cannot do that).",
+   "test": "Read 'The Mountain Memory' and the chapter that introduces Tucker. If the brook is named, work it; if it is withheld, note that (1 of 5).  From the Twin Bridges confluence and from Beaverhead Rock, run 20° and 200° on the quad. List every granite outcrop within a mile of a road that the lines cross (2 of 5).  Check Crystal Park's day-use fee and hours against 'free, 24/7'. If it charges, strike it as a site (3 of 5).  Measure 'walking distance' from a candidate surge to the first bend past the Hole; anything over three miles fails the reported constraint (4 of 5).  Ask the September Featured Question: 'Is the Hole a body of water?' It is specific without being on the nose (5 of 5).",
+   "verdicts": {
+    "l03": "fit",
+    "l07": "fit",
+    "l11": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "pass",
+    "g_vehicle": "pass",
+    "g_free": "unk",
+    "g_dog": "pass",
+    "g_trail": "unk",
+    "g_rail": "unk",
+    "g_mile": "unk",
+    "g_elev": "unk",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_armchair": "pass",
+    "g_bride": "pass",
+    "g_rotate": "unk",
+    "g_fenn": "unk",
+    "g_manip": "unk"
+   },
+   "chain": {
+    "l01": {
+     "place": "The river",
+     "reading": "What lives in time is the river; stanza 1 is the frame, and 5:4 says you already had it",
+     "conf": 1
+    },
+    "l02": {
+     "place": "Word count",
+     "reading": "'Hole' is the poem's 42nd word (verified by count); 42 is confirmed relevant by Posey (reported)",
+     "conf": 3
+    },
+    "l03": {
+     "place": "Wisdom River = Big Hole River; the town of Wisdom",
+     "reading": "Lewis's 1805 name, kept only by the town and by old maps: hidden in plain sight",
+     "conf": 2
+    },
+    "l06": {
+     "place": "Upper Big Hole, Land of 10,000 Haystacks",
+     "reading": "Slow silent meanders; the Netflix 'needle in a football field' points here (fan)",
+     "conf": 2
+    },
+    "l07": {
+     "place": "Big Hole River / Big Hole valley",
+     "reading": "Natural, proper-noun Hole. Posey: no man-made implication (reported); hole-named place = 'on the nose' (reported); community calls this line solved (circulating)",
+     "conf": 3
+    },
+    "l08": {
+     "place": "Big Hole blue-ribbon water",
+     "reading": "The book's fishing chapters; alt: 'pole' = pole star, fixing north before 3:1 (fan)",
+     "conf": 2
+    },
+    "l09": {
+     "place": "Polaris, MT / the East Pioneers",
+     "reading": "Polaris is the pole star in Ursa Minor and a town the book names outright; East Pioneers give an 'east' half of one range",
+     "conf": 2
+    },
+    "l10": {
+     "place": "Beaverhead Rock over the Beaverhead passage",
+     "reading": "Visible-only, not alive (state park: view from a distance). Gates = the ancient route up the Beaverhead to Lemhi Pass; alt bride site: Sacajawea Memorial at Lemhi Pass",
+     "conf": 1
+    },
+    "l11": {
+     "place": "Twin Bridges — three forks make the Jefferson",
+     "reading": "Wisdom, Philanthropy, Philosophy (verified history). Run 20° from the confluence",
+     "conf": 1
+    },
+    "l12": {
+     "place": "Back-bearing 200° / Sacagawea's return",
+     "reading": "Reverse the 20° line from her foot; or her literal return home over Lemhi. Rotation is 'technically' implied (reported)",
+     "conf": 1
+    },
+    "l13": {
+     "place": "Pioneer batholith (Crystal Park) or Tobacco Root granite",
+     "reading": "Book: 'smell of pine and wet granite' at Crystal Park. No arcs identified",
+     "conf": 1
+    },
+    "l19": {
+     "place": "The Big Hole / Jefferson",
+     "reading": "A river's steady flow — the through-line",
+     "conf": 1
+    }
+   },
+   "created": 1788800000001,
+   "top3": 1
+  },
+  {
+   "id": "c_t2_sinks",
+   "name": "TOP 2 · Sinks Canyon → Wind River front (Lander, Wyoming)",
+   "region": "WY · Fremont County, Sinks Canyon SP / Shoshone NF",
+   "coords": "42.7397, -108.8187 (the Rise)",
+   "elev": "≈ 6,100 ft",
+   "notes": "TOP-3 VERDICT (Sep 6 2026): The cleanest stanza 2 in the store: four lines in order, on foot, in under a mile, with a natural capital-H Hole. Ranked second only because stanza 3 is unpinned. — The Middle Fork of the Popo Agie vanishes into a limestone cavern (the Sinks) and surges back up a quarter mile down-canyon at the Rise, a clear pool of huge trout where fishing is banned. Walk the poem: hope surges clear and bright (the Rise) → walk near the water's silent flight (the river running unseen underground) → round the bend, past the Hole (the canyon road bends at the Sinks) → cast your pole where fishing is allowed again above the cavern in Shoshone National Forest. The upper canyon is Wind River granite. Reported through Treasure Among Us, Sinks Canyon was itself one of Posey's Fenn-search locations, which would satisfy the 75-mile remark at zero miles.",
+   "kill": "The book's Treasure Trail list not naming Sinks Canyon AND no bear, star or bearing that brings the stanza 3 construction back into the canyon; or the upper-canyon granite proving to be all trail.",
+   "test": "Open the book's Treasure Trail list and confirm or strike Sinks Canyon. Fifteen minutes; changes the rank (1 of 4).  From the Rise, and from the three-forks junction near Lander, run 20° and 200° on the quad; note what each line crosses within a mile of Sinks Canyon Road (2 of 4).  Map off-trail granite faces in the upper canyon above the state park boundary, within a mile of the road (3 of 4).  Check Sinks Canyon State Park fees and hours; confirm the NF boundary on the ground (4 of 4).",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l07": "fit",
+    "l08": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "pass",
+    "g_vehicle": "pass",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_trail": "unk",
+    "g_rail": "pass",
+    "g_mile": "pass",
+    "g_elev": "unk",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_armchair": "pass",
+    "g_bride": "unk",
+    "g_rotate": "unk",
+    "g_fenn": "pass",
+    "g_manip": "unk"
+   },
+   "chain": {
+    "l05": {
+     "place": "The Rise of the Sinks",
+     "reading": "Spring surges up clear from the rock; giant trout; no fishing",
+     "conf": 3
+    },
+    "l06": {
+     "place": "Popo Agie underground, Sinks → Rise",
+     "reading": "A quarter mile of silent, unseen flow; about two hours underground",
+     "conf": 3
+    },
+    "l07": {
+     "place": "The Sinks",
+     "reading": "A natural capital-H Hole the river disappears into; the canyon road bends at it",
+     "conf": 3
+    },
+    "l08": {
+     "place": "Popo Agie above the Sinks",
+     "reading": "Fishing is banned from the Rise to the road bridge; cast your pole above, in the national forest",
+     "conf": 3
+    },
+    "l11": {
+     "place": "Three forks of the Popo Agie (North, Middle, Little)",
+     "reading": "Foot of three; run 20° from their junction near Lander",
+     "conf": 1
+    },
+    "l13": {
+     "place": "Wind River granite, upper Sinks Canyon",
+     "reading": "Precambrian granite cliffs in Shoshone NF; off-trail faces within a mile of the road",
+     "conf": 3
+    },
+    "l19": {
+     "place": "The Popo Agie",
+     "reading": "A river that literally goes away and comes back",
+     "conf": 1
+    }
+   },
+   "created": 1788800000002,
+   "top3": 2
+  },
+  {
+   "id": "c_t3_jackson",
+   "name": "TOP 3 · Jackson Hole — Granite Creek / the Tetons' foot (Wyoming)",
+   "region": "WY · Teton County, Bridger-Teton NF / Hoback",
+   "coords": "43.3598, -110.4416 (Granite Hot Springs)",
+   "elev": "≈ 6,900 ft",
+   "notes": "TOP-3 VERDICT (Sep 6 2026): The proper-noun Hole Posey was asked about by name, granite by name and by rock, and a 'him' and a 'her' facing each other across the valley. Ranked third because the poem's order fights the geography. — Jackson Hole is the Hole the 'on the nose' question named. Granite Hot Springs surges hot and clear up Granite Creek; the creek walks down to the Hoback and the Snake, serious fishing water. The Sleeping Indian (Sheep Mountain) lies on his back along the EAST edge of the Hole, a 'he' who is alive or not depending on your perspective, exactly Posey's phrasing. The Tetons, French 'the three breasts', are 'her' and 'three' in one name, and their foot is the valley floor. Run 20° from her foot and return it. Site must be outside Grand Teton National Park (fee, no dogs): Bridger-Teton NF is free.",
+   "kill": "Confirmation that the clues run in geographic order at walking distances (surge before Hole kills it); or 'return her face' producing nothing within a mile of a road on the 200° line.",
+   "test": "Run 20° and 200° from the foot of the Grand Teton and from the Sleeping Indian's head; list what falls on NF land within a mile of a road (1 of 4).  Check the Granite Creek Road season and the hot-springs fee boundary; confirm the creek below the pool is free and dog-legal (2 of 4).  Look for any bear-named feature on the east rim of the Hole (Gros Ventre, Sheep Mountain area) (3 of 4).  Decide the order question with Posey's words: 'walking distance from silent flight through past the Hole' cannot span the 18 miles from the hot springs to the valley (4 of 4).",
+   "verdicts": {
+    "l07": "fit",
+    "l09": "fit"
+   },
+   "gates": {
+    "g_notin": "pass",
+    "g_public": "pass",
+    "g_bldg": "pass",
+    "g_safe": "pass",
+    "g_vehicle": "unk",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_trail": "unk",
+    "g_rail": "pass",
+    "g_mile": "unk",
+    "g_elev": "unk",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "pass",
+    "g_armchair": "pass",
+    "g_bride": "unk",
+    "g_rotate": "unk",
+    "g_fenn": "pass",
+    "g_manip": "unk"
+   },
+   "chain": {
+    "l05": {
+     "place": "Granite Hot Springs",
+     "reading": "Hot water surges up Granite Creek; the creek below the pool is free",
+     "conf": 1
+    },
+    "l06": {
+     "place": "Granite Creek → Hoback River",
+     "reading": "Walk near the creek down to the Hoback",
+     "conf": 1
+    },
+    "l07": {
+     "place": "Jackson Hole",
+     "reading": "The proper-noun natural Hole; named in the 'on the nose' question",
+     "conf": 3
+    },
+    "l08": {
+     "place": "Hoback / Snake fly water",
+     "reading": "Blue-ribbon water at walking distance",
+     "conf": 1
+    },
+    "l09": {
+     "place": "Sleeping Indian (Sheep Mountain), east rim",
+     "reading": "A 'he' lying on his back, obvious from the west; alive or not by perspective. No bear name",
+     "conf": 3
+    },
+    "l10": {
+     "place": "The Tetons over the valley",
+     "reading": "'Her' by name; the gates = the Hoback and Snake canyons the trappers came through (fan)",
+     "conf": 1
+    },
+    "l11": {
+     "place": "Foot of the three Tetons",
+     "reading": "Grand, Middle, South; their foot is the valley floor; run 20°",
+     "conf": 1
+    },
+    "l12": {
+     "place": "Reverse 200° from the Tetons' foot",
+     "reading": "Back toward the Hoback / Granite Creek side",
+     "conf": 1
+    },
+    "l13": {
+     "place": "Granite Creek granite",
+     "reading": "Granite by name; Gros Ventre outcrops; no arcs identified",
+     "conf": 1
+    }
+   },
+   "created": 1788800000003,
+   "top3": 3
   }
  ],
  "mapStates": {
@@ -9301,5 +9564,552 @@
    "status": "open",
    "note": ""
   }
+ },
+ "top3": {
+  "date": "Built Sep 6 2026",
+  "method": {
+   "how": [
+    "Every candidate in the store was re-argued line by line against the 35 confirmed and 57 reported Posey statements, not against its own case notes.",
+    "A solve was ranked by how many hard statements it survives with nothing overridden, how much of stanzas 2–4 it places in consecutive order at the distances Posey describes, and how much independent support it has from the book, the map and Posey's own history.",
+    "Crowd exposure was not scored against a solve. Posey's confirmed Aug 2025 post (first two clues solved by several, some within 200 ft of the checkpoint) is mild evidence FOR the region the crowd has worked, because the crowd has overwhelmingly worked southwest Montana.",
+    "Tiers are shown on every claim. Nothing below 'reported' was allowed to carry a line on its own."
+   ],
+   "shared": [
+    "All three keep the Hole natural and proper-noun. Posey's direct 'no' to a man-made Hole (reported, Seekers Summit) and his 'on the nose' punt on hole-named places (reported) are the two statements that cut hardest through the candidate list. The Moab culvert, Hole-in-the-Wall and Baker's Hole fail or wobble on them.",
+    "All three keep stanza 2 at walking distance and stanza 3 solvable from a map (reported: boots on the ground only at stanza 4; 'you do not need to be at the bride to identify her foot of three' is confirmed).",
+    "All three are inside the printed map, on free 24/7 public land with dogs allowed, and in Montana or Wyoming, the two states with the most independent support (Fenn footprint, the disclaimer's Wyoming law, the grandfather's Montana)."
+   ],
+   "moab": "The Moab / La Sal solve (Matrimony Spring → Potash Road → Jeep Arch → Castle Valley) does not make the three. It is not dead on any single confirmed rule, but it needs three reported statements read against their plain sense at once: the Hole as a culvert (Posey: no man-made implication), 'ursa east' as a heading (Posey: Ursa East is a thing with no west version), and 'granite bold' in country with no granite. Sister Superior fixed the bride and broke the sequence. Keep it archived, not deleted.",
+   "unknown": [
+    "I have not seen the book's Treasure Trail list. The claim that Sinks Canyon and Grand Teton were Posey's own Fenn-search locations is reported through Treasure Among Us and is not verified.",
+    "I cannot check current fee status or hours for Crystal Park, Sinks Canyon State Park or the Granite Hot Springs road from here; those are flagged as tests.",
+    "The 'below a mile high' rule is fan analysis from the Lewis Carroll quote. All three top sites are above 5,280 ft except Twin Bridges. If that rule is ever confirmed, ranks 2 and 3 fall and rank 1 moves to its Twin Bridges end.",
+    "No candidate in the store places 'double arcs' on a specific granite feature with any confidence. Stanza 4 is unsolved everywhere; every rank above is a stanza 1–3 ranking."
+   ]
+  },
+  "solves": [
+   {
+    "rank": 1,
+    "candidate": "c_t1_bighole",
+    "name": "Wisdom River corridor — Big Hole → Beaverhead → Twin Bridges (SW Montana)",
+    "region": "MT · Beaverhead / Madison counties",
+    "coords": "45.6166, -113.4536 (Wisdom) → 45.5461, -112.3320 (Twin Bridges)",
+    "elev": "6,060 ft at Wisdom · 4,600 ft at Twin Bridges",
+    "verdict": "Most evidence, least finished. The only region where the poem's own words (Wisdom, Hole, three, river) and Posey's own life (grandfather's Montana, the Dillon signing, the book's gazetteer) land on the same forty miles.",
+    "thesis": "Lewis named the Big Hole the Wisdom River in August 1805; trappers renamed it for the 'hole' (their word for a mountain valley) it drains. So 'Wisdom waits in shadowed sight' and 'past the Hole' are one river under two names, and the book's map, drawn in a deliberately old style, is the shadowed sight that keeps the old name. The river runs out of its Hole to Twin Bridges, where Lewis's three virtues (Wisdom, Philanthropy, Philosophy) make the Jefferson: a literal 'foot of three'. Beaverhead Rock, the landmark Sacagawea recognised as home, stands twelve miles up the Beaverhead as a bride that is visible, not alive, and 'follows from the gates' if the gates are the ancient Beaverhead passage the Corps walked. Granite is on both sides: the Pioneer batholith west (Crystal Park, the book's 'wet granite') and the Tobacco Root batholith east.",
+    "route": [
+     {
+      "line": "l01",
+      "place": "The river",
+      "reading": "What lives in time is the river; stanza 1 is the frame, and 5:4 says you already had it",
+      "tier": "fan"
+     },
+     {
+      "line": "l02",
+      "place": "Word count",
+      "reading": "'Hole' is the poem's 42nd word (verified by count); 42 is confirmed relevant by Posey (reported)",
+      "tier": "reported"
+     },
+     {
+      "line": "l03",
+      "place": "Wisdom River = Big Hole River; the town of Wisdom",
+      "reading": "Lewis's 1805 name, kept only by the town and by old maps: hidden in plain sight",
+      "tier": "circulating"
+     },
+     {
+      "line": "l05",
+      "place": "UNPLACED — the corridor's weakest slot",
+      "reading": "Candidates: spring surge on the upper Big Hole; Jackson Hot Springs (private lodge, fails as a site, may pass as a view); Elkhorn Hot Springs on the Pioneer Byway",
+      "tier": "unverified"
+     },
+     {
+      "line": "l06",
+      "place": "Upper Big Hole, Land of 10,000 Haystacks",
+      "reading": "Slow silent meanders; the Netflix 'needle in a football field' points here (fan)",
+      "tier": "circulating"
+     },
+     {
+      "line": "l07",
+      "place": "Big Hole River / Big Hole valley",
+      "reading": "Natural, proper-noun Hole. Posey: no man-made implication (reported); hole-named place = 'on the nose' (reported); community calls this line solved (circulating)",
+      "tier": "reported"
+     },
+     {
+      "line": "l08",
+      "place": "Big Hole blue-ribbon water",
+      "reading": "The book's fishing chapters; alt: 'pole' = pole star, fixing north before 3:1 (fan)",
+      "tier": "circulating"
+     },
+     {
+      "line": "l09",
+      "place": "Polaris, MT / the East Pioneers",
+      "reading": "Polaris is the pole star in Ursa Minor and a town the book names outright; East Pioneers give an 'east' half of one range",
+      "tier": "circulating"
+     },
+     {
+      "line": "l10",
+      "place": "Beaverhead Rock over the Beaverhead passage",
+      "reading": "Visible-only, not alive (state park: view from a distance). Gates = the ancient route up the Beaverhead to Lemhi Pass; alt bride site: Sacajawea Memorial at Lemhi Pass",
+      "tier": "fan"
+     },
+     {
+      "line": "l11",
+      "place": "Twin Bridges — three forks make the Jefferson",
+      "reading": "Wisdom, Philanthropy, Philosophy (verified history). Run 20° from the confluence",
+      "tier": "fan"
+     },
+     {
+      "line": "l12",
+      "place": "Back-bearing 200° / Sacagawea's return",
+      "reading": "Reverse the 20° line from her foot; or her literal return home over Lemhi. Rotation is 'technically' implied (reported)",
+      "tier": "unverified"
+     },
+     {
+      "line": "l13",
+      "place": "Pioneer batholith (Crystal Park) or Tobacco Root granite",
+      "reading": "Book: 'smell of pine and wet granite' at Crystal Park. No arcs identified",
+      "tier": "unverified"
+     },
+     {
+      "line": "l19",
+      "place": "The Big Hole / Jefferson",
+      "reading": "A river's steady flow — the through-line",
+      "tier": "fan"
+     }
+    ],
+    "evidence": [
+     {
+      "t": "Lewis named the Big Hole the Wisdom River, 6 Aug 1805; trappers' 'hole' = mountain valley.",
+      "tier": "confirmed",
+      "src": "History, verified Sep 2026"
+     },
+     {
+      "t": "The book names Dillon, Big Hole Valley, Wisdom, Polaris, Pioneer Mountains, Crystal Park, Bannack, Blacktail Deer Creek, Clark Canyon, Red Rock River; 'the Big Hole's crystal waters'.",
+      "tier": "reported",
+      "src": "Hub gazetteer / book verbatim"
+     },
+     {
+      "t": "Posey's grandfather was a Montana fish-and-game warden; Posey's summers were at the family cabin; the June 2025 signing was in Dillon; the Sep 12 2026 meet-and-greet is in Polaris.",
+      "tier": "reported",
+      "src": "Statements report; TAU"
+     },
+     {
+      "t": "'Hole' is the 42nd word of the poem; Posey confirmed 42 is relevant and called 4:19 'a little uncanny'.",
+      "tier": "reported",
+      "src": "Count verified; hub"
+     },
+     {
+      "t": "Posey: the Hole has no man-made implication; whether it corresponds to a hole-named place is 'an on the nose question'.",
+      "tier": "reported",
+      "src": "Seekers Summit"
+     },
+     {
+      "t": "The book cover's torn outline matches the Big Hole watershed; pp. 4 and 117 → 113th meridian through Wisdom.",
+      "tier": "fan",
+      "src": "Mysterious Writings top-10 list"
+     },
+     {
+      "t": "Beaverhead Rock 'may be viewed from a distance but is not directly accessible'; non-residents pay $8 — fine for a bride you only look at, fatal for a site.",
+      "tier": "confirmed",
+      "src": "Montana FWP, verified"
+     },
+     {
+      "t": "Posey: it would be 'a little strange' to discover the bride without understanding the ancient gates; the bride is visible and not alive.",
+      "tier": "reported",
+      "src": "Seekers Summit"
+     }
+    ],
+    "gates": {
+     "g_notin": "pass",
+     "g_public": "pass",
+     "g_bldg": "pass",
+     "g_safe": "pass",
+     "g_vehicle": "pass",
+     "g_free": "unk",
+     "g_dog": "pass",
+     "g_trail": "unk",
+     "g_rail": "unk",
+     "g_mile": "unk",
+     "g_elev": "unk",
+     "g_states": "pass",
+     "g_map": "pass",
+     "g_natural": "pass",
+     "g_hole": "pass",
+     "g_armchair": "pass",
+     "g_bride": "pass",
+     "g_rotate": "unk",
+     "g_fenn": "unk",
+     "g_manip": "unk"
+    },
+    "against": [
+     "Distance. Wisdom to Beaverhead Rock is about 50 air miles; Posey said each clue is 'not meant to convey great distance' (reported). The corridor only works if stanza 3 is drawn on the map, not walked.",
+     "'As hope surges' has no pin. The first actionable clue is the one this solve is worst at.",
+     "West Yellowstone, Posey's best-documented Fenn ground, is about 130 air miles from Wisdom (85 from Twin Bridges), outside the walked-back 75-mile remark.",
+     "It is the crowd's solve. Fifteen months of searchers and no checkpoint photo means either the checkpoint is subtle or the crowd is in the wrong part of the corridor."
+    ],
+    "kill": "Any Posey answer that the Hole is not a place name; a bride confirmed outside the Beaverhead; or a checkpoint statement that puts stanza 2 and stanza 3 within walking distance of each other (this corridor cannot do that).",
+    "tests": [
+     "Read 'The Mountain Memory' and the chapter that introduces Tucker. If the brook is named, work it; if it is withheld, note that.",
+     "From the Twin Bridges confluence and from Beaverhead Rock, run 20° and 200° on the quad. List every granite outcrop within a mile of a road that the lines cross.",
+     "Check Crystal Park's day-use fee and hours against 'free, 24/7'. If it charges, strike it as a site.",
+     "Measure 'walking distance' from a candidate surge to the first bend past the Hole; anything over three miles fails the reported constraint.",
+     "Ask the September Featured Question: 'Is the Hole a body of water?' It is specific without being on the nose."
+    ],
+    "fits": [
+     "l03",
+     "l07",
+     "l11"
+    ],
+    "open": [
+     "Which surge?",
+     "Which gates: the Beaverhead passage, Lemhi Pass, Big Hole Pass or Chief Joseph Pass?",
+     "Where are two arcs on granite within a mile of a road?"
+    ]
+   },
+   {
+    "rank": 2,
+    "candidate": "c_t2_sinks",
+    "name": "Sinks Canyon → Wind River front (Lander, Wyoming)",
+    "region": "WY · Fremont County, Sinks Canyon SP / Shoshone NF",
+    "coords": "42.7397, -108.8187 (the Rise)",
+    "elev": "≈ 6,100 ft",
+    "verdict": "The cleanest stanza 2 in the store: four lines in order, on foot, in under a mile, with a natural capital-H Hole. Ranked second only because stanza 3 is unpinned.",
+    "thesis": "The Middle Fork of the Popo Agie vanishes into a limestone cavern (the Sinks) and surges back up a quarter mile down-canyon at the Rise, a clear pool of huge trout where fishing is banned. Walk the poem: hope surges clear and bright (the Rise) → walk near the water's silent flight (the river running unseen underground) → round the bend, past the Hole (the canyon road bends at the Sinks) → cast your pole where fishing is allowed again above the cavern in Shoshone National Forest. The upper canyon is Wind River granite. Reported through Treasure Among Us, Sinks Canyon was itself one of Posey's Fenn-search locations, which would satisfy the 75-mile remark at zero miles.",
+    "route": [
+     {
+      "line": "l05",
+      "place": "The Rise of the Sinks",
+      "reading": "Spring surges up clear from the rock; giant trout; no fishing",
+      "tier": "confirmed"
+     },
+     {
+      "line": "l06",
+      "place": "Popo Agie underground, Sinks → Rise",
+      "reading": "A quarter mile of silent, unseen flow; about two hours underground",
+      "tier": "confirmed"
+     },
+     {
+      "line": "l07",
+      "place": "The Sinks",
+      "reading": "A natural capital-H Hole the river disappears into; the canyon road bends at it",
+      "tier": "reported"
+     },
+     {
+      "line": "l08",
+      "place": "Popo Agie above the Sinks",
+      "reading": "Fishing is banned from the Rise to the road bridge; cast your pole above, in the national forest",
+      "tier": "confirmed"
+     },
+     {
+      "line": "l09",
+      "place": "OPEN — three options within 30 mi",
+      "reading": "Wind River Reservation east of the Winds (Chief Washakie's realm); Bears Ears peak in the Winds; a 20° bearing from the pole star",
+      "tier": "unverified"
+     },
+     {
+      "line": "l10",
+      "place": "OPEN — Sacagawea at Fort Washakie",
+      "reading": "A statue and grave: visible, not alive. But 'near graves' fails the rules for a SITE, so she can only be a bride you look at, never the place",
+      "tier": "unverified"
+     },
+     {
+      "line": "l11",
+      "place": "Three forks of the Popo Agie (North, Middle, Little)",
+      "reading": "Foot of three; run 20° from their junction near Lander",
+      "tier": "fan"
+     },
+     {
+      "line": "l13",
+      "place": "Wind River granite, upper Sinks Canyon",
+      "reading": "Precambrian granite cliffs in Shoshone NF; off-trail faces within a mile of the road",
+      "tier": "reported"
+     },
+     {
+      "line": "l19",
+      "place": "The Popo Agie",
+      "reading": "A river that literally goes away and comes back",
+      "tier": "fan"
+     }
+    ],
+    "evidence": [
+     {
+      "t": "Sinks and Rise verified: river underground about a quarter mile and two hours; fishing prohibited at the Rise and down to the bridge; no day-use fee reported; leashed dogs allowed; upper canyon is Shoshone NF.",
+      "tier": "confirmed",
+      "src": "Wyoming State Parks / Shoshone NF, verified"
+     },
+     {
+      "t": "Fenn footprint list per Treasure Among Us: Madison Junction, Nine Mile Hole, Hebgen Lake, Yellowstone, Sinks Canyon, Grand Teton, San Juans.",
+      "tier": "reported",
+      "src": "Treasure Among Us (secondary; verify in the book)"
+     },
+     {
+      "t": "Posey: walking distance from 'waters' silent flight' through 'round the bend, past the Hole'.",
+      "tier": "reported",
+      "src": "MW Q&A compilation"
+     },
+     {
+      "t": "Posey: the Hole has no man-made implication.",
+      "tier": "reported",
+      "src": "Seekers Summit"
+     },
+     {
+      "t": "The disclaimer invokes Wyoming law; Fenn's chest was found in Wyoming; Posey searched within 75 miles of his own hide (walked back).",
+      "tier": "reported",
+      "src": "Book disclaimer; Seekers Summit"
+     },
+     {
+      "t": "Rule 42 'below a mile high' would fail this site at 6,100 ft.",
+      "tier": "fan",
+      "src": "r/beyondthemapsedge"
+     }
+    ],
+    "gates": {
+     "g_notin": "pass",
+     "g_public": "pass",
+     "g_bldg": "pass",
+     "g_safe": "pass",
+     "g_vehicle": "pass",
+     "g_free": "pass",
+     "g_dog": "pass",
+     "g_trail": "unk",
+     "g_rail": "pass",
+     "g_mile": "pass",
+     "g_elev": "unk",
+     "g_states": "pass",
+     "g_map": "pass",
+     "g_natural": "pass",
+     "g_hole": "pass",
+     "g_armchair": "pass",
+     "g_bride": "unk",
+     "g_rotate": "unk",
+     "g_fenn": "pass",
+     "g_manip": "unk"
+    },
+    "against": [
+     "Stanza 3 has no pin. 'His realm', 'his bride' and 'ancient gates' are all candidates, none argued to the point of a verdict.",
+     "No bear name in the canyon; the nearest is Bears Ears peak, deep in the Winds.",
+     "The Sinks is a cavern. The rules bar the TREASURE from caves, not a clue; but a searcher who reads 'past the Hole' as 'go into the Hole' is walking into a rule violation.",
+     "The Fenn-footprint claim is secondary. If the book's list does not contain Sinks Canyon, the 75-mile support collapses to nothing.",
+     "The Sinks Canyon State Park segment may carry a non-resident day fee. The NF reach above it is free either way."
+    ],
+    "kill": "The book's Treasure Trail list not naming Sinks Canyon AND no bear, star or bearing that brings the stanza 3 construction back into the canyon; or the upper-canyon granite proving to be all trail.",
+    "tests": [
+     "Open the book's Treasure Trail list and confirm or strike Sinks Canyon. Fifteen minutes; changes the rank.",
+     "From the Rise, and from the three-forks junction near Lander, run 20° and 200° on the quad; note what each line crosses within a mile of Sinks Canyon Road.",
+     "Map off-trail granite faces in the upper canyon above the state park boundary, within a mile of the road.",
+     "Check Sinks Canyon State Park fees and hours; confirm the NF boundary on the ground."
+    ],
+    "fits": [
+     "l05",
+     "l06",
+     "l07",
+     "l08"
+    ],
+    "open": [
+     "Who is 'he'?",
+     "Which gates?",
+     "Is the checkpoint the Rise itself (something already there and something he placed)?"
+    ]
+   },
+   {
+    "rank": 3,
+    "candidate": "c_t3_jackson",
+    "name": "Jackson Hole — Granite Creek / the Tetons' foot (Wyoming)",
+    "region": "WY · Teton County, Bridger-Teton NF / Hoback",
+    "coords": "43.3598, -110.4416 (Granite Hot Springs)",
+    "elev": "≈ 6,900 ft",
+    "verdict": "The proper-noun Hole Posey was asked about by name, granite by name and by rock, and a 'him' and a 'her' facing each other across the valley. Ranked third because the poem's order fights the geography.",
+    "thesis": "Jackson Hole is the Hole the 'on the nose' question named. Granite Hot Springs surges hot and clear up Granite Creek; the creek walks down to the Hoback and the Snake, serious fishing water. The Sleeping Indian (Sheep Mountain) lies on his back along the EAST edge of the Hole, a 'he' who is alive or not depending on your perspective, exactly Posey's phrasing. The Tetons, French 'the three breasts', are 'her' and 'three' in one name, and their foot is the valley floor. Run 20° from her foot and return it. Site must be outside Grand Teton National Park (fee, no dogs): Bridger-Teton NF is free.",
+    "route": [
+     {
+      "line": "l05",
+      "place": "Granite Hot Springs",
+      "reading": "Hot water surges up Granite Creek; the creek below the pool is free",
+      "tier": "fan"
+     },
+     {
+      "line": "l06",
+      "place": "Granite Creek → Hoback River",
+      "reading": "Walk near the creek down to the Hoback",
+      "tier": "fan"
+     },
+     {
+      "line": "l07",
+      "place": "Jackson Hole",
+      "reading": "The proper-noun natural Hole; named in the 'on the nose' question",
+      "tier": "reported"
+     },
+     {
+      "line": "l08",
+      "place": "Hoback / Snake fly water",
+      "reading": "Blue-ribbon water at walking distance",
+      "tier": "fan"
+     },
+     {
+      "line": "l09",
+      "place": "Sleeping Indian (Sheep Mountain), east rim",
+      "reading": "A 'he' lying on his back, obvious from the west; alive or not by perspective. No bear name",
+      "tier": "reported"
+     },
+     {
+      "line": "l10",
+      "place": "The Tetons over the valley",
+      "reading": "'Her' by name; the gates = the Hoback and Snake canyons the trappers came through (fan)",
+      "tier": "fan"
+     },
+     {
+      "line": "l11",
+      "place": "Foot of the three Tetons",
+      "reading": "Grand, Middle, South; their foot is the valley floor; run 20°",
+      "tier": "fan"
+     },
+     {
+      "line": "l12",
+      "place": "Reverse 200° from the Tetons' foot",
+      "reading": "Back toward the Hoback / Granite Creek side",
+      "tier": "unverified"
+     },
+     {
+      "line": "l13",
+      "place": "Granite Creek granite",
+      "reading": "Granite by name; Gros Ventre outcrops; no arcs identified",
+      "tier": "unverified"
+     }
+    ],
+    "evidence": [
+     {
+      "t": "Posey punted on whether the Hole corresponds to a place with 'hole' in its name (Jackson Hole, Big Hole River): 'an on the nose question.'",
+      "tier": "reported",
+      "src": "Seekers Summit"
+     },
+     {
+      "t": "Sleeping Indian verified: Sheep Mountain, Gros Ventre Range, a chief on his back, on the east edge of the Hole.",
+      "tier": "confirmed",
+      "src": "Verified Sep 2026"
+     },
+     {
+      "t": "Posey on 'he': 'That depends on your perspective.' On the bride: visible, not alive.",
+      "tier": "reported",
+      "src": "Seekers Summit"
+     },
+     {
+      "t": "Grand Teton is in Posey's reported Fenn footprint; Fenn's chest was found in Wyoming.",
+      "tier": "reported",
+      "src": "Treasure Among Us; Fenn 2020"
+     },
+     {
+      "t": "Dogs are barred from trails in Grand Teton NP and the park charges a fee; national forest allows both. The site cannot be in the park.",
+      "tier": "confirmed",
+      "src": "Official FAQ + NPS rules"
+     },
+     {
+      "t": "'Ursa east' anagram 'use a star' (circulating) would replace the missing bear with a bearing from Polaris.",
+      "tier": "circulating",
+      "src": "MW Discord"
+     }
+    ],
+    "gates": {
+     "g_notin": "pass",
+     "g_public": "pass",
+     "g_bldg": "pass",
+     "g_safe": "pass",
+     "g_vehicle": "unk",
+     "g_free": "pass",
+     "g_dog": "pass",
+     "g_trail": "unk",
+     "g_rail": "pass",
+     "g_mile": "unk",
+     "g_elev": "unk",
+     "g_states": "pass",
+     "g_map": "pass",
+     "g_natural": "pass",
+     "g_hole": "pass",
+     "g_armchair": "pass",
+     "g_bride": "unk",
+     "g_rotate": "unk",
+     "g_fenn": "pass",
+     "g_manip": "unk"
+    },
+    "against": [
+     "Order. The surge (Granite Hot Springs) sits about 18 air miles south-east of Jackson, up the Hoback; the poem reaches the Hole in line 7 and the surge in line 5. The route only works if 'past the Hole' means leaving the valley, not entering it.",
+     "Granite Hot Springs is a fee pool with a seasonal road; only the creek below it is free. Winter access is by snowmobile.",
+     "No bear anywhere. Sheep Mountain is named for bighorn sheep.",
+     "It is heavily visited Fenn country: 'not near any trail, so it wouldn't be stumbled upon' is hard to satisfy within a mile of a road here.",
+     "Thermopolis is the near alternate if the bride must be named: the Wedding of the Waters stands at the mouth of Wind River Canyon, with Precambrian granite at the north end. It loses on the Hole (none on the approach) and on 'ursa'."
+    ],
+    "kill": "Confirmation that the clues run in geographic order at walking distances (surge before Hole kills it); or 'return her face' producing nothing within a mile of a road on the 200° line.",
+    "tests": [
+     "Run 20° and 200° from the foot of the Grand Teton and from the Sleeping Indian's head; list what falls on NF land within a mile of a road.",
+     "Check the Granite Creek Road season and the hot-springs fee boundary; confirm the creek below the pool is free and dog-legal.",
+     "Look for any bear-named feature on the east rim of the Hole (Gros Ventre, Sheep Mountain area).",
+     "Decide the order question with Posey's words: 'walking distance from silent flight through past the Hole' cannot span the 18 miles from the hot springs to the valley."
+    ],
+    "fits": [
+     "l07",
+     "l09"
+    ],
+    "open": [
+     "Where is 'ursa'?",
+     "Are the gates the Hoback canyon, the Snake River canyon or Teton Pass?",
+     "Any double arcs on Granite Creek granite?"
+    ]
+   }
+  ],
+  "compare": [
+   [
+    "Stanza 2 placed",
+    "3 of 4 (no surge)",
+    "4 of 4, in order, on foot",
+    "4 of 4, but order fights geography"
+   ],
+   [
+    "Stanza 3 placed",
+    "Realm, bride, three: all argued, none pinned",
+    "Nothing pinned",
+    "'He' and 'her' verified, gates open"
+   ],
+   [
+    "Stanza 4 granite",
+    "Pioneer and Tobacco Root batholiths, no arcs",
+    "Wind River granite in NF, no arcs",
+    "Granite Creek, no arcs"
+   ],
+   [
+    "Book support",
+    "Strongest: nine named places",
+    "None known",
+    "None known"
+   ],
+   [
+    "Posey's history",
+    "Grandfather's Montana; Dillon signing",
+    "Reported Fenn-search site (verify)",
+    "Reported Fenn-search site (verify)"
+   ],
+   [
+    "Clue-to-clue distance",
+    "Tens of miles: map construction only",
+    "Under a mile for stanza 2",
+    "18 miles surge to Hole"
+   ],
+   [
+    "Elevation vs 'below a mile' (fan)",
+    "6,060 ft at Wisdom; 4,600 at Twin Bridges",
+    "6,100 ft: fails if confirmed",
+    "6,900 ft: fails if confirmed"
+   ],
+   [
+    "Crowd exposure",
+    "Highest; 'within 200 ft of the checkpoint' likely here",
+    "Low",
+    "High (Fenn country)"
+   ],
+   [
+    "Engine score",
+    "see card",
+    "see card",
+    "see card"
+   ]
+  ]
  }
 }
