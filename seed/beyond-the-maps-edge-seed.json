@@ -7035,6 +7035,694 @@
    ],
    "when": "2026-09-05",
    "created": 1788628459309
+  },
+  {
+   "id": "i224",
+   "text": "Q: Does one need to be at the bride to identify her foot of three, or some distance away? Posey stalled, re-read it, then answered: No. You do not need to be at the bride — the foot of three should be identifiable from a distance or from a map.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "bride",
+    "foot-of-three",
+    "distance",
+    "armchair"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Foot of three reads from a distance; rules out small on-site measurements"
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The bride is seen, not climbed to"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i225",
+   "text": "Q: How far is 'her face' from 'the place'? Posey: probably not as far as many people think.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "face",
+    "distance",
+    "place"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Face and place are close"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i226",
+   "text": "Q: How far is the treasure from the bride? Posey: a matter of perspective.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "bride",
+    "distance",
+    "perspective"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Bride-to-treasure distance is deliberately ambiguous"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i227",
+   "text": "Q: Is 'east' a portion within one Ursa, or is there a west Ursa and an east Ursa? Posey: you only need to worry about Ursa East.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "ursa",
+    "east",
+    "place-noun"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 3,
+     "why": "'Ursa East' is treated as a thing with an east part — a place, not a heading verb"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i228",
+   "text": "Q: Is 'ursa' lowercase deliberately? Posey: the poem was written deliberately; the choice not to capitalize was intentional. No further clarity offered.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "ursa",
+    "capitalization",
+    "structure"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Lowercase ursa is deliberate — a common noun doing place work"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i229",
+   "text": "Q: Are 'the place' and 'the sacred space' the same location? Posey: not necessarily.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "place",
+    "sacred-space",
+    "two-destinations",
+    "checkpoint"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Stanza 3 ends somewhere that may not be the treasure"
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "The sacred space can be a different location from 'the place'"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i230",
+   "text": "Q: Does her face belong to the bride? Posey: yes (after hedging about two interpretations). Q: Is 'return her face' referring to the bride? Punted in September, answered yes at Seekers Summit.",
+   "kind": "statement",
+   "conf": "confirmed",
+   "source": "Session notes, Sep 6 2026 (MW Q&A compilation / Seekers Summit)",
+   "when": "2026-03-28",
+   "tags": [
+    "bride",
+    "face",
+    "punted"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 3,
+     "why": "Her face = the bride's face"
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": ""
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i231",
+   "text": "Analysis of the Ursa East answer: the question 'is there a west ursa and an east ursa?' only makes sense if ursa names something. If it were 'bear east' as a heading verb there would be no west version to ask about. With the deliberate lowercase, ursa is a common noun doing place work — the eastern part of a bear-named thing. This closes the 'bear east as instruction' reading the Moab stanza 3 was built on.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026 — analysis of confirmed Q&A",
+   "when": "2026-09-06",
+   "tags": [
+    "ursa",
+    "east",
+    "closed-reading"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 3,
+     "why": "'Bear east' as a verb is closed by the Ursa East answer"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i232",
+   "text": "Analysis: the gates are the anchor, not the bride. Gates come first (Posey), so they are the more findable, probably named or well-known thing; the bride is what you spot once you are looking at them. Solves that find a bride and then hunt for gates have this inverted.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "gates",
+    "bride",
+    "order"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Identify the gates first; derive the bride"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i233",
+   "text": "Analysis: there are two destinations in the back half. 'The place' and 'the sacred space' are not necessarily the same. Stanza 3 ends somewhere; stanza 4 is somewhere else. Since the checkpoint sits at least halfway through the clues and boots on the ground begins at stanza 4, 'the place' is a strong candidate for the checkpoint itself.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "checkpoint",
+    "place",
+    "sacred-space",
+    "structure"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'The place' may be the checkpoint"
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Sacred space = the treasure site, distinct from the place"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i234",
+   "text": "Gates-as-passage reframe: 'ancient gates' as a valley or pass used as a crossing route long ago, rather than a formation with 'gate' in its name. Fits gates-before-bride (a historic crossing is identified first; the bride is the landform standing over it), fits not needing to be at the bride (she is visible from the pass), and is mappable from an armchair. Candidates: Lemhi Pass (ancient trade and buffalo route, Lewis & Clark 1805), Big Hole Pass and Chief Joseph Pass (Nez Perce 1877), the Great Bannock Trail (Shoshone-Bannock buffalo route by Cooke City and the Beartooth edge), South Pass (emigrant gateway, Archean granite, Devil's Gate and Split Rock nearby).",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 (Josh's reframe)",
+   "when": "2026-09-06",
+   "tags": [
+    "gates",
+    "pass",
+    "passage",
+    "reframe",
+    "montana",
+    "wyoming"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Gates = a historic passage; bride = the landform over it"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i235",
+   "text": "Tucker thread: Posey's Vizsla Tucker, trained by hide-and-seek on trails, appears throughout the Netflix documentary; the dog illustrated beneath the treasure poem in the book is a Vizsla. The memorial poem 'Mountain Memory' (p. 213) shares wording with stanza 2: 'around the bend' appears in both; casting a line into a babbling brook sits against 'cast your pole'; 'where earth and memory converge' echoes the place / sacred space. Best reading: S2L3–L4 may be anchored to a small mountain brook in timber at elevation that Posey associated with Tucker — a tributary, not a valley river like the Big Hole or Beaverhead.",
+   "kind": "book",
+   "conf": "likely",
+   "source": "Beyond the Map's Edge p. 213 'Mountain Memory' + Netflix (session notes Sep 6 2026)",
+   "when": "2026-09-06",
+   "tags": [
+    "tucker",
+    "dog",
+    "book",
+    "page-213",
+    "brook",
+    "stanza-2"
+   ],
+   "links": [
+    {
+     "lineId": "l07",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Around the bend' appears in the Tucker poem"
+    },
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Casting a line into a brook mirrors 'cast your pole'"
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Where earth and memory converge' echoes the sacred space"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i236",
+   "text": "Lost-dog-poster checkpoint theory REJECTED: it fails three of Posey's statements. The checkpoint is both something he placed AND something already there (a poster is only placed); clues must stand the test of time (paper outdoors since 2023 would not); and the checkpoint is not something that could be moved.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "checkpoint",
+    "tucker",
+    "rejected"
+   ],
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "A poster cannot be the checkpoint"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i237",
+   "text": "Tucker Creek DROPPED: a fan-analysis site claimed a 'Tucker Creek' in the Big Hole drainage. It does not appear in Montana geographic name records (GNIS) for that drainage. Unverified and removed from the working file — the reason the reliability tiers exist.",
+   "kind": "objection",
+   "conf": "disputed",
+   "source": "Fan-analysis site (untraced) vs GNIS check, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "tucker",
+    "gnis",
+    "unverified",
+    "method"
+   ],
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "A named 'Tucker Creek' cannot be relied on"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i238",
+   "text": "Ask / read: the 'Mountain Memory' chapter (p. 213) and the chapter that introduces Tucker — is the fishing location named? If it names a place, work that place against the poem; if it deliberately withholds the place, that is informative too. Highest-value fifteen-minute action.",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — next actions",
+   "when": "2026-09-06",
+   "tags": [
+    "tucker",
+    "book",
+    "todo"
+   ],
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Could produce a real fishing place"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i239",
+   "text": "Haystack theory: in the Netflix documentary Posey said 'needle in a football field' instead of 'needle in a haystack'; the Big Hole Valley around Wisdom is called the land of 10,000 haystacks. Community inference — Posey has never tied the phrase to any place. Haystack Mountain in the La Sals is offered as a rival (the Moab Times casts it as a female figure, 'chicks around a hen').",
+   "kind": "community",
+   "conf": "unverified",
+   "source": "Community inference (session notes Sep 6 2026)",
+   "when": "2026-09-06",
+   "tags": [
+    "haystack",
+    "netflix",
+    "wisdom",
+    "la-sals"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Land of 10,000 haystacks around Wisdom, MT"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i240",
+   "text": "Against reading the haystack swap as a pointer: he removed the word, and an omission has no direction — 'he avoided it because it gives the place away' and 'because it is irrelevant' are equally available. 'Football field' may be the actual content: a size statement (~1.3 acres) consistent with no more than a mile of hiking. Haystack is a shape word that multiplies (Wind Rivers, Adirondacks, Connecticut, Oregon; GNIS lists 144 peaks named Bear Mountain). Equal plausibility in two regions means the clue does not discriminate — set it aside rather than count it for either. The one asymmetry: Montana's version sits on a pile of book references; the La Sal version attaches to a peak that appears nowhere in the book.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "haystack",
+    "method",
+    "football-field"
+   ],
+   "links": [
+    {
+     "lineId": "l03",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "The haystack swap does not point anywhere"
+    },
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "'Football field' as a size of the search area"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i241",
+   "text": "La Sal name hooks (peaks visible looking south: Peale, Mellenthin, South Mountain, Tukuhnikivatz, Haystack, Manns, Waas, Castle Mountain, La Sal Peak): Castle Mountain is a better 'realm' candidate than Waas (a realm is what a castle governs); Manns Peak beside Mount Waas — if Waas means 'man', two adjacent peaks mean the same thing in two languages; Mount Mellenthin is named for a ranger killed there in 1918 (memorial angle hits the no-graves rule); La Sal Peak = Spanish 'the salt'. Absent and needed: nothing bear, nothing bride, nothing three or twenty, nothing hole.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — La Sal screenshot",
+   "when": "2026-09-06",
+   "tags": [
+    "la-sals",
+    "realm",
+    "castle",
+    "names"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Castle Mountain as 'his realm'"
+    },
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "No bear naming in the La Sals"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i242",
+   "text": "Sister Superior solve (Castle Valley, Moab): the Rectory ridge runs Castleton Tower, the Rectory, the Priest and Nuns, Sister Superior, the Convent — a nun is a bride of Christ. Gates = the valley mouth flanked by the Rectory ridge and Parriott Mesa; 'foot of three' = three towers sharing one 1,000-ft Moenkopi-Chinle pedestal; rotation readings applied to Sister Superior's face. Best supporting find: Matrimony Spring sits at the junction where SR-128 begins, and SR-128 runs to a priest, nuns, a convent and a sister superior — a marriage spring at the head of a road ending in a wedding party.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — working solve",
+   "when": "2026-09-06",
+   "tags": [
+    "moab",
+    "castle-valley",
+    "sister-superior",
+    "bride",
+    "sr-128"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Sister Superior as the bride; valley mouth as gates"
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Matrimony Spring heads the SR-128 naming chain"
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Three towers on one pedestal"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i243",
+   "text": "Unresolved conflicts in the Sister Superior solve: direction — Castle Valley is northwest of Waas/Manns and northeast of Moab, not east; sequence — Castle Valley opens off SR-128 at the same junction as Matrimony Spring (S2L1), so stanza 3 returns you to where stanza 2 started, against Posey's consecutive order. Removing Tukuhnikivatz also emptied stanza 4: Medicine Lakes and Gold Basin only existed at Tuk's foot. Archived so they are not re-argued: Waas as realm, Tuk as bride, Medicine Lakes, Gold Basin, Corona + Bowtie.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "moab",
+    "direction",
+    "sequence",
+    "stanza-4",
+    "archived"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Castle Valley is not east"
+    },
+    {
+     "lineId": "l10",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Stanza 3 loops back to the stanza-2 start"
+    },
+    {
+     "lineId": "l13",
+     "stance": "contradicts",
+     "weight": 2,
+     "why": "Moab stanza 4 has no candidate"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i244",
+   "text": "'Foot of three' weakness admitted: the Rectory ridge has more than three named towers; getting to three requires picking an unjustified subgroup — fitting a number to a place. Readings left open: foot as a unit (three feet at a bearing); a base with three of something at it (drainages, ridges, trails, trees); three as part of a number (320, 203, a coordinate fragment); the base of something named Three-something.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "foot-of-three",
+    "numbers",
+    "method"
+   ],
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "contradicts",
+     "weight": 1,
+     "why": "Tower-counting is number-fitting"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i245",
+   "text": "Ask / look up: what does 'Tomasaki' mean (Mount Tomasaki, adjacent to Manns and Waas, a Ute name like Waas), and is it male or female? Unworkable as a bride or realm until established. Also Mount Laurel (12,271 ft; laurel = wedding garland) is one foot different from Manns Peak (12,272) but sits across Geyser Pass — an elevation coincidence, not a clue.",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026",
+   "when": "2026-09-06",
+   "tags": [
+    "tomasaki",
+    "ute",
+    "la-sals",
+    "laurel"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Possible bride name, unverified"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i246",
+   "text": "Eastern Beartooths case: a bear-named range with a real east half; granitic against the volcanic Absarokas; Granite Peak is the state high point; rock dated ~3.96 billion years, so 'secrets of the past still hold' and 'beyond the reach of time's swift race' stop being metaphors; Custer-Gallatin and Shoshone NF (free), paved US-212, outside Yellowstone's paid boundary. Against: no gates found; no bride (Twin Peaks is paired but not a bride); no book support — the book names southwest Montana, 200 miles west.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — regions compared",
+   "when": "2026-09-06",
+   "tags": [
+    "beartooths",
+    "granite",
+    "ursa",
+    "montana"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Bear-named range with an east half"
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Granite"
+    },
+    {
+     "lineId": "l14",
+     "stance": "supports",
+     "weight": 2,
+     "why": "3.96-billion-year rock"
+    },
+    {
+     "lineId": "l15",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Oldest rock = beyond time's reach"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i247",
+   "text": "Pioneer Mountains / Big Hole / Beaverhead case: by far the strongest book support (Dillon signing; Wisdom, Big Hole, Polaris, Pioneers, Bannack, Crystal Park, Blacktail Deer Creek, Clark Canyon, Red Rock River); Pioneer batholith granite at Crystal Park; East and West Pioneers are a genuine east-west split of one range; ancient passes nearby (Lemhi, Big Hole, Chief Joseph). Against: bear naming not established; gates not established.",
+   "kind": "speculation",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — regions compared",
+   "when": "2026-09-06",
+   "tags": [
+    "pioneers",
+    "big-hole",
+    "book",
+    "granite"
+   ],
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "East Pioneers = an east half of a range"
+    },
+    {
+     "lineId": "l13",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Pioneer batholith granite"
+    },
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ancient passes as gates candidates"
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i248",
+   "text": "Ask: which historic pass has a named landform standing over it that could read as a bride? First question in a while that runs forward from the poem rather than backward from a place. Also: check whether the East Pioneers have anything gate-named.",
+   "kind": "question",
+   "conf": "unverified",
+   "source": "Session notes, Sep 6 2026 — next actions",
+   "when": "2026-09-06",
+   "tags": [
+    "gates",
+    "bride",
+    "pass",
+    "todo"
+   ],
+   "links": [
+    {
+     "lineId": "l10",
+     "stance": "supports",
+     "weight": 1,
+     "why": ""
+    }
+   ],
+   "created": 1788665972337
+  },
+  {
+   "id": "i249",
+   "text": "Method lesson: a resonant name found after arriving in a region is not evidence that the region is right (the Haystack episode). The Moab solve was built outward from Jeep Arch rather than forward from the poem; today it gained its best detail (the SR-128 naming chain) and lost its two most load-bearing pins (ursa-as-verb and all of stanza 4). The gates-as-passage reframe points back toward southwest Montana where ancient passes and book references overlap.",
+   "kind": "objection",
+   "conf": "likely",
+   "source": "Session notes, Sep 6 2026 — standing assessment",
+   "when": "2026-09-06",
+   "tags": [
+    "method",
+    "moab",
+    "montana",
+    "assessment"
+   ],
+   "links": [],
+   "created": 1788665972337
   }
  ],
  "candidates": [
@@ -7044,7 +7732,7 @@
    "region": "UT · Moab / Gold Bar, BLM",
    "coords": "≈ 38.58, -109.62 (verify on quad)",
    "elev": "≈ 4,600 ft",
-   "notes": "Stanza-4 site of the Moab / La Sal solve. Reached via SR-279 from the Matrimony Spring start; trail has bolted cable and ladder. Verdicts follow the §11 scoreboard: pinned lines fit, contested lines left unjudged so the objections stay visible.",
+   "notes": "Stanza-4 site of the Moab / La Sal solve. Reached via SR-279 from the Matrimony Spring start; trail has bolted cable and ladder. Verdicts follow the §11 scoreboard: pinned lines fit, contested lines left unjudged so the objections stay visible. ARCHIVED Sep 6 2026: Corona + Bowtie removed from the working solve; kept so it is not re-argued.",
    "verdicts": {
     "l05": "fit",
     "l06": "fit",
@@ -7078,7 +7766,7 @@
    "region": "UT · La Sal Mountains, near La Sal Pass",
    "coords": "≈ 38.42, -109.24 (verify on quad)",
    "elev": "≈ 10,000 ft",
-   "notes": "Reading C endpoint. Named plural pair at Tuk's southern base; drivable pass with trailhead. Check standard-car access on La Sal Pass Road in dry season. Stanza 2 approach unchanged from the Moab start. VERIFIED: a trailhead with pit toilets at the end of a 4WD spur — fails three gates as a site.",
+   "notes": "Reading C endpoint. Named plural pair at Tuk's southern base; drivable pass with trailhead. Check standard-car access on La Sal Pass Road in dry season. Stanza 2 approach unchanged from the Moab start. VERIFIED: a trailhead with pit toilets at the end of a 4WD spur — fails three gates as a site. ARCHIVED Sep 6 2026: removed from the working solve when Tukuhnikivatz was dropped as the bride — kept so it is not re-argued.",
    "verdicts": {
     "l05": "fit",
     "l06": "fit",
@@ -7119,7 +7807,7 @@
    "region": "UT · La Sal Mountains, Geyser Pass Rd → Gold Basin Rd",
    "coords": "≈ 38.47, -109.26 (verify on quad)",
    "elev": "≈ 10,500 ft",
-   "notes": "Arc-shaped cirques on bold rock, but no named paired pools; talus, avalanche paths and creek per trip reports. Higher and more snowbound.",
+   "notes": "Arc-shaped cirques on bold rock, but no named paired pools; talus, avalanche paths and creek per trip reports. Higher and more snowbound. ARCHIVED Sep 6 2026: removed with Tuk; kept so it is not re-argued.",
    "verdicts": {
     "l05": "fit",
     "l06": "fit",
@@ -8161,7 +8849,7 @@
    "region": "MT/WY · Custer-Gallatin / Shoshone NF",
    "coords": "≈ 44.95, -109.60 (verify)",
    "elev": "≈ 10,000 ft",
-   "notes": "A literal Beartooth for ursa, granite plateau, inside the Fenn ring; but 10,000 ft, fee-adjacent (Yellowstone NE entrance), no water line and no Hole.",
+   "notes": "A literal Beartooth for ursa, granite plateau, inside the Fenn ring; but 10,000 ft, fee-adjacent (Yellowstone NE entrance), no water line and no Hole. Sep 6 2026 case for the EASTERN Beartooths: bear-named range with a real east half; Granite Peak (state high point); ~3.96-billion-year rock; free NF, paved US-212. Against: no gates, no bride, no book support (book names SW Montana, 200 mi west).",
    "kill": "No stanza 2.",
    "test": "Any spring/Hole pair along the Clarks Fork below the plateau?",
    "verdicts": {
@@ -8490,6 +9178,78 @@
     "g_hole": "unk"
    },
    "created": 1788628459304
+  },
+  {
+   "id": "c_sistersuperior",
+   "name": "Sister Superior / Castle Valley — Moab stanza 3 (superseded)",
+   "region": "UT · Grand County, Castle Valley / BLM",
+   "coords": "≈ 38.655, -109.375 (Rectory ridge; verify)",
+   "elev": "≈ 6,600 ft (valley) · towers to 7,000 ft",
+   "notes": "Sep 6 2026 working solve: Matrimony Spring (S2L1) → Colorado River on Potash Rd (S2L2) → canyon bend / culvert on the Gold Bar approach (S2L3, contested — the Hole has no man-made implication) → riverbank (S2L4 placeholder) → east from Jeep Arch into Castle Valley; realm = the valley, Castleton Tower the castle (S3L1) → Sister Superior on the Rectory ridge as the bride; gates = valley mouth between the Rectory ridge and Parriott Mesa (S3L2) → three towers on one pedestal (S3L3) → rotation readings on Sister Superior's face (S3L4). Stanza 4 empty since Tuk was removed. Superseded the same day: the Ursa East answer closes 'bear east' as a verb; Castle Valley is NW not east; SR-128 returns to the S2 start.",
+   "kill": "Already wounded: ursa-as-verb closed by Posey's Ursa East answer; no granite; no bear naming; no stanza-4 candidate. Killed outright by any confirmation that the gates are a named crossing rather than a valley mouth.",
+   "test": "Establish what 'Tomasaki' means; check whether any Castle Valley feature carries a bear name; if neither, close the region.",
+   "verdicts": {
+    "l05": "fit",
+    "l06": "fit",
+    "l07": "fail",
+    "l09": "fail",
+    "l10": "fit",
+    "l13": "fail"
+   },
+   "gates": {
+    "g_public": "pass",
+    "g_free": "pass",
+    "g_safe": "pass",
+    "g_dog": "pass",
+    "g_notin": "pass",
+    "g_hole": "fail",
+    "g_map": "fail"
+   },
+   "created": 1788665972337,
+   "chain": {
+    "l05": {
+     "place": "Matrimony Spring",
+     "reading": "Marriage spring at the head of SR-128",
+     "conf": 2,
+     "coords": "38.575, -109.53"
+    },
+    "l06": {
+     "place": "Colorado River, Potash Road (SR-279)",
+     "reading": "Walk near the silent river",
+     "conf": 2,
+     "coords": "38.57, -109.60"
+    },
+    "l07": {
+     "place": "Canyon bend / Gold Bar culvert",
+     "reading": "Contested: the culvert is man-made",
+     "conf": 1,
+     "coords": "38.60, -109.62"
+    },
+    "l09": {
+     "place": "Castle Valley / Castleton Tower",
+     "reading": "Realm = the valley a castle governs (direction conflict: NE of Moab, not east)",
+     "conf": 1,
+     "coords": "38.65, -109.37"
+    },
+    "l10": {
+     "place": "Sister Superior, Rectory ridge",
+     "reading": "A nun is a bride of Christ; gates = the valley mouth",
+     "conf": 2,
+     "coords": "38.655, -109.375"
+    },
+    "l11": {
+     "place": "Rectory towers on one pedestal",
+     "reading": "Three formations on a common base (weak — more than three towers)",
+     "conf": 1,
+     "coords": "38.655, -109.375"
+    },
+    "l12": {
+     "place": "Sister Superior's face",
+     "reading": "Rotation readings apply to the tower's face",
+     "conf": 1,
+     "coords": "38.655, -109.375"
+    }
+   }
   }
  ],
  "mapStates": {

@@ -282,6 +282,21 @@ _f("Beartooth Butte", "peak", 44.95, -109.60, 10514, "WY", "windriver", "Shoshon
 _f("Beartooth Pass", "pass", 44.97, -109.47, 10947, "WY", "windriver", "NF", "US-212, seasonal", "yes (summer)", ["high"], [], "Highest pass on the Beartooth Highway.", ["bear", "pass"])
 _f("Pompeys Pillar", "rock", 46.00, -108.00, 2900, "MT", "gates", "BLM NM (fee)", "I-94", "yes", ["fee", "man-made"], [], "Clark's 1806 carved signature; sandstone; fee.", ["names", "past", "secrets"])
 
+
+# La Sals / Castle Valley additions (session notes Sep 6 2026)
+_f("Castleton Tower (Castle Rock)", "rock", 38.652, -109.372, 6656, "UT", "lasals", "BLM (free)", "Castle Valley Rd, 1.4 mi trail", "yes", ["climbing"], ["Castle Rock (official)"], "Wingate sandstone tower at the mouth of Castle Valley; the 'castle' of the realm reading.", ["castle", "realm", "rock"])
+_f("Sister Superior (Rectory ridge)", "rock", 38.657, -109.376, 6800, "UT", "lasals", "BLM (free)", "Castle Valley Rd; technical climb", "yes (base)", ["climbing"], ["The Rectory", "Priest and Nuns", "The Convent (same ridge)"], "A nun is a 'bride of Christ' — the Sep 6 2026 bride reading. Posey: you need not be at the bride. Coordinates approximate.", ["bride", "sister", "three", "face"])
+_f("Parriott Mesa", "rock", 38.66, -109.40, 6600, "UT", "lasals", "BLM", "SR-128", "yes", [], [], "West flank of the Castle Valley mouth — the other 'gate post' in the valley-mouth reading.", ["gate", "gates"])
+_f("Castle Mountain (La Sal)", "peak", 38.61, -109.26, 12044, "UT", "lasals", "Manti-La Sal NF", "trail", "no", ["high"], [], "A realm is what a castle governs — better 'realm' candidate than Waas. Coordinates approximate.", ["castle", "realm"])
+_f("Manns Peak", "peak", 38.55, -109.24, 12272, "UT", "lasals", "Manti-La Sal NF", "trail from Geyser Pass", "no", ["high"], [], "Beside Mount Waas; if Waas means 'man', two adjacent peaks say the same thing in two languages.", ["man", "he"])
+_f("Mount Tomasaki", "peak", 38.56, -109.25, 12239, "UT", "lasals", "Manti-La Sal NF", "trail", "no", ["high"], ["Ute name — meaning not established"], "Adjacent to Manns and Waas. Open lookup: meaning and gender of the name.", ["ute"])
+_f("Mount Laurel (La Sal)", "peak", 38.49, -109.25, 12271, "UT", "lasals", "Manti-La Sal NF", "trail", "no", ["high"], [], "Woman's name; laurel = wedding garland; one foot lower than Manns Peak — an elevation coincidence, not a clue.", ["bride", "laurel", "her"])
+_f("Haystack Mountain (La Sal)", "peak", 38.60, -109.27, 11642, "UT", "lasals", "Manti-La Sal NF", "trail", "no", ["high"], [], "Shape name that multiplies across the West; the Moab Times casts it as a hen with chicks. Rival to the Montana 'land of 10,000 haystacks'.", ["haystack", "her"])
+_f("Mount Mellenthin", "peak", 38.47, -109.23, 12645, "UT", "lasals", "Manti-La Sal NF", "trail", "no", ["high", "memorial"], [], "Named for a ranger killed there in 1918 — a non-living man, but a memorial angle.", ["he", "memorial"])
+# Beartooths / Great Bannock Trail (session notes Sep 6 2026)
+_f("Granite Peak", "peak", 45.163, -109.807, 12807, "MT", "windriver", "Custer-Gallatin NF", "multi-day climb", "no", ["high", "climbing", "far"], [], "Montana's high point; Beartooth rock dated ~3.96 billion years — the oldest in the West.", ["granite", "bear", "time", "past"])
+_f("Great Bannock Trail (Cooke City)", "historic", 45.02, -109.93, 7600, "MT", "windriver", "NF / YNP boundary", "US-212", "yes", [], [], "Shoshone-Bannock buffalo route across Yellowstone's NE corner — an 'ancient gate' as a passage.", ["gates", "ancient", "pass", "trail"])
+
 # ---------------------------------------------------------------- name-pattern index
 # idea -> words that count as a match in a name or alias (lowercase substrings)
 NAME_PATTERNS = {
@@ -314,6 +329,7 @@ HISTORY = [
     {"name": "Bannack–Virginia City road; Corinne freight road", "kind": "trail", "regions": ["grasshopper", "bighole"], "text": "Stage and freight routes of the 1860s gold camps; stage stops along the Beaverhead.", "source": "Montana Historical Society"},
     {"name": "Mining camps", "kind": "settlement", "regions": ["grasshopper", "pioneers", "sweetwater", "blackhills"], "text": "Bannack (1862), Polaris and Elkhorn/Coolidge (1880s–1920s), South Pass City and Atlantic City (1867), Deadwood (1876).", "source": "state historical societies"},
     {"name": "Sacagawea", "kind": "person", "regions": ["bighole", "windriver"], "text": "Taken at Three Forks; recognised Beaverhead Rock; reunited with Cameahwait near Camp Fortunate/Lemhi; reputed grave at Fort Washakie (disputed — another tradition places her death at Fort Manuel, SD, 1812).", "source": "Moulton; Wind River Reservation tradition"},
+    {"name": "Great Bannock Trail", "kind": "trail", "regions": ["windriver", "gates"], "text": "Shoshone-Bannock route to the buffalo grounds across the NE corner of Yellowstone by Cooke City and the Beartooth front.", "source": "NPS / Haines"},
     {"name": "Local legends", "kind": "legend", "regions": ["lasals", "bearlake", "cityofrocks"], "text": "Matrimony Spring (drink and you'll marry / return); Bear Lake Monster (1868 Deseret News); Almo massacre (disputed 1861 story, marker erected 1938).", "source": "local newspapers; verify each"},
 ]
 
