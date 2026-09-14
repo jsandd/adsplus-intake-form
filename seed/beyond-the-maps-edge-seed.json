@@ -47,7 +47,7 @@
     "text": "As hope surges, clear and bright,",
     "hard": false,
     "status": "pinned",
-    "note": "First actionable clue (Posey). Working read: Matrimony Spring at US-191/SR-128 north of Moab — cold, clear, year-round, La Sal-fed; local marriage legend plants the bride motif early.",
+    "note": "First actionable clue (Posey). Working read: Matrimony Spring at US-191/SR-128 north of Moab — cold, clear, year-round, La Sal-fed; local marriage legend plants the bride motif early. COMET READING (Sep 14 2026): Comet Mountain, East Pioneers. A comet surges, clear and bright; NEOWISE, the comet of hope, stood over Comet Mountain from Sawtooth Lake in July 2020; the treasure holds a meteorite; Polaris and Dillon are the map's odd labels either side of the crest. Analyst reading; hinges on the date of the 2020 Instagram photo.",
     "kind": "geographic"
    },
    {
@@ -7927,37 +7927,26 @@
    ]
   },
   {
-   "id": "i258",
+   "id": "i259",
    "kind": "speculation",
    "conf": "unverified",
    "source": "My own analysis (Sep 14 2026)",
    "when": "2026-09-14",
    "tags": [
     "comet-sawtooth",
+    "line-2-1",
     "rationale",
     "neowise",
     "meteorite"
    ],
-   "created": 1789367018026,
-   "text": "Comet Mountain rationale for 2:1, pulled together. (1) The treasure holds a meteorite (Posey, confirmed): a piece of a thing that fell from the sky, in a hunt whose first clue can be read as a thing in the sky. (2) Stanza 1 says the answer lives in time and returns through measured rhyme; a comet is the one natural object on a schedule. (3) 'As hope surges, clear and bright' describes a comet: it brightens fast as it nears the sun, climbs each night, and has always been read as a sign. (4) Comet NEOWISE, the 'comet of hope' of July 2020, stood at azimuth 335–340° from Sawtooth Lake on July 10–11 at 11 pm; Comet Mountain is at 343° from that lake. A 2020 Instagram photo tagged Polaris is claimed (Reddit, unverified) to be from Sawtooth Lake. (5) His map's two odd Montana labels, Polaris and Dillon, bracket this crest; the book names Polaris and Crystal Park and describes a star-spangled Grasshopper Valley sky. (6) 'In ursa east' is where you stand east of Polaris. Cost: the Hole must be a local bowl, not the Big Hole; the photo date is the single verification that would move this from analyst reading to evidence.",
+   "created": 1789367125626,
+   "text": "COMET MOUNTAIN as 'As hope surges, clear and bright' (2:1). (1) The treasure holds a meteorite (Posey, confirmed): a piece of a thing that fell from the sky, in a hunt whose first clue can be read as a thing in the sky. (2) Stanza 1 says the answer lives in time and returns through measured rhyme; a comet is the one natural object on a schedule. (3) 'As hope surges, clear and bright' describes a comet: it brightens fast as it nears the sun, climbs each night, and has always been read as a sign. (4) Comet NEOWISE, the 'comet of hope' of July 2020, stood at azimuth 335–340° from Sawtooth Lake on July 10–11 at 11 pm; Comet Mountain is at 343° from that lake. A 2020 Instagram photo tagged Polaris is claimed (Reddit, unverified) to be from Sawtooth Lake. (5) His map's two odd Montana labels, Polaris and Dillon, bracket this crest; the book names Polaris and Crystal Park and describes a star-spangled Grasshopper Valley sky. (6) 'In ursa east' is where you stand east of Polaris. Cost: the Hole must be a local bowl, not the Big Hole; the photo date is the single verification that would move this from analyst reading to evidence.",
    "links": [
     {
      "lineId": "l05",
      "stance": "supports",
-     "weight": 2,
-     "why": "Comet as the surge of hope, seen over Comet Mountain."
-    },
-    {
-     "lineId": "l01",
-     "stance": "supports",
-     "weight": 1,
-     "why": "What lives in time: a comet returns."
-    },
-    {
-     "lineId": "l09",
-     "stance": "supports",
-     "weight": 1,
-     "why": "East of Polaris."
+     "weight": 3,
+     "why": "Comet Mountain as the first actionable clue: the comet of hope (NEOWISE, July 2020) rising over a mountain named Comet, seen from Sawtooth Lake; the meteorite in the box; Polaris and Dillon as the map's odd labels bracketing the crest."
     }
    ]
   }
