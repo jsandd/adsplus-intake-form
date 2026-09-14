@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 209 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 214 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -233,7 +233,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 209 items.
 ## 15. Design philosophy, in his words
 
 - **[Confirmed]** 'The part of me that embraces childlike wonder' wrote the poem. *(X Marks the Pod, early 2026 (5:39))*
-- **[Said]** treasure.quest is the 'single source of truth': official guidance lives there, so participants do not need social media or private Discord channels. *(Toby Younis interview (A Gypsy's Kiss) (11:36))*
+- **[Said]** treasure.quest is the 'single source of truth': official guidance lives there, so participants do not need social media or private Discord channels. He plans to move into a bystander role with no further media appearances. *(Toby Younis interview (A Gypsy's Kiss) (11:36); Froggy interview, 2025 (24:06))*
 - **[Said]** Open book on the narrative, steel vault on the mechanics: mechanical details require careful crafting, so he prefers written responses over off-the-cuff verbal ones to avoid errors. *(Toby Younis interview (A Gypsy's Kiss) (15:42))*
 - **[Said]** He treated Fenn's hunt as a case study and used hindsight to build guardrails for a smoother, verifiable, streamlined experience. Success means independent, verifiable findings and few post-find conspiracy theories. *(Toby Younis interview (A Gypsy's Kiss) (5:08, 8:36))*
 - **[Said]** Has his level of interaction made the hunt harder or more confusing? Off-the-cuff responses in forums can sometimes muddy the waters, though his intent is to provide clarity. *(X Marks the Pod, early 2026 (3:31))*
@@ -241,8 +241,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 209 items.
 - **[Said]** Are Google Earth and AI helping or hurting? Both. Some people see patterns in foliage that do not exist. *(X Marks the Pod, early 2026 (6:36))*
 - **[Confirmed]** Designed for humans, not AI: 'creating a puzzle for an intellect that dwarfs our own is a paradox… I really wanted to design something that embraces the core of what it means to be human… an astronomical amount of thought.' He will not divulge the tactics. *(X Q&A via MW, Sep 2025; X Marks the Pod)*
 - **[Said]** Difficulty: somewhere in the middle on a scale of one to Forrest Fenn. *(Dillon Q&A, Jun 21 2025 (42:57))*
-- **[Confirmed]** Disney Imagineering background (about a decade): 'not just you go and get it. There's something more to it.' Tiers: 'some easier things… and some more challenging.' *(X Marks the Pod, early 2026)*
-- **[Confirmed]** 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.' *(Froggy interview, 2025)*
+- **[Confirmed]** Disney Imagineering background (about a decade): 'not just you go and get it. There's something more to it.' Tiers: 'some easier things… and some more challenging.' He wanted it approachable yet challenging, not impossible: a mix of easier and harder clues. *(X Marks the Pod, early 2026; Froggy interview, 2025 (1:43))*
+- **[Confirmed]** 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.' Asked whether he is prouder of the spot or the puzzle: equally pleased with both. *(Froggy interview, 2025 (21:43, 22:49))*
 
 ## 16. About Justin, as he has stated it
 
@@ -252,6 +252,11 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 209 items.
 - **[Said]** He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09))*
 - **[Said]** He studied computer science but did not graduate, and worked at Microsoft, the Walt Disney Company and Visa. *(Dillon Q&A, Jun 21 2025 (51:59))*
 - **[Said]** His biggest fish: a very large trout caught trolling at Heron Lake, New Mexico, which made the local newspapers. *(Dillon Q&A, Jun 21 2025 (45:45))*
+- **[Said]** He hunted for Forrest Fenn's treasure for ten years. He enjoys creating his own hunt because he can build in everything he wished other hunts had. *(Froggy interview, 2025 (0:15))*
+- **[Said]** His grandfather Wayne, the game warden, survived a Jeep accident because someone happened to notice tire tracks leading off the road. *(Froggy interview, 2025 (17:28))*
+- **[Said]** He sold his truck, 'The Beast,' after Tucker died; it was too painful to drive. *(Froggy interview, 2025 (8:06))*
+- **[Said]** He gets violently seasick, so he prefers inland trout fishing to offshore fishing. He still subconsciously checks mile markers while driving. *(Froggy interview, 2025 (12:30, 10:21))*
+- **[Said]** The Victorio Peak mystery captured his heart as a youth and still interests him; he has theorized about using radar and bat colonies to find alternate cave entrances. As a child in Tucson he hid things for himself to find, and had a pet raccoon named Rascal. *(Froggy interview, 2025 (4:26, 3:12, 8:54))*
 - **[Said]** He had considered creating a hunt for years, inspired by Forrest Fenn's. Serious health concerns were the turning point. He went in 'eyes wide open' about lawsuits and chaos, driven by the joy he felt in past hunts. *(Toby Younis interview (A Gypsy's Kiss) (2:38, 3:52))*
 - **[Said]** Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes. *(Public statements (research report))*
 - **[Said]** His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game. *(Seekers Summit; public statements)*
