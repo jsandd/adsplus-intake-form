@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 174 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 180 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -18,7 +18,9 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 174 items.
 - **[Said]** Access to the location is free and available 24/7. *(Posey Q&A (Mysterious Writings compilation))*
 - **[Leaned]** Is the hunt 24/7 accessible year round? 'I suppose that would depend on your definition of accessibility, but it would be possible.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:07:25))*
 - **[Said]** 'If you need rope then it's not the right location.' Searchers are going too deep into wilderness, rappelling into caves and searching cliffsides. Nothing dangerous is required. *(Seekers Summit, Mar 28 2026)*
-- **[Said]** A gazebo counts as a building. The exterior of a structure: 'always a possibility.' Not wheelchair accessible. *(Seekers Summit, Mar 28 2026)*
+- **[Said]** A gazebo counts as a building. The exterior of a structure: 'always a possibility.' Can a hunt item be displayed on the outside of a man-made building? He does not want to limit that possibility. Not wheelchair accessible. *(Seekers Summit, Mar 28 2026; X Marks the Pod, early 2026 (35:26))*
+- **[Said]** Are there loopholes in the rules? There are no intentional loopholes. *(X Marks the Pod, early 2026 (34:11))*
+- **[Declined]** Does the hunt require a river crossing? Not specified. *(X Marks the Pod, early 2026 (50:23))*
 - **[Said]** No specialized knowledge is needed. No dangerous water crossings. *(Public statements (research report))*
 - **[Said]** All clues are expected to stand the test of time; he will announce if something drastic changes. *(Posey Q&A (MW compilation))*
 
@@ -185,6 +187,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 174 items.
 - **[Confirmed]** The Tucker bronze statue is NOT the treasure. The original Saddleback briefcase that carried the treasure, plus the Netflix coffee mugs, ship to the winner. *(Treasure Hunt With Us, Apr 9 2025)*
 - **[Confirmed]** The whole treasure weighs about 60 pounds including the container. *(treasure.quest FAQ)*
 - **[Said]** Contents: mostly gold (bars, flakes, dust), precious gems, rare coins across eras, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest including the dragon bracelet, and a Bitcoin wallet funded by book sales. A separate Steward holds additional items. *(Posey Q&A; public statements)*
+- **[Said]** The 1652 Oak Tree shilling in the treasure has a personal backstory: it replaced a counterfeit one from his grandfather's collection. *(X Marks the Pod, early 2026 (30:18))*
 - **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The complete solution will be revealed at the conclusion of the hunt. *(Posey Q&A (MW compilation))*
 
 ## 13. The hiding trip
@@ -208,7 +211,10 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 174 items.
 
 ## 15. Design philosophy, in his words
 
-- **[Confirmed]** 'The part of me that embraces childlike wonder' wrote the poem. *(X Marks the Pod, early 2026)*
+- **[Confirmed]** 'The part of me that embraces childlike wonder' wrote the poem. *(X Marks the Pod, early 2026 (5:39))*
+- **[Said]** Has his level of interaction made the hunt harder or more confusing? Off-the-cuff responses in forums can sometimes muddy the waters, though his intent is to provide clarity. *(X Marks the Pod, early 2026 (3:31))*
+- **[Said]** Anything to clarify or take back from other interviews? He is happy with the status quo and fears further clarification might create more ambiguity. *(X Marks the Pod, early 2026 (5:08))*
+- **[Said]** Are Google Earth and AI helping or hurting? Both. Some people see patterns in foliage that do not exist. *(X Marks the Pod, early 2026 (6:36))*
 - **[Confirmed]** Designed for humans, not AI: 'creating a puzzle for an intellect that dwarfs our own is a paradox… I really wanted to design something that embraces the core of what it means to be human… an astronomical amount of thought.' He will not divulge the tactics. *(X Q&A via MW, Sep 2025; X Marks the Pod)*
 - **[Confirmed]** Disney Imagineering background (about a decade): 'not just you go and get it. There's something more to it.' Tiers: 'some easier things… and some more challenging.' *(X Marks the Pod, early 2026)*
 - **[Confirmed]** 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.' *(Froggy interview, 2025)*
