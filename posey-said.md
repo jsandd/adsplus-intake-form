@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 188 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 202 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -14,7 +14,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** 'The treasure is not on private property.' Restated emphatically after reports of trespassing. *(Posey, June 2026)*
 - **[Said]** Federal versus state land: 'No, but it's publicly accessible as of today.' 'The focus is on legal accessibility of the final location, not convenience of access.' *(Dillon Q&A, Jun 21 2025)*
 - **[Confirmed]** Do you have to pay to get in? 'No, not as of today.' *(treasure.quest FAQ)*
-- **[Confirmed]** Can I bring my dog? 'If your dog is the outdoors type, absolutely!' *(treasure.quest FAQ)*
+- **[Confirmed]** Can I bring my dog? 'If your dog is the outdoors type, absolutely!' The best way to use a dog in this hunt is to practice good outdoor manners, not to train it to sniff for gold. *(treasure.quest FAQ; Dillon Q&A, Jun 21 2025 (1:17:09))*
+- **[Said]** Stay on public land. Use the available mapping apps to check property lines. *(Dillon Q&A, Jun 21 2025 (35:00))*
 - **[Said]** Access to the location is free and available 24/7. *(Posey Q&A (Mysterious Writings compilation))*
 - **[Leaned]** Is the hunt 24/7 accessible year round? 'I suppose that would depend on your definition of accessibility, but it would be possible.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:07:25))*
 - **[Said]** 'If you need rope then it's not the right location.' Searchers are going too deep into wilderness, rappelling into caves and searching cliffsides. Nothing dangerous is required. *(Seekers Summit, Mar 28 2026)*
@@ -28,8 +29,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 
 - **[Confirmed]** All essential clues are in the poem, which is free on treasure.quest. Five stanzas of four lines. At least ten clues. *(treasure.quest announcements)*
 - **[Confirmed]** The clues are in consecutive order, top to bottom. *(treasure.quest FAQ and announcements)*
-- **[Confirmed]** No red herrings in the poem. No hidden codes in the website's source code. *(Posey Q&A (MW compilation))*
-- **[Confirmed]** 'I wrote the bulk of that poem in 6 hours or less. Purposely didn't finish the poem til the day the book went to print… I only tweaked two words tops.' *(Dillon Q&A, Jun 21 2025)*
+- **[Confirmed]** No intentional red herrings in the poem or the book. No hidden codes in the website's source code. *(Posey Q&A (MW compilation); Dillon Q&A, Jun 21 2025 (1:08:08))*
+- **[Confirmed]** 'I wrote the bulk of that poem in 6 hours or less. Purposely didn't finish the poem til the day the book went to print… I only tweaked two words tops.' Excluding a few minor tweaks, the poem stayed static from first draft to final. *(Dillon Q&A, Jun 21 2025 (17:32))*
 - **[Confirmed]** 'Virtually every line in the poem is helpful. So just because as hope surges is the first actionable clue, doesn't mean people should discount the earlier lines. They are helpful context.' *(X Dark Matters, Sep 4 2025)*
 - **[Confirmed]** The first actionable clue is 'As hope surges, clear and bright.' The last actionable clue: 'It does somewhat depend and depending on your interpretation it's either stanza four or five.' *(Posey Q&A (MW compilation); Seekers Summit Q&A transcript, Mar 28 2026 (12:38))*
 - **[Confirmed]** Does the poem need to be read or rearranged other than as presented? 'I'm not going to rule that out.' *(Seekers Summit, Mar 28 2026)*
@@ -63,6 +64,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** How far from your car? 'You don't need to hike a great distance. You don't need to hike more than a mile to figure out where the treasure is at.' *(treasure.quest FAQ)*
 - **[Said]** 'On earth, in the American West, not a place you have to go many miles to find.' *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** 'If you're needing to drink many bottles of water, you're going too far.' *(Seekers Summit, Mar 28 2026)*
+- **[Said]** A hike is required to reach the treasure location. He declined to specify its length. *(Dillon Q&A, Jun 21 2025 (1:18:50))*
 - **[Confirmed]** 'Even a serious low rider would absolutely have made it' on the BLM dirt roads. *(Seekers Summit, Mar 28 2026)*
 - **[Said]** 'By the time you're going to get the treasure you're not searching, you're retrieving.' Once you know exactly where it is you will have time to plan the retrieval. *(X Marks the Pod, Sep 4 2025)*
 - **[Said]** No grid searching. *(X Marks the Pod, early 2026)*
@@ -85,7 +87,9 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** Something along the way 'will help significantly' (said on X Marks the Pod in the context of trinkets). Asked to elaborate: 'It's pivotal to your journey.' *(Seekers Summit Q&A transcript, Mar 28 2026 (39:54))*
 - **[Leaned]** Do I need a wizard staff during any part of the hunt? 'Every journey needs a good walking stick.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:17:50))*
 - **[Confirmed]** 'There is a vantage point involved. But it's not that any of the clues are necessarily talking about that vantage point.' (Asked about the vantage point in his grandfather's memoir.) *(Seekers Summit, Mar 28 2026)*
-- **[Said]** The site is below 11,000 feet. Clues may cross state lines. Not in a pay park, national-park fee area or restricted zone. *(Posey, per the treasurehuntamusementpark research hub (secondary))*
+- **[Said]** The treasure is located at an elevation below 11,000 feet. *(Dillon Q&A, Jun 21 2025 (1:01:55))*
+- **[Said]** Clues may cross state lines. Not in a pay park, national-park fee area or restricted zone. *(Posey, per the treasurehuntamusementpark research hub (secondary))*
+- **[Said]** He did not create a physical 'blaze' on a tree. He wanted his markers to stand the test of time against natural forces. *(Dillon Q&A, Jun 21 2025 (21:34))*
 - **[Declined]** Are national parks ruled out? 'I'm not going to say yes or no to that.' *(Seekers Summit Q&A transcript, Mar 28 2026 (31:17))*
 - **[Declined]** Whether the site predates his Fenn searches: not specified. *(Posey Q&A (MW compilation))*
 - **[Declined]** Can a Prius get within a mile of the treasure? He chose to punt. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (29:43))*
@@ -104,7 +108,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** Is 'ursa' lowercase deliberately? The poem was written deliberately; the choice not to capitalize was intentional. On 'use a star': 'that's all the clarity I'm willing to provide.' *(Seekers Summit, Mar 28 2026)*
 - **[Said]** Is 'he' living, or was he ever living? 'That depends on your perspective.' *(Seekers Summit, Mar 28 2026)*
 - **[Said]** The bride is not a person who is alive right now. He does not want anyone thinking she is a living person you can interact with, so that searchers do not hassle real people. The bride is something visible. *(Seekers Summit, Mar 28 2026)*
-- **[Said]** Has the bride ever been alive? 'Depends on how you define the term alive.' *(Sandal livestream, Sep 2025)*
+- **[Said]** Is the bride alive? Declined to answer in June 2025. By September: 'Depends on how you define the term alive.' *(Dillon Q&A, Jun 21 2025 (1:20:55); Sandal livestream, Sep 2025)*
 - **[Confirmed]** Has anyone located or correctly identified the bride? 'Yes.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:34))*
 - **[Said]** It would be 'a little strange' to discover the bride without understanding the ancient gates. *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** Does her face belong to the bride? Yes (after hedging about two interpretations). Is 'return her face' referring to the bride? Punted in Sep 2025, answered yes at the Summit. *(X Dark Matters, Sep 2025; Seekers Summit, Mar 28 2026)*
@@ -129,6 +133,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 
 ## 8. Where it is and is not
 
+- **[Said]** June 2025: he was not ruling out any search state, including Montana, but might consider it in the future if there was no tangible progress. *(Dillon Q&A, Jun 21 2025 (19:12))*
 - **[Said]** Colorado and Oregon are eliminated, per the Mysterious Writings account of the Summit. Note: in the Q&A transcript, asked 'What are the two states you would have eliminated?' (23:45) he declined to name them and redirected. *(Seekers Summit via Mysterious Writings; Seekers Summit Q&A transcript, Mar 28 2026 (23:45))*
 - **[Confirmed]** What does eliminating a state mean? 'When I say eliminate a state, I mean that you don't need to worry about it. Like there are no clues in that state. There's no treasure in that state. It's complete elimination.' *(Seekers Summit Q&A transcript, Mar 28 2026 (36:17))*
 - **[Said]** Are the majority of the hunt items and locations in the same state or county as the treasure? 'I would just generally be less concerned about the borders.' *(Seekers Summit Q&A transcript, Mar 28 2026 (10:42))*
@@ -156,6 +161,9 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** How many hints or clues are in the book's stories, not counting the poem? 'I haven't counted them but there are several.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:06:08))*
 - **[Confirmed]** He did not plan to write a book at first; he wrote it so everyone was on equal footing and to have creative control over hints. Not every story has a hint, but they are sprinkled throughout. *(Treasure Hunt With Us, Apr 9 2025 (3:47))*
 - **[Confirmed]** His favorite story in the book: he has 'an affinity for the postal pilgrimage.' *(Treasure Hunt With Us, Apr 9 2025 (5:01))*
+- **[Said]** The book his uncle Hyram gave him is 'Early Spanish Signs and Symbols.' *(Dillon Q&A, Jun 21 2025 (24:43))*
+- **[Said]** The ebook's pictures are black and white to keep the file size compatible with e-readers. *(Dillon Q&A, Jun 21 2025 (1:16:08))*
+- **[Said]** Strategy advice: watch the series, read the book, and read the poem multiple times. *(Dillon Q&A, Jun 21 2025 (30:46))*
 - **[Leaned]** Do the four points of the compass designate a specific site? 'Anything related to that, the book is the best reference.' Asked whether they map to the starting point, Wisdom, the bride, the brother, the babbling brook, the grandfather and the exact spot: 'a good question, but I have to punt on that.' *(Treasure Hunt With Us, Apr 9 2025 (14:03, 14:46))*
 - **[Confirmed]** Were any of the photographs in the book (not illustrations) placed to function as explicit clues? 'I think they are useful. Yes.' *(Seekers Summit Q&A transcript, Mar 28 2026 (11:34))*
 - **[Confirmed]** Are there any clues in the Tucker poem? 'I think a reasonable person would say that that poem is helpful.' *(Seekers Summit Q&A transcript, Mar 28 2026 (43:16))*
@@ -192,6 +200,9 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Confirmed]** 'Who says it's a box?' The container is an existing object with 'targeted and deliberate modifications.' Some searchers have guessed it correctly. 'Extremely recognizable. Anybody who watched the series or read my book will know right away.' Not a Fenn replica. No knowledge of the Fenn hunt is needed. *(Treasure Hunt With Us, Apr 9 2025; treasure.quest FAQ)*
 - **[Confirmed]** The Tucker bronze statue is NOT the treasure. The original Saddleback briefcase that carried the treasure, plus the Netflix coffee mugs, ship to the winner. *(Treasure Hunt With Us, Apr 9 2025)*
 - **[Confirmed]** The whole treasure weighs about 60 pounds including the container. *(treasure.quest FAQ)*
+- **[Said]** The treasure is a real, physical collection of gold and gems located in the wilderness, not a proxy item. *(Dillon Q&A, Jun 21 2025 (23:27))*
+- **[Said]** He will not reveal what the container is, to prevent decoys and because of possible future interference by AI. *(Dillon Q&A, Jun 21 2025 (13:05))*
+- **[Said]** To claim the prize, the finder uses the email address on page 150 of the signed books. The prize includes the original Saddleback leather briefcase and the coffee mugs. *(Dillon Q&A, Jun 21 2025 (1:13:24))*
 - **[Said]** Contents: mostly gold (bars, flakes, dust), precious gems, rare coins across eras, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest including the dragon bracelet, and a Bitcoin wallet funded by book sales. A separate Steward holds additional items. *(Posey Q&A; public statements)*
 - **[Said]** The 1652 Oak Tree shilling in the treasure has a personal backstory: it replaced a counterfeit one from his grandfather's collection. *(X Marks the Pod, early 2026 (30:18))*
 - **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The 30-day requirement protects the finder: there is additional legal paperwork on file with the steward that is important for the finder to have. The complete solution will be revealed at the conclusion of the hunt. *(Posey Q&A (MW compilation); Treasure Hunt With Us, Apr 9 2025 (9:10))*
@@ -199,7 +210,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 
 ## 13. The hiding trip
 
-- **[Confirmed]** Two journeys in 2023 totaling more than 9,000 miles; the first was reconnaissance. Off-grid. 'No hint meant to be read into 9,000 miles.' *(Seekers Summit, Mar 28 2026)*
+- **[Confirmed]** Two journeys in 2023 totaling more than 9,000 miles; the first was reconnaissance. Off-grid. 'No hint meant to be read into 9,000 miles.' The point of the statement was to convey that he traveled a great distance. *(Seekers Summit, Mar 28 2026; Dillon Q&A, Jun 21 2025 (10:49))*
 - **[Confirmed]** At least four trips from the car, all within a 24-hour span, with a broken tibia, not in his own vehicle. *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** 'Anonymous travel is very hard… my route was convoluted… I did it twice.' He has never returned and has no plans to. *(Seekers Summit, Mar 28 2026)*
 - **[Said]** He aimed to leave no digital footprint of the journey, and filmed the description of the treasure for Netflix only just before release so production staff had no advantage. *(Public statements (research report))*
@@ -207,7 +218,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 ## 14. Progress reports, in date order
 
 - **[Confirmed]** Mar 28 2025: 'The treasure has NOT been found!' *(Posey on X)*
-- **[Said]** Jun 21 2025: people have been within two miles, 'and certainly even less.' *(Dillon Q&A)*
+- **[Said]** Jun 21 2025: people have been within two miles, 'and certainly even less.' To his knowledge nobody had reached the checkpoint, and nobody had mentioned the correct answer to the cipher. *(Dillon Q&A, Jun 21 2025 (7:39))*
 - **[Confirmed]** Aug 1 2025: several searchers have solved at least the first two clues; some have been within 200 feet of the checkpoint; zero searchers have sent a photo of the correct checkpoint. *(Posey on X)*
 - **[Confirmed]** Sep 2025: stanza 1 and 'at least PART of stanza 2' solved (the interview version said 'at least half of it'). Searchers are 'quite close.' Searchers do not know without doubt until the checkpoint. *(Posey on X; X Marks the Pod)*
 - **[Confirmed]** Mar 28 2026: part of stanza 3 solved; 'at least six clues' by the most advanced searcher; the kitchen-sized target area unreached; 'No group way off in left field. No group uber close.' 'Tangible progress… absolutely attainable… a matter of time.' *(Seekers Summit)*
@@ -223,6 +234,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Said]** Anything to clarify or take back from other interviews? He is happy with the status quo and fears further clarification might create more ambiguity. *(X Marks the Pod, early 2026 (5:08))*
 - **[Said]** Are Google Earth and AI helping or hurting? Both. Some people see patterns in foliage that do not exist. *(X Marks the Pod, early 2026 (6:36))*
 - **[Confirmed]** Designed for humans, not AI: 'creating a puzzle for an intellect that dwarfs our own is a paradox… I really wanted to design something that embraces the core of what it means to be human… an astronomical amount of thought.' He will not divulge the tactics. *(X Q&A via MW, Sep 2025; X Marks the Pod)*
+- **[Said]** Difficulty: somewhere in the middle on a scale of one to Forrest Fenn. *(Dillon Q&A, Jun 21 2025 (42:57))*
 - **[Confirmed]** Disney Imagineering background (about a decade): 'not just you go and get it. There's something more to it.' Tiers: 'some easier things… and some more challenging.' *(X Marks the Pod, early 2026)*
 - **[Confirmed]** 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.' *(Froggy interview, 2025)*
 
@@ -232,6 +244,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 188 items.
 - **[Said]** Why public lands matter to him: rooted in childhood experiences, and younger generations need to connect with nature. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (8:04))*
 - **[Said]** His best experience of the hunt: seeing families find the inspiration to share an adventure together. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (17:16))*
 - **[Said]** He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09))*
+- **[Said]** He studied computer science but did not graduate, and worked at Microsoft, the Walt Disney Company and Visa. *(Dillon Q&A, Jun 21 2025 (51:59))*
+- **[Said]** His biggest fish: a very large trout caught trolling at Heron Lake, New Mexico, which made the local newspapers. *(Dillon Q&A, Jun 21 2025 (45:45))*
 - **[Said]** Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes. *(Public statements (research report))*
 - **[Said]** His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game. *(Seekers Summit; public statements)*
 - **[Confirmed]** Bringing Tucker to Nine Mile Hole during the Fenn search was risky: a dog crossing the river there would have been conspicuous, and it was a dangerous endeavor. He does not regret bringing Tucker to the hunt. *(Treasure Hunt With Us, Apr 9 2025 (7:58))*
