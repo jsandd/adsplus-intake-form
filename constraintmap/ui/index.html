@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constraint Map — Beyond the Map's Edge</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--g0:#0D1016;--g1:#141922;--g2:#1B212C;--g3:#242C39;--line:#2A3240;--line2:#3B4553;--ink:#E9EDF2;--ink2:#A5AFBD;--ink3:#6E7889;--gold:#E4B34C;--gold-soft:rgba(228,179,76,.14);--ok:#4CC58F;--warn:#F0955A;--bad:#F26D6D;--f-b:"Instrument Sans","Helvetica Neue",Arial,sans-serif;--f-m:"Azeret Mono",ui-monospace,Menlo,Consolas,monospace}
+*{box-sizing:border-box} html,body{height:100%;margin:0} body{background:var(--g0);color:var(--ink);font:13px/1.45 var(--f-b);display:grid;grid-template-rows:52px 1fr;grid-template-columns:minmax(0,1fr) 420px;grid-template-areas:"top top" "map side"}
+header{grid-area:top;display:flex;align-items:center;gap:14px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--g1)} header h1{font-size:15px;margin:0;letter-spacing:.04em;text-transform:uppercase} header .sub{font:11px var(--f-m);color:var(--ink3)} header .grow{flex:1}
+.mode{display:flex;border:1px solid var(--line2);border-radius:6px;overflow:hidden} .mode button{background:transparent;border:0;color:var(--ink2);padding:6px 12px;font:inherit;cursor:pointer} .mode button.on{background:var(--gold-soft);color:var(--gold)}
+#map{grid-area:map;background:#0b0d12} aside{grid-area:side;overflow:auto;border-left:1px solid var(--line);background:var(--g1)}
+.tabs{display:flex;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--g1);z-index:5} .tabs button{flex:1;background:transparent;border:0;border-bottom:2px solid transparent;color:var(--ink2);padding:10px 4px;font:inherit;cursor:pointer;font-size:12px} .tabs button.on{color:var(--gold);border-bottom-color:var(--gold)}
+.pane{display:none;padding:12px 14px} .pane.on{display:block}
+.k{font:600 10px var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)} .hint{color:var(--ink3);font-size:12px} .mono{font-family:var(--f-m);font-size:11px}
+.btn{background:var(--g2);border:1px solid var(--line2);color:var(--ink);border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer} .btn:hover{border-color:var(--gold)} .btn.gold{background:var(--gold);color:#171B22;border-color:var(--gold);font-weight:600} .btn.sm{padding:3px 8px;font-size:12px} .btn.ghost{background:transparent} .btn:disabled{opacity:.5;cursor:default}
+input,textarea,select{background:var(--g0);border:1px solid var(--line2);color:var(--ink);border-radius:5px;padding:5px 7px;font:inherit} input[type=number]{width:74px} textarea{width:100%;min-height:54px}
+.verdict{font:700 22px var(--f-m);letter-spacing:.06em;padding:10px 12px;border-radius:6px;margin:8px 0} .verdict.SURVIVES{background:rgba(76,197,143,.16);color:var(--ok)} .verdict.FLAGGED{background:rgba(240,149,90,.16);color:var(--warn)} .verdict.KILLED{background:rgba(242,109,109,.16);color:var(--bad)} .verdict.OPEN{background:var(--g2);color:var(--ink2)} .verdict small{display:block;font:11px var(--f-m);letter-spacing:.04em;color:var(--ink2);margin-top:3px}
+table.r{width:100%;border-collapse:collapse;font-size:12px} table.r td{padding:5px 4px;border-top:1px solid var(--line);vertical-align:top} table.r td.s{width:16px;font-weight:700;text-align:center} .pass{color:var(--ok)} .fail{color:var(--bad)} .unknown{color:var(--ink3)} .off{opacity:.4} .val{font-family:var(--f-m);font-size:11px;color:var(--ink2)} .note{font-size:11px;color:var(--ink3)} .tag{font:600 9px var(--f-m);letter-spacing:.06em;padding:1px 4px;border-radius:3px;border:1px solid;margin-left:4px} .tag.CONFIRMED{color:var(--ok);border-color:var(--ok)} .tag.SAID{color:var(--gold);border-color:var(--gold)} .sev{font:600 9px var(--f-m);color:var(--ink3);margin-left:4px}
+.rule{padding:8px 0;border-top:1px solid var(--line)} .rule .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap} .rule .name{font-weight:600;flex:1;min-width:160px} .rule .src{font-size:11px;color:var(--ink3);margin-top:3px}
+.cands{display:grid;gap:10px} .cand{border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--g2)} .cand .h{display:flex;gap:8px;align-items:center} .cand .h b{font:700 16px var(--f-m);color:var(--gold)} .cand .h .nm{flex:1;font-weight:600}
+.grid{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px} .grid th{font:600 9px var(--f-m);letter-spacing:.06em;color:var(--ink3);text-align:left;padding:3px;border-bottom:1px solid var(--line2)} .grid td{padding:3px;border-top:1px solid var(--line);text-align:center;font-weight:700} .grid td:first-child{text-align:left;font-weight:400;color:var(--ink2)} .grid th.c{text-align:center;color:var(--gold);font-size:12px}
+.check{list-style:none;padding:0;margin:0} .check li{display:grid;grid-template-columns:22px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line)} .check input{width:18px;height:18px;margin-top:2px} .check .src{font-size:11px;color:var(--ink3)}
+.data .st{display:grid;grid-template-columns:44px 1fr auto auto auto;gap:6px;align-items:center;padding:5px 0;border-top:1px solid var(--line);font-size:12px} .data .st b{font-family:var(--f-m)} .bar{height:6px;background:var(--g3);border-radius:3px;overflow:hidden} .bar i{display:block;height:100%;background:var(--ok)}
+pre.log{background:var(--g0);border:1px solid var(--line);border-radius:6px;padding:8px;font:10.5px var(--f-m);max-height:180px;overflow:auto;white-space:pre-wrap;color:var(--ink2)}
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--g3);border:1px solid var(--line2);color:var(--ink);padding:8px 14px;border-radius:8px;z-index:99}
+.leaflet-container{font:inherit} .pin-cand{background:var(--gold);color:#171B22;font:700 11px var(--f-m);border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 0 0 2px rgba(0,0,0,.4)} .pin-res{background:#6FB3D8;border-radius:50%;width:10px;height:10px;border:2px solid #fff;opacity:.85} .pin-res.top{background:#fff;border-color:var(--gold);width:14px;height:14px}
+@media print{body{display:block;background:#fff;color:#000} header,#map,.tabs,.pane{display:none} .pane.print{display:block!important} .check li{border-top-color:#ccc} .btn{display:none}}
+@media (max-width:900px){body{grid-template-columns:1fr;grid-template-rows:52px 46vh 1fr;grid-template-areas:"top" "map" "side"} aside{border-left:0;border-top:1px solid var(--line)}}
+</style></head><body>
+<header><h1>Constraint map</h1><span class="sub">Beyond the Map's Edge · local engine · Posey's rules only</span><span class="grow"></span>
+<div class="mode"><button id="m-point" class="on">Point scorer</button><button id="m-box">Regional render</button></div>
+<span class="sub" id="status">…</span></header>
+<div id="map"></div>
+<aside>
+<div class="tabs"><button data-pane="score" class="on">Score</button><button data-pane="rules">Rules</button><button data-pane="cands">Candidates</button><button data-pane="check">Checklist</button><button data-pane="data">Data</button></div>
+<div class="pane on" id="pane-score">
+  <div class="row" style="display:flex;gap:6px;align-items:center"><input id="coord" placeholder="lat, lon  (or click the map)" style="flex:1"><button class="btn gold" id="go">Score</button></div>
+  <div id="result"><p class="hint" style="margin-top:12px">Click anywhere on the map, or type a coordinate. Every mappable rule comes back pass / fail / unknown with the measured value beside it.</p></div>
+</div>
+<div class="pane" id="pane-rules">
+  <p class="hint">CONFIRMED rules kill on a fail. SAID rules flag. Switch any rule off to test sensitivity; edit any parameter. Changes save locally and apply to the next score.</p>
+  <div id="rules"></div>
+  <div style="margin-top:10px;display:flex;gap:6px"><button class="btn sm ghost" id="rules-reset">Reset to defaults</button><button class="btn sm" id="rules-rescore">Re-score saved candidates</button></div>
+</div>
+<div class="pane" id="pane-cands">
+  <div style="display:flex;gap:6px;margin-bottom:10px"><button class="btn sm" id="c-export">Copy export for the site</button><button class="btn sm ghost" id="c-toggle-res">Show research candidates</button></div>
+  <div id="cands"></div>
+</div>
+<div class="pane print" id="pane-check">
+  <p class="hint">The rules that cannot be layers. Tick them on site. <button class="btn sm" onclick="window.print()">Print</button></p>
+  <div id="check-head" class="hint"></div>
+  <ul class="check" id="check"></ul>
+</div>
+<div class="pane data" id="pane-data">
+  <p class="hint">Everything is downloaded once and stored under <span class="mono">constraintmap/data</span>. Nothing is queried live when you click.</p>
+  <div class="k" style="margin-top:8px">PAD-US (land owner, access)</div>
+  <div id="padus"></div>
+  <div class="k" style="margin-top:12px">Elevation tiles (30 m) · roads, trails, rails (USGS NTD) · cemeteries, caves, mines (GNIS)</div>
+  <div id="cov"></div>
+  <div class="k" style="margin-top:12px">Log</div><pre class="log" id="log"></pre>
+</div>
+</aside>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const $ = s => document.querySelector(s), esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const api = async (p, body) => { const r = await fetch(p, body ? { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body) } : {}); return r.json(); };
+const toast = m => { const t = document.createElement("div"); t.className = "toast"; t.textContent = m; document.body.appendChild(t); setTimeout(() => t.remove(), 2600); };
+let RULES = [], CHECK = [], mode = "point", last = null, cands = [], research = [], showRes = false, boxLayer = null, boxStart = null, overlay = null;
+const map = L.map("map", { zoomControl:true }).setView([44.5, -110.5], 6);
+const osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom:19, attribution:"© OpenStreetMap" }).addTo(map);
+const topo = L.tileLayer("https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}", { maxZoom:16, attribution:"USGS" });
+const sat = L.tileLayer("https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}", { maxZoom:16, attribution:"USGS" });
+L.control.layers({ "OpenStreetMap":osm, "USGS Topo":topo, "USGS Imagery":sat }).addTo(map);
+const pinLayer = L.layerGroup().addTo(map), resLayer = L.layerGroup(), clickPin = L.layerGroup().addTo(map);
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b)); document.querySelectorAll(".pane").forEach(p => p.classList.toggle("on", p.id === "pane-" + b.dataset.pane)); }));
+const showPane = n => document.querySelector(`.tabs button[data-pane="${n}"]`).click();
+$("#m-point").onclick = () => setMode("point"); $("#m-box").onclick = () => setMode("box");
+function setMode(m) { mode = m; $("#m-point").classList.toggle("on", m === "point"); $("#m-box").classList.toggle("on", m === "box"); map.dragging[m === "box" ? "disable" : "enable"](); $("#map").style.cursor = m === "box" ? "crosshair" : ""; if (m === "box") toast("Drag a box on the map. The overlay is computed for that box only."); }
+map.on("mousedown", e => { if (mode !== "box") return; boxStart = e.latlng; if (boxLayer) boxLayer.remove(); boxLayer = L.rectangle([e.latlng, e.latlng], { color:"#E4B34C", weight:1.5, fillOpacity:.05 }).addTo(map); });
+map.on("mousemove", e => { if (mode !== "box" || !boxStart) return; boxLayer.setBounds([boxStart, e.latlng]); });
+map.on("mouseup", async e => { if (mode !== "box" || !boxStart) return; const b = L.latLngBounds(boxStart, e.latlng); boxStart = null; if (b.getNorth() - b.getSouth() < 0.002) return; await renderBox(b); });
+map.on("click", e => { if (mode === "point") score(e.latlng.lat, e.latlng.lng); });
+$("#go").onclick = () => { const m = /(-?\d{1,2}\.\d+)[,\s]+(-?\d{2,3}\.\d+)/.exec($("#coord").value); if (!m) return toast("Type lat, lon like 45.216, -112.637"); score(+m[1], +m[2]); map.setView([+m[1], +m[2]], Math.max(map.getZoom(), 11)); };
+$("#coord").addEventListener("keydown", e => { if (e.key === "Enter") $("#go").click(); });
+async function score(lat, lon) {
+  $("#coord").value = `${lat.toFixed(5)}, ${lon.toFixed(5)}`; showPane("score");
+  clickPin.clearLayers(); L.circleMarker([lat, lon], { radius:7, color:"#fff", weight:2, fillColor:"#E4B34C", fillOpacity:1 }).addTo(clickPin);
+  $("#result").innerHTML = '<p class="hint" style="margin-top:12px">Measuring… (first click in a new 1° tile downloads about 50 MB of elevation once)</p>';
+  const r = await api(`/api/score?lat=${lat}&lon=${lon}`); if (r.error) { $("#result").innerHTML = `<p class="fail">${esc(r.error)}</p>`; return; }
+  last = { lat, lon, ...r }; renderResult(r, lat, lon);
+}
+function renderResult(r, lat, lon) {
+  const s = r.summary, m = r.measurements, pd = m.padus;
+  const rows = RULES.map(rule => { const v = r.verdicts[rule.id] || { status:"unknown", value:"" }; const sym = v.status === "pass" ? "✓" : v.status === "fail" ? "✕" : "?"; return `<tr class="${rule.on ? "" : "off"}"><td class="s ${v.status}">${sym}</td><td><div>${esc(rule.name)}<span class="tag ${rule.tag}">${rule.tag}</span><span class="sev">${rule.severity}</span></div><div class="val">${esc(v.value)}${rule.param != null ? ` · limit ${rule.param} ${rule.unit}` : ""}</div>${v.note ? `<div class="note">${esc(v.note)}</div>` : ""}</td></tr>`; }).join("");
+  const land = pd ? `<div class="hint" style="margin:6px 0"><b>Land:</b> ${esc(pd.owner)}${pd.manager ? " · managed by " + esc(pd.manager) : ""}${pd.designation ? "<br>" + esc(pd.designation) : ""}<br>Access: ${esc(pd.access)} · Fee: ${esc(pd.fee)}</div>` : "";
+  $("#result").innerHTML = `<div class="verdict ${s.verdict}">${s.verdict}<small>${esc(m.state_code || "outside the states")} · ${m.elev_ft != null ? Math.round(m.elev_ft).toLocaleString() + " ft" : "no elevation"} · ${m.ms} ms · ${s.kills.length} kill · ${s.flags.length} flag · ${s.unknown.length} unknown</small></div>${land}
+    <div style="display:flex;gap:6px;margin:6px 0"><button class="btn sm gold" id="save-cand">Save as candidate ${nextLetter()}</button><button class="btn sm ghost" id="rescore">Re-score</button></div>
+    <table class="r"><tbody>${rows}</tbody></table>`;
+  $("#save-cand").onclick = async () => { const name = prompt("Name for this candidate", `Candidate ${nextLetter()}`); if (name == null) return; const notes = prompt("Notes (optional)", "") || ""; const res = await api("/api/candidates", { lat, lon, name, notes, measurements:r.measurements, verdicts:r.verdicts, summary:r.summary }); cands = res.candidates; drawCands(); toast("Saved as " + name); showPane("cands"); };
+  $("#rescore").onclick = () => score(lat, lon);
+}
+function nextLetter() { const used = new Set(cands.map(c => c.letter)); for (let i = 0; i < 26; i++) { const l = String.fromCharCode(65 + i); if (!used.has(l)) return l; } return "Z"; }
+async function renderBox(b) {
+  $("#status").textContent = "rendering box…"; showPane("score");
+  $("#result").innerHTML = '<p class="hint" style="margin-top:12px">Computing the overlay for the box (elevation tiles for the box download once)…</p>';
+  const r = await api("/api/render", { bbox:[b.getWest(), b.getSouth(), b.getEast(), b.getNorth()] });
+  $("#status").textContent = "";
+  if (r.error) { $("#result").innerHTML = `<p class="fail">${esc(r.error)}</p>`; return; }
+  if (overlay) overlay.remove(); overlay = L.imageOverlay(r.png, r.bounds, { opacity:.85 }).addTo(map);
+  const fc = Object.entries(r.fail_counts).map(([k, v]) => { const rule = RULES.find(x => x.id === k); return `<tr><td>${esc(rule ? rule.name : k)}</td><td class="val">${v} sq mi</td></tr>`; }).join("");
+  $("#result").innerHTML = `<div class="verdict SURVIVES">${r.surviving_sqmi} sq mi<small>survive every enabled rule · ${r.flagged_sqmi} sq mi flagged · ${r.killed_sqmi} sq mi killed · of ${r.total_sqmi} sq mi · ${r.cell_m} m cells</small></div>
+    ${r.unknown_rules.length ? `<p class="hint">Not applied (layer missing here): ${r.unknown_rules.map(k => (RULES.find(x => x.id === k) || {}).name || k).join("; ")}</p>` : ""}
+    <table class="r"><tbody><tr><td><b>Green</b> survives · <b>orange</b> flagged by a SAID rule · <b>red</b> killed</td></tr>${fc}</tbody></table>
+    <div style="margin-top:8px"><button class="btn sm ghost" id="clear-ov">Clear overlay</button></div>`;
+  $("#clear-ov").onclick = () => { if (overlay) overlay.remove(); overlay = null; if (boxLayer) boxLayer.remove(); };
+}
+async function loadRules() { const r = await api("/api/rules"); RULES = r.rules; CHECK = r.checklist; drawRules(); drawCheck(); }
+function drawRules() {
+  $("#rules").innerHTML = RULES.map(r => `<div class="rule" data-id="${r.id}"><div class="row"><input type="checkbox" class="on" ${r.on ? "checked" : ""}><span class="name">${esc(r.name)}<span class="tag ${r.tag}">${r.tag}</span></span>${r.param != null ? `<input type="number" class="param" value="${r.param}" step="any"><span class="hint">${r.unit}</span>` : ""}<select class="sev"><option value="kill" ${r.severity === "kill" ? "selected" : ""}>kill</option><option value="flag" ${r.severity === "flag" ? "selected" : ""}>flag</option></select></div><div class="src">${esc(r.source)}</div></div>`).join("");
+  $("#rules").querySelectorAll(".rule").forEach(el => { const save = async () => { const o = {}; document.querySelectorAll("#rules .rule").forEach(x => { const id = x.dataset.id; const p = x.querySelector(".param"); o[id] = { on:x.querySelector(".on").checked, severity:x.querySelector(".sev").value, param:p ? +p.value : null }; }); const r = await api("/api/rules", { overrides:o }); RULES = r.rules; drawRules(); toast("Rules saved"); }; el.querySelectorAll("input,select").forEach(i => i.addEventListener("change", save)); });
+}
+$("#rules-reset").onclick = async () => { const r = await api("/api/rules", { overrides:{} }); RULES = r.rules; drawRules(); toast("Defaults restored"); };
+$("#rules-rescore").onclick = async () => { toast("Re-scoring…"); const r = await api("/api/candidates/rescore", {}); cands = r.candidates; drawCands(); toast("Done"); showPane("cands"); };
+function drawCheck() { $("#check-head").textContent = last ? `Site: ${last.lat.toFixed(5)}, ${last.lon.toFixed(5)}` : ""; $("#check").innerHTML = CHECK.map((c, i) => `<li><input type="checkbox" id="ck${i}"><label for="ck${i}">${esc(c[0])}<div class="src">${esc(c[1])}</div></label></li>`).join(""); }
+async function loadCands() { const r = await api("/api/candidates"); cands = r.candidates; research = r.research; drawCands(); }
+function drawCands() {
+  pinLayer.clearLayers(); resLayer.clearLayers();
+  cands.forEach(c => L.marker([c.lat, c.lon], { icon:L.divIcon({ className:"", html:`<div class="pin-cand">${esc(c.letter)}</div>`, iconSize:[22, 22], iconAnchor:[11, 11] }) }).bindTooltip(`${c.letter} · ${esc(c.name)} · ${esc(c.summary.verdict || "")}`).on("click", () => score(c.lat, c.lon)).addTo(pinLayer));
+  research.forEach(c => L.marker([c.lat, c.lon], { icon:L.divIcon({ className:"", html:`<div class="pin-res ${c.top3 ? "top" : ""}"></div>`, iconSize:[14, 14], iconAnchor:[7, 7] }) }).bindTooltip(`${esc(c.name)} (research db)`).on("click", () => score(c.lat, c.lon)).addTo(resLayer));
+  if (showRes) resLayer.addTo(map); else resLayer.remove();
+  if (!cands.length) { $("#cands").innerHTML = '<p class="hint">No saved candidates. Score a point, then Save as candidate. Letters match Matrix B.</p>'; return; }
+  const head = `<tr><th>Rule</th>${cands.map(c => `<th class="c">${esc(c.letter)}</th>`).join("")}</tr>`;
+  const grid = RULES.map(r => `<tr><td>${esc(r.name)}</td>${cands.map(c => { const v = (c.verdicts || {})[r.id]; const s = v ? v.status : "unknown"; return `<td class="${s}" title="${esc(v ? v.value : "")}">${s === "pass" ? "✓" : s === "fail" ? "✕" : "?"}</td>`; }).join("")}</tr>`).join("");
+  $("#cands").innerHTML = `<table class="grid"><thead>${head}</thead><tbody>${grid}<tr><td><b>Verdict</b></td>${cands.map(c => `<td class="${(c.summary.verdict || "").toLowerCase() === "killed" ? "fail" : (c.summary.verdict || "") === "SURVIVES" ? "pass" : "unknown"}" style="font-size:9px">${esc(c.summary.verdict || "")}</td>`).join("")}</tr></tbody></table>
+    <div class="cands" style="margin-top:12px">${cands.map(c => `<div class="cand"><div class="h"><b>${esc(c.letter)}</b><span class="nm">${esc(c.name)}</span><button class="btn sm ghost" data-go="${c.id}">Go</button><button class="btn sm ghost" data-del="${c.id}">✕</button></div><div class="val">${c.lat.toFixed(5)}, ${c.lon.toFixed(5)} · ${esc(c.summary.verdict || "")}${c.measurements && c.measurements.elev_ft != null ? " · " + Math.round(c.measurements.elev_ft).toLocaleString() + " ft" : ""}</div><textarea data-notes="${c.id}" placeholder="Notes">${esc(c.notes)}</textarea></div>`).join("")}</div>`;
+  $("#cands").querySelectorAll("[data-go]").forEach(b => b.onclick = () => { const c = cands.find(x => x.id === b.dataset.go); map.setView([c.lat, c.lon], 13); score(c.lat, c.lon); });
+  $("#cands").querySelectorAll("[data-del]").forEach(b => b.onclick = async () => { if (!confirm("Delete this candidate?")) return; const r = await api("/api/candidates/delete", { id:b.dataset.del }); cands = r.candidates; drawCands(); });
+  $("#cands").querySelectorAll("[data-notes]").forEach(t => t.addEventListener("change", async () => { const c = cands.find(x => x.id === t.dataset.notes); c.notes = t.value; await api("/api/candidates", c); toast("Notes saved"); }));
+}
+$("#c-toggle-res").onclick = () => { showRes = !showRes; $("#c-toggle-res").textContent = showRes ? "Hide research candidates" : "Show research candidates"; drawCands(); };
+$("#c-export").onclick = async () => { const r = await api("/api/export"); const txt = JSON.stringify(r, null, 1); try { await navigator.clipboard.writeText(txt); toast("Export copied. Paste it into the site's Constraint map tab, or send it to Claude."); } catch (e) { prompt("Copy this:", txt); } };
+async function loadStatus() {
+  const s = await api("/api/status");
+  $("#padus").innerHTML = s.padus.units ? `<div class="hint">${s.padus.units.toLocaleString()} units loaded from ${esc(s.padus.source)}</div>` : `<div class="hint">Not loaded. Download the PAD-US 4 GeoPackage from the USGS (Protected Areas Database, "PAD-US 4.x Geopackage"), save it as <span class="mono">constraintmap/data/padus.gpkg</span>, then:</div><div style="margin-top:6px"><button class="btn sm" data-fetch="padus">Load data/padus.gpkg</button></div>`;
+  const order = ["MT", "WY", "ID", "UT", "NV", "CA", "AZ", "NM", "WA", "TX"];
+  $("#cov").innerHTML = order.map(st => { const d = s.dem.states[st] || { tiles:0, have:0 }; const v = s.vectors; const has = l => v[l] && v[l][st] ? v[l][st].n.toLocaleString() : null; return `<div class="st"><b>${st}</b><div><div class="bar"><i style="width:${d.tiles ? 100 * d.have / d.tiles : 0}%"></i></div><div class="hint">elevation ${d.have}/${d.tiles} tiles · roads ${has("road") || "—"} · trails ${has("trail") || "—"} · cemeteries ${has("cemetery") || "—"}</div></div><button class="btn sm" data-fetch="dem" data-st="${st}" title="about ${d.tiles} × 50 MB">DEM</button><button class="btn sm" data-fetch="tran" data-st="${st}">Roads</button><button class="btn sm" data-fetch="gnis" data-st="${st}">GNIS</button></div>`; }).join("");
+  $("#log").textContent = (s.log || []).join("\n"); $("#status").textContent = s.job ? "working: " + s.job : (s.dem.downloading ? "downloading tile " + s.dem.downloading : "");
+  document.querySelectorAll("[data-fetch]").forEach(b => b.onclick = async () => { const r = await api("/api/fetch", { kind:b.dataset.fetch, state:b.dataset.st }); toast(r.ok ? "Started: " + b.dataset.fetch + " " + (b.dataset.st || "") : "Another job is running: " + r.running); });
+}
+loadRules(); loadCands(); loadStatus(); setInterval(loadStatus, 4000);
+</script></body></html>
