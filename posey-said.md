@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 216 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 233 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -246,7 +246,27 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 216 items.
 - **[Confirmed]** Disney Imagineering background (about a decade): 'not just you go and get it. There's something more to it.' Tiers: 'some easier things… and some more challenging.' He wanted it approachable yet challenging, not impossible: a mix of easier and harder clues. *(X Marks the Pod, early 2026; Froggy interview, 2025 (1:43))*
 - **[Confirmed]** 'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.' Asked whether he is prouder of the spot or the puzzle: equally pleased with both. *(Froggy interview, 2025 (21:43, 22:49))*
 
-## 16. About Justin, as he has stated it
+## 16. The map: what he chose to label
+
+- **[Confirmed]** The map covers the western United States plus Alaska (Hawaii is absent) and is titled 'Beyond The Map's Edge.' He has said the selection of labeled landmarks is his and the placement, names and elevations are the designer's. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Montana labels: Glacier National Park, Waterton-Glacier International Peace Park, Flathead Lake, Bob Marshall Wilderness Area, Helena, Polaris, Dillon, Granite Pk 12,807 ft, Missouri R. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Wyoming labels: Yellowstone National Park, Cody, Grand Teton National Park, Gannett Pk 7,076 ft (the figure is not the summit elevation), Wind River Range, Sinks Canyon State Park, Devils Tower National Monument, Cheyenne. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Idaho labels: Boise, Sawtooth National Recreation Area, Borah Pk 12,662 ft, Craters of the Moon National Monument, Hell's Canyon Recreation Area, Snake R. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Utah labels: Salt Lake City, Great Salt Lake, Kings Pk 13,528 ft, Arches National Park, Bryce Canyon National Park, Zion National Park, Colorado R. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Colorado labels: Denver, Rocky Mountain National Park, Mt. Elbert 14,440 ft, Garden of the Gods National Park (so labeled), Great Sand Dunes National Park, Mesa Verde National Park. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** New Mexico labels: Santa Fe, Heron Lake State Park, Bandelier National Monument, Wheeler Pk 13,167 ft, Alamogordo, Cloudcroft, White Sands National Park, Carlsbad Caverns National Park, Rio Grande R. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Arizona labels: Phoenix, Tucson, Saguaro National Park, Lukeville, Humphreys Pk 12,637 ft, Antelope Canyon, Monument Valley, Colorado R. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Nevada labels: Carson City, Lake Tahoe, Great Basin National Park, Boundary Pk 13,147 ft, Valley of Fire State Park, Red Rock Canyon National Conservation Area. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** California labels: Sacramento, Mt. Shasta 14,179 ft, Redwood National Park, Sierra Nevada, Central Valley, Yosemite National Park, Big Sur, Joshua Tree National Park, Channel Islands. Mt. Whitney is not labeled. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Washington and Oregon labels: Olympia, Redmond, Olympic National Park, North Cascades National Park, San Juan Islands, Mt. Rainier 14,411 ft, Columbia River Gorge National Scenic Area, Columbia R., Cascade Range, Columbia Plateau, Mt. Hood 11,249 ft, Crater Lake National Park. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Texas labels: Guadalupe Pk 8,751 ft, Big Bend National Park. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Alaska labels: Juneau, Denali National Park, Mt. Denali 20,194 ft, Wrangell-St. Elias National Park, Kenai Fjords National Park, Glacier Bay National Park, Brooks Range, Alaska Range, Arctic Coastal Plain, Seward Peninsula, Mt. Chamberlin 8,901 ft, Mt. Osborn 4,714 ft, Mt. Tozi 5,360 ft, Mt. Oyukak 6,909 ft, Mt. Marcus Baker 13,176 ft, Redoubt Volcano 10,197 ft, Mt. Crooked 4,429 ft, one further Brooks Range peak at 4,524 ft whose name is hard to read at this resolution, plus rivers, islands, Bristol Bay, Bering Sea and Pacific Ocean. Nine named peaks in all. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Peaks with elevations in the West are the state high points of Washington, Oregon, Idaho, Montana, Wyoming, Utah, Colorado, New Mexico, Arizona, Nevada and Texas. California is the exception: Mt. Shasta is labeled, Mt. Whitney is not. *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Only three state parks are labeled on the entire map: Sinks Canyon (Wyoming), Valley of Fire (Nevada) and Heron Lake (New Mexico). *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Small towns labeled, apart from state capitals: Polaris and Dillon (Montana), Cody (Wyoming), Redmond (Washington), Big Sur and Lukeville, Cloudcroft and Alamogordo (New Mexico), and Tucson (Arizona). *(treasure.quest/map.jpg (his published map))*
+- **[Confirmed]** Every state capital in the mapped West carries a star: Olympia, Boise, Helena, Cheyenne, Salt Lake City, Denver, Santa Fe, Phoenix, Carson City, Sacramento, Juneau. Salem, Oregon is missing (he has said the missing capital is accidental). *(treasure.quest/map.jpg (his published map))*
+
+## 17. About Justin, as he has stated it
 
 - **[Confirmed]** He is married. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (58:17))*
 - **[Said]** Why public lands matter to him: rooted in childhood experiences, and younger generations need to connect with nature. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (8:04))*

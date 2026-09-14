@@ -6,8 +6,8 @@ def c(*ids): return ''
 def blank(): return '<span class="fill"></span>'
 def tag(t): return f'<span class="tag {t.lower()[0]}">{t}</span>'
 P=[]
-P.append('''<div class="cover"><div class="eyebrow">Posey-only working tool</div><h1>Solve Matrix</h1><p class="sub">Built from Justin Posey's own statements and nothing else: the 216 items in "What Justin Posey Has Said." No fan theories, no community solves. Seven matrices, each with blank columns for your own work.</p>
-<ol class="toc"><li><b>A</b> Journey matrix: the poem stage by stage, with the mode, constraints, distances and open questions Posey attached to each</li><li><b>B</b> Location filter: every rule that applies to the final spot, with pass/fail boxes for three candidates</li><li><b>C</b> Distance and geometry ledger: every statement that carries a length, a direction or a shape</li><li><b>D</b> Element matrix: what each part of the hunt (poem, book, map, series, songs, cipher, logo, time) contains and what it is for</li><li><b>E</b> Deductions that follow from his words alone, with the chain of citations</li><li><b>F</b> Progress timeline: what he says has been solved, and when</li><li><b>G</b> Open-question ledger: what he declined, and a specific, not-on-the-nose way to ask it again</li></ol>
+P.append('''<div class="cover"><div class="eyebrow">Posey-only working tool</div><h1>Solve Matrix</h1><p class="sub">Built from Justin Posey's own statements and nothing else: the 216 items in "What Justin Posey Has Said." No fan theories, no community solves. Eight matrices, each with blank columns for your own work.</p>
+<ol class="toc"><li><b>A</b> Journey matrix: the poem stage by stage, with the mode, constraints, distances and open questions Posey attached to each</li><li><b>B</b> Location filter: every rule that applies to the final spot, with pass/fail boxes for three candidates</li><li><b>C</b> Distance and geometry ledger: every statement that carries a length, a direction or a shape</li><li><b>D</b> Element matrix: what each part of the hunt (poem, book, map, series, songs, cipher, logo, time) contains and what it is for</li><li><b>E</b> Deductions that follow from his words alone, with the chain of citations</li><li><b>F</b> Progress timeline: what he says has been solved, and when</li><li><b>G</b> Open-question ledger: what he declined, and a specific, not-on-the-nose way to ask it again</li><li><b>H</b> His map, crossed with his statements: the systematic labels, and the odd ones that needed a reason</li></ol>
 <p class="note">Citation key: = section 3, item 4 of the statements list. Tags: C confirmed · S said · L leaned · D declined.</p></div>''')
 
 # A journey matrix
@@ -167,6 +167,42 @@ rows=[
 ]
 P.append('<div class="page"><h2><span>G</span>Open-question ledger</h2><p class="hint">Everything he refused, with his stated reason. He answers questions that are specific but not on the nose. The suggested rewordings are drafts for the monthly Featured Question, not facts.</p>'+T(head,rows,"ledger")+'</div>')
 
+# H: his map
+head=["Category on the map","Members","Systematic?"]
+rows=[
+["State capitals (starred)","Olympia, Boise, Helena, Cheyenne, Salt Lake City, Denver, Santa Fe, Phoenix, Carson City, Sacramento, Juneau. Salem missing (accidental, per him)","Yes: every capital"],
+["State high points with elevations","Rainier, Hood, Borah, Granite, Gannett, Kings, Elbert, Wheeler, Humphreys, Boundary, Guadalupe","Yes, except California: Shasta is labeled, Whitney is not"],
+["National parks","Olympic, North Cascades, Glacier, Yellowstone, Grand Teton, Rocky Mountain, Great Sand Dunes, Mesa Verde, Arches, Bryce Canyon, Zion, Great Basin, Redwood, Yosemite, Joshua Tree, Saguaro, White Sands, Carlsbad Caverns, Big Bend, Crater Lake, Denali, Wrangell-St. Elias, Kenai Fjords, Glacier Bay","Nearly complete for the West; a few parks are absent"],
+["Major rivers and ranges","Columbia, Snake, Missouri, Colorado, Rio Grande; Cascade Range, Sierra Nevada, Rocky Mountains, Wind River Range, Brooks Range, Alaska Range","Broadly systematic"],
+["Everything else","See the table below","No. These are the choices that needed a reason"],
+]
+t1=T(head,rows,"mapcat")
+head=["The odd ones out","Kind","What he has said that touches it","Why it might be there","Your note"]
+rows=[
+["<b>Polaris</b>, MT","Town of a few dozen people","Grandfather was a Montana game warden; summers at the family cabin","The only village-sized place labeled in Montana; also the name of the North Star",blank()],
+["<b>Dillon</b>, MT","Small town","His June 2025 signing; grandfather's country","Hub of the Beaverhead country",blank()],
+["<b>Cody</b>, WY","Small town","No statement","East gate of Yellowstone",blank()],
+["<b>Redmond</b>, WA","Suburb","He worked at Microsoft; the Bronze Beast chapter is set in Washington","Personal history",blank()],
+["<b>Tucson</b>, AZ","City, not the capital","Raised there; Brandon's memorial; Summit venue he would not rule out","Personal history",blank()],
+["<b>Cloudcroft</b> and <b>Alamogordo</b>, NM","Small towns","No statement","Two labels for one small area, next to White Sands",blank()],
+["<b>Lukeville</b>, AZ","Border crossing","No statement","Odd choice: a port of entry, not a destination",blank()],
+["<b>Big Sur</b>, CA","Coast","No statement","Scenery, or personal",blank()],
+["<b>Sinks Canyon State Park</b>, WY","State park","No statement","One of only three state parks labeled; a river that vanishes and rises",blank()],
+["<b>Heron Lake State Park</b>, NM","State park","His biggest fish, a trout caught trolling here; the book says Heron Lake was 'our north star'","Personal history, and a second north-star reference beside Polaris",blank()],
+["<b>Valley of Fire State Park</b>, NV","State park","No statement","One of the three state parks",blank()],
+["<b>Red Rock Canyon NCA</b>, NV","Conservation area","No statement","Not a park; a BLM area, the land type he described driving on",blank()],
+["<b>Antelope Canyon</b> and <b>Monument Valley</b>","Navajo Nation sites","No statement","Both need permits or guides; conflicts with free 24/7 access if taken as sites",blank()],
+["<b>Flathead Lake</b>, <b>Lake Tahoe</b>, <b>Great Salt Lake</b>","Lakes","No statement","The only three lakes named in the West",blank()],
+["<b>Bob Marshall Wilderness</b>, <b>Sawtooth NRA</b>, <b>Hell's Canyon</b>, <b>Columbia River Gorge</b>","Wild areas","No statement","Wilderness and recreation areas, not parks",blank()],
+["<b>Craters of the Moon</b>, <b>Devils Tower</b>, <b>Bandelier</b>","National monuments","No statement","The only three monuments labeled",blank()],
+["<b>Garden of the Gods</b>","City park, labeled 'National Park'","Colorado is eliminated (per the Mysterious Writings account)","Mislabeled; in an eliminated state",blank()],
+["<b>San Juan Islands</b>, <b>Channel Islands</b>","Islands","No statement","Water access, which his rules make awkward",blank()],
+["<b>Mt. Shasta</b>","Peak, not the state high point","Errata notes the missing period on 'Mt. Shasta' and nothing about Whitney","The one break in the high-point pattern",blank()],
+["<b>Columbia Plateau</b>, <b>Central Valley</b>","Regions","No statement","The only two lowland regions named",blank()],
+]
+t2=T(head,rows,"mapx")
+P.append('<div class="page"><h2><span>H</span>His map, crossed with his statements</h2><p class="hint">He called the map a good primer and said the choice of labels was his. Most labels follow a system: capitals, state high points, national parks, big rivers. The ones that do not follow a system are the choices that needed a reason, so they are listed separately.</p>'+t1+'<h3>The labels that needed a reason</h3>'+t2+'<div class="two" style="break-before:page"><div><h3>Reading the odd ones</h3><p>Four of them line up with his stated life: Redmond, Tucson, Heron Lake, and the Dillon-Polaris pair. Two are north-star references: Polaris by name, Heron Lake by his own words in the book. Three are the only state parks on the map. Several fail his own access rules if read as sites (Antelope Canyon, Monument Valley, the islands), which suggests those are context, not destinations.</p></div><div><h3>A test</h3><p>For any candidate, ask: is it at or beside an odd label? If yes, the map explains why it is shown. If a candidate sits in a corner with no label of any kind, you need a separate reason the map is still a primer for it.</p></div></div></div>')
+
 CSS='''
 @page{size:Letter landscape; margin:.55in .6in .65in .6in}
 body{font-family:"Bitstream Charter","Liberation Serif",Georgia,serif; font-size:8.6pt; line-height:1.35; color:#161a20; margin:0}
@@ -189,7 +225,8 @@ table.m{width:100%; border-collapse:collapse; font-size:8pt} .m th{font-family:"
 .ledger td:nth-child(1){width:34%} .elements td:nth-child(1){width:10%} .elements td:nth-child(2){width:36%}
 .deduce td:nth-child(1){width:3%} .deduce td:nth-child(2){width:36%} .deduce td:nth-child(4){width:8%}
 .timeline td:nth-child(1){width:12%} .timeline td:nth-child(2){width:62%}
-.two{display:grid; grid-template-columns:1fr 1fr; gap:18pt; margin-top:10pt} .two p{font-size:9pt}
+.mapx td:nth-child(1){width:20%} .mapx td:nth-child(2){width:11%} .mapx td:nth-child(3){width:28%} .mapx td:nth-child(4){width:26%} .mapcat td:nth-child(1){width:20%} .mapcat td:nth-child(3){width:22%}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:18pt; margin-top:8pt; page-break-inside:avoid} .two p{font-size:8.6pt}
 '''
 import re as _re
 fix=lambda t:_re.sub(r'\s+([.,;:])',r'\1',_re.sub(r'  +',' ',t)).replace('()','')
