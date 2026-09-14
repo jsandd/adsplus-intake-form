@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 202 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 209 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -129,6 +129,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 202 items.
 - **[Confirmed]** How does he know a searcher was near the checkpoint? 'I'm not going to say the exact way, but there are a number of ways that people have conveyed to me where they're searching. In one of those spheres, I have come to learn that there have been more than one person that have been close to the checkpoint.' *(Seekers Summit Q&A transcript, Mar 28 2026 (32:40))*
 - **[Declined]** Can he view searchers if they are near the treasure? 'I am going to punt on that question.' *(Seekers Summit Q&A transcript, Mar 28 2026 (15:05))*
 - **[Confirmed]** Has any searcher been in the small kitchen-sized area where the treasure is hidden? 'To my uncertain knowledge, no.' *(Seekers Summit Q&A transcript, Mar 28 2026 (14:26))*
+- **[Said]** 'Zero doubt': the clues are designed so that a searcher's confidence in the path increases as they progress rather than stagnating. *(Toby Younis interview (A Gypsy's Kiss) (6:56))*
 - **[Confirmed]** 'Formalized hide-and-seek with confidence checkpoints. I wanted to give a way for people to gain confidence as opposed to losing confidence as they work through clues.' *(X Marks the Pod, early 2026)*
 
 ## 8. Where it is and is not
@@ -181,7 +182,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 202 items.
 - **[Confirmed]** Are the clocks part of the cipher? 'Yes.' *(Seekers Summit Q&A transcript, Mar 28 2026 (38:08))*
 - **[Said]** There are clues in the hunt's songs. One song contains what he called an extremely definitive clue. *(Posey Q&A (MW compilation); Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (43:40))*
 - **[Said]** Is the cipher solvable without a math degree? Yes, it is designed to be approachable. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:12))*
-- **[Said]** One person has solved the technical clue; it is not required to find the treasure. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:56))*
+- **[Said]** One person has solved the technical clue; it is not required to find the treasure. He was surprised it took so long: it is an Easter egg he never intended as a core barrier to entry. *(Livestream interview transcript (matches the Sandal Sanders livestream, Sep 2025) (38:56); Toby Younis interview (A Gypsy's Kiss) (24:06))*
 - **[Leaned]** Can the poem be solved with a flow equation? That 'sounds like it would require an advanced degree.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (57:08))*
 
 ## 11. The Netflix series
@@ -205,7 +206,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 202 items.
 - **[Said]** To claim the prize, the finder uses the email address on page 150 of the signed books. The prize includes the original Saddleback leather briefcase and the coffee mugs. *(Dillon Q&A, Jun 21 2025 (1:13:24))*
 - **[Said]** Contents: mostly gold (bars, flakes, dust), precious gems, rare coins across eras, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest including the dragon bracelet, and a Bitcoin wallet funded by book sales. A separate Steward holds additional items. *(Posey Q&A; public statements)*
 - **[Said]** The 1652 Oak Tree shilling in the treasure has a personal backstory: it replaced a counterfeit one from his grandfather's collection. *(X Marks the Pod, early 2026 (30:18))*
-- **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The 30-day requirement protects the finder: there is additional legal paperwork on file with the steward that is important for the finder to have. The complete solution will be revealed at the conclusion of the hunt. *(Posey Q&A (MW compilation); Treasure Hunt With Us, Apr 9 2025 (9:10))*
+- **[Said]** The steward verifies the finder's authenticity, releases the remaining Bitcoin wallet key, and ensures no one continues searching after the find. *(Toby Younis interview (A Gypsy's Kiss) (31:49))*
+- **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The 30-day requirement protects the finder: there is additional legal paperwork on file with the steward that is important for the finder to have. The complete solution will be revealed at the conclusion of the hunt, with supporting documentation, to give 'zero doubt' that the treasure was hidden where claimed. *(Posey Q&A (MW compilation); Treasure Hunt With Us, Apr 9 2025 (9:10); Toby Younis interview (A Gypsy's Kiss) (34:39))*
 - **[Confirmed]** When the treasure is found, will he post a 30-day countdown on the website? 'Yes, I think I will. I think that's only fair.' *(Treasure Hunt With Us, Apr 9 2025 (6:46))*
 
 ## 13. The hiding trip
@@ -224,12 +226,16 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 202 items.
 - **[Confirmed]** Mar 28 2026: part of stanza 3 solved; 'at least six clues' by the most advanced searcher; the kitchen-sized target area unreached; 'No group way off in left field. No group uber close.' 'Tangible progress… absolutely attainable… a matter of time.' *(Seekers Summit)*
 - **[Confirmed]** Summit statistics: 277,428 verify requests; 119,644 people '100% sure'; 1,221 bribe attempts; 80 blackmail attempts; 19 tracking attempts; 16 search-and-rescue operations. *(Seekers Summit, Mar 28 2026)*
 - **[Said]** Jul 2026: the separate marked-book prize was found, 'not the treasure (yet).' *(Posey, July 2026)*
+- **[Said]** He estimates 10,000 to 100,000 active searchers, from emails, social media and bookstore visits. Searchers who do not post publicly often email him. *(Toby Younis interview (A Gypsy's Kiss) (46:12, 42:25))*
 - **[Said]** Since July 2026 he answers a monthly Featured Question through Mysterious Writings. Questions phrased specifically but not 'on the nose' have gotten real answers. *(Mysterious Writings)*
 - **[Confirmed]** Pep talk: 'The night is darkest before the light. If you are confident in the location in which you're searching, I see little reason to stray.' *(X Marks the Pod, early 2026)*
 
 ## 15. Design philosophy, in his words
 
 - **[Confirmed]** 'The part of me that embraces childlike wonder' wrote the poem. *(X Marks the Pod, early 2026 (5:39))*
+- **[Said]** treasure.quest is the 'single source of truth': official guidance lives there, so participants do not need social media or private Discord channels. *(Toby Younis interview (A Gypsy's Kiss) (11:36))*
+- **[Said]** Open book on the narrative, steel vault on the mechanics: mechanical details require careful crafting, so he prefers written responses over off-the-cuff verbal ones to avoid errors. *(Toby Younis interview (A Gypsy's Kiss) (15:42))*
+- **[Said]** He treated Fenn's hunt as a case study and used hindsight to build guardrails for a smoother, verifiable, streamlined experience. Success means independent, verifiable findings and few post-find conspiracy theories. *(Toby Younis interview (A Gypsy's Kiss) (5:08, 8:36))*
 - **[Said]** Has his level of interaction made the hunt harder or more confusing? Off-the-cuff responses in forums can sometimes muddy the waters, though his intent is to provide clarity. *(X Marks the Pod, early 2026 (3:31))*
 - **[Said]** Anything to clarify or take back from other interviews? He is happy with the status quo and fears further clarification might create more ambiguity. *(X Marks the Pod, early 2026 (5:08))*
 - **[Said]** Are Google Earth and AI helping or hurting? Both. Some people see patterns in foliage that do not exist. *(X Marks the Pod, early 2026 (6:36))*
@@ -246,6 +252,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 202 items.
 - **[Said]** He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09))*
 - **[Said]** He studied computer science but did not graduate, and worked at Microsoft, the Walt Disney Company and Visa. *(Dillon Q&A, Jun 21 2025 (51:59))*
 - **[Said]** His biggest fish: a very large trout caught trolling at Heron Lake, New Mexico, which made the local newspapers. *(Dillon Q&A, Jun 21 2025 (45:45))*
+- **[Said]** He had considered creating a hunt for years, inspired by Forrest Fenn's. Serious health concerns were the turning point. He went in 'eyes wide open' about lawsuits and chaos, driven by the joy he felt in past hunts. *(Toby Younis interview (A Gypsy's Kiss) (2:38, 3:52))*
 - **[Said]** Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes. *(Public statements (research report))*
 - **[Said]** His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game. *(Seekers Summit; public statements)*
 - **[Confirmed]** Bringing Tucker to Nine Mile Hole during the Fenn search was risky: a dog crossing the river there would have been conspicuous, and it was a dangerous endeavor. He does not regret bringing Tucker to the hunt. *(Treasure Hunt With Us, Apr 9 2025 (7:58))*
