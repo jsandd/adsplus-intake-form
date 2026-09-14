@@ -32,7 +32,8 @@ def _db():
             _conn = sqlite3.connect(config.VEC_DB, check_same_thread=False)
             _conn.execute("CREATE TABLE IF NOT EXISTS feat(id INTEGER PRIMARY KEY, layer TEXT, state TEXT, attrs TEXT, wkb BLOB)")
             _conn.execute("CREATE INDEX IF NOT EXISTS feat_layer ON feat(layer)")
-            _conn.execute("CREATE VIRTUAL TABLE IF NOT EXISTS feat_rt USING rtree(id, minx, maxx, miny, maxy)")
+            for l in LAYERS:
+                _conn.execute(f"CREATE VIRTUAL TABLE IF NOT EXISTS rt_{l} USING rtree(id, minx, maxx, miny, maxy)")
             _conn.execute("CREATE TABLE IF NOT EXISTS loaded(layer TEXT, state TEXT, n INTEGER, source TEXT, PRIMARY KEY(layer, state))")
         return _conn
 
@@ -48,12 +49,12 @@ def coverage():
 
 def _insert(layer, state, rows, source):
     c = _db(); cur = c.cursor()
-    cur.execute("DELETE FROM feat_rt WHERE id IN (SELECT id FROM feat WHERE layer=? AND state=?)", (layer, state))
+    cur.execute(f"DELETE FROM rt_{layer} WHERE id IN (SELECT id FROM feat WHERE layer=? AND state=?)", (layer, state))
     cur.execute("DELETE FROM feat WHERE layer=? AND state=?", (layer, state))
     for attrs, g in rows:
         b = g.bounds
         cur.execute("INSERT INTO feat(layer, state, attrs, wkb) VALUES (?,?,?,?)", (layer, state, json.dumps(attrs, default=str), shapely.to_wkb(g)))
-        cur.execute("INSERT INTO feat_rt VALUES (?,?,?,?,?)", (cur.lastrowid, b[0], b[2], b[1], b[3]))
+        cur.execute(f"INSERT INTO rt_{layer} VALUES (?,?,?,?,?)", (cur.lastrowid, b[0], b[2], b[1], b[3]))
     cur.execute("INSERT OR REPLACE INTO loaded VALUES (?,?,?,?)", (layer, state, len(rows), source))
     c.commit()
 
@@ -115,6 +116,54 @@ def ingest_tran(state, log=print):
         log(f"    {len(rows)} features")
 
 
+def ingest_struct(state, log=print):
+    """USGS National Structures Dataset: building footprints (FEMA USA Structures polygons) and
+    cemeteries (Struct_Point FCode 82010). Cemeteries left GNIS in 2021, so they come from here."""
+    from pyogrio.raw import read as _read
+    from pyproj import Transformer, CRS
+    import numpy as np
+    name = config.STATES[state][0].split(" (")[0]
+    url = f"{config.TNM}Struct/Shape/STRUCT_{name.replace(' ', '_')}_State_Shape.zip"
+    z = _download(url, os.path.join(config.DATA, "struct", f"STRUCT_{state}.zip"), log)
+    with zipfile.ZipFile(z) as zf:
+        names = zf.namelist()
+    def load(pattern):
+        shp = [n for n in names if n.lower().endswith(".shp") and pattern in n]
+        if not shp:
+            return None
+        meta, index, geoms, fields = _read(f"zip://{z}!{shp[0]}")
+        src = CRS.from_user_input(meta["crs"]) if meta.get("crs") else CRS.from_epsg(4326)
+        tf = None if src.to_epsg() == 5070 else Transformer.from_crs(src, "EPSG:5070", always_xy=True)
+        return meta, geoms, fields, tf
+    def conv(g, tf):
+        return g if tf is None else shapely.transform(g, lambda a: np.column_stack(tf.transform(a[:, 0], a[:, 1])))
+    r = load("Struct_Point")
+    if r:
+        meta, geoms, fields, tf = r; fn = list(meta["fields"])
+        fc = fields[fn.index("fcode")]; nm = fields[fn.index("name")]
+        rows = []
+        for i in range(len(geoms)):
+            if int(fc[i]) == 82010 and geoms[i] is not None:
+                rows.append(({"name": nm[i], "fcode": 82010}, conv(shapely.from_wkb(geoms[i]), tf)))
+        _insert("cemetery", state, rows, "USGS NSD")
+        log(f"  {state} cemetery: {len(rows)} points")
+    r = load("Struct_Poly_FEMA")
+    if r:
+        meta, geoms, fields, tf = r; fn = list(meta["fields"])
+        occ = fields[fn.index("occ_cls")] if "occ_cls" in fn else None
+        rows = []
+        for i in range(len(geoms)):
+            if geoms[i] is None:
+                continue
+            g = shapely.from_wkb(geoms[i])
+            if g is None or g.is_empty:
+                continue
+            rows.append(({"occ": (occ[i] if occ is not None else None)}, conv(g, tf)))
+        log(f"  {state} building: {len(rows)} footprints, writing…")
+        _insert("building", state, rows, "USGS NSD / FEMA USA Structures")
+        log(f"  {state} building: done")
+
+
 def ingest_gnis(state, log=print):
     """USGS GNIS domestic names: cemeteries, caves, mines as points."""
     url = f"{config.TNM}GeographicNames/DomesticNames/DomesticNames_{state}_Text.zip"
@@ -141,31 +190,41 @@ def ingest_gnis(state, log=print):
 
 
 def nearest(layer, lat, lon, max_m=8000, where=None):
-    """Nearest feature of a layer within max_m metres: (distance_m, attrs) or (None, None)."""
+    """Nearest feature of a layer within max_m metres: (distance_m, attrs) or (None, None).
+    One R-tree query, then features parsed in order of bounding-box distance and stopped
+    as soon as the box lower bound exceeds the best exact distance."""
     c = _db()
     x, y = geo.to_m(lon, lat)
     p = Point(x, y)
+    rows = []
+    for R in (min(1000.0, max_m), max_m):
+        rows = c.execute(f"SELECT id, minx, maxx, miny, maxy FROM rt_{layer} WHERE minx<=? AND maxx>=? AND miny<=? AND maxy>=?", (x + R, x - R, y + R, y - R)).fetchall()
+        if rows or R >= max_m:
+            break
+    def lb(r):
+        dx = max(r[1] - x, 0, x - r[2]); dy = max(r[3] - y, 0, y - r[4])
+        return (dx * dx + dy * dy) ** 0.5
+    rows.sort(key=lb)
     best = (None, None)
-    r = 500.0
-    while r <= max_m:
-        ids = c.execute("SELECT f.id, f.attrs, f.wkb FROM feat_rt r JOIN feat f ON f.id=r.id WHERE f.layer=? AND r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?", (layer, x + r, x - r, y + r, y - r)).fetchall()
-        for i, attrs, wkb in ids:
-            a = json.loads(attrs)
-            if where and not where(a):
-                continue
-            d = swkb.loads(wkb).distance(p)
-            if best[0] is None or d < best[0]:
-                best = (d, a)
-        if best[0] is not None and best[0] <= r:
-            return best
-        r *= 3
+    for r in rows:
+        if best[0] is not None and lb(r) >= best[0]:
+            break
+        attrs, wkb = c.execute("SELECT attrs, wkb FROM feat WHERE id=?", (r[0],)).fetchone()
+        a = json.loads(attrs)
+        if where and not where(a):
+            continue
+        d = swkb.loads(wkb).distance(p)
+        if best[0] is None or d < best[0]:
+            best = (d, a)
+    if best[0] is not None and best[0] > max_m:
+        return (None, None)
     return best
 
 
 def contains(layer, lat, lon):
     c = _db()
     x, y = geo.to_m(lon, lat); p = Point(x, y)
-    for i, attrs, wkb in c.execute("SELECT f.id, f.attrs, f.wkb FROM feat_rt r JOIN feat f ON f.id=r.id WHERE f.layer=? AND r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?", (layer, x, x, y, y)).fetchall():
+    for i, attrs, wkb in c.execute(f"SELECT f.id, f.attrs, f.wkb FROM rt_{layer} r JOIN feat f ON f.id=r.id WHERE r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?", (x, x, y, y)).fetchall():
         if swkb.loads(wkb).contains(p):
             return json.loads(attrs)
     return None
@@ -175,7 +234,7 @@ def features_in(layer, bbox_m):
     """Geometries of a layer intersecting a projected box (for regional render)."""
     c = _db()
     x0, y0, x1, y1 = bbox_m
-    rows = c.execute("SELECT f.wkb, f.attrs FROM feat_rt r JOIN feat f ON f.id=r.id WHERE f.layer=? AND r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?", (layer, x1, x0, y1, y0)).fetchall()
+    rows = c.execute(f"SELECT f.wkb, f.attrs FROM rt_{layer} r JOIN feat f ON f.id=r.id WHERE r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?", (x1, x0, y1, y0)).fetchall()
     return [(swkb.loads(w), json.loads(a)) for w, a in rows]
 
 

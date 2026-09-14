@@ -92,7 +92,7 @@ class H(BaseHTTPRequestHandler):
                 self._json(render.render(b["bbox"], rs, int(b.get("max_cells") or 250000))); return
             if u.path == "/api/fetch":
                 kind, st = b["kind"], (b.get("state") or "").upper()
-                fn = {"dem": lambda: dem.fetch_state(st, log), "tran": lambda: vectors.ingest_tran(st, log), "gnis": lambda: vectors.ingest_gnis(st, log), "padus": lambda: padus.ingest(b.get("path") or os.path.join(config.DATA, "padus.gpkg"), log)}[kind]
+                fn = {"dem": lambda: dem.fetch_state(st, log), "tran": lambda: vectors.ingest_tran(st, log), "gnis": lambda: vectors.ingest_gnis(st, log), "struct": lambda: vectors.ingest_struct(st, log), "padus": lambda: padus.ingest(b.get("path") or os.path.join(config.DATA, "padus.gpkg"), log)}[kind]
                 ok = run_job(f"{kind} {st}", fn); self._json({"ok": ok, "running": _jobs["running"]}); return
             self._json({"error": "not found"}, 404)
         except Exception as e:

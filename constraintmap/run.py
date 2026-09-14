@@ -7,7 +7,8 @@ Starts the tool and opens it in your browser (http://localhost:8790).
 Optional:
   python3 run.py fetch-dem MT WY        download 30 m elevation tiles for whole states ahead of time
   python3 run.py fetch-tran MT WY       download USGS roads / trails / railroads for those states
-  python3 run.py fetch-gnis MT WY       download USGS place names (cemeteries, caves, mines)
+  python3 run.py fetch-struct MT WY     download USGS structures (building footprints, cemeteries)
+  python3 run.py fetch-gnis MT WY       download USGS place names (caves, mines)
   python3 run.py load-padus PATH.gpkg   load the PAD-US GeoPackage you downloaded (land owner, access)
   python3 run.py --port 8790            use a different port
 
@@ -57,6 +58,10 @@ def main():
     if args and args[0] == "fetch-tran":
         for st in args[1:]:
             vectors.ingest_tran(st.upper(), log=print)
+        return
+    if args and args[0] == "fetch-struct":
+        for st in args[1:]:
+            vectors.ingest_struct(st.upper(), log=print)
         return
     if args and args[0] == "fetch-gnis":
         for st in args[1:]:
