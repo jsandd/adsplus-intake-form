@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 165 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 174 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -85,6 +85,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 165 items.
 - **[Said]** The site is below 11,000 feet. Clues may cross state lines. Not in a pay park, national-park fee area or restricted zone. *(Posey, per the treasurehuntamusementpark research hub (secondary))*
 - **[Declined]** Are national parks ruled out? 'I'm not going to say yes or no to that.' *(Seekers Summit Q&A transcript, Mar 28 2026 (31:17))*
 - **[Declined]** Whether the site predates his Fenn searches: not specified. *(Posey Q&A (MW compilation))*
+- **[Declined]** Can a Prius get within a mile of the treasure? He chose to punt. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (29:43))*
 
 ## 5. The Hole and the double arcs
 
@@ -144,6 +145,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 165 items.
 - **[Confirmed]** The dedication is 'layered and intentional… I am talking about a person… someone very special.' *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** The rancher 'Niven': 'an interesting character, that's about all I can say.' *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** The logo: 'the angzarr symbol. I chose and modified it intentionally.' 'I designed the logo intentionally and it has some meaning.' *(X Dark Matters, Sep 4 2025; X Marks the Pod)*
+- **[Said]** Are 'The Goonies' or 'A River Runs Through It' helpful? Fun for 'pregaming' an adventure, but not strictly necessary for the hunt. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (27:08))*
 - **[Said]** 'Take your treasure hat off and read the memoir as a memoir.' 'Understanding the person who hid it is the clearest map.' *(X Marks the Pod, early 2026)*
 - **[Confirmed]** The one mistake searchers consistently make, and the reset: 'Take a Matt stance, Matt the editor. If you're getting in deep and you feel like you're going down many rabbit holes, probably the best reset is to just read it as a memoir.' *(Seekers Summit Q&A transcript, Mar 28 2026 (58:18))*
 - **[Confirmed]** Does the book mention the area of the first actionable clue? 'The very specific area is not mentioned, but there are times in the book where descriptions pertain to the area where the treasure is hidden.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:23:39))*
@@ -161,7 +163,10 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 165 items.
 - **[Confirmed]** The cipher's answer is MAGYAR, solved April 2026 and confirmed. Basic math only. 'The cipher is more than anything a nod to what the container is.' MAGYAR does not give coordinates, a state or a region. *(Posey, April 2026; Sandal livestream)*
 - **[Confirmed]** 'The key to one direction lies in another' is a hidden audio message in the ARKADE song. He confirmed it as the technical clue, not as the core geographic solution. Does it relate to the azimuth? 'No.' *(Posey, April 2026; Seekers Summit)*
 - **[Confirmed]** Are the clocks part of the cipher? 'Yes.' *(Seekers Summit Q&A transcript, Mar 28 2026 (38:08))*
-- **[Said]** There are clues in the hunt's songs. One song contains what he called an extremely definitive clue. *(Posey Q&A (MW compilation))*
+- **[Said]** There are clues in the hunt's songs. One song contains what he called an extremely definitive clue. *(Posey Q&A (MW compilation); Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (43:40))*
+- **[Said]** Is the cipher solvable without a math degree? Yes, it is designed to be approachable. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:12))*
+- **[Said]** One person has solved the technical clue; it is not required to find the treasure. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:56))*
+- **[Leaned]** Can the poem be solved with a flow equation? That 'sounds like it would require an advanced degree.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (57:08))*
 
 ## 11. The Netflix series
 
@@ -210,6 +215,10 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 165 items.
 
 ## 16. About Justin, as he has stated it
 
+- **[Confirmed]** He is married. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (58:17))*
+- **[Said]** Why public lands matter to him: rooted in childhood experiences, and younger generations need to connect with nature. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (8:04))*
+- **[Said]** His best experience of the hunt: seeing families find the inspiration to share an adventure together. *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (17:16))*
+- **[Said]** He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09))*
 - **[Said]** Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes. *(Public statements (research report))*
 - **[Said]** His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game. *(Seekers Summit; public statements)*
 - **[Confirmed]** The first time Brandon joined him searching for Fenn's treasure was in Yellowstone, at Iron Springs. *(Seekers Summit Q&A transcript, Mar 28 2026 (50:13))*

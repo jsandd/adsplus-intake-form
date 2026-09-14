@@ -80,6 +80,7 @@ SECTIONS = [
  ("S","The site is below 11,000 feet. Clues may cross state lines. Not in a pay park, national-park fee area or restricted zone.","Posey, per the treasurehuntamusementpark research hub (secondary)"),
  ("D","Are national parks ruled out? 'I'm not going to say yes or no to that.'","Seekers Summit Q&A transcript, Mar 28 2026 (31:17)"),
  ("D","Whether the site predates his Fenn searches: not specified.","Posey Q&A (MW compilation)"),
+ ("D","Can a Prius get within a mile of the treasure? He chose to punt.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (29:43)"),
 ]),
 ("The Hole and the double arcs", [
  ("S","The Hole carries no man-made implication: a direct 'no.'","Seekers Summit, Mar 28 2026"),
@@ -134,6 +135,7 @@ SECTIONS = [
  ("C","The dedication is 'layered and intentional… I am talking about a person… someone very special.'","Seekers Summit, Mar 28 2026"),
  ("C","The rancher 'Niven': 'an interesting character, that's about all I can say.'","Seekers Summit, Mar 28 2026"),
  ("C","The logo: 'the angzarr symbol. I chose and modified it intentionally.' 'I designed the logo intentionally and it has some meaning.'","X Dark Matters, Sep 4 2025; X Marks the Pod"),
+ ("S","Are 'The Goonies' or 'A River Runs Through It' helpful? Fun for 'pregaming' an adventure, but not strictly necessary for the hunt.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (27:08)"),
  ("S","'Take your treasure hat off and read the memoir as a memoir.' 'Understanding the person who hid it is the clearest map.'","X Marks the Pod, early 2026"),
  ("C","The one mistake searchers consistently make, and the reset: 'Take a Matt stance, Matt the editor. If you're getting in deep and you feel like you're going down many rabbit holes, probably the best reset is to just read it as a memoir.'","Seekers Summit Q&A transcript, Mar 28 2026 (58:18)"),
  ("C","Does the book mention the area of the first actionable clue? 'The very specific area is not mentioned, but there are times in the book where descriptions pertain to the area where the treasure is hidden.'","Seekers Summit Q&A transcript, Mar 28 2026 (1:23:39)"),
@@ -150,7 +152,10 @@ SECTIONS = [
  ("C","The cipher's answer is MAGYAR, solved April 2026 and confirmed. Basic math only. 'The cipher is more than anything a nod to what the container is.' MAGYAR does not give coordinates, a state or a region.","Posey, April 2026; Sandal livestream"),
  ("C","'The key to one direction lies in another' is a hidden audio message in the ARKADE song. He confirmed it as the technical clue, not as the core geographic solution. Does it relate to the azimuth? 'No.'","Posey, April 2026; Seekers Summit"),
  ("C","Are the clocks part of the cipher? 'Yes.'","Seekers Summit Q&A transcript, Mar 28 2026 (38:08)"),
- ("S","There are clues in the hunt's songs. One song contains what he called an extremely definitive clue.","Posey Q&A (MW compilation)"),
+ ("S","There are clues in the hunt's songs. One song contains what he called an extremely definitive clue.","Posey Q&A (MW compilation); Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (43:40)"),
+ ("S","Is the cipher solvable without a math degree? Yes, it is designed to be approachable.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:12)"),
+ ("S","One person has solved the technical clue; it is not required to find the treasure.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (38:56)"),
+ ("L","Can the poem be solved with a flow equation? That 'sounds like it would require an advanced degree.'","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (57:08)"),
 ]),
 ("The Netflix series", [
  ("S","He had no creative control and did not know scene order, framing or focus. He hid hints during filming that even the producers did not know about. Clues exist only 'where I had some notion of control, directly or indirectly.'","Posey Q&A; Dillon Q&A"),
@@ -193,6 +198,10 @@ SECTIONS = [
  ("C","'Forrest spent like 10 years… I came up with the bulk of that poem in about four to six hours.'","Froggy interview, 2025"),
 ]),
 ("About Justin, as he has stated it", [
+ ("C","He is married.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (58:17)"),
+ ("S","Why public lands matter to him: rooted in childhood experiences, and younger generations need to connect with nature.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (8:04)"),
+ ("S","His best experience of the hunt: seeing families find the inspiration to share an adventure together.","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (17:16)"),
+ ("S","He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.'","Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09)"),
  ("S","Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes.","Public statements (research report)"),
  ("S","His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game.","Seekers Summit; public statements"),
  ("C","The first time Brandon joined him searching for Fenn's treasure was in Yellowstone, at Iron Springs.","Seekers Summit Q&A transcript, Mar 28 2026 (50:13)"),
