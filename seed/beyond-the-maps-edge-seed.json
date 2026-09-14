@@ -9717,7 +9717,7 @@
    "top3": 3
   },
   {
-   "id": "c_cometsawtooth",
+   "id": "c_comet_sawtooth",
    "name": "Comet Mountain / Sawtooth Mountain — East Pioneers (MT)",
    "region": "MT · Beaverhead County, Beaverhead-Deerlodge NF · Elkhorn Hot Springs quad",
    "coords": "45.4597, -113.0443 (Comet) · 45.4368, -113.0136 (Sawtooth)",
@@ -9828,7 +9828,7 @@
      "coords": "45.46465, -113.03653"
     }
    },
-   "created": 1789400000000
+   "created": 1789450000000
   }
  ],
  "mapStates": {
