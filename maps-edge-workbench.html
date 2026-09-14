@@ -85,7 +85,7 @@ a{color:var(--gold)}
 .tabs .n{font-family:var(--f-m); font-size:10.5px; color:var(--ink-3); background:var(--g3); padding:1px 6px; border-radius:100px}
 .tabs button[aria-current="page"] .n{color:var(--gold); background:var(--gold-soft)}
 .top .grow{flex:1; min-width:4px}
-@media (max-width:1400px){ .tabs .n{display:none} .brand .sub{display:none} }
+@media (max-width:1560px){ .tabs .n{display:none} .brand .sub{display:none} .tabs button{padding:0 8px} }
 .topbtn{background:var(--g2); border:1px solid var(--line); border-radius:var(--r); padding:6px 10px; cursor:pointer; color:var(--ink-2); display:inline-flex; gap:8px; align-items:center; font-size:12.5px; white-space:nowrap}
 .topbtn:hover{border-color:var(--line-2); color:var(--ink)}
 .topbtn kbd{font-family:var(--f-m); font-size:10px; border:1px solid var(--line-2); border-radius:3px; padding:0 4px; color:var(--ink-3)}
@@ -450,6 +450,16 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 @media (max-width:1180px){ .t3grid,.t3intro{grid-template-columns:1fr} .hqtop3{grid-template-columns:1fr} }
 @media (max-width:820px){ .t3head{flex-wrap:wrap} .t3head h2{font-size:24px} }
 
+/* His map */
+.hmwrap{position:relative; background:#0b0d12; border-radius:var(--r); overflow:hidden; line-height:0} .hmwrap img{width:100%; height:auto; display:block; user-select:none} .hmwrap svg{position:absolute; inset:0; width:100%; height:100%; overflow:visible} .hmwrap.calib{cursor:crosshair} .hmwrap.calib img{opacity:.85}
+.hmwrap .hml circle{pointer-events:all} .hmwrap .hml.odd circle{filter:drop-shadow(0 0 3px rgba(242,109,109,.6))} .hmwrap .hml.flash circle{stroke:#fff; stroke-width:4; r:14}
+.hmwrap .hms{cursor:pointer} .hmwrap .hms circle{fill:var(--gold); stroke:#0b0d12; stroke-width:1.5; opacity:.95} .hmwrap .hms.out circle{fill:#8C94A3; opacity:.55} .hmwrap .hms.top circle{fill:#fff; stroke:var(--gold); stroke-width:3} .hmwrap .hms.sel circle{stroke:#fff; stroke-width:3} .hmwrap .hms text{font:700 13px var(--f-m); fill:#fff; paint-order:stroke; stroke:#0b0d12; stroke-width:3px}
+.hmwrap .hmroute{fill:none; stroke:var(--gold); stroke-width:2.5; stroke-dasharray:6 4} .hmwrap .hmring{fill:rgba(228,179,76,.06); stroke:var(--gold); stroke-width:1; stroke-dasharray:3 3}
+.hmtog{display:flex; flex-wrap:wrap; gap:6px; padding:10px 14px} .hmtog .tog{font:600 11px var(--f-m); letter-spacing:.04em; padding:5px 9px; border-radius:99px; border:1px solid var(--line-2); background:transparent; color:var(--ink-3); cursor:pointer} .hmtog .tog.on{color:var(--gold); border-color:var(--gold-line); background:var(--gold-soft)}
+.hmcalib{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 14px; border-bottom:1px solid var(--line); background:var(--gold-soft)} .hmcalib select{font:inherit; background:var(--g1); color:var(--ink); border:1px solid var(--line-2); border-radius:var(--r); padding:5px 8px; max-width:320px}
+.hmlist{max-height:520px; overflow:auto} .hmlrow{display:grid; grid-template-columns:10px minmax(0,1fr) auto; gap:8px; align-items:center; width:100%; text-align:left; background:transparent; border:0; border-top:1px solid var(--line); padding:6px 14px; color:var(--ink); font:inherit; cursor:pointer} .hmlrow:hover{background:var(--g2)} .hmlrow i{width:8px; height:8px; border-radius:50%; display:block} .hmlrow .m{font:10px var(--f-m); color:var(--ink-3)}
+label.btn input{display:none}
+
 </style>
 
 <header class="top">
@@ -566,7 +576,7 @@ const state = {
   judge:{ queue:[], i:0, done:0 }, overlays:{ fenn:true, cutoff:true, rings:false, labels:true, sitelabels:false, route:true },
   gateShowOut:false, wallFocus:null, wallTier:"all", chat:[], aiBusy:false, usingDemo:false,
 };
-let db = null, downloads = null, sampler = null, ready = false;
+let db = null, downloads = null, sampler = null, assetsCap = null, ready = false;
 const writeTimers = new Map();
 const uid = p => p + "_" + Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-4);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
@@ -605,6 +615,7 @@ async function connect() {
   try { db = await claude.use("db"); } catch (e) { db = null; }
   try { downloads = await claude.use("downloads"); } catch (e) { downloads = null; }
   try { sampler = await claude.use("sample"); } catch (e) { sampler = null; }
+  try { assetsCap = await claude.use("assets"); } catch (e) { assetsCap = null; }
   renderDrawer();
   if (!db) { ready = true; setSync("off", "local only — export to keep"); loadDemoIfEmpty(); render(); return; }
   setSync("busy", "connecting");
@@ -612,6 +623,7 @@ async function connect() {
   db.doc("map/states").onSnapshot(s => { if (s.exists) { const d = s.data() || {}; state.mapStates = d.states && typeof d.states === "object" ? d.states : {}; } if (ready && state.route === "map") render(); }, () => {});
   db.collection("intel").onSnapshot(s => { const rows = s.docs.map(d => ({ id:d.id, ...(d.data() || {}) })); if (rows.length) { state.intel = rows; state.usingDemo = false; } else if (!state.usingDemo) state.intel = []; afterLoad(); }, () => {});
   db.collection("candidates").onSnapshot(s => { const rows = s.docs.map(d => ({ id:d.id, ...(d.data() || {}) })); if (rows.length) { state.solves = rows.map(normSolve); state.usingDemo = false; } else if (!state.usingDemo) state.solves = []; afterLoad(); }, () => {});
+  db.doc("hismap/doc").onSnapshot(s => { const d = s.exists ? (s.data() || {}) : {}; state.hisMap.assetId = d.assetId || null; state.hisMap.calib = d.calib || {}; state.hisMap.loaded = true; _hmFit = null; if (ready && state.route === "hismap") render(); }, () => { state.hisMap.loaded = true; });
   db.collection("readings").onSnapshot(s => { state.readings = s.docs.map(d => ({ id:d.id, ...(d.data() || {}) })); if (ready) render(); }, () => {});
   setTimeout(afterLoad, 2500);
 }
@@ -724,15 +736,16 @@ function solvePins(c) { const out = []; state.lines.forEach((l, i) => { const s 
 
 
 /* ================= render core ================= */
-const VIEWS = [["hq","HQ",() => ""],["top3","Top 3",() => "3"],["solves","Solves",() => standing().length + "/" + state.solves.length],["wall","Evidence wall",() => state.intel.length],["lab","Line lab",() => state.lines.length],["gate","The gate",() => GATES.length],["facts","Facts",() => state.intel.length],["map","Map",() => Object.values(state.mapStates).filter(x => x && (x.status === "active" || x.status === "hot")).length || ""],["ops","Ops",() => ""]];
+const VIEWS = [["hq","HQ",() => ""],["top3","Top 3",() => "3"],["solves","Solves",() => standing().length + "/" + state.solves.length],["wall","Evidence wall",() => state.intel.length],["lab","Line lab",() => state.lines.length],["gate","The gate",() => GATES.length],["facts","Facts",() => state.intel.length],["hismap","His map",() => state.hisMap && state.hisMap.assetId ? "●" : ""],["map","Map",() => Object.values(state.mapStates).filter(x => x && (x.status === "active" || x.status === "hot")).length || ""],["ops","Ops",() => ""]];
 let wallSim = null;
 function render() {
   document.getElementById("tabs").innerHTML = VIEWS.map(([id, label, n]) => `<button data-route="${id}" ${state.route === id ? 'aria-current="page"' : ""}>${label}${n(state) ? `<span class="n">${n(state)}</span>` : ""}</button>`).join("");
   if (wallSim) { wallSim.stop(); wallSim = null; }
-  const fn = { hq:viewHQ, top3:viewTop3, solves:viewSolves, wall:viewWall, lab:viewLab, gate:viewGate, facts:viewFacts, map:viewMap, ops:viewOps }[state.route] || viewHQ;
+  const fn = { hq:viewHQ, top3:viewTop3, hismap:viewHisMap, solves:viewSolves, wall:viewWall, lab:viewLab, gate:viewGate, facts:viewFacts, map:viewMap, ops:viewOps }[state.route] || viewHQ;
   document.getElementById("view").innerHTML = (state.usingDemo ? `<div class="panel" style="margin-bottom:14px; border-color:var(--warn)"><div class="pb row"><div><b>Worked example.</b> <span class="hint">Nothing here is from the hunt. Paste the poem or add a fact and it clears.</span></div><div class="grow"></div><button class="btn sm" data-act="clear-demo">Clear</button></div></div>` : "") + fn();
   wire();
   if (state.route === "wall") startWall();
+  if (state.route === "hismap") wireHisMap();
   window.scrollTo({ top:0 });
 }
 const stackHTML = (s, max) => { const p = s.parts, tot = Math.max(1, max); const w = v => Math.max(0, v) / tot * 100; return `<div class="stack" title="chain ${p.chain} · verdicts ${p.fit} · gate ${p.gate} · evidence ${p.evid}"><i class="a" style="width:${w(p.chain)}%"></i><i class="b" style="width:${w(p.fit)}%"></i><i class="c" style="width:${w(p.gate)}%"></i><i class="e" style="width:${w(p.evid)}%"></i></div>`; };
@@ -802,6 +815,81 @@ function viewTop3() {
   ${cards}
   ${cmp}
   <div class="t3intro"><div class="panel"><div class="ph"><h3>Where the Moab solve stands</h3></div><div class="pb">${esc(t.method.moab)}</div></div><div class="panel warnb"><div class="ph"><h3>What I do not know</h3><span class="k">said plainly</span></div><ul class="t3list">${t.method.unknown.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div></div>`;
+}
+
+/* ================= His map (treasure.quest/map.jpg) =================
+   The published map lives here as an uploaded asset. Pins are placed by a
+   polynomial fit from the labels he printed to their real coordinates; the
+   fit is calibrated by clicking labels on the image. */
+const HM_LABELS = [
+  // [name, category, lat, lon, odd?]  category: capital | peak | park | monument | statepark | town | water | area
+  ["Olympia","capital",47.038,-122.900],["Boise","capital",43.615,-116.202],["Helena","capital",46.589,-112.039],["Cheyenne","capital",41.140,-104.820],["Salt Lake City","capital",40.761,-111.891],["Denver","capital",39.739,-104.990],["Santa Fe","capital",35.687,-105.938],["Phoenix","capital",33.448,-112.074],["Carson City","capital",39.164,-119.767],["Sacramento","capital",38.582,-121.494],["Juneau","capital",58.302,-134.420],
+  ["Mt. Rainier 14,411","peak",46.853,-121.760],["Mt. Hood 11,249","peak",45.374,-121.695],["Borah Pk 12,662","peak",44.137,-113.781],["Granite Pk 12,807","peak",45.163,-109.807],["Gannett Pk (7,076 as printed)","peak",43.184,-109.654],["Kings Pk 13,528","peak",40.776,-110.373],["Mt. Elbert 14,440","peak",39.118,-106.445],["Wheeler Pk 13,167","peak",36.557,-105.417],["Humphreys Pk 12,637","peak",35.346,-111.678],["Boundary Pk 13,147","peak",37.846,-118.351],["Guadalupe Pk 8,751","peak",31.891,-104.860],["Mt. Shasta 14,179","peak",41.409,-122.195,1],
+  ["Olympic NP","park",47.802,-123.604],["North Cascades NP","park",48.700,-121.200],["Glacier NP","park",48.696,-113.718],["Yellowstone NP","park",44.428,-110.588],["Grand Teton NP","park",43.791,-110.682],["Rocky Mountain NP","park",40.343,-105.688],["Great Sand Dunes NP","park",37.733,-105.512],["Mesa Verde NP","park",37.184,-108.489],["Arches NP","park",38.733,-109.593],["Bryce Canyon NP","park",37.593,-112.187],["Zion NP","park",37.298,-113.026],["Great Basin NP","park",38.984,-114.300],["Redwood NP","park",41.213,-124.005],["Yosemite NP","park",37.865,-119.538],["Joshua Tree NP","park",33.881,-115.900],["Saguaro NP","park",32.297,-111.167],["White Sands NP","park",32.779,-106.172],["Carlsbad Caverns NP","park",32.148,-104.557],["Big Bend NP","park",29.250,-103.250],["Crater Lake NP","park",42.944,-122.109],
+  ["Craters of the Moon NM","monument",43.417,-113.517,1],["Devils Tower NM","monument",44.590,-104.715,1],["Bandelier NM","monument",35.779,-106.271,1],
+  ["Sinks Canyon State Park","statepark",42.740,-108.820,1],["Heron Lake State Park","statepark",36.690,-106.700,1],["Valley of Fire State Park","statepark",36.430,-114.520,1],["Red Rock Canyon NCA","statepark",36.135,-115.427,1],
+  ["Polaris","town",45.366,-113.122,1],["Dillon","town",45.216,-112.637,1],["Cody","town",44.526,-109.056,1],["Redmond","town",47.674,-122.122,1],["Tucson","town",32.222,-110.975,1],["Cloudcroft","town",32.957,-105.742,1],["Alamogordo","town",32.900,-105.960,1],["Lukeville","town",31.881,-112.817,1],["Big Sur","town",36.270,-121.808,1],
+  ["Flathead Lake","water",47.900,-114.100,1],["Lake Tahoe","water",39.090,-120.040,1],["Great Salt Lake","water",41.100,-112.500,1],["Antelope Canyon","area",36.862,-111.374,1],["Monument Valley","area",36.998,-110.098,1],["Bob Marshall Wilderness","area",47.700,-113.200,1],["Sawtooth NRA","area",44.000,-114.900,1],["Hell's Canyon","area",45.400,-116.700,1],["Columbia River Gorge","area",45.700,-121.900,1],["Garden of the Gods","area",38.878,-104.882,1],["San Juan Islands","area",48.550,-123.050,1],["Channel Islands","area",34.000,-119.700,1],
+];
+/* Rough starting pixels (fractions of width and height) read off the published image; click-calibrate to refine. */
+const HM_DEFAULT_CALIB = { "Olympia":[.535,.137],"Boise":[.675,.334],"Helena":[.753,.180],"Cheyenne":[.913,.436],"Salt Lake City":[.755,.474],"Denver":[.915,.532],"Santa Fe":[.894,.704],"Phoenix":[.752,.796],"Carson City":[.603,.517],"Sacramento":[.563,.572],"Mt. Rainier 14,411":[.539,.175],"Mt. Hood 11,249":[.567,.247],"Mt. Shasta 14,179":[.566,.425],"Boundary Pk 13,147":[.645,.594],"Borah Pk 12,662":[.730,.283],"Granite Pk 12,807":[.813,.242],"Gannett Pk (7,076 as printed)":[.816,.320],"Kings Pk 13,528":[.792,.487],"Mt. Elbert 14,440":[.879,.548],"Wheeler Pk 13,167":[.900,.657],"Humphreys Pk 12,637":[.770,.745],"Guadalupe Pk 8,751":[.913,.883],"Cody":[.832,.263],"Dillon":[.759,.234],"Polaris":[.739,.216],"Tucson":[.785,.861],"Redmond":[.522,.120],"Big Sur":[.565,.671] };
+const HM_CAT = { capital:["Capital","#F3CD7A"], peak:["High point","#E4B34C"], park:["National park","#4CC58F"], monument:["Monument","#6FB3D8"], statepark:["State park / NCA","#F26D6D"], town:["Town","#F0955A"], water:["Lake","#6FB3D8"], area:["Area","#B7A3FF"] };
+state.hisMap = { assetId:null, calib:null, natural:[1500,844], loaded:false };
+state.hmUi = { show:{ labels:true, odd:true, sites:true, top3:true, route:true, rings:false }, mode:"view", calibPick:"", sel:null };
+function hmCalib() { return Object.assign({}, HM_DEFAULT_CALIB, state.hisMap.calib || {}); }
+/* Least-squares quadratic fit lon/lat → fraction x,y using the calibrated labels. */
+let _hmFit = null, _hmFitKey = "";
+function hmFit() {
+  const cal = hmCalib(), key = JSON.stringify(cal); if (_hmFit && _hmFitKey === key) return _hmFit;
+  const pts = HM_LABELS.filter(l => cal[l[0]] && l[3] > -130).map(l => ({ lon:l[3], lat:l[2], x:cal[l[0]][0], y:cal[l[0]][1] }));
+  const basis = p => { const u = (p.lon + 112) / 10, v = (p.lat - 40) / 10; return [1, u, v, u * u, u * v, v * v]; };
+  const n = pts.length >= 8 ? 6 : 3, rows = pts.map(p => basis(p).slice(0, n));
+  const solve = target => { const A = Array.from({ length:n }, () => Array(n + 1).fill(0)); rows.forEach((r, k) => { for (let i = 0; i < n; i++) { for (let j = 0; j < n; j++) A[i][j] += r[i] * r[j]; A[i][n] += r[i] * target[k]; } });
+    for (let i = 0; i < n; i++) { let m = i; for (let k = i + 1; k < n; k++) if (Math.abs(A[k][i]) > Math.abs(A[m][i])) m = k; [A[i], A[m]] = [A[m], A[i]]; if (Math.abs(A[i][i]) < 1e-12) return null; for (let k = 0; k < n; k++) { if (k === i) continue; const f = A[k][i] / A[i][i]; for (let j = i; j <= n; j++) A[k][j] -= f * A[i][j]; } }
+    return A.map((r, i) => r[n] / r[i]); };
+  const cx = pts.length >= 3 ? solve(pts.map(p => p.x)) : null, cy = pts.length >= 3 ? solve(pts.map(p => p.y)) : null;
+  const fn = (cx && cy) ? (lat, lon) => { const b = basis({ lat, lon }).slice(0, n); return [b.reduce((s, v, i) => s + v * cx[i], 0), b.reduce((s, v, i) => s + v * cy[i], 0)]; } : null;
+  let err = 0; if (fn) { pts.forEach(p => { const [x, y] = fn(p.lat, p.lon); err += Math.hypot((x - p.x) * state.hisMap.natural[0], (y - p.y) * state.hisMap.natural[1]); }); err = pts.length ? err / pts.length : 0; }
+  _hmFit = { fn, n:pts.length, err, order:n === 6 ? "quadratic" : "affine" }; _hmFitKey = key; return _hmFit;
+}
+function hmPX(lat, lon) { const f = hmFit(); if (!f.fn) return null; const [x, y] = f.fn(lat, lon); return [x * state.hisMap.natural[0], y * state.hisMap.natural[1]]; }
+function viewHisMap() {
+  const hm = state.hisMap, ui = state.hmUi, [W, H] = hm.natural, fit = hmFit(), cal = hmCalib();
+  const rk = ranked(), sel = solveById(ui.sel) || solveById(state.sel.solve);
+  const head = `<div class="vh"><div><h2>His map</h2><p class="lede">The map he published at treasure.quest, exactly as printed, with the board's candidates placed on it. He called it 'a good primer' and said the choice of labels was his.</p></div><div class="grow"></div>${assetsCap ? `<label class="btn"><input type="file" accept="image/jpeg,image/png,image/webp" id="hm-file" hidden>${hm.assetId ? "Replace image" : "Upload map.jpg"}</label>` : ""}<button class="btn ${ui.mode === "calib" ? "gold" : ""}" data-hm="mode">${ui.mode === "calib" ? "Done calibrating" : "Calibrate"}</button></div>`;
+  if (!hm.assetId) return head + `<div class="panel"><div class="pb"><h3 style="margin:0 0 6px">The map is not on the site yet</h3><p class="hint">${assetsCap ? "Save treasure.quest/map.jpg to your computer, then use Upload map.jpg above. It is stored with this site and every viewer sees it." : "This view cannot upload files (read-only). Open the site as its owner to add the map."}</p><p class="hint">${hm.loaded ? "" : "Checking the store…"}</p></div></div>` + hmLabelsPanel(null);
+  const pins = [];
+  if (ui.show.labels) HM_LABELS.forEach(l => { if (l[3] <= -130) return; if (!ui.show.odd && l[4]) return; const c = cal[l[0]]; const p = c ? [c[0] * W, c[1] * H] : hmPX(l[2], l[3]); if (!p) return; const col = HM_CAT[l[1]][1]; pins.push(`<g class="hml ${l[4] ? "odd" : ""} ${c ? "cal" : "fit"}" data-hml="${esc(l[0])}"><circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${l[4] ? 7 : 5}" fill="none" stroke="${col}" stroke-width="${l[4] ? 2.5 : 1.5}"/><title>${esc(l[0])} · ${HM_CAT[l[1]][0]}${l[4] ? " · odd one out" : ""}${c ? " · calibrated" : " · fitted"}</title></g>`); });
+  if (ui.show.sites && fit.fn) rk.forEach(({ c, s }) => { const p0 = parseCoords(c.coords); if (!p0) return; const p = hmPX(p0[0], p0[1]); if (!p) return; const top = c.top3; if (!ui.show.top3 && top) return; const isSel = sel && sel.id === c.id; pins.push(`<g class="hms ${s.ruledOut ? "out" : "live"} ${top ? "top" : ""} ${isSel ? "sel" : ""}" data-hms="${c.id}"><circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${top ? 9 : isSel ? 8 : 5.5}"/>${top ? `<text x="${(p[0] + 12).toFixed(1)}" y="${(p[1] + 4).toFixed(1)}">TOP ${top}</text>` : ""}<title>${esc(c.name)} · ${s.ruledOut ? "ruled out" : "score " + s.score}</title></g>`); });
+  if (ui.show.route && sel && fit.fn) { const ps = solvePins(sel).map(x => hmPX(x.p[0], x.p[1])).filter(Boolean); if (ps.length > 1) pins.push(`<polyline class="hmroute" points="${ps.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")}"/>`); }
+  if (ui.show.rings && fit.fn) FENN_SITES.forEach(([n, la, lo]) => { const p = hmPX(la, lo), q = hmPX(la, lo + 75 / 69 / Math.cos(rad(la))); if (p && q) pins.push(`<circle class="hmring" cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${Math.abs(q[0] - p[0]).toFixed(1)}"><title>75 mi around ${esc(n)}</title></circle>`); });
+  const calibBar = ui.mode === "calib" ? `<div class="hmcalib"><span class="k">Calibrate</span><select id="hm-pick">${["", ...HM_LABELS.filter(l => l[3] > -130).map(l => l[0])].map(n => `<option value="${esc(n)}" ${n === ui.calibPick ? "selected" : ""}>${n ? (cal[n] ? "✓ " : "· ") + esc(n) : "pick a label, then click it on the map"}</option>`).join("")}</select><span class="hint">${fit.n} points · ${fit.order} fit · mean error ${fit.err.toFixed(0)} px</span><button class="btn sm ghost" data-hm="calib-clear">Reset my clicks</button></div>` : "";
+  const map = `<div class="panel"><div class="ph"><h3>treasure.quest/map.jpg</h3><span class="k">${W}×${H} px · ${fit.n} calibration points · mean fit error ${fit.err.toFixed(0)} px</span></div>${calibBar}<div class="hmwrap ${ui.mode === "calib" ? "calib" : ""}" id="hm-wrap"><img id="hm-img" src="/_blob/${esc(hm.assetId)}" alt="Beyond the Map's Edge map"><svg id="hm-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${pins.join("")}</svg></div>
+    <div class="hmtog">${[["labels","His labels"],["odd","Odd ones out"],["sites","Candidates"],["top3","Top 3"],["route","Selected route"],["rings","75-mi Fenn rings"]].map(([k, l]) => `<button class="tog ${ui.show[k] ? "on" : ""}" data-hm="tog" data-k="${k}">${l}</button>`).join("")}</div></div>`;
+  const side = `<div style="display:grid; gap:16px">${hmSelPanel(sel)}${hmLabelsPanel(cal)}</div>`;
+  return head + `<div class="mapwrap">${map}${side}</div>`;
+}
+function hmSelPanel(sel) {
+  if (!sel) return `<div class="panel"><div class="ph"><h3>Selected solve</h3></div><div class="pb hint">Click a candidate pin, or pick one in the Solve room.</div></div>`;
+  const s = strength(sel), p0 = parseCoords(sel.coords); let near = "";
+  if (p0) { const d = HM_LABELS.filter(l => l[3] > -130).map(l => ({ l, d:haversine(p0, [l[2], l[3]]) })).sort((a, b) => a.d - b.d).slice(0, 4); near = d.map(x => `<div class="fi"><span class="dot" style="background:${HM_CAT[x.l[1]][1]}"></span><span>${esc(x.l[0])}<div class="m">${x.d.toFixed(0)} mi · ${HM_CAT[x.l[1]][0]}${x.l[4] ? " · odd one out" : ""}</div></span></div>`).join(""); }
+  return `<div class="panel"><div class="ph"><h3>${esc(shortName(sel))}</h3><span class="k">score ${s.score}</span></div><div class="pb"><div class="hint">${esc(sel.region || "")}${sel.coords ? " · " + esc(sel.coords) : ""}</div></div><div class="ph"><h3>Nearest labels he printed</h3></div><div class="feed">${near || '<div class="pb hint">No coordinates on this solve.</div>'}</div><div class="pb"><button class="btn sm" data-act="open-solve" data-id="${sel.id}">Open in Solve room</button></div></div>`;
+}
+function hmLabelsPanel(cal) {
+  const odd = HM_LABELS.filter(l => l[4]), sys = HM_LABELS.filter(l => !l[4]);
+  const row = l => `<button class="hmlrow" data-hmgo="${esc(l[0])}"><i style="background:${HM_CAT[l[1]][1]}"></i><span>${esc(l[0])}</span><span class="m">${HM_CAT[l[1]][0]}${cal && cal[l[0]] ? " · ✓" : ""}</span></button>`;
+  return `<div class="panel"><div class="ph"><h3>The labels he chose</h3><span class="k">${HM_LABELS.length} transcribed</span></div><div class="pb hint">Most follow a system: capitals, state high points, national parks, big rivers. The ${odd.length} that do not are the choices that needed a reason.</div><div class="hmlist"><div class="k" style="padding:6px 14px">Odd ones out</div>${odd.map(row).join("")}<div class="k" style="padding:10px 14px 6px">Systematic</div>${sys.map(row).join("")}</div></div>`;
+}
+async function hmSave(patch) { Object.assign(state.hisMap, patch); if (db) { try { await db.doc("hismap/doc").set({ assetId:state.hisMap.assetId, calib:state.hisMap.calib || {} }); setSync("ok", "map saved"); } catch (e) { setSync("off", "map not saved"); } } }
+function wireHisMap() {
+  const view = document.getElementById("view"), ui = state.hmUi;
+  const img = document.getElementById("hm-img"); if (img) img.addEventListener("load", () => { if (img.naturalWidth && (img.naturalWidth !== state.hisMap.natural[0] || img.naturalHeight !== state.hisMap.natural[1])) { state.hisMap.natural = [img.naturalWidth, img.naturalHeight]; _hmFit = null; render(); } });
+  const file = document.getElementById("hm-file"); if (file) file.addEventListener("change", async () => { const f = file.files[0]; if (!f || !assetsCap) return; setSync("ok", "uploading map…"); try { const r = await assetsCap.upload(f); await hmSave({ assetId:r.id }); render(); } catch (e) { toast("Upload failed: " + (e && e.code ? e.code : "error")); setSync("off", "upload failed"); } });
+  view.querySelectorAll("[data-hm]").forEach(b => b.addEventListener("click", () => { const k = b.dataset.hm; if (k === "mode") ui.mode = ui.mode === "calib" ? "view" : "calib"; else if (k === "tog") ui.show[b.dataset.k] = !ui.show[b.dataset.k]; else if (k === "calib-clear") { if (confirm("Forget every point you clicked and go back to the rough defaults?")) hmSave({ calib:{} }); } render(); }));
+  const pick = document.getElementById("hm-pick"); if (pick) pick.addEventListener("change", () => { ui.calibPick = pick.value; });
+  view.querySelectorAll("[data-hms]").forEach(g => g.addEventListener("click", ev => { ev.stopPropagation(); ui.sel = g.dataset.hms; state.sel.solve = ui.sel; render(); renderDrawerCtx(); }));
+  view.querySelectorAll("[data-hmgo]").forEach(b => b.addEventListener("click", () => { const n = b.dataset.hmgo; const g = view.querySelector(`[data-hml="${CSS.escape(n)}"]`); if (g) { g.classList.add("flash"); g.scrollIntoView({ block:"center", behavior:"smooth" }); setTimeout(() => g.classList.remove("flash"), 1800); } else if (ui.mode !== "calib") { ui.mode = "calib"; ui.calibPick = n; render(); toast("Click where " + n + " is on the map."); } }));
+  const wrap = document.getElementById("hm-wrap"); if (wrap) wrap.addEventListener("click", ev => { if (ui.mode !== "calib") return; const p = document.getElementById("hm-pick"); const name = p ? p.value : ui.calibPick; if (!name) { toast("Pick a label first."); return; } const r = wrap.getBoundingClientRect(); const fx = (ev.clientX - r.left) / r.width, fy = (ev.clientY - r.top) / r.height; const calib = Object.assign({}, state.hisMap.calib || {}); calib[name] = [+fx.toFixed(4), +fy.toFixed(4)]; _hmFit = null; hmSave({ calib }); toast(name + " set"); render(); });
 }
 
 /* ================= Solves ================= */
