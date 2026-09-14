@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 180 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 188 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -69,6 +69,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 
 ## 4. The site itself
 
+- **[Confirmed]** Does anybody besides him know where the treasure is? 'No, there is not a soul that knows but me. I am the only person on the planet.' *(Treasure Hunt With Us, Apr 9 2025 (0:38))*
 - **[Confirmed]** 'A place that is important to me, and a place that I've known about for quite some time.' Meaningful for beauty, symbolism AND sentiment: 'all of the above.' *(Seekers Summit, Mar 28 2026)*
 - **[Said]** 'In a place that's dear to my heart' and 'surrounded by significance.' *(Public statements (research report))*
 - **[Confirmed]** Physical objects along the way: 'fair to say there are.' *(Seekers Summit, Mar 28 2026)*
@@ -120,6 +121,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 - **[Said]** The checkpoint is both something he placed AND something already there. Tied to a topographic feature? 'There is some implication there.' Not something you need to worry about moving. It is possible to be at it and not recognize it, depending how close you are. *(Seekers Summit, Mar 28 2026)*
 - **[Said]** 'You'd be hard pressed to get all the way without seeing the checkpoint.' 'There is a chance you could bypass it, but boy the odds are astronomically low.' *(Posey Q&A; X Q&A via MW, Sep 2025)*
 - **[Confirmed]** The checkpoint is not visible in the Netflix series. *(Posey on X, Aug 1 2025)*
+- **[Declined]** Is the checkpoint a boots-on-the-ground checkpoint or a before-you-go checkpoint? 'I haven't specified, but I might reconsider that in the future. For now, I have to avoid answering.' *(Treasure Hunt With Us, Apr 9 2025 (2:56))*
 - **[Confirmed]** How does he know a searcher was near the checkpoint? 'I'm not going to say the exact way, but there are a number of ways that people have conveyed to me where they're searching. In one of those spheres, I have come to learn that there have been more than one person that have been close to the checkpoint.' *(Seekers Summit Q&A transcript, Mar 28 2026 (32:40))*
 - **[Declined]** Can he view searchers if they are near the treasure? 'I am going to punt on that question.' *(Seekers Summit Q&A transcript, Mar 28 2026 (15:05))*
 - **[Confirmed]** Has any searcher been in the small kitchen-sized area where the treasure is hidden? 'To my uncertain knowledge, no.' *(Seekers Summit Q&A transcript, Mar 28 2026 (14:26))*
@@ -152,6 +154,9 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 - **[Confirmed]** The one mistake searchers consistently make, and the reset: 'Take a Matt stance, Matt the editor. If you're getting in deep and you feel like you're going down many rabbit holes, probably the best reset is to just read it as a memoir.' *(Seekers Summit Q&A transcript, Mar 28 2026 (58:18))*
 - **[Confirmed]** Does the book mention the area of the first actionable clue? 'The very specific area is not mentioned, but there are times in the book where descriptions pertain to the area where the treasure is hidden.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:23:39))*
 - **[Confirmed]** How many hints or clues are in the book's stories, not counting the poem? 'I haven't counted them but there are several.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:06:08))*
+- **[Confirmed]** He did not plan to write a book at first; he wrote it so everyone was on equal footing and to have creative control over hints. Not every story has a hint, but they are sprinkled throughout. *(Treasure Hunt With Us, Apr 9 2025 (3:47))*
+- **[Confirmed]** His favorite story in the book: he has 'an affinity for the postal pilgrimage.' *(Treasure Hunt With Us, Apr 9 2025 (5:01))*
+- **[Leaned]** Do the four points of the compass designate a specific site? 'Anything related to that, the book is the best reference.' Asked whether they map to the starting point, Wisdom, the bride, the brother, the babbling brook, the grandfather and the exact spot: 'a good question, but I have to punt on that.' *(Treasure Hunt With Us, Apr 9 2025 (14:03, 14:46))*
 - **[Confirmed]** Were any of the photographs in the book (not illustrations) placed to function as explicit clues? 'I think they are useful. Yes.' *(Seekers Summit Q&A transcript, Mar 28 2026 (11:34))*
 - **[Confirmed]** Are there any clues in the Tucker poem? 'I think a reasonable person would say that that poem is helpful.' *(Seekers Summit Q&A transcript, Mar 28 2026 (43:16))*
 - **[Confirmed]** Is the map still useful once you have made tangible progress? 'I think it's a good primer.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:18:21))*
@@ -160,7 +165,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 
 ## 10. The cipher, the technical hint, the songs
 
-- **[Said]** One cipher exists, plus one hint he describes as 'somewhat technical.' Neither is critical to the solution. *(Seekers Summit, Mar 28 2026)*
+- **[Said]** One cipher exists, plus one hint he describes as 'somewhat technical.' Neither is critical to the solution. Earlier: 'There are two elements. One is a cipher (very approachable), and the other might require technical know-how, but there are ways to uncover it without advanced knowledge. It is not a super critical clue.' *(Seekers Summit, Mar 28 2026; Treasure Hunt With Us, Apr 9 2025 (19:24))*
+- **[Declined]** Is the cipher more toward the poem or the book? 'I haven't specified.' (A year later: 'Who says the cipher is in the book?') *(Treasure Hunt With Us, Apr 9 2025 (20:47))*
 - **[Said]** Is the cipher in one section of the book or several? 'Who says the cipher is in the book?' *(Seekers Summit, Mar 28 2026)*
 - **[Confirmed]** The cipher's answer is MAGYAR, solved April 2026 and confirmed. Basic math only. 'The cipher is more than anything a nod to what the container is.' MAGYAR does not give coordinates, a state or a region. *(Posey, April 2026; Sandal livestream)*
 - **[Confirmed]** 'The key to one direction lies in another' is a hidden audio message in the ARKADE song. He confirmed it as the technical clue, not as the core geographic solution. Does it relate to the azimuth? 'No.' *(Posey, April 2026; Seekers Summit)*
@@ -179,7 +185,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 - **[Confirmed]** The Red Mountain clip was B-roll chosen by the crew: 'I didn't have any influence or involvement in that.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:05:00))*
 - **[Confirmed]** Is all the footage he wanted in Gold & Greed actually in it? 'Everything that I really wanted to be included got included.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:08:20))*
 - **[Confirmed]** The clock: Roman numerals make no difference. Clock count: 'the lower the number the better.' Times 4:02 and 5:26 are eliminated as meaningful. *(Dillon Q&A; Posey Q&A (MW compilation))*
-- **[Said]** The clocks are relevant; he called 4:19 on the Netflix clock 'a little uncanny.' *(Posey, per the research hub (secondary))*
+- **[Said]** Was the clock actually moving during filming? 'That might have been a little uncanny.' (The research hub records him calling 4:19 on the clock 'a little uncanny.') *(Treasure Hunt With Us, Apr 9 2025 (11:22); research hub (secondary))*
 
 ## 12. The container and the treasure
 
@@ -188,7 +194,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 - **[Confirmed]** The whole treasure weighs about 60 pounds including the container. *(treasure.quest FAQ)*
 - **[Said]** Contents: mostly gold (bars, flakes, dust), precious gems, rare coins across eras, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest including the dragon bracelet, and a Bitcoin wallet funded by book sales. A separate Steward holds additional items. *(Posey Q&A; public statements)*
 - **[Said]** The 1652 Oak Tree shilling in the treasure has a personal backstory: it replaced a counterfeit one from his grandfather's collection. *(X Marks the Pod, early 2026 (30:18))*
-- **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The complete solution will be revealed at the conclusion of the hunt. *(Posey Q&A (MW compilation))*
+- **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The 30-day requirement protects the finder: there is additional legal paperwork on file with the steward that is important for the finder to have. The complete solution will be revealed at the conclusion of the hunt. *(Posey Q&A (MW compilation); Treasure Hunt With Us, Apr 9 2025 (9:10))*
+- **[Confirmed]** When the treasure is found, will he post a 30-day countdown on the website? 'Yes, I think I will. I think that's only fair.' *(Treasure Hunt With Us, Apr 9 2025 (6:46))*
 
 ## 13. The hiding trip
 
@@ -227,6 +234,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 180 items.
 - **[Said]** He still has his grandmother's sweater but chooses not to wear it, to preserve its 'mystique.' *(Livestream interview transcript (timestamped; matches the Sandal Sanders livestream, Sep 2025) (24:09))*
 - **[Said]** Raised in Arizona, based in Texas. Software engineer, art and antiques dealer. Searched for the Fenn chest for years; bought the Fenn chest from the finder, auctioned most of its contents in Dec 2022, and kept the chest, the dragon bracelet, some coins, dust and flakes. *(Public statements (research report))*
 - **[Said]** His grandfather was a fish-and-game warden in Montana; Justin spent summers at the family cabin exploring the hills with a metal detector. His grandfather wrote memoirs; Justin's favorite story is the poacher confronted at a cabin poker game. *(Seekers Summit; public statements)*
+- **[Confirmed]** Bringing Tucker to Nine Mile Hole during the Fenn search was risky: a dog crossing the river there would have been conspicuous, and it was a dangerous endeavor. He does not regret bringing Tucker to the hunt. *(Treasure Hunt With Us, Apr 9 2025 (7:58))*
 - **[Confirmed]** The first time Brandon joined him searching for Fenn's treasure was in Yellowstone, at Iron Springs. *(Seekers Summit Q&A transcript, Mar 28 2026 (50:13))*
 - **[Confirmed]** On seekers trying to find Brandon's memorial in Tucson: 'You don't need to take any big risks here.' *(Seekers Summit Q&A transcript, Mar 28 2026 (55:51))*
 - **[Confirmed]** Favorite childhood memory with Brandon: building forts; Brandon building a bench, sitting on it, and it falling over. What it comes down to is 'the resilience that he had even at a very young age. He was a very stubborn kid.' *(Seekers Summit Q&A transcript, Mar 28 2026 (1:00:01))*
