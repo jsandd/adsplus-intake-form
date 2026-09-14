@@ -9513,6 +9513,106 @@
    },
    "created": 1788800000003,
    "top3": 3
+  },
+  {
+   "id": "c_cometsawtooth",
+   "name": "Comet Mountain / Sawtooth Mountain — East Pioneers (MT)",
+   "region": "MT · Beaverhead County, Beaverhead-Deerlodge NF · Elkhorn Hot Springs quad",
+   "coords": "45.4597, -113.0443 (Comet) · 45.4368, -113.0136 (Sawtooth)",
+   "elev": "10,200 ft (Comet) · 10,265 ft (Sawtooth) · lakes 8,200–9,700 ft",
+   "notes": "AREA DOSSIER Sep 14 2026. Two granite summits 2.2 mi apart on the East Pioneer crest, 3 mi east of Elkhorn Hot Springs and Crystal Park, 7 mi NE of Polaris. USGS data run: both summits under 11,000 ft (Torrey Mountain, 2.4 mi east, is over at 11,131). An unnamed mapped road climbs Comet's west shoulder to 9,540 ft, 0.43 mi below the summit. Mapped trails: Elkhorn Creek, Clark Creek, Boot/Pear/Anchor, Pear-May-Tub Lake, plus Comet Ridge and Upper Elkhorn Mine snowmobile routes. No building footprints, cemeteries or railroads within 5 mi in USGS data, but Coolidge ghost town (2.1 mi N) has ruins, the Elkhorn Mine adits, and patented claims that may be private. 94 mi from Hebgen Lake, outside the walked-back 75-mile Fenn remark. Book support: Polaris and Crystal Park named; Grasshopper Valley 'star-spangled' sky. His map labels Polaris and Dillon. Poem fits are analyst readings: Comet as 'what lives in time'; Polaris then east = East Pioneers for 'ursa east his realm'; twin cirques (Sawtooth Lake / Anchor Lake; Hall-Hopkin / Dingley) as candidate 'double arcs on granite'. No bride, gates, Hole or foot-of-three named in the area.",
+   "kill": "Real PAD-US showing the shoulder or lakes inside a patented (private) claim; the Hole having to be walking distance from the surge (the Big Hole is 15+ mi west, Wise River 8 mi east); a bride identified far from here; the road to 9,540 ft turning out to be a 4WD track (then the summit and north cirque fail the one-mile rule).",
+   "test": "Drive the unnamed road off the Elkhorn side and note where a low car stops and its elevation (1 of 5). Load real PAD-US and re-score points A–F (2 of 5). From Comet's summit photograph the twin cirques; decide if they read as double arcs (3 of 5). Check Crystal Park fee and hours; it must be free 24/7 to be the site (4 of 5). Walk Elkhorn Creek trail from Coolidge to Hall/Hopkin lakes: look for adits, ruins, markers within 500 ft of any candidate (5 of 5).",
+   "verdicts": {
+    "l03": "fit",
+    "l09": "fit",
+    "l13": "fit"
+   },
+   "gates": {
+    "g_notin": "unk",
+    "g_public": "pass",
+    "g_bldg": "unk",
+    "g_safe": "pass",
+    "g_vehicle": "unk",
+    "g_free": "pass",
+    "g_dog": "pass",
+    "g_trail": "pass",
+    "g_rail": "pass",
+    "g_mile": "pass",
+    "g_elev": "fail",
+    "g_states": "pass",
+    "g_map": "pass",
+    "g_natural": "pass",
+    "g_hole": "unk",
+    "g_armchair": "pass",
+    "g_bride": "unk",
+    "g_rotate": "unk",
+    "g_fenn": "fail",
+    "g_manip": "unk"
+   },
+   "chain": {
+    "l01": {
+     "place": "Comet Mountain",
+     "reading": "A comet is the thing that lives in time: it returns on a schedule. Analyst reading",
+     "conf": 1,
+     "coords": "45.4597, -113.0443"
+    },
+    "l03": {
+     "place": "Wisdom River (Big Hole), 23 mi west",
+     "reading": "The old name of the river the east side drains to via Wise River",
+     "conf": 1,
+     "coords": "45.618, -113.451"
+    },
+    "l05": {
+     "place": "Elkhorn Hot Springs",
+     "reading": "Hot water surges; 3.05 mi west of Comet. The pool is private; the creek is not",
+     "conf": 1,
+     "coords": "45.4590, -113.1072"
+    },
+    "l06": {
+     "place": "Hot Springs Creek / Elkhorn Creek",
+     "reading": "Quiet creeks on either side of the crest",
+     "conf": 1,
+     "coords": "45.4499, -113.1206"
+    },
+    "l07": {
+     "place": "OPEN: the Big Hole (west) or Wise River (east)",
+     "reading": "Neither is walking distance from the springs",
+     "conf": 0,
+     "coords": ""
+    },
+    "l09": {
+     "place": "East Pioneers, east of Polaris",
+     "reading": "Polaris is the star of Ursa Minor; go east of the town and you are in this range",
+     "conf": 2,
+     "coords": "45.3696, -113.1195"
+    },
+    "l10": {
+     "place": "OPEN",
+     "reading": "Nothing named for a bride or a gate within 8 mi in GNIS",
+     "conf": 0,
+     "coords": ""
+    },
+    "l11": {
+     "place": "OPEN: Twin Lakes, Dingley Lakes, three cirque lakes?",
+     "reading": "No named 'three'",
+     "conf": 0,
+     "coords": "45.4010, -112.9956"
+    },
+    "l13": {
+     "place": "Sawtooth Mountain twin cirques (Sawtooth Lake W, Anchor Lake E)",
+     "reading": "Two glacial bowls on Pioneer batholith granite; Comet has its own pair (Hall-Hopkin N, Dingley S)",
+     "conf": 1,
+     "coords": "45.4368, -113.0136"
+    },
+    "l16": {
+     "place": "Saddleback Mountain between the two peaks",
+     "reading": "Analyst note only: the container is a Saddleback briefcase",
+     "conf": 1,
+     "coords": "45.4611, -113.0312"
+    }
+   },
+   "created": 1789400000000
   }
  ],
  "mapStates": {
