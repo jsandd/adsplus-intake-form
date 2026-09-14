@@ -7723,6 +7723,208 @@
    ],
    "links": [],
    "created": 1788665972337
+  },
+  {
+   "id": "i250",
+   "kind": "community",
+   "conf": "unverified",
+   "text": "Reddit (Hydrofoiling, 8 upvotes): Sawtooth Lake in the East Pioneers is the location of a 2020 photo on Justin's Instagram tagged 'Polaris'. Not verified against the Instagram post.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit",
+    "instagram"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l09",
+     "stance": "supports",
+     "weight": 2,
+     "why": "Puts Justin at Sawtooth Lake, east of Polaris, before the hunt."
+    },
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The lake the 20° line starts from."
+    }
+   ]
+  },
+  {
+   "id": "i251",
+   "kind": "book",
+   "conf": "unverified",
+   "text": "Reddit (deleted user, 3 upvotes): in the book, while fishing Grasshopper Creek, Justin 'cast his pole' at a badger. Book content reported second-hand; the page is not cited.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit",
+    "book",
+    "grasshopper-creek"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l08",
+     "stance": "supports",
+     "weight": 2,
+     "why": "'Cast your pole' as the book's own phrase, on Grasshopper Creek west of the Pioneers."
+    }
+   ]
+  },
+  {
+   "id": "i252",
+   "kind": "community",
+   "conf": "unverified",
+   "text": "Reddit OP (incomesharks, 22 upvotes): Comet Mountain and especially Coolidge are the only places with photos of Justin, Brandon and Tucker together; 'this is where his Grandpa had a place'; he took Tucker up here from Texas. Personal-history claim, unverified. If the grandfather's place is within a mile of a candidate, the rules exclude that mile.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit",
+    "coolidge",
+    "grandfather"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l16",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Sentiment and lore at the site, which he has said the finder will come to know."
+    }
+   ]
+  },
+  {
+   "id": "i253",
+   "kind": "community",
+   "conf": "unverified",
+   "text": "Reddit OP: three mountain lakes, 'all at the foot of the lake where their creeks start', form a perfect 20° angle; completing the triangle ('return her face') goes up the mountain ('ursa east'), 'almost exactly 5,200 feet, a mile from where you park'. Lakes not named in the post. Checked against GNIS lake points: Sawtooth Lake → Elkhorn Lake bears exactly 20.0° at 1.93 mi, and Sawtooth Lake's lines to Elkhorn Lake and Hall Lake meet at 20.7°. Caution: with 25 lakes in 8 miles, more than a hundred lake triples meet at 18.5–21.5°, so a 20° hit is expected by chance; the outlet ('foot') positions have not been measured.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit",
+    "geometry",
+    "twenty-degree"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 2,
+     "why": "A concrete foot-of-three construction in the area, with a real 20.0° bearing."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Completing the triangle as the 'return'."
+    }
+   ]
+  },
+  {
+   "id": "i254",
+   "kind": "community",
+   "conf": "unverified",
+   "text": "Reddit OP: the acknowledgements page's first paragraph spells AFT TT AFT as an acrostic; read as Tweedy/Torrey (TT) and the chapter 'Grasshopper Valley' (AFT). Not verified against the book.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit",
+    "acrostic"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l01",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A possible hidden pointer to the East Pioneers."
+    }
+   ]
+  },
+  {
+   "id": "i255",
+   "kind": "community",
+   "conf": "unverified",
+   "text": "Reddit (Ok_Oil_2550): Comet Mountain is an eroded, rounded, boulder-strewn summit; 'it has literally lost its face'. Offered as a reading of 'return her face'.",
+   "source": "r/beyondthemapsedge thread 'Narrowing in on…' (screenshots, Sep 14 2026; posts from 2025)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "reddit"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "A face to return on Comet Mountain, if the bride is the mountain."
+    }
+   ]
+  },
+  {
+   "id": "i257",
+   "kind": "speculation",
+   "conf": "unverified",
+   "text": "Ice as 'waters' silent flight' (user question, Sep 14 2026). For it: ice and snowmelt move without sound, and the Pioneer crest holds late snow on north faces above 9,600 ft (about 1.2 sq mi of such ground in the box, two thirds of it on Torrey Mountain, the rest under Alturas, Highboy, Sawtooth, Tent, Saddleback and Comet). Against it: there are no glaciers in the East Pioneers today, snow cover changes by month, and he has said the clues stand the test of time. A reading that survives every season: a 'flight' is a series, and the Boot–Pear–May–Tub–Chain string of lakes is a flight of water, as is Chain Lake by name.",
+   "source": "My own analysis (Sep 14 2026)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "ice",
+    "analysis"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l06",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Ice or a chain of lakes as the silent flight."
+    },
+    {
+     "lineId": "l05",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Spring melt as the surge, if the ice reading is taken."
+    }
+   ]
+  },
+  {
+   "id": "i256",
+   "kind": "speculation",
+   "conf": "unverified",
+   "text": "Analyst check of the East Pioneers geometry (Sep 14 2026), on NHD lake OUTLETS (the 'foot' of a lake), not lake centres: Dingley Lakes outlet → Hopkin Lake outlet bears exactly 20.0° at 1.27 mi (200.0° back). Dingley Lakes carries a plural name but is one mapped polygon with one outlet, so 'three' is not answered by the lake count. The 20° line from that outlet climbs Comet Mountain's south-east flank and reaches Hopkin Lake's outlet under Comet's north cirque. The earlier centre-to-centre hit (Sawtooth Lake → Elkhorn Lake 20.0°) does not survive on outlets. Base rate: 19 outlet triples within 3 mi meet at 20° ± 1.5°, so geometry alone cannot prove a triple.",
+   "source": "My own analysis (Sep 14 2026)",
+   "when": "2026-09-14",
+   "tags": [
+    "comet-sawtooth",
+    "geometry",
+    "analysis"
+   ],
+   "created": 1789366213410,
+   "links": [
+    {
+     "lineId": "l11",
+     "stance": "supports",
+     "weight": 1,
+     "why": "Measured, with the base-rate caveat."
+    },
+    {
+     "lineId": "l12",
+     "stance": "supports",
+     "weight": 1,
+     "why": "The return line lands on Sawtooth Mountain's ridge or at Elkhorn Lake."
+    }
+   ]
   }
  ],
  "candidates": [
@@ -9520,13 +9722,15 @@
    "region": "MT · Beaverhead County, Beaverhead-Deerlodge NF · Elkhorn Hot Springs quad",
    "coords": "45.4597, -113.0443 (Comet) · 45.4368, -113.0136 (Sawtooth)",
    "elev": "10,200 ft (Comet) · 10,265 ft (Sawtooth) · lakes 8,200–9,700 ft",
-   "notes": "AREA DOSSIER Sep 14 2026. Two granite summits 2.2 mi apart on the East Pioneer crest, 3 mi east of Elkhorn Hot Springs and Crystal Park, 7 mi NE of Polaris. USGS data run: both summits under 11,000 ft (Torrey Mountain, 2.4 mi east, is over at 11,131). An unnamed mapped road climbs Comet's west shoulder to 9,540 ft, 0.43 mi below the summit. Mapped trails: Elkhorn Creek, Clark Creek, Boot/Pear/Anchor, Pear-May-Tub Lake, plus Comet Ridge and Upper Elkhorn Mine snowmobile routes. No building footprints, cemeteries or railroads within 5 mi in USGS data, but Coolidge ghost town (2.1 mi N) has ruins, the Elkhorn Mine adits, and patented claims that may be private. 94 mi from Hebgen Lake, outside the walked-back 75-mile Fenn remark. Book support: Polaris and Crystal Park named; Grasshopper Valley 'star-spangled' sky. His map labels Polaris and Dillon. Poem fits are analyst readings: Comet as 'what lives in time'; Polaris then east = East Pioneers for 'ursa east his realm'; twin cirques (Sawtooth Lake / Anchor Lake; Hall-Hopkin / Dingley) as candidate 'double arcs on granite'. No bride, gates, Hole or foot-of-three named in the area.",
+   "notes": "AREA DOSSIER Sep 14 2026. Two granite summits 2.2 mi apart on the East Pioneer crest, 3 mi east of Elkhorn Hot Springs and Crystal Park, 7 mi NE of Polaris. USGS data run: both summits under 11,000 ft (Torrey Mountain, 2.4 mi east, is over at 11,131). An unnamed mapped road climbs Comet's west shoulder to 9,540 ft, 0.43 mi below the summit. Mapped trails: Elkhorn Creek, Clark Creek, Boot/Pear/Anchor, Pear-May-Tub Lake, plus Comet Ridge and Upper Elkhorn Mine snowmobile routes. No building footprints, cemeteries or railroads within 5 mi in USGS data, but Coolidge ghost town (2.1 mi N) has ruins, the Elkhorn Mine adits, and patented claims that may be private. 94 mi from Hebgen Lake, outside the walked-back 75-mile Fenn remark. Book support: Polaris and Crystal Park named; Grasshopper Valley 'star-spangled' sky. His map labels Polaris and Dillon. Poem fits are analyst readings: Comet as 'what lives in time'; Polaris then east = East Pioneers for 'ursa east his realm'; twin cirques (Sawtooth Lake / Anchor Lake; Hall-Hopkin / Dingley) as candidate 'double arcs on granite'. No bride, gates, Hole or foot-of-three named in the area. REDDIT (unverified): a 2020 Instagram photo tagged Polaris was taken at Sawtooth Lake; photos of Justin, Brandon and Tucker at Comet Mountain and Coolidge; 'his Grandpa had a place' here; the book has him casting his pole at a badger on Grasshopper Creek; acknowledgements acrostic AFT TT AFT. Geometry checked on NHD lake outlets: Dingley Lakes outlet to Hopkin Lake outlet bears exactly 20.0° at 1.27 mi; Dingley Lakes is one mapped pond despite the plural name.",
    "kill": "Real PAD-US showing the shoulder or lakes inside a patented (private) claim; the Hole having to be walking distance from the surge (the Big Hole is 15+ mi west, Wise River 8 mi east); a bride identified far from here; the road to 9,540 ft turning out to be a 4WD track (then the summit and north cirque fail the one-mile rule).",
    "test": "Drive the unnamed road off the Elkhorn side and note where a low car stops and its elevation (1 of 5). Load real PAD-US and re-score points A–F (2 of 5). From Comet's summit photograph the twin cirques; decide if they read as double arcs (3 of 5). Check Crystal Park fee and hours; it must be free 24/7 to be the site (4 of 5). Walk Elkhorn Creek trail from Coolidge to Hall/Hopkin lakes: look for adits, ruins, markers within 500 ft of any candidate (5 of 5).",
    "verdicts": {
     "l03": "fit",
     "l09": "fit",
-    "l13": "fit"
+    "l13": "fit",
+    "l11": "fit",
+    "l08": "fit"
    },
    "gates": {
     "g_notin": "unk",
@@ -9570,10 +9774,10 @@
      "coords": "45.4590, -113.1072"
     },
     "l06": {
-     "place": "Hot Springs Creek / Elkhorn Creek",
-     "reading": "Quiet creeks on either side of the crest",
+     "place": "Boot–Pear–May–Tub–Chain lakes, or late snow on the north faces",
+     "reading": "A 'flight' of lakes survives every season; ice does not",
      "conf": 1,
-     "coords": "45.4499, -113.1206"
+     "coords": "45.4132, -113.0055"
     },
     "l07": {
      "place": "OPEN: the Big Hole (west) or Wise River (east)",
@@ -9594,10 +9798,10 @@
      "coords": ""
     },
     "l11": {
-     "place": "OPEN: Twin Lakes, Dingley Lakes, three cirque lakes?",
-     "reading": "No named 'three'",
-     "conf": 0,
-     "coords": "45.4010, -112.9956"
+     "place": "Dingley Lakes outlet ('her foot'): plural name, one mapped pond, one outlet",
+     "reading": "From the outlet, 20.0° runs exactly to Hopkin Lake's outlet, 1.27 mi, over Comet's flank. Measured on NHD outlets",
+     "conf": 2,
+     "coords": "45.44736, -113.04551"
     },
     "l13": {
      "place": "Sawtooth Mountain twin cirques (Sawtooth Lake W, Anchor Lake E)",
@@ -9610,6 +9814,18 @@
      "reading": "Analyst note only: the container is a Saddleback briefcase",
      "conf": 1,
      "coords": "45.4611, -113.0312"
+    },
+    "l08": {
+     "place": "Grasshopper Creek",
+     "reading": "The book has him 'cast his pole' at a badger while fishing Grasshopper Creek (reported on Reddit, unverified)",
+     "conf": 1,
+     "coords": "45.42, -113.15"
+    },
+    "l12": {
+     "place": "Hopkin Lake outlet under Comet's north cirque, or the 200° return to Dingley",
+     "reading": "The 20° line ends at Hopkin's outlet; returning it (200°) leads back to Dingley. Reddit: Comet 'has lost its face'",
+     "conf": 1,
+     "coords": "45.46465, -113.03653"
     }
    },
    "created": 1789400000000
