@@ -47,9 +47,22 @@ def ingest(path, log=print):
     from pyogrio.raw import read as _read
     import shapely
     path = os.path.abspath(path)
-    layers = [l[0] for l in pyogrio.list_layers(path)]
+    if not os.path.exists(path):
+        cands = [f for f in os.listdir(config.DATA) if f.lower().endswith((".gpkg", ".zip", ".gdb"))] if os.path.isdir(config.DATA) else []
+        raise RuntimeError(f"file not found: {path}. Save the PAD-US GeoPackage (or the .zip it came in) in the data folder as padus.gpkg. Files there now: {', '.join(cands) or 'none'}")
+    if path.lower().endswith(".zip"):
+        import zipfile
+        inner = [n for n in zipfile.ZipFile(path).namelist() if n.lower().endswith(".gpkg")]
+        if not inner:
+            raise RuntimeError("that zip has no .gpkg inside it")
+        path = f"zip://{path}!{inner[0]}"
+        log(f"reading {inner[0]} inside the zip")
+    try:
+        layers = [l[0] for l in pyogrio.list_layers(path)]
+    except Exception as e:
+        raise RuntimeError(f"could not open {os.path.basename(path)} as a GeoPackage: {e}")
     log(f"PAD-US layers in {os.path.basename(path)}: {', '.join(layers)}")
-    wanted = [l for l in layers if any(k in l for k in ("Fee", "Designation", "Easement"))] or layers
+    wanted = [l for l in layers if any(k in l for k in ("Fee", "Designation", "Easement")) and "Combined" not in l] or layers
     c = _db()
     c.execute("DELETE FROM units"); c.execute("DELETE FROM units_rt"); c.commit()
     lon0, lat0, lon1, lat1 = config.MAP_EXTENT

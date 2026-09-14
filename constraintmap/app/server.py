@@ -9,7 +9,7 @@ from urllib.parse import parse_qs, urlparse
 
 from . import config, dem, padus, render, rules, scorer, store, vectors
 
-_jobs = {"log": [], "running": None}
+_jobs = {"log": [], "running": None, "last_error": None}
 
 
 def log(msg):
@@ -24,9 +24,12 @@ def run_job(name, fn):
     def go():
         _jobs["running"] = name
         try:
+            _jobs["last_error"] = None
             fn()
             log(f"done: {name}")
         except Exception as e:
+            traceback.print_exc()
+            _jobs["last_error"] = f"{name}: {e}"
             log(f"FAILED {name}: {e}")
         finally:
             _jobs["running"] = None
@@ -53,7 +56,7 @@ class H(BaseHTTPRequestHandler):
                 p = os.path.join(config.UI, "index.html"); b = open(p, "rb").read()
                 self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(b))); self.end_headers(); self.wfile.write(b); return
             if u.path == "/api/status":
-                self._json({"dem": dem.coverage(), "padus": padus.loaded(), "vectors": vectors.coverage(), "job": _jobs["running"], "log": _jobs["log"][-30:], "states": {k: v[0] for k, v in config.STATES.items()}}); return
+                self._json({"dem": dem.coverage(), "padus": padus.loaded(), "vectors": vectors.coverage(), "job": _jobs["running"], "last_error": _jobs["last_error"], "log": _jobs["log"][-30:], "states": {k: v[0] for k, v in config.STATES.items()}}); return
             if u.path == "/api/rules":
                 self._json({"rules": rules.merged(store.get_rules_overrides()), "checklist": config.CHECKLIST, "fenn": config.FENN_SITES}); return
             if u.path == "/api/score":
@@ -92,7 +95,7 @@ class H(BaseHTTPRequestHandler):
                 self._json(render.render(b["bbox"], rs, int(b.get("max_cells") or 250000))); return
             if u.path == "/api/fetch":
                 kind, st = b["kind"], (b.get("state") or "").upper()
-                fn = {"dem": lambda: dem.fetch_state(st, log), "tran": lambda: vectors.ingest_tran(st, log), "gnis": lambda: vectors.ingest_gnis(st, log), "struct": lambda: vectors.ingest_struct(st, log), "padus": lambda: padus.ingest(b.get("path") or os.path.join(config.DATA, "padus.gpkg"), log)}[kind]
+                fn = {"dem": lambda: dem.fetch_state(st, log), "tran": lambda: vectors.ingest_tran(st, log), "gnis": lambda: vectors.ingest_gnis(st, log), "struct": lambda: vectors.ingest_struct(st, log), "padus": lambda: padus.ingest(os.path.join(config.DATA, b.get("path") or "padus.gpkg") if not os.path.isabs(b.get("path") or "") else b["path"], log)}[kind]
                 ok = run_job(f"{kind} {st}", fn); self._json({"ok": ok, "running": _jobs["running"]}); return
             self._json({"error": "not found"}, 404)
         except Exception as e:
