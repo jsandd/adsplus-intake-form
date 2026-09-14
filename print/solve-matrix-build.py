@@ -2,13 +2,13 @@ import html
 e=html.escape
 def T(head, rows, cls=""):
     return f'<table class="m {cls}"><thead><tr>'+''.join(f'<th>{e(h)}</th>' for h in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join(f'<td>{c}</td>' for c in r)+'</tr>' for r in rows)+'</tbody></table>'
-def c(*ids): return ' '.join(f'<span class="cite">{i}</span>' for i in ids)
+def c(*ids): return ''
 def blank(): return '<span class="fill"></span>'
 def tag(t): return f'<span class="tag {t.lower()[0]}">{t}</span>'
 P=[]
-P.append('''<div class="cover"><div class="eyebrow">Posey-only working tool</div><h1>Solve Matrix</h1><p class="sub">Built from Justin Posey's own statements and nothing else: 216 items, cited by section.item number from "What Justin Posey Has Said." No fan theories, no community solves. Seven matrices, each with blank columns for your own work.</p>
+P.append('''<div class="cover"><div class="eyebrow">Posey-only working tool</div><h1>Solve Matrix</h1><p class="sub">Built from Justin Posey's own statements and nothing else: the 216 items in "What Justin Posey Has Said." No fan theories, no community solves. Seven matrices, each with blank columns for your own work.</p>
 <ol class="toc"><li><b>A</b> Journey matrix: the poem stage by stage, with the mode, constraints, distances and open questions Posey attached to each</li><li><b>B</b> Location filter: every rule that applies to the final spot, with pass/fail boxes for three candidates</li><li><b>C</b> Distance and geometry ledger: every statement that carries a length, a direction or a shape</li><li><b>D</b> Element matrix: what each part of the hunt (poem, book, map, series, songs, cipher, logo, time) contains and what it is for</li><li><b>E</b> Deductions that follow from his words alone, with the chain of citations</li><li><b>F</b> Progress timeline: what he says has been solved, and when</li><li><b>G</b> Open-question ledger: what he declined, and a specific, not-on-the-nose way to ask it again</li></ol>
-<p class="note">Citation key: [3.4] = section 3, item 4 of the statements list. Tags: C confirmed · S said · L leaned · D declined.</p></div>''')
+<p class="note">Citation key: = section 3, item 4 of the statements list. Tags: C confirmed · S said · L leaned · D declined.</p></div>''')
 
 # A journey matrix
 head=["Stage","Mode per Posey","What he confirmed or said","Hard constraints in force","Distance he attached","Still open (declined)","Test you can run","Your reading"]
@@ -31,8 +31,8 @@ rows=[
 P.append('<div class="page"><h2><span>A</span>Journey matrix</h2><p class="hint">The poem stage by stage. Mode and constraints come only from his statements; the Test column is what his words let you check.</p>'+T(head,rows,"journey")+'</div>')
 
 # B location filter
-head=["Rule","Tag","Cite","Applies to","What it eliminates","Candidate A","Candidate B","Candidate C"]
-R=lambda rule,t,ids,app,elim:[rule,tag(t),c(*ids),app,elim,blank(),blank(),blank()]
+head=["Rule","Tag","Applies to","What it eliminates","Candidate A","Candidate B","Candidate C"]
+R=lambda rule,t,ids,app,elim:[rule,tag(t),app,elim,blank(),blank(),blank()]
 rows=[
 R("Not underwater","Confirmed",["1.1"],"Treasure, checkpoint, placed clues","Lakebeds, river bottoms, springs you must enter"),
 R("Not on private property","Confirmed",["1.1","1.5","1.9"],"All hunt items","Any spot needing permission; check property lines"),
@@ -65,55 +65,55 @@ R("Only he knows; never returned since hiding","Confirmed",["4.1","13.3"],"Site"
 P.append('<div class="page"><h2><span>B</span>Location filter</h2><p class="hint">Every rule he has stated about the final spot, the checkpoint or the route. Mark each candidate ✓ pass, ✕ fail, or ? unknown. One ✕ on a Confirmed row ends the candidate.</p>'+T(head,rows,"filter")+'</div>')
 
 # C distance ledger
-head=["Statement","Cite","Kind","What it fixes","Number"]
+head=["Statement","Kind","What it fixes","Number"]
 rows=[
-["Walking distance from 'waters' silent flight' through 'past the Hole'",c("3.4"),"Length","2:2 to 2:3 is on foot","walking"],
-["Not more than a mile to figure out where the treasure is",c("3.5"),"Length","Car to the point of knowing","≤ 1 mile"],
-["A hike is required; length withheld",c("3.8"),"Length","There is a walk; not a pullout","> 0"],
-["If you need many bottles of water you are going too far",c("3.7"),"Length","Short walk, not a day",""],
-["Each clue is not meant to convey great distance",c("2.17"),"Spacing","Clue-to-clue gaps are small","small"],
-["First clue to last in miles: impossible to answer given the structure",c("2.23"),"Structure","The clues are not a simple line",""],
-["Distance from the first actionable clue to the treasure: forming the question may give the answer",c("2.22"),"Structure","The question contains a premise he rejects",""],
-["Beginning to end, the poem creates 'some sort of shape'",c("2.16"),"Shape","The route draws a figure","shape"],
-["Indiana Jones and National Treasure, offered instead of linear / points / hybrid",c("2.18"),"Shape","Leaned toward a device or construction, not a march",""],
-["Backtracking: no if you knew the whole solution; yes in the natural progression",c("2.19"),"Shape","The path re-crosses itself for a first-timer",""],
-["You do not need to be at the bride to identify her foot of three",c("6.12"),"Geometry","The foot is readable from a distance or a map",""],
-["Her face to the place: not as far as many think",c("6.10"),"Length","Short",""],
-["Bride to treasure: a matter of perspective",c("6.11"),"Length","Depends how you measure it",""],
-["Return her face implies a physical rotation, technically",c("6.9"),"Geometry","Something turns","rotation"],
-["Twenty degree; foot of three",c("2.9","6.12"),"Numbers","The only numbers in the poem; wordplay for numbers is in play","20, 3"],
-["42 is relevant",c("9.22"),"Number","A number outside the poem matters","42"],
-["Clock: the lower the number the better; 4:02 and 5:26 out; clocks are part of the cipher",c("11.7","10.6"),"Number","A clock reading feeds the cipher, not the map",""],
-["Below 11,000 feet",c("4.17"),"Elevation","Ceiling","< 11,000 ft"],
-["Within 75 miles of a Fenn search location, then walked back",c("8.9"),"Radius","Soft","75 mi"],
-["Element of time is important",c("2.11"),"Time","Time matters somewhere in the solve",""],
-["Vantage point involved, but no clue is necessarily about it",c("4.16"),"Geometry","A viewpoint exists in the solve",""],
-["Checkpoint at least halfway through the clues; at least ten clues",c("7.1","2.1"),"Order","Checkpoint at clue 5 or later","≥ 5th clue"],
-["Searchers within 200 feet of the checkpoint; within two miles of the treasure",c("14.3","14.2"),"Length","How close the crowd got","200 ft; 2 mi"],
+["Walking distance from 'waters' silent flight' through 'past the Hole'","Length","2:2 to 2:3 is on foot","walking"],
+["Not more than a mile to figure out where the treasure is","Length","Car to the point of knowing","≤ 1 mile"],
+["A hike is required; length withheld","Length","There is a walk; not a pullout","> 0"],
+["If you need many bottles of water you are going too far","Length","Short walk, not a day",""],
+["Each clue is not meant to convey great distance","Spacing","Clue-to-clue gaps are small","small"],
+["First clue to last in miles: impossible to answer given the structure","Structure","The clues are not a simple line",""],
+["Distance from the first actionable clue to the treasure: forming the question may give the answer","Structure","The question contains a premise he rejects",""],
+["Beginning to end, the poem creates 'some sort of shape'","Shape","The route draws a figure","shape"],
+["Indiana Jones and National Treasure, offered instead of linear / points / hybrid","Shape","Leaned toward a device or construction, not a march",""],
+["Backtracking: no if you knew the whole solution; yes in the natural progression","Shape","The path re-crosses itself for a first-timer",""],
+["You do not need to be at the bride to identify her foot of three","Geometry","The foot is readable from a distance or a map",""],
+["Her face to the place: not as far as many think","Length","Short",""],
+["Bride to treasure: a matter of perspective","Length","Depends how you measure it",""],
+["Return her face implies a physical rotation, technically","Geometry","Something turns","rotation"],
+["Twenty degree; foot of three","Numbers","The only numbers in the poem; wordplay for numbers is in play","20, 3"],
+["42 is relevant","Number","A number outside the poem matters","42"],
+["Clock: the lower the number the better; 4:02 and 5:26 out; clocks are part of the cipher","Number","A clock reading feeds the cipher, not the map",""],
+["Below 11,000 feet","Elevation","Ceiling","< 11,000 ft"],
+["Within 75 miles of a Fenn search location, then walked back","Radius","Soft","75 mi"],
+["Element of time is important","Time","Time matters somewhere in the solve",""],
+["Vantage point involved, but no clue is necessarily about it","Geometry","A viewpoint exists in the solve",""],
+["Checkpoint at least halfway through the clues; at least ten clues","Order","Checkpoint at clue 5 or later","≥ 5th clue"],
+["Searchers within 200 feet of the checkpoint; within two miles of the treasure","Length","How close the crowd got","200 ft; 2 mi"],
 ]
 P.append('<div class="page"><h2><span>C</span>Distance and geometry ledger</h2><p class="hint">Every statement of his that carries a length, an order, a direction or a shape. Use it to size a candidate route before you drive.</p>'+T(head,rows,"ledger")+'</div>')
 
 # D element matrix
-head=["Element","What he says it holds","Required to find it?","What it points to","Status","Cite"]
+head=["Element","What he says it holds","Required to find it?","What it points to","Status"]
 rows=[
-["<b>The poem</b>","All essential clues; at least ten; consecutive; every line helpful; numbers hidden in words","Yes, the whole thing","An exact location when solved in full","Stanza 1, part of 2, part of 3 solved by others",c("2.1","2.2","2.5","2.9","3.3","14.5")],
-["<b>The book</b>","Several hints sprinkled through the stories, not every story; descriptions that pertain to the area; photographs useful; the Tucker poem helpful; dedication layered and intentional; four points of the compass, 'the book is the best reference'","Written so everyone is on equal footing","The area, the person, the container","Read as a memoir first",c("9.10","9.11","9.12","9.18","9.19","9.4","9.17","9.8")],
-["<b>The map</b>","The treasure is on it; he chose which landmarks are labeled; names, positions and elevations are the designer's and errors are unintentional","'A good primer'","The region","Useful early; still a primer later",c("8.6","8.7","9.20")],
-["<b>Layer five</b>","'Has some bearing on the treasure hunt'","Not stated","Not stated","Undefined",c("9.2")],
-["<b>The Netflix series</b>","At least five singular clues plus compound ones; two super obvious hints in an episode 2 or 3 scene without him; hints 'guide you in the book'; checkpoint not shown; Carl scene and Red Mountain clip hold nothing","Hints, not the solution","Back into the book","The two obvious hints were found by Sep 2025",c("11.2","11.3","9.1","7.4","11.4","11.5")],
-["<b>The clock</b>","Part of the cipher; lower number is better; Roman numerals irrelevant; 4:02 and 5:26 out; 'a little uncanny'","Feeds the cipher","The cipher","Open",c("10.6","11.7","11.8")],
-["<b>The songs</b>","Clues in the songs; one 'extremely definitive' clue; a hidden audio message is the technical clue","Technical clue not required","'The key to one direction lies in another'; not the azimuth","Technical clue solved by one person",c("10.7","10.5","10.9")],
-["<b>The cipher</b>","MAGYAR; basic math; a nod to what the container is; gives no coordinates, state or region; 'who says it's in the book'","No","The container","Solved April 2026",c("10.4","10.3","10.8")],
-["<b>The logo</b>","Angzarr, chosen and modified intentionally; 'has some meaning'","Not stated","Not stated","Open",c("9.6")],
-["<b>42</b>","'The short answer is yes'; Hitchhiker's Guide","Not stated","Not stated","Open",c("9.22")],
-["<b>Time</b>","'The element of time is important'; no time travel","Not stated","Not stated","Open",c("2.11","2.12")],
-["<b>The checkpoint</b>","Placed and already there; topographic implication; halfway or later; pivotal","Practically yes: hard to get all the way without it","Confidence that you are on the path","Reached within 200 ft by some; no correct photo",c("7.2","7.1","7.3","14.3")],
-["<b>The container</b>","An existing object with deliberate modifications; recognizable to anyone who read the book or saw the series; not a box; Saddleback briefcase is what carried it, not what holds it","Recognize it on sight","Itself","Guessed correctly by some",c("12.1","12.2","10.4")],
+["<b>The poem</b>","All essential clues; at least ten; consecutive; every line helpful; numbers hidden in words","Yes, the whole thing","An exact location when solved in full","Stanza 1, part of 2, part of 3 solved by others"],
+["<b>The book</b>","Several hints sprinkled through the stories, not every story; descriptions that pertain to the area; photographs useful; the Tucker poem helpful; dedication layered and intentional; four points of the compass, 'the book is the best reference'","Written so everyone is on equal footing","The area, the person, the container","Read as a memoir first"],
+["<b>The map</b>","The treasure is on it; he chose which landmarks are labeled; names, positions and elevations are the designer's and errors are unintentional","'A good primer'","The region","Useful early; still a primer later"],
+["<b>Layer five</b>","'Has some bearing on the treasure hunt'","Not stated","Not stated","Undefined"],
+["<b>The Netflix series</b>","At least five singular clues plus compound ones; two super obvious hints in an episode 2 or 3 scene without him; hints 'guide you in the book'; checkpoint not shown; Carl scene and Red Mountain clip hold nothing","Hints, not the solution","Back into the book","The two obvious hints were found by Sep 2025"],
+["<b>The clock</b>","Part of the cipher; lower number is better; Roman numerals irrelevant; 4:02 and 5:26 out; 'a little uncanny'","Feeds the cipher","The cipher","Open"],
+["<b>The songs</b>","Clues in the songs; one 'extremely definitive' clue; a hidden audio message is the technical clue","Technical clue not required","'The key to one direction lies in another'; not the azimuth","Technical clue solved by one person"],
+["<b>The cipher</b>","MAGYAR; basic math; a nod to what the container is; gives no coordinates, state or region; 'who says it's in the book'","No","The container","Solved April 2026"],
+["<b>The logo</b>","Angzarr, chosen and modified intentionally; 'has some meaning'","Not stated","Not stated","Open"],
+["<b>42</b>","'The short answer is yes'; Hitchhiker's Guide","Not stated","Not stated","Open"],
+["<b>Time</b>","'The element of time is important'; no time travel","Not stated","Not stated","Open"],
+["<b>The checkpoint</b>","Placed and already there; topographic implication; halfway or later; pivotal","Practically yes: hard to get all the way without it","Confidence that you are on the path","Reached within 200 ft by some; no correct photo"],
+["<b>The container</b>","An existing object with deliberate modifications; recognizable to anyone who read the book or saw the series; not a box; Saddleback briefcase is what carried it, not what holds it","Recognize it on sight","Itself","Guessed correctly by some"],
 ]
 P.append('<div class="page"><h2><span>D</span>Element matrix</h2><p class="hint">What each part of the hunt is for, in his words. The Required column separates what you must solve from what only helps.</p>'+T(head,rows,"elements")+'</div>')
 
 # E deductions
-head=["#","Deduction","Chain of his statements","Confidence"]
+head=["#","Deduction","Rests on","Confidence"]
 rows=[
 ["1","Stanzas 1 to 3 are solvable from home even though stanza 2 describes walking. The walk is described before it is taken.","Boots on the ground required only at stanza four "+c("3.2")+" + a fair amount solvable from home "+c("3.1")+" + walking distance 2:2 to 2:3 "+c("3.4"),"High"],
 ["2","The checkpoint is at or after the fifth clue, so it is in stanza 3 or later.","At least ten clues "+c("2.1")+" + at least halfway when you reach it "+c("7.1")+" + consecutive order "+c("2.2"),"High"],
@@ -131,41 +131,41 @@ rows=[
 ["14","Some part of the solve depends on time (a date, an hour, a season, an age), and it is not a rule about when to visit.","Element of time important "+c("2.11")+" + 24/7 access "+c("1.10")+" + clues stand the test of time "+c("1.18"),"Medium"],
 ["15","Spoken answers are less reliable than written ones, by his own account. Weight the rules, the FAQ and his posts above any podcast reply.","Prefers written responses to avoid errors "+c("15.3")+" + off-the-cuff forum replies can muddy the waters "+c("15.5"),"High"],
 ]
-P.append('<div class="page"><h2><span>E</span>Deductions that follow from his words alone</h2><p class="hint">These are inferences, not statements. Each one shows the chain of his own statements it rests on, so you can break the chain if you disagree with a link.</p>'+T(head,rows,"deduce")+'</div>')
+P.append('<div class="page"><h2><span>E</span>Deductions that follow from his words alone</h2><p class="hint">These are inferences, not statements. Each one shows the statements of his it rests on, so you can break the chain if you disagree with a link.</p>'+T(head,rows,"deduce")+'</div>')
 
 # F timeline
-head=["Date","What he said","Solved so far (his count)","Cite"]
+head=["Date","What he said","Solved so far (his count)"]
 rows=[
-["Mar 28 2025","Not found","—",c("14.1")],
-["Apr 9 2025","Only he knows; 'who says it's a box'; cipher toward poem or book not specified","—",c("4.1","12.1","10.2")],
-["Jun 21 2025","Within two miles; nobody at the checkpoint; nobody has said the cipher answer; no state ruled out; below 11,000 ft","Under two clues implied",c("14.2","8.1","4.17")],
-["Aug 1 2025","Several have solved at least the first two clues; some within 200 ft of the checkpoint; zero correct photos","2 clues",c("14.3")],
-["Sep 2025","Stanza 1 and at least part of stanza 2 solved; searchers 'quite close'; the two obvious Netflix hints found","Stanza 1 + part of 2",c("14.4","11.3")],
-["Mar 28 2026","Bride identified; part of stanza 3 solved; at least six clues by the most advanced searcher; kitchen-sized area unreached; nobody way off, nobody uber close","6 clues",c("6.6","14.5","7.8")],
-["Apr 2026","Cipher solved: MAGYAR; technical clue confirmed","Cipher done",c("10.4","10.5")],
-["Jul 2026","Marked-book prize found, not the treasure; monthly Featured Question begins","—",c("14.7","14.9")],
+["Mar 28 2025","Not found","—"],
+["Apr 9 2025","Only he knows; 'who says it's a box'; cipher toward poem or book not specified","—"],
+["Jun 21 2025","Within two miles; nobody at the checkpoint; nobody has said the cipher answer; no state ruled out; below 11,000 ft","Under two clues implied"],
+["Aug 1 2025","Several have solved at least the first two clues; some within 200 ft of the checkpoint; zero correct photos","2 clues"],
+["Sep 2025","Stanza 1 and at least part of stanza 2 solved; searchers 'quite close'; the two obvious Netflix hints found","Stanza 1 + part of 2"],
+["Mar 28 2026","Bride identified; part of stanza 3 solved; at least six clues by the most advanced searcher; kitchen-sized area unreached; nobody way off, nobody uber close","6 clues"],
+["Apr 2026","Cipher solved: MAGYAR; technical clue confirmed","Cipher done"],
+["Jul 2026","Marked-book prize found, not the treasure; monthly Featured Question begins","—"],
 ]
-P.append('<div class="page"><h2><span>F</span>Progress timeline</h2><p class="hint">What he says has been solved, in order. The gap between six clues and the kitchen-sized area is where the hunt stands.</p>'+T(head,rows,"timeline")+'''<div class="two"><div><h3>What "six clues" can cover</h3><p>With at least ten clues in consecutive order [2.1, 2.2], six solved clues starting at 2:1 [2.6] reach into stanza 3, which matches "part of stanza 3 solved" [14.5] and "bride identified" [6.6]. So the frontier is between the bride and the foot of three, or between the foot and the rotation. Nobody has reported the arcs.</p></div><div><h3>Use of the timeline</h3><p>If your solve places the checkpoint before the bride, it must explain how searchers were within 200 feet of the checkpoint in Aug 2025 [14.3] while stanza 3 was unsolved until 2026 [14.5]. If it places the checkpoint after the bride, the 200-foot group had solved more than he credited them with at the time. Either way, write down which.</p></div></div></div>''')
+P.append('<div class="page"><h2><span>F</span>Progress timeline</h2><p class="hint">What he says has been solved, in order. The gap between six clues and the kitchen-sized area is where the hunt stands.</p>'+T(head,rows,"timeline")+'''<div class="two"><div><h3>What "six clues" can cover</h3><p>With at least ten clues in consecutive order, six solved clues starting at 2:1 reach into stanza 3, which matches "part of stanza 3 solved" and "bride identified". So the frontier is between the bride and the foot of three, or between the foot and the rotation. Nobody has reported the arcs.</p></div><div><h3>Use of the timeline</h3><p>If your solve places the checkpoint before the bride, it must explain how searchers were within 200 feet of the checkpoint in Aug 2025 while stanza 3 was unsolved until 2026. If it places the checkpoint after the bride, the 200-foot group had solved more than he credited them with at the time. Either way, write down which.</p></div></div></div>''')
 
 # G open questions
-head=["What he declined","Cite","Why it was refused (his words)","A specific, not-on-the-nose way to ask","Your note"]
+head=["What he declined","Why it was refused (his words)","A specific, not-on-the-nose way to ask","Your note"]
 rows=[
-["Does the Hole correspond to a hole-named place?",c("5.2"),"'An on the nose question'","Is the Hole something a fisherman would call a hole?",blank()],
-["Is 'double arcs' the man-made clue? Natural or created?",c("5.3","5.4"),"Punted; 'he knows what he knows'","Were the double arcs there before you first visited the site?",blank()],
-["Is 'double arcs' a bearing?",c("5.5"),"Punted","Do the double arcs stay in one place through the year?",blank()],
-["Is the place in her face or her gaze?",c("6.14"),"No clarity","When her face is returned, does the place lie in front of her or behind her?",blank()],
-["Is the checkpoint before or after boots on the ground?",c("7.5"),"Not specified; may reconsider","Can a searcher describe the checkpoint to you accurately without having stood at it?",blank()],
-["Do you need to move rocks?",c("4.12"),"Punted","Is what must be manipulated lighter than the treasure?",blank()],
-["Is it buried?",c("4.10"),"AI could use it","Skip; he has stated it does not change the solve",blank()],
-["Are national parks ruled out?",c("4.20"),"Will not say yes or no","Is the final location on land where a dog may go off-trail on a leash?",blank()],
-["Is 'cast your pole' a fishing pole?",c("2.26"),"Not specified","Would the person in 'I wait for you' be standing in water or beside it?",blank()],
-["Can a Prius get within a mile?",c("4.22"),"Punted","Is the last road before the walk paved?",blank()],
-["Does the hunt require a river crossing?",c("1.15"),"Not specified","Is every hunt item on the same side of every river it is near?",blank()],
-["Does the site predate your Fenn searches?",c("4.21"),"Not specified","Did you know the site before 2010?",blank()],
-["Which animal did you see?",c("8.12"),"Would affect the search area","Is the animal's range on the printed map limited to one state?",blank()],
-["The one question nobody has asked",c("2.14"),"He cannot verbalize it","Work backward from 'the key to one direction lies in another' [10.5] and the element of time [2.11]",blank()],
+["Does the Hole correspond to a hole-named place?","'An on the nose question'","Is the Hole something a fisherman would call a hole?",blank()],
+["Is 'double arcs' the man-made clue? Natural or created?","Punted; 'he knows what he knows'","Were the double arcs there before you first visited the site?",blank()],
+["Is 'double arcs' a bearing?","Punted","Do the double arcs stay in one place through the year?",blank()],
+["Is the place in her face or her gaze?","No clarity","When her face is returned, does the place lie in front of her or behind her?",blank()],
+["Is the checkpoint before or after boots on the ground?","Not specified; may reconsider","Can a searcher describe the checkpoint to you accurately without having stood at it?",blank()],
+["Do you need to move rocks?","Punted","Is what must be manipulated lighter than the treasure?",blank()],
+["Is it buried?","AI could use it","Skip; he has stated it does not change the solve",blank()],
+["Are national parks ruled out?","Will not say yes or no","Is the final location on land where a dog may go off-trail on a leash?",blank()],
+["Is 'cast your pole' a fishing pole?","Not specified","Would the person in 'I wait for you' be standing in water or beside it?",blank()],
+["Can a Prius get within a mile?","Punted","Is the last road before the walk paved?",blank()],
+["Does the hunt require a river crossing?","Not specified","Is every hunt item on the same side of every river it is near?",blank()],
+["Does the site predate your Fenn searches?","Not specified","Did you know the site before 2010?",blank()],
+["Which animal did you see?","Would affect the search area","Is the animal's range on the printed map limited to one state?",blank()],
+["The one question nobody has asked","He cannot verbalize it","Work backward from 'the key to one direction lies in another' and the element of time",blank()],
 ]
-P.append('<div class="page"><h2><span>G</span>Open-question ledger</h2><p class="hint">Everything he refused, with his stated reason. He answers questions that are specific but not on the nose [14.9]. The suggested rewordings are drafts for the monthly Featured Question, not facts.</p>'+T(head,rows,"ledger")+'</div>')
+P.append('<div class="page"><h2><span>G</span>Open-question ledger</h2><p class="hint">Everything he refused, with his stated reason. He answers questions that are specific but not on the nose. The suggested rewordings are drafts for the monthly Featured Question, not facts.</p>'+T(head,rows,"ledger")+'</div>')
 
 CSS='''
 @page{size:Letter landscape; margin:.55in .6in .65in .6in}
@@ -185,11 +185,14 @@ table.m{width:100%; border-collapse:collapse; font-size:8pt} .m th{font-family:"
 .fill{display:block; min-height:22pt; border:.7pt dashed #b9c0cb; border-radius:2pt}
 .tag{font-family:"DejaVu Sans Mono"; font-size:6.4pt; letter-spacing:.06em; text-transform:uppercase; padding:1pt 3pt; border:.7pt solid; border-radius:2pt; white-space:nowrap} .tag.c{color:#1f8f5f; border-color:#1f8f5f} .tag.s{color:#9a6e12; border-color:#9a6e12} .tag.l{color:#2e86b5; border-color:#2e86b5} .tag.d{color:#7a8493; border-color:#a9b1bd}
 .journey td:nth-child(1){width:9%} .journey td:nth-child(2){width:9%} .journey td:nth-child(3){width:22%} .journey td:nth-child(4){width:12%} .journey td:nth-child(5){width:9%} .journey td:nth-child(6){width:12%} .journey td:nth-child(7){width:14%} .journey td:nth-child(8){width:13%}
-.filter td:nth-child(1){width:26%} .filter td:nth-child(4){width:13%} .filter td:nth-child(5){width:22%} .filter td:nth-child(n+6){width:8%}
+.filter td:nth-child(1){width:28%} .filter td:nth-child(3){width:14%} .filter td:nth-child(4){width:26%} .filter td:nth-child(n+5){width:8%}
 .ledger td:nth-child(1){width:34%} .elements td:nth-child(1){width:10%} .elements td:nth-child(2){width:36%}
 .deduce td:nth-child(1){width:3%} .deduce td:nth-child(2){width:36%} .deduce td:nth-child(4){width:8%}
-.timeline td:nth-child(1){width:10%} .timeline td:nth-child(2){width:54%}
+.timeline td:nth-child(1){width:12%} .timeline td:nth-child(2){width:62%}
 .two{display:grid; grid-template-columns:1fr 1fr; gap:18pt; margin-top:10pt} .two p{font-size:9pt}
 '''
+import re as _re
+fix=lambda t:_re.sub(r'\s+([.,;:])',r'\1',_re.sub(r'  +',' ',t)).replace('()','')
+P=[fix(x) for x in P]
 doc=f'<!doctype html><html><head><meta charset="utf-8"><title>Posey Solve Matrix</title><style>{CSS}</style></head><body>{"".join(P)}</body></html>'
 open('matrix.html','w').write(doc); print('ok')
