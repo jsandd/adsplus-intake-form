@@ -1,6 +1,6 @@
 # What Justin Posey has said
 
-Everything he has stated, confirmed, or leaned toward about the hunt. 214 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
+Everything he has stated, confirmed, or leaned toward about the hunt. 216 items. No fan readings, no community theories. Compiled Sep 14 2026; includes the full Seekers Summit 2026 Q&A transcript.
 
 **Confirmed** = official rules, his own posts, or a direct transcript quote. **Said** = an interview or Q&A answer reported by a named source. **Leaned** = a hedge or nudge in his own words. **Declined** = asked directly, would not answer (listed so you know it is open).
 
@@ -22,7 +22,8 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 214 items.
 - **[Said]** A gazebo counts as a building. The exterior of a structure: 'always a possibility.' Can a hunt item be displayed on the outside of a man-made building? He does not want to limit that possibility. Not wheelchair accessible. *(Seekers Summit, Mar 28 2026; X Marks the Pod, early 2026 (35:26))*
 - **[Said]** Are there loopholes in the rules? There are no intentional loopholes. *(X Marks the Pod, early 2026 (34:11))*
 - **[Declined]** Does the hunt require a river crossing? Not specified. *(X Marks the Pod, early 2026 (50:23))*
-- **[Said]** No specialized knowledge is needed. No dangerous water crossings. *(Public statements (research report))*
+- **[Said]** No specialized knowledge is needed: no advanced degrees, no tech or programming skills. No dangerous water crossings are required. *(Early post-launch interview (matches the Cowlazars & KPro episode, 2025) (1:38, 6:05); public statements)*
+- **[Said]** He planned meticulously so that no one has an unfair advantage; it is a free-for-all for anyone who wants to search. *(Early post-launch interview (matches the Cowlazars & KPro episode, 2025) (25:08))*
 - **[Said]** All clues are expected to stand the test of time; he will announce if something drastic changes. *(Posey Q&A (MW compilation))*
 
 ## 2. The poem: structure and how to read it
@@ -205,6 +206,7 @@ Everything he has stated, confirmed, or leaned toward about the hunt. 214 items.
 - **[Said]** He will not reveal what the container is, to prevent decoys and because of possible future interference by AI. *(Dillon Q&A, Jun 21 2025 (13:05))*
 - **[Said]** To claim the prize, the finder uses the email address on page 150 of the signed books. The prize includes the original Saddleback leather briefcase and the coffee mugs. *(Dillon Q&A, Jun 21 2025 (1:13:24))*
 - **[Said]** Contents: mostly gold (bars, flakes, dust), precious gems, rare coins across eras, a meteorite, historical artifacts dating to 561 BC, items from the Forrest Fenn chest including the dragon bracelet, and a Bitcoin wallet funded by book sales. A separate Steward holds additional items. *(Posey Q&A; public statements)*
+- **[Said]** There is a sentimental collection placed in the chest that means a great deal to him. *(Early post-launch interview (matches the Cowlazars & KPro episode, 2025) (21:18))*
 - **[Said]** The 1652 Oak Tree shilling in the treasure has a personal backstory: it replaced a counterfeit one from his grandfather's collection. *(X Marks the Pod, early 2026 (30:18))*
 - **[Said]** The steward verifies the finder's authenticity, releases the remaining Bitcoin wallet key, and ensures no one continues searching after the find. *(Toby Younis interview (A Gypsy's Kiss) (31:49))*
 - **[Said]** Finders keepers. The finder may remain anonymous but must come forward within 30 days to claim the Bitcoin portion. The 30-day requirement protects the finder: there is additional legal paperwork on file with the steward that is important for the finder to have. The complete solution will be revealed at the conclusion of the hunt, with supporting documentation, to give 'zero doubt' that the treasure was hidden where claimed. *(Posey Q&A (MW compilation); Treasure Hunt With Us, Apr 9 2025 (9:10); Toby Younis interview (A Gypsy's Kiss) (34:39))*
